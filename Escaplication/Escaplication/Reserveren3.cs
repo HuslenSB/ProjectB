@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace Escaplication
 {
-    public partial class Form1 : Form
+    public partial class Reserveren3 : Form
     {
-        public Form1()
+        public Reserveren3()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Reserveren f2 = new Reserveren();
+            f2.Show();
         }
     }
 }
