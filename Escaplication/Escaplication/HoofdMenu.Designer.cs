@@ -33,12 +33,12 @@
             this.Reserveren = new System.Windows.Forms.PictureBox();
             this.Recensies = new System.Windows.Forms.PictureBox();
             this.ImagePanels = new System.Windows.Forms.Panel();
+            this.Reserveertekst = new System.Windows.Forms.Label();
             this.RecensieText = new System.Windows.Forms.Label();
             this.Contact = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.HoofdMenuPanel = new System.Windows.Forms.Panel();
             this.Hoofdpagina = new System.Windows.Forms.Label();
-            this.Reserveertekst = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Informatie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LocatieContact)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Reserveren)).BeginInit();
@@ -49,40 +49,43 @@
             // 
             // Informatie
             // 
+            this.Informatie.ImageLocation = "http://www.dotnetperls.com/favicon.ico";
             this.Informatie.Location = new System.Drawing.Point(69, 27);
             this.Informatie.Name = "Informatie";
             this.Informatie.Size = new System.Drawing.Size(283, 181);
             this.Informatie.TabIndex = 0;
             this.Informatie.TabStop = false;
-            this.Informatie.ImageLocation = "http://www.dotnetperls.com/favicon.ico";
+            this.Informatie.Click += new System.EventHandler(this.Informatie_Click);
             // 
             // LocatieContact
             // 
+            this.LocatieContact.ImageLocation = "http://www.dotnetperls.com/favicon.ico";
             this.LocatieContact.Location = new System.Drawing.Point(433, 180);
             this.LocatieContact.Name = "LocatieContact";
             this.LocatieContact.Size = new System.Drawing.Size(283, 181);
             this.LocatieContact.TabIndex = 1;
             this.LocatieContact.TabStop = false;
-            this.LocatieContact.ImageLocation = "http://www.dotnetperls.com/favicon.ico";
-
+            this.LocatieContact.Click += new System.EventHandler(this.LocatieContact_Click);
             // 
             // Reserveren
             // 
+            this.Reserveren.ImageLocation = "http://www.dotnetperls.com/favicon.ico";
             this.Reserveren.Location = new System.Drawing.Point(70, 437);
             this.Reserveren.Name = "Reserveren";
             this.Reserveren.Size = new System.Drawing.Size(283, 181);
             this.Reserveren.TabIndex = 2;
             this.Reserveren.TabStop = false;
-            this.Reserveren.ImageLocation = "http://www.dotnetperls.com/favicon.ico";
+            this.Reserveren.Click += new System.EventHandler(this.Reserveren_Click);
             // 
             // Recensies
             // 
+            this.Recensies.ImageLocation = "http://www.dotnetperls.com/favicon.ico";
             this.Recensies.Location = new System.Drawing.Point(433, 437);
             this.Recensies.Name = "Recensies";
             this.Recensies.Size = new System.Drawing.Size(283, 181);
             this.Recensies.TabIndex = 3;
             this.Recensies.TabStop = false;
-            this.Recensies.ImageLocation = "http://www.dotnetperls.com/favicon.ico";
+            this.Recensies.Click += new System.EventHandler(this.Recensies_Click);
             // 
             // ImagePanels
             // 
@@ -96,6 +99,17 @@
             this.ImagePanels.Size = new System.Drawing.Size(800, 524);
             this.ImagePanels.TabIndex = 4;
             // 
+            // Reserveertekst
+            // 
+            this.Reserveertekst.AutoSize = true;
+            this.Reserveertekst.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
+            this.Reserveertekst.Location = new System.Drawing.Point(144, 483);
+            this.Reserveertekst.Name = "Reserveertekst";
+            this.Reserveertekst.Size = new System.Drawing.Size(138, 29);
+            this.Reserveertekst.TabIndex = 4;
+            this.Reserveertekst.Text = "Reserveren";
+            this.Reserveertekst.Click += new System.EventHandler(this.Reserveertekst_Click);
+            // 
             // RecensieText
             // 
             this.RecensieText.AutoSize = true;
@@ -105,6 +119,7 @@
             this.RecensieText.Size = new System.Drawing.Size(127, 29);
             this.RecensieText.TabIndex = 3;
             this.RecensieText.Text = "Recensies";
+            this.RecensieText.Click += new System.EventHandler(this.RecensieText_Click);
             // 
             // Contact
             // 
@@ -115,6 +130,7 @@
             this.Contact.Size = new System.Drawing.Size(312, 29);
             this.Contact.TabIndex = 2;
             this.Contact.Text = "Locatie en contactgegevens";
+            this.Contact.Click += new System.EventHandler(this.Contact_Click);
             // 
             // label1
             // 
@@ -125,6 +141,7 @@
             this.label1.Size = new System.Drawing.Size(277, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Escape Room Infromatie";
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // HoofdMenuPanel
             // 
@@ -143,16 +160,6 @@
             this.Hoofdpagina.Size = new System.Drawing.Size(211, 39);
             this.Hoofdpagina.TabIndex = 3;
             this.Hoofdpagina.Text = "Hoofdpagina";
-            // 
-            // Reserveertekst
-            // 
-            this.Reserveertekst.AutoSize = true;
-            this.Reserveertekst.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
-            this.Reserveertekst.Location = new System.Drawing.Point(144, 483);
-            this.Reserveertekst.Name = "Reserveertekst";
-            this.Reserveertekst.Size = new System.Drawing.Size(138, 29);
-            this.Reserveertekst.TabIndex = 4;
-            this.Reserveertekst.Text = "Reserveren";
             // 
             // HoofdMenu
             // 
