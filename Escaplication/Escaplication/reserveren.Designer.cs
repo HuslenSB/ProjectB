@@ -43,24 +43,21 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Reserveren1 = new System.Windows.Forms.TabPage();
             this.Reserveren2 = new System.Windows.Forms.TabPage();
+            this.peopletxtbox = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
+            this.passwordtxtbox = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.usernametxtbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Reserveren3 = new System.Windows.Forms.TabPage();
-            this.label6 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.Reserveren1.SuspendLayout();
             this.Reserveren2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.Reserveren3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -200,9 +197,11 @@
             // 
             // Reserveren2
             // 
+            this.Reserveren2.Controls.Add(this.peopletxtbox);
             this.Reserveren2.Controls.Add(this.button5);
+            this.Reserveren2.Controls.Add(this.passwordtxtbox);
             this.Reserveren2.Controls.Add(this.button4);
-            this.Reserveren2.Controls.Add(this.groupBox1);
+            this.Reserveren2.Controls.Add(this.usernametxtbox);
             this.Reserveren2.Controls.Add(this.label1);
             this.Reserveren2.Location = new System.Drawing.Point(4, 22);
             this.Reserveren2.Name = "Reserveren2";
@@ -211,6 +210,14 @@
             this.Reserveren2.TabIndex = 1;
             this.Reserveren2.Text = "Reserveren 2";
             this.Reserveren2.UseVisualStyleBackColor = true;
+            // 
+            // peopletxtbox
+            // 
+            this.peopletxtbox.Location = new System.Drawing.Point(334, 222);
+            this.peopletxtbox.Name = "peopletxtbox";
+            this.peopletxtbox.Size = new System.Drawing.Size(187, 20);
+            this.peopletxtbox.TabIndex = 3;
+            this.peopletxtbox.Text = "Aantal mensen ";
             // 
             // button5
             // 
@@ -222,6 +229,14 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // passwordtxtbox
+            // 
+            this.passwordtxtbox.Location = new System.Drawing.Point(334, 196);
+            this.passwordtxtbox.Name = "passwordtxtbox";
+            this.passwordtxtbox.Size = new System.Drawing.Size(187, 20);
+            this.passwordtxtbox.TabIndex = 2;
+            this.passwordtxtbox.Text = "Wachtwoord";
+            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(353, 337);
@@ -232,49 +247,13 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // groupBox1
+            // usernametxtbox
             // 
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(320, 176);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 113);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(7, 87);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(187, 20);
-            this.textBox4.TabIndex = 3;
-            this.textBox4.Text = "Aantal mensen ";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(7, 64);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(187, 20);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "Telefoonnummer";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(7, 37);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(187, 20);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "emailadres@email.com";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(7, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(187, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Voornaam en achternaam";
+            this.usernametxtbox.Location = new System.Drawing.Point(334, 168);
+            this.usernametxtbox.Name = "usernametxtbox";
+            this.usernametxtbox.Size = new System.Drawing.Size(187, 20);
+            this.usernametxtbox.TabIndex = 0;
+            this.usernametxtbox.Text = "Gebruikersnaam";
             // 
             // label1
             // 
@@ -297,16 +276,6 @@
             this.Reserveren3.Text = "Reserveren 3";
             this.Reserveren3.UseVisualStyleBackColor = true;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(230, 122);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(412, 13);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "We hebben je reservering verwerkt en sturen je zo snel mogelijk een bevestigingsm" +
-    "ail!";
-            // 
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(305, 225);
@@ -316,6 +285,15 @@
             this.button6.Text = "Terug naar overzicht";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(285, 157);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(257, 13);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Je reservering is verwerkt en is te zien op je account!";
             // 
             // Reserveren
             // 
@@ -333,8 +311,6 @@
             this.Reserveren1.PerformLayout();
             this.Reserveren2.ResumeLayout(false);
             this.Reserveren2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.Reserveren3.ResumeLayout(false);
             this.Reserveren3.PerformLayout();
             this.ResumeLayout(false);
@@ -358,16 +334,14 @@
         private System.Windows.Forms.TabPage Reserveren1;
         private System.Windows.Forms.TabPage Reserveren2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TabPage Reserveren3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox peopletxtbox;
+        private System.Windows.Forms.TextBox passwordtxtbox;
+        private System.Windows.Forms.TextBox usernametxtbox;
     }
 }
 
