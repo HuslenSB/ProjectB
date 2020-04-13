@@ -35,19 +35,38 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.PageTitle = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Reserveren1 = new System.Windows.Forms.TabPage();
+            this.Reserveren2 = new System.Windows.Forms.TabPage();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Reserveren3 = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.Reserveren1.SuspendLayout();
+            this.Reserveren2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.Reserveren3.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(116, 412);
+            this.button1.Location = new System.Drawing.Point(74, 404);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -57,7 +76,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(396, 412);
+            this.button2.Location = new System.Drawing.Point(380, 404);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
@@ -67,7 +86,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(680, 412);
+            this.button3.Location = new System.Drawing.Point(681, 404);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 2;
@@ -78,7 +97,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(77, 146);
+            this.pictureBox1.Location = new System.Drawing.Point(41, 160);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(166, 238);
             this.pictureBox1.TabIndex = 3;
@@ -87,7 +106,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(332, 146);
+            this.pictureBox2.Location = new System.Drawing.Point(315, 160);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(193, 238);
             this.pictureBox2.TabIndex = 4;
@@ -96,25 +115,25 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(617, 146);
+            this.pictureBox3.Location = new System.Drawing.Point(628, 160);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(197, 238);
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
             // 
-            // label1
+            // PageTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(393, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Reserveren";
+            this.PageTitle.AutoSize = true;
+            this.PageTitle.Location = new System.Drawing.Point(377, 28);
+            this.PageTitle.Name = "PageTitle";
+            this.PageTitle.Size = new System.Drawing.Size(62, 13);
+            this.PageTitle.TabIndex = 6;
+            this.PageTitle.Text = "Reserveren";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(329, 70);
+            this.label2.Location = new System.Drawing.Point(312, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(211, 13);
             this.label2.TabIndex = 7;
@@ -123,7 +142,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(113, 127);
+            this.label3.Location = new System.Drawing.Point(71, 132);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 13);
             this.label3.TabIndex = 8;
@@ -132,7 +151,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(393, 127);
+            this.label4.Location = new System.Drawing.Point(369, 132);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 13);
             this.label4.TabIndex = 9;
@@ -141,36 +160,184 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(664, 127);
+            this.label5.Location = new System.Drawing.Point(678, 132);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(105, 13);
             this.label5.TabIndex = 10;
             this.label5.Text = "HAUNTED ESCAPE";
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.Reserveren1);
+            this.tabControl1.Controls.Add(this.Reserveren2);
+            this.tabControl1.Controls.Add(this.Reserveren3);
+            this.tabControl1.Location = new System.Drawing.Point(1, 1);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(882, 508);
+            this.tabControl1.TabIndex = 11;
+            // 
+            // Reserveren1
+            // 
+            this.Reserveren1.Controls.Add(this.pictureBox2);
+            this.Reserveren1.Controls.Add(this.label4);
+            this.Reserveren1.Controls.Add(this.label5);
+            this.Reserveren1.Controls.Add(this.pictureBox1);
+            this.Reserveren1.Controls.Add(this.label3);
+            this.Reserveren1.Controls.Add(this.button3);
+            this.Reserveren1.Controls.Add(this.PageTitle);
+            this.Reserveren1.Controls.Add(this.label2);
+            this.Reserveren1.Controls.Add(this.button2);
+            this.Reserveren1.Controls.Add(this.button1);
+            this.Reserveren1.Controls.Add(this.pictureBox3);
+            this.Reserveren1.Location = new System.Drawing.Point(4, 22);
+            this.Reserveren1.Name = "Reserveren1";
+            this.Reserveren1.Padding = new System.Windows.Forms.Padding(3);
+            this.Reserveren1.Size = new System.Drawing.Size(874, 482);
+            this.Reserveren1.TabIndex = 0;
+            this.Reserveren1.Text = "Reserveren 1";
+            this.Reserveren1.UseVisualStyleBackColor = true;
+            // 
+            // Reserveren2
+            // 
+            this.Reserveren2.Controls.Add(this.button5);
+            this.Reserveren2.Controls.Add(this.button4);
+            this.Reserveren2.Controls.Add(this.groupBox1);
+            this.Reserveren2.Controls.Add(this.label1);
+            this.Reserveren2.Location = new System.Drawing.Point(4, 22);
+            this.Reserveren2.Name = "Reserveren2";
+            this.Reserveren2.Padding = new System.Windows.Forms.Padding(3);
+            this.Reserveren2.Size = new System.Drawing.Size(874, 482);
+            this.Reserveren2.TabIndex = 1;
+            this.Reserveren2.Text = "Reserveren 2";
+            this.Reserveren2.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(122, 337);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(160, 86);
+            this.button5.TabIndex = 9;
+            this.button5.Text = "Terug naar overzicht";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(353, 337);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(134, 86);
+            this.button4.TabIndex = 8;
+            this.button4.Text = "Reserveren!";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Location = new System.Drawing.Point(320, 176);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 113);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(7, 87);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(187, 20);
+            this.textBox4.TabIndex = 3;
+            this.textBox4.Text = "Aantal mensen ";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(7, 64);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(187, 20);
+            this.textBox3.TabIndex = 2;
+            this.textBox3.Text = "Telefoonnummer";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(7, 37);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(187, 20);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.Text = "emailadres@email.com";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(7, 10);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(187, 20);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "Voornaam en achternaam";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(303, 83);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
+            // 
+            // Reserveren3
+            // 
+            this.Reserveren3.Controls.Add(this.button6);
+            this.Reserveren3.Controls.Add(this.label6);
+            this.Reserveren3.Location = new System.Drawing.Point(4, 22);
+            this.Reserveren3.Name = "Reserveren3";
+            this.Reserveren3.Padding = new System.Windows.Forms.Padding(3);
+            this.Reserveren3.Size = new System.Drawing.Size(874, 482);
+            this.Reserveren3.TabIndex = 2;
+            this.Reserveren3.Text = "Reserveren 3";
+            this.Reserveren3.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(230, 122);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(412, 13);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "We hebben je reservering verwerkt en sturen je zo snel mogelijk een bevestigingsm" +
+    "ail!";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(305, 225);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(203, 122);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "Terug naar overzicht";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Reserveren
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 511);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tabControl1);
             this.Name = "Reserveren";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.Reserveren1.ResumeLayout(false);
+            this.Reserveren1.PerformLayout();
+            this.Reserveren2.ResumeLayout(false);
+            this.Reserveren2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.Reserveren3.ResumeLayout(false);
+            this.Reserveren3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -182,11 +349,25 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label PageTitle;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage Reserveren1;
+        private System.Windows.Forms.TabPage Reserveren2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TabPage Reserveren3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button6;
     }
 }
 
