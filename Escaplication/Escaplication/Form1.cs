@@ -36,5 +36,15 @@ namespace Escaplication
         {
 
         }
+
+        private void kamertxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void commentaartxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
