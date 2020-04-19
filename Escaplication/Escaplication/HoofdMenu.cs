@@ -65,9 +65,5 @@ namespace Escaplication
             Program.pagina = 4;
             Close();
         }
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Program.active = false;
-        }
     }
 }
