@@ -12,42 +12,51 @@ namespace Escaplication
 {
     public partial class Reserveren : Form
     {
-        public string var1;
+        public string usernametxt, passwordtxt, peopletxt, chosenroom;
         public Reserveren()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Reserveren2 f1 = new Reserveren2();
-            var1 = "Leuk dat je hebt gekozen voor de Sparta escape room!";
-            f1.label1.Text = var1;
-            f1.Show();
+            tabControl1.SelectTab(1);
+            this.label1.Text = "Leuk dat je hebt gekozen voor de Sparta escape room!";
+            chosenroom = "Sparta";
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Reserveren2 f1 = new Reserveren2();
-            var1 = "Leuk dat je hebt gekozen voor de Last run escape room!";
-            f1.label1.Text = var1;
-            f1.Show();
+            tabControl1.SelectTab(1);
+            this.label1.Text = "Leuk dat je hebt gekozen voor de Last run escape room!";
+            chosenroom = "The last run";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Reserveren2 f1 = new Reserveren2();
-            var1 = "Leuk dat je hebt gekozen voor de Haunted escape, escape room!";
-            f1.label1.Text = var1;
-            f1.Show();
+            tabControl1.SelectTab(1);
+            this.label1.Text = "Leuk dat je hebt gekozen voor de Haunted escape, escape room!";
+            chosenroom = "Haunted escape";
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(0);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(0);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(2);
+            usernametxt = usernametxtbox.Text;
+            passwordtxt = passwordtxtbox.Text;
+            peopletxt = peopletxtbox.Text;
+        }
+        
     }
 }
