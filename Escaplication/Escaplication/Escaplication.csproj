@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Tarieven_Tab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarieven_Tab.Designer.cs">
+      <DependentUpon>Tarieven_Tab.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reserveren2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,9 +86,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Reserveren3.resx">
       <DependentUpon>Reserveren3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarieven_Tab.resx">
+      <DependentUpon>Tarieven_Tab.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -96,6 +106,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sparta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Running.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountain.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
