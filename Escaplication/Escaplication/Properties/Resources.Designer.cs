@@ -63,6 +63,16 @@ namespace Escaplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Locatie_en_Contactgegevens {
+            get {
+                object obj = ResourceManager.GetObject("Locatie en Contactgegevens", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mountain {
             get {
                 object obj = ResourceManager.GetObject("mountain", resourceCulture);

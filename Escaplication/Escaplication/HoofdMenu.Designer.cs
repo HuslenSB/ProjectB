@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HoofdMenu));
             this.Informatie = new System.Windows.Forms.PictureBox();
             this.LocatieContact = new System.Windows.Forms.PictureBox();
             this.Reserveren = new System.Windows.Forms.PictureBox();
@@ -49,40 +50,44 @@
             // 
             // Informatie
             // 
-            this.Informatie.ImageLocation = "http://www.dotnetperls.com/favicon.ico";
+            this.Informatie.Image = ((System.Drawing.Image)(resources.GetObject("Informatie.Image")));
             this.Informatie.Location = new System.Drawing.Point(69, 27);
             this.Informatie.Name = "Informatie";
             this.Informatie.Size = new System.Drawing.Size(283, 181);
+            this.Informatie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Informatie.TabIndex = 0;
             this.Informatie.TabStop = false;
             this.Informatie.Click += new System.EventHandler(this.Informatie_Click);
             // 
             // LocatieContact
             // 
-            this.LocatieContact.ImageLocation = "http://www.dotnetperls.com/favicon.ico";
+            this.LocatieContact.Image = global::Escaplication.Properties.Resources.Locatie_en_Contactgegevens;
             this.LocatieContact.Location = new System.Drawing.Point(433, 180);
             this.LocatieContact.Name = "LocatieContact";
             this.LocatieContact.Size = new System.Drawing.Size(283, 181);
+            this.LocatieContact.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LocatieContact.TabIndex = 1;
             this.LocatieContact.TabStop = false;
             this.LocatieContact.Click += new System.EventHandler(this.LocatieContact_Click);
             // 
             // Reserveren
             // 
-            this.Reserveren.ImageLocation = "http://www.dotnetperls.com/favicon.ico";
+            this.Reserveren.Image = ((System.Drawing.Image)(resources.GetObject("Reserveren.Image")));
             this.Reserveren.Location = new System.Drawing.Point(70, 437);
             this.Reserveren.Name = "Reserveren";
             this.Reserveren.Size = new System.Drawing.Size(283, 181);
+            this.Reserveren.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Reserveren.TabIndex = 2;
             this.Reserveren.TabStop = false;
             this.Reserveren.Click += new System.EventHandler(this.Reserveren_Click);
             // 
             // Recensies
             // 
-            this.Recensies.ImageLocation = "http://www.dotnetperls.com/favicon.ico";
+            this.Recensies.Image = ((System.Drawing.Image)(resources.GetObject("Recensies.Image")));
             this.Recensies.Location = new System.Drawing.Point(433, 437);
             this.Recensies.Name = "Recensies";
             this.Recensies.Size = new System.Drawing.Size(283, 181);
+            this.Recensies.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Recensies.TabIndex = 3;
             this.Recensies.TabStop = false;
             this.Recensies.Click += new System.EventHandler(this.Recensies_Click);
