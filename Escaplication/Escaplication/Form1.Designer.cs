@@ -62,8 +62,7 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(270, 52);
             this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "Ago tijd wel een mier toch doel. Krachtiger monopolies verwachten begrenzing nu b" +
-    "eschaving om. Ze laag door in mont. Planten behoeft regelen als geleend.";
+            this.richTextBox1.Text = "Ago tijd wel een mier toch doel. Krachtiger monopolies verwachten begrenzing nu b";
             // 
             // groupBox2
             // 
@@ -159,8 +158,7 @@
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(270, 49);
             this.richTextBox2.TabIndex = 2;
-            this.richTextBox2.Text = "Ago tijd wel een mier toch doel. Krachtiger monopolies verwachten begrenzing nu b" +
-    "eschaving om. Ze laag door in mont. Planten behoeft regelen als geleend.";
+            this.richTextBox2.Text = "Ago tijd wel een mier toch doel. Krachtiger monopolies verwachten begrenzing nu b";
             this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
             // Form1
