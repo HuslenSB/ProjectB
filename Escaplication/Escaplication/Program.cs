@@ -18,7 +18,7 @@ namespace Escaplication
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Reserveren());
+            Application.Run(new HoofdMenu());
 
         }
     }
