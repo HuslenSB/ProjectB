@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accountpagina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accountpagina.Designer.cs">
+      <DependentUpon>Accountpagina.cs</DependentUpon>
+    </Compile>
     <Compile Include="HoofdMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     <Compile Include="Tarieven_Tab.Designer.cs">
       <DependentUpon>Tarieven_Tab.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Accountpagina.resx">
+      <DependentUpon>Accountpagina.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HoofdMenu.resx">
       <DependentUpon>HoofdMenu.cs</DependentUpon>
     </EmbeddedResource>
