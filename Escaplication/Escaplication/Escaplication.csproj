@@ -52,6 +52,12 @@
     <Compile Include="HoofdMenu.designer.cs">
       <DependentUpon>HoofdMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Informatie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informatie.Designer.cs">
+      <DependentUpon>Informatie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reserveren.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     </Compile>
     <EmbeddedResource Include="HoofdMenu.resx">
       <DependentUpon>HoofdMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informatie.resx">
+      <DependentUpon>Informatie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reserveren.resx">
       <DependentUpon>Reserveren.cs</DependentUpon>
