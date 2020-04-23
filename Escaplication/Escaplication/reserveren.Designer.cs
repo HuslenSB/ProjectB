@@ -168,10 +168,10 @@
             this.tabControl1.Controls.Add(this.Reserveren1);
             this.tabControl1.Controls.Add(this.Reserveren2);
             this.tabControl1.Controls.Add(this.Reserveren3);
-            this.tabControl1.Location = new System.Drawing.Point(-2, -21);
+            this.tabControl1.Location = new System.Drawing.Point(1, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(885, 530);
+            this.tabControl1.Size = new System.Drawing.Size(882, 508);
             this.tabControl1.TabIndex = 11;
             // 
             // Reserveren1
@@ -190,7 +190,7 @@
             this.Reserveren1.Location = new System.Drawing.Point(4, 22);
             this.Reserveren1.Name = "Reserveren1";
             this.Reserveren1.Padding = new System.Windows.Forms.Padding(3);
-            this.Reserveren1.Size = new System.Drawing.Size(877, 504);
+            this.Reserveren1.Size = new System.Drawing.Size(874, 482);
             this.Reserveren1.TabIndex = 0;
             this.Reserveren1.Text = "Reserveren 1";
             this.Reserveren1.UseVisualStyleBackColor = true;
