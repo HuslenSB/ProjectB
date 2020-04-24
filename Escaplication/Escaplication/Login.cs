@@ -49,7 +49,7 @@ namespace Escaplication
         }
  
         // Lijn 0 en 1 van de txt file worden in [] users gestopt. Lijn 0 == gebruikersnaam, 1 == wachtwoord.
-
+         
         private void Loginbtn_Click(object sender, EventArgs e)
         {
             string path = Application.StartupPath + "\\Gebruikers\\" + Gebruikersnaamtxt.Text + ".txt";
@@ -62,7 +62,7 @@ namespace Escaplication
                
                 if (users[0] == Gebruikersnaamtxt.Text && users[1] == Wachtwoordtxt.Text)
                 {
-                    Form1 f1 = new Form1();
+                    Recensie f1 = new Recensie();
                     f1.Show();
                 }
                 else if (users[0]== Gebruikersnaamtxt.Text && users[1] != Wachtwoordtxt.Text)
@@ -77,7 +77,11 @@ namespace Escaplication
             }    
 
         }
- 
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
