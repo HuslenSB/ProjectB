@@ -19,10 +19,18 @@ namespace Escaplication
 
             // Als file \gebruikers niet bestaat, create file \gebruikers.
 
-            if (!Directory.Exists(Application.StartupPath + "\\Gebruikers\\"))
+            if (!Directory.Exists(Application.StartupPath + "\\Gebruikers\\")&& !Directory.Exists(Environment.CurrentDirectory + "/Recensies/"))
             {
                 Directory.CreateDirectory(Application.StartupPath + "\\Gebruikers\\");
+                Directory.CreateDirectory(Environment.CurrentDirectory + "/Recensies/");
+                StreamWriter StrWriter = new StreamWriter(Application.StartupPath + "\\Recensies\\" + "Test.txt");
+                StrWriter.WriteLine("Huslen");
+                StrWriter.WriteLine("Sparta");
+                StrWriter.WriteLine("Leuke kamer!");
+                StrWriter.WriteLine("5");
+                StrWriter.Close();
             }
+    
         }
  
         private void Login_Load(object sender, EventArgs e)

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
 namespace Escaplication
 {
     static class Program
@@ -17,7 +17,7 @@ namespace Escaplication
             Console.WriteLine("test");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Recensie());
+            Application.Run(new Login());
         }
     }
 }

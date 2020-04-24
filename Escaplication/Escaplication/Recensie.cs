@@ -12,14 +12,13 @@ namespace Escaplication
 {
     public partial class Recensie : Form
     {
-        public Recensie()
-        { 
+    
+    public Recensie()
+        {
             InitializeComponent();
-            if (!Directory.Exists(Application.StartupPath + "\\Recensies\\"))
-            {
-                Directory.CreateDirectory(Application.StartupPath + "\\Recensies\\");
-            }
+
         }
+
 
         public static string pathh = Application.StartupPath + "\\Recensies\\";
         public static string[] RecensiePath = Directory.GetFiles(pathh);
@@ -29,78 +28,59 @@ namespace Escaplication
             int totalfiles = Directory.GetFiles(pathh).Length;
 
             // Recensie lijst
-
-            for (int i = 0, LocPointGB = 333, LocPointTB = 390, LocPointLabel = 359, LocPointSter =25; i < totalfiles; i++, LocPointGB += 150, LocPointTB += 150, LocPointLabel += 150, LocPointSter+=20)
+            if (totalfiles > 0)
             {
-                string[] ArrayRecensies = File.ReadAllLines(Convert.ToString(RecensiePath[i]));
 
-                // Groupbox
 
-                GroupBox recensiegb = new GroupBox();
-                recensiegb.Name = "";
-                recensiegb.Size = new Size(432, 145);
-                recensiegb.Location = new Point(3, LocPointGB);
-                recensiegb.TabIndex = 0;
-                recensiegb.TabStop = false;
-                recensiegb.Text = ArrayRecensies[0];
+                for (int i = 0, LocPointGB = 333, LocPointTB = 390, LocPointLabel = 359, LocPointSter = 25; i < totalfiles; i++, LocPointGB += 150, LocPointTB += 150, LocPointLabel += 150, LocPointSter += 20)
+                {
+                    string[] ArrayRecensies = File.ReadAllLines(Convert.ToString(RecensiePath[i]));
 
-                // Commentaar
+                    // Groupbox
 
-                RichTextBox commentaar = new RichTextBox();
-                commentaar.Text = ArrayRecensies[2];
-                commentaar.Location = new Point(91, LocPointTB);
-                commentaar.Size = new Size(270, 52);
+                    GroupBox recensiegb = new GroupBox();
+                    recensiegb.Name = "";
+                    recensiegb.Size = new Size(432, 145);
+                    recensiegb.Location = new Point(3, LocPointGB);
+                    recensiegb.TabIndex = 0;
+                    recensiegb.TabStop = false;
+                    recensiegb.Text = ArrayRecensies[0];
 
-                // Naam van kamer
+                    // Commentaar
 
-                Label naamkamer = new Label();
-                naamkamer.AutoSize = true;
-                naamkamer.Location = new Point(166, LocPointLabel);
-                naamkamer.Size = new Size(103, 13);
-                naamkamer.Name = "Kamernaam";
-                naamkamer.Text = ArrayRecensies[1];
+                    RichTextBox commentaar = new RichTextBox();
+                    commentaar.Text = ArrayRecensies[2];
+                    commentaar.Location = new Point(91, LocPointTB);
+                    commentaar.Size = new Size(270, 52);
 
-                // Sterren
+                    // Naam van kamer
 
-                Label ster = new Label();
-                ster.AutoSize = true;
-                ster.Name = "ster";
-                ster.Text = ArrayRecensies[3];
-                ster.Location = new Point(6, LocPointSter);
-                ster.Size = new Size(100, 15);
+                    Label naamkamer = new Label();
+                    naamkamer.AutoSize = true;
+                    naamkamer.Location = new Point(166, LocPointLabel);
+                    naamkamer.Size = new Size(103, 13);
+                    naamkamer.Name = "Kamernaam";
+                    naamkamer.Text = ArrayRecensies[1];
 
-                panel1.Controls.Add(naamkamer);
-                panel1.Controls.Add(commentaar);
-                panel1.Controls.Add(recensiegb);
-                panel1.Controls.Add(ster);
+                    // Sterren
+
+                    Label ster = new Label();
+                    ster.AutoSize = true;
+                    ster.Name = "ster";
+                    ster.Text = ArrayRecensies[3];
+                    ster.Location = new Point(6, LocPointSter);
+                    ster.Size = new Size(100, 15);
+
+                    panel1.Controls.Add(naamkamer);
+                    panel1.Controls.Add(commentaar);
+                    panel1.Controls.Add(recensiegb);
+                    panel1.Controls.Add(ster);
+                }
             }
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void richTextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kamertxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void commentaartxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void Recensiebtn_Click(object sender, EventArgs e)
         {
@@ -153,6 +133,30 @@ namespace Escaplication
         }
 
         private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+           private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kamertxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void commentaartxt_TextChanged(object sender, EventArgs e)
         {
 
         }
