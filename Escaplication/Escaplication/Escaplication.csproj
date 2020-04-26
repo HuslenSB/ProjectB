@@ -89,7 +89,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reserveren.resx">
       <DependentUpon>Reserveren.cs</DependentUpon>
-    </EmbeddedResource>
     <Compile Include="Recensie.cs">
       <SubType>Form</SubType>
     </Compile>
