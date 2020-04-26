@@ -49,7 +49,7 @@
     <Compile Include="Accountpagina.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Accountpagina.Designer.cs">
+    <Compile Include="Accountpagina.designer.cs">
       <DependentUpon>Accountpagina.cs</DependentUpon>
     </Compile>
     <Compile Include="HoofdMenu.cs">
@@ -61,8 +61,20 @@
     <Compile Include="Informatie.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Informatie.Designer.cs">
+    <Compile Include="Informatie.designer.cs">
       <DependentUpon>Informatie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recensie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recensie.designer.cs">
+      <DependentUpon>Recensie.cs</DependentUpon>
     </Compile>
     <Compile Include="Reserveren.cs">
       <SubType>Form</SubType>
@@ -87,28 +99,14 @@
     <EmbeddedResource Include="Informatie.resx">
       <DependentUpon>Informatie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reserveren.resx">
-      <DependentUpon>Reserveren.cs</DependentUpon>
-    </EmbeddedResource>
-    <Compile Include="Recensie.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Recensie.Designer.cs">
-      <DependentUpon>Recensie.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
+    <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    </EmbeddedResource>
     <EmbeddedResource Include="Recensie.resx">
       <DependentUpon>Recensie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Reserveren.resx">
+      <DependentUpon>Reserveren.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
