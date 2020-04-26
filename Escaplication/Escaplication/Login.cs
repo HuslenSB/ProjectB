@@ -33,10 +33,7 @@ namespace Escaplication
     
         }
  
-        private void Login_Load(object sender, EventArgs e)
-        {
- 
-        }
+
 
         // Maakt een txt file aan in de gebruikers file bij het registreren. Gebruikersnaam + ".txt" == txt file naam.
         // In
@@ -86,10 +83,6 @@ namespace Escaplication
 
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

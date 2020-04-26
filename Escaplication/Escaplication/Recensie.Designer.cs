@@ -73,7 +73,7 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Schrijf een recensie";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+
             // 
             // sterrentxt
             // 
@@ -114,7 +114,7 @@
             this.commentaartxt.Name = "commentaartxt";
             this.commentaartxt.Size = new System.Drawing.Size(217, 20);
             this.commentaartxt.TabIndex = 4;
-            this.commentaartxt.TextChanged += new System.EventHandler(this.commentaartxt_TextChanged);
+       
             // 
             // kamertxt
             // 
@@ -122,7 +122,7 @@
             this.kamertxt.Name = "kamertxt";
             this.kamertxt.Size = new System.Drawing.Size(217, 20);
             this.kamertxt.TabIndex = 3;
-            this.kamertxt.TextChanged += new System.EventHandler(this.kamertxt_TextChanged);
+   
             // 
             // label4
             // 
@@ -150,7 +150,6 @@
             this.label1.Size = new System.Drawing.Size(88, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Naam van kamer";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox1
             // 
@@ -163,7 +162,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Peter";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label5
             // 
@@ -183,8 +181,7 @@
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 4;
             this.label6.Text = "label6";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
+            //
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(91, 53);
@@ -224,7 +221,6 @@
             this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Sterren 4/5";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // richTextBox2
             // 
@@ -234,7 +230,7 @@
             this.richTextBox2.TabIndex = 2;
             this.richTextBox2.Text = "Ago tijd wel een mier toch doel. Krachtiger monopolies verwachten begrenzing nu b" +
     "";
-            this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
+   
             // 
             // panel1
             // 
@@ -255,7 +251,6 @@
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "groupBox4";
-            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // label8
             // 
@@ -265,7 +260,6 @@
             this.label8.Size = new System.Drawing.Size(108, 13);
             this.label8.TabIndex = 5;
             this.label8.Text = "TEST YOUR SKILLS";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // Recensie
             // 

@@ -172,7 +172,6 @@
             this.label7.Size = new System.Drawing.Size(110, 15);
             this.label7.TabIndex = 14;
             this.label7.Text = "TEST YOUR SKILLS";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // Login
             // 
@@ -196,7 +195,7 @@
             this.Controls.Add(this.Loginbtn);
             this.Name = "Login";
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 
