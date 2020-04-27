@@ -30,6 +30,9 @@ namespace Escaplication
                 ab.WriteLine(passwordregtxtbox.Text);
                 ab.Close();
                 MessageBox.Show("Registreren voltooid");
+                StreamWriter af = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Accounts.txt");
+                af.WriteLine(usernameregtxtbox.Text);
+                af.Close();
             }
             else
             {
@@ -111,6 +114,26 @@ namespace Escaplication
         private void button7_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(0);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            StreamWriter ae = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + usernamelogintxtbox.Text + ".txt");
+            decimal k = numericUpDown1.Value;
+            int n = (int)k;
+            lines[n*2] = "";
+            lines[n * 2+1] = "";
+            lines[n * 2+2] = "";
+            for (int i = 0; i < lines.Length; i++)
+            {
+                if (lines[i] != "")
+                {
+                    ae.WriteLine(lines[i]);
+                }
+            }
+            ae.Close();
+            this.Controls.Clear();
+            this.InitializeComponent();
         }
     }
 }

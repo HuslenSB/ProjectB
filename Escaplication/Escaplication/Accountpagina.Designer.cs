@@ -60,11 +60,15 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -282,6 +286,8 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.numericUpDown1);
+            this.panel1.Controls.Add(this.button9);
             this.panel1.Location = new System.Drawing.Point(38, 115);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(453, 277);
@@ -385,6 +391,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Admin account";
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(281, 12);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(106, 85);
+            this.button9.TabIndex = 0;
+            this.button9.Text = "Selecteer welke reservering u wilt verwijderen";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(393, 46);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(54, 20);
+            this.numericUpDown1.TabIndex = 1;
+            // 
             // Accountpagina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -398,9 +421,11 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -439,5 +464,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Button button9;
     }
 }
