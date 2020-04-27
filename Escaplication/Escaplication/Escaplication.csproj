@@ -46,11 +46,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accountpagina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accountpagina.designer.cs">
+      <DependentUpon>Accountpagina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact_Tab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact_Tab.designer.cs">
+      <DependentUpon>Contact_Tab.cs</DependentUpon>
+    </Compile>
     <Compile Include="HoofdMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HoofdMenu.designer.cs">
       <DependentUpon>HoofdMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informatie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informatie.designer.cs">
+      <DependentUpon>Informatie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recensie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recensie.designer.cs">
+      <DependentUpon>Recensie.cs</DependentUpon>
     </Compile>
     <Compile Include="Reserveren.cs">
       <SubType>Form</SubType>
@@ -66,8 +96,23 @@
     <Compile Include="Tarieven_Tab.Designer.cs">
       <DependentUpon>Tarieven_Tab.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Accountpagina.resx">
+      <DependentUpon>Accountpagina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact_Tab.resx">
+      <DependentUpon>Contact_Tab.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HoofdMenu.resx">
       <DependentUpon>HoofdMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informatie.resx">
+      <DependentUpon>Informatie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recensie.resx">
+      <DependentUpon>Recensie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reserveren.resx">
       <DependentUpon>Reserveren.cs</DependentUpon>
