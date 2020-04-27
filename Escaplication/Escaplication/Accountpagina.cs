@@ -13,6 +13,11 @@ namespace Escaplication
 {
     public partial class Accountpagina : Form
     {
+        public string[] lines;
+        public Accountpagina()
+        {
+            InitializeComponent();
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -20,12 +25,6 @@ namespace Escaplication
             ab.WriteLine(usernameregtxtbox.Text);
             ab.WriteLine(passwordregtxtbox.Text);
             ab.Close();
-        }
-
-        public string[] lines;
-        public Accountpagina()
-        {
-            InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -36,9 +35,17 @@ namespace Escaplication
             {
                 lines = File.ReadAllLines(path);
                 {
-                    if (lines[0] == usernamelogintxtbox.Text && lines[1] == passwordregtxtbox.Text)
+                    if (lines[0] == usernamelogintxtbox.Text && lines[1] == passlogintxtbox.Text)
                     {
                         tabControl1.SelectTab(1);
+                        this.label6.Text = "Welkom " + usernamelogintxtbox.Text;
+                        if (lines.Length != 0)
+                        {
+                            for(int i=2; i<lines.Length-2; i++)
+                            {
+
+                            }
+                        }
                     }
                     else if("Admin" == usernamelogintxtbox.Text && "Admin" == passlogintxtbox.Text)
                     {
@@ -48,7 +55,6 @@ namespace Escaplication
                     {
                         MessageBox.Show("Verkeerde gebruikersnaam of wachtwoord");
                     }
-
                 }
             }
             else { 

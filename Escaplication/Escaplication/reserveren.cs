@@ -50,30 +50,30 @@ namespace Escaplication
         private void button6_Click(object sender, EventArgs e)
         {
             Accountpagina f1 = new Accountpagina();
+            this.Hide();
             f1.Show();
-            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(2);
             usernametxt = usernametxtbox.Text;
             passwordtxt = passwordtxtbox.Text;
             peopletxt = peopletxtbox.Text;
             string path = Application.StartupPath + "\\Gebruikers\\" + usernametxt + ".txt";
 
-            if (System.IO.File.Exists(path))
+            if (File.Exists(path))
             {
-                lines = System.IO.File.ReadAllLines(path);
+                lines = File.ReadAllLines(path);
                 {
                     if (lines[0] == usernametxt && lines[1] == passwordtxt)
                     {
                         using (StreamWriter ac = File.AppendText(Application.StartupPath + "\\Gebruikers\\" + usernametxt + ".txt"))
                         {
                             ac.WriteLine(chosenroom);
+                            ac.WriteLine(peopletxt);
+                            ac.WriteLine(Datumprikkerbox.Text);
                         }
-                        lines = File.ReadAllLines(path);
-                        Console.WriteLine(lines.Length);
+                        tabControl1.SelectTab(2);
                     }
                     else
                     {
@@ -82,7 +82,10 @@ namespace Escaplication
 
                 }
             }
-
+            else
+            {
+                MessageBox.Show("Verkeerde gebruikersnaam of wachtwoord");
+            }
         }
     }
 }
