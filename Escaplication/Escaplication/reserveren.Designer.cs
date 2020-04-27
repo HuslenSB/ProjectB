@@ -182,6 +182,7 @@
             // 
             // Reserveren1
             // 
+            this.Reserveren1.BackColor = System.Drawing.Color.Turquoise;
             this.Reserveren1.Controls.Add(this.pictureBox2);
             this.Reserveren1.Controls.Add(this.label4);
             this.Reserveren1.Controls.Add(this.label5);
@@ -199,10 +200,10 @@
             this.Reserveren1.Size = new System.Drawing.Size(874, 482);
             this.Reserveren1.TabIndex = 0;
             this.Reserveren1.Text = "Reserveren 1";
-            this.Reserveren1.UseVisualStyleBackColor = true;
             // 
             // Reserveren2
             // 
+            this.Reserveren2.BackColor = System.Drawing.Color.Turquoise;
             this.Reserveren2.Controls.Add(this.numericUpDown1);
             this.Reserveren2.Controls.Add(this.label10);
             this.Reserveren2.Controls.Add(this.Datumprikkerbox);
@@ -217,10 +218,9 @@
             this.Reserveren2.Location = new System.Drawing.Point(4, 22);
             this.Reserveren2.Name = "Reserveren2";
             this.Reserveren2.Padding = new System.Windows.Forms.Padding(3);
-            this.Reserveren2.Size = new System.Drawing.Size(874, 504);
+            this.Reserveren2.Size = new System.Drawing.Size(874, 482);
             this.Reserveren2.TabIndex = 1;
             this.Reserveren2.Text = "Reserveren 2";
-            this.Reserveren2.UseVisualStyleBackColor = true;
             // 
             // numericUpDown1
             // 
@@ -323,15 +323,15 @@
             // 
             // Reserveren3
             // 
+            this.Reserveren3.BackColor = System.Drawing.Color.Turquoise;
             this.Reserveren3.Controls.Add(this.button6);
             this.Reserveren3.Controls.Add(this.label6);
             this.Reserveren3.Location = new System.Drawing.Point(4, 22);
             this.Reserveren3.Name = "Reserveren3";
             this.Reserveren3.Padding = new System.Windows.Forms.Padding(3);
-            this.Reserveren3.Size = new System.Drawing.Size(874, 504);
+            this.Reserveren3.Size = new System.Drawing.Size(874, 482);
             this.Reserveren3.TabIndex = 2;
             this.Reserveren3.Text = "Reserveren 3";
-            this.Reserveren3.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
