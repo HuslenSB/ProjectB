@@ -266,6 +266,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.Turquoise;
             this.tabPage2.Controls.Add(this.panel1);
             this.tabPage2.Controls.Add(this.button7);
             this.tabPage2.Controls.Add(this.groupBox1);
@@ -274,10 +275,9 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(631, 422);
+            this.tabPage2.Size = new System.Drawing.Size(791, 422);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Usertab";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -327,16 +327,16 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.Turquoise;
             this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Controls.Add(this.groupBox2);
             this.tabPage3.Controls.Add(this.button11);
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(631, 422);
+            this.tabPage3.Size = new System.Drawing.Size(791, 422);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Admin tab";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // label10
             // 

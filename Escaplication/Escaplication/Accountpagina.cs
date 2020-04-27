@@ -23,12 +23,19 @@ namespace Escaplication
 
         private void button2_Click(object sender, EventArgs e)
         {
-            StreamWriter ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + usernameregtxtbox.Text + ".txt");
-            ab.WriteLine(usernameregtxtbox.Text);
-            ab.WriteLine(passwordregtxtbox.Text);
-            ab.Close();
+            if (!File.Exists(Application.StartupPath + "\\Gebruikers\\" + usernameregtxtbox.Text + ".txt"))
+            {
+                StreamWriter ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + usernameregtxtbox.Text + ".txt");
+                ab.WriteLine(usernameregtxtbox.Text);
+                ab.WriteLine(passwordregtxtbox.Text);
+                ab.Close();
+                MessageBox.Show("Registreren voltooid");
+            }
+            else
+            {
+                MessageBox.Show("Deze gebruikersnaam bestaat al");
+            }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             string path = Application.StartupPath + "\\Gebruikers\\" + usernamelogintxtbox.Text + ".txt";
