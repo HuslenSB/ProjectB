@@ -50,9 +50,7 @@ namespace Escaplication
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Accountpagina f1 = new Accountpagina();
-            this.Hide();
-            f1.Show();
+            tabControl1.SelectTab(0);
         }
 
         private void button4_Click(object sender, EventArgs e)
