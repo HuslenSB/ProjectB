@@ -18,6 +18,7 @@ namespace Escaplication
         public Reserveren()
         {
             InitializeComponent();
+
         }
 
 
@@ -58,7 +59,7 @@ namespace Escaplication
         {
             usernametxt = usernametxtbox.Text;
             passwordtxt = passwordtxtbox.Text;
-            peopletxt = peopletxtbox.Text;
+            peopletxt = numericUpDown1.Text;
             string path = Application.StartupPath + "\\Gebruikers\\" + usernametxt + ".txt";
 
             if (File.Exists(path))
@@ -73,7 +74,14 @@ namespace Escaplication
                             ac.WriteLine(peopletxt);
                             ac.WriteLine(Datumprikkerbox.Text);
                         }
-                        tabControl1.SelectTab(2);
+                        using (StreamWriter ad = File.AppendText(Application.StartupPath + "\\Gebruikers\\" + "Reserveringen.txt"))
+                        {
+                            ad.WriteLine(usernametxt);
+                            ad.WriteLine(chosenroom);
+                            ad.WriteLine(peopletxt);
+                            ad.WriteLine(Datumprikkerbox.Text);
+                        }
+                            tabControl1.SelectTab(2);
                     }
                     else
                     {

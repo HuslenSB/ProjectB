@@ -43,7 +43,11 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Reserveren1 = new System.Windows.Forms.TabPage();
             this.Reserveren2 = new System.Windows.Forms.TabPage();
-            this.peopletxtbox = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.Datumprikkerbox = new System.Windows.Forms.DateTimePicker();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.passwordtxtbox = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
@@ -52,11 +56,7 @@
             this.Reserveren3 = new System.Windows.Forms.TabPage();
             this.button6 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.Datumprikkerbox = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -64,6 +64,7 @@
             this.Reserveren1.SuspendLayout();
             this.Reserveren2.SuspendLayout();
             this.Reserveren3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -202,12 +203,12 @@
             // 
             // Reserveren2
             // 
+            this.Reserveren2.Controls.Add(this.numericUpDown1);
             this.Reserveren2.Controls.Add(this.label10);
             this.Reserveren2.Controls.Add(this.Datumprikkerbox);
             this.Reserveren2.Controls.Add(this.label9);
             this.Reserveren2.Controls.Add(this.label8);
             this.Reserveren2.Controls.Add(this.label7);
-            this.Reserveren2.Controls.Add(this.peopletxtbox);
             this.Reserveren2.Controls.Add(this.button5);
             this.Reserveren2.Controls.Add(this.passwordtxtbox);
             this.Reserveren2.Controls.Add(this.button4);
@@ -221,12 +222,49 @@
             this.Reserveren2.Text = "Reserveren 2";
             this.Reserveren2.UseVisualStyleBackColor = true;
             // 
-            // peopletxtbox
+            // label10
             // 
-            this.peopletxtbox.Location = new System.Drawing.Point(334, 222);
-            this.peopletxtbox.Name = "peopletxtbox";
-            this.peopletxtbox.Size = new System.Drawing.Size(187, 20);
-            this.peopletxtbox.TabIndex = 3;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(236, 254);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(92, 13);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "Datum Selecteren";
+            // 
+            // Datumprikkerbox
+            // 
+            this.Datumprikkerbox.Location = new System.Drawing.Point(334, 248);
+            this.Datumprikkerbox.Name = "Datumprikkerbox";
+            this.Datumprikkerbox.Size = new System.Drawing.Size(187, 20);
+            this.Datumprikkerbox.TabIndex = 13;
+            this.Datumprikkerbox.Value = new System.DateTime(2020, 4, 26, 0, 0, 0, 0);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(251, 225);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(77, 13);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Aantal mensen";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(260, 199);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(68, 13);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Wachtwoord";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(244, 171);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(84, 13);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Gebruikersnaam";
             // 
             // button5
             // 
@@ -302,49 +340,17 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Je reservering is verwerkt en is te zien op je account!";
             // 
-            // label7
+            // numericUpDown1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(244, 171);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 13);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Gebruikersnaam";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(260, 199);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 13);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Wachtwoord";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(251, 225);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 13);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Aantal mensen";
-            // 
-            // Datumprikkerbox
-            // 
-            this.Datumprikkerbox.Location = new System.Drawing.Point(334, 248);
-            this.Datumprikkerbox.Name = "Datumprikkerbox";
-            this.Datumprikkerbox.Size = new System.Drawing.Size(187, 20);
-            this.Datumprikkerbox.TabIndex = 13;
-            this.Datumprikkerbox.Value = new System.DateTime(2020, 4, 26, 0, 0, 0, 0);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(236, 254);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(92, 13);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "Datum Selecteren";
+            this.numericUpDown1.Location = new System.Drawing.Point(334, 222);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(187, 20);
+            this.numericUpDown1.TabIndex = 15;
             // 
             // Reserveren
             // 
@@ -364,6 +370,7 @@
             this.Reserveren2.PerformLayout();
             this.Reserveren3.ResumeLayout(false);
             this.Reserveren3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -390,7 +397,6 @@
         private System.Windows.Forms.TabPage Reserveren3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox peopletxtbox;
         private System.Windows.Forms.TextBox passwordtxtbox;
         private System.Windows.Forms.TextBox usernametxtbox;
         private System.Windows.Forms.Label label10;
@@ -398,6 +404,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
 
