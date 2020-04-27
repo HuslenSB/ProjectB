@@ -52,6 +52,12 @@
     <Compile Include="Accountpagina.designer.cs">
       <DependentUpon>Accountpagina.cs</DependentUpon>
     </Compile>
+    <Compile Include="Contact_Tab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact_Tab.designer.cs">
+      <DependentUpon>Contact_Tab.cs</DependentUpon>
+    </Compile>
     <Compile Include="HoofdMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </Compile>
     <EmbeddedResource Include="Accountpagina.resx">
       <DependentUpon>Accountpagina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact_Tab.resx">
+      <DependentUpon>Contact_Tab.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HoofdMenu.resx">
       <DependentUpon>HoofdMenu.cs</DependentUpon>
