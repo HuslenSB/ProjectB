@@ -40,13 +40,14 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Account = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Recenties
             // 
             this.Recenties.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Recenties.Location = new System.Drawing.Point(752, 25);
+            this.Recenties.Location = new System.Drawing.Point(750, 25);
             this.Recenties.Name = "Recenties";
             this.Recenties.Size = new System.Drawing.Size(131, 39);
             this.Recenties.TabIndex = 29;
@@ -57,7 +58,7 @@
             // 
             this.Contact.BackColor = System.Drawing.Color.Aqua;
             this.Contact.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Contact.Location = new System.Drawing.Point(906, 25);
+            this.Contact.Location = new System.Drawing.Point(900, 25);
             this.Contact.Name = "Contact";
             this.Contact.Size = new System.Drawing.Size(131, 39);
             this.Contact.TabIndex = 28;
@@ -78,7 +79,7 @@
             // 
             this.Tarieven.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Tarieven.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tarieven.Location = new System.Drawing.Point(447, 25);
+            this.Tarieven.Location = new System.Drawing.Point(450, 25);
             this.Tarieven.Name = "Tarieven";
             this.Tarieven.Size = new System.Drawing.Size(131, 39);
             this.Tarieven.TabIndex = 26;
@@ -98,7 +99,7 @@
             // Homepage
             // 
             this.Homepage.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Homepage.Location = new System.Drawing.Point(149, 25);
+            this.Homepage.Location = new System.Drawing.Point(150, 25);
             this.Homepage.Name = "Homepage";
             this.Homepage.Size = new System.Drawing.Size(131, 39);
             this.Homepage.TabIndex = 24;
@@ -127,7 +128,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.Turquoise;
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(151, 462);
             this.richTextBox1.Name = "richTextBox1";
@@ -138,7 +139,7 @@
             // 
             // richTextBox2
             // 
-            this.richTextBox2.BackColor = System.Drawing.Color.Turquoise;
+            this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox2.Location = new System.Drawing.Point(623, 426);
             this.richTextBox2.Name = "richTextBox2";
@@ -156,12 +157,22 @@
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
             // 
+            // Account
+            // 
+            this.Account.Location = new System.Drawing.Point(1090, 12);
+            this.Account.Name = "Account";
+            this.Account.Size = new System.Drawing.Size(75, 23);
+            this.Account.TabIndex = 36;
+            this.Account.Text = "Account";
+            this.Account.UseVisualStyleBackColor = true;
+            // 
             // Contact_Tab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Turquoise;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1179, 629);
+            this.Controls.Add(this.Account);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
@@ -194,5 +205,6 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Account;
     }
 }
