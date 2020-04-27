@@ -25,6 +25,9 @@ namespace Escaplication
         private void button1_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(1);
+            Reserveren1.Enabled = false;
+            Reserveren2.Enabled = true;
+            Reserveren3.Enabled = false;
             this.label1.Text = "Leuk dat je hebt gekozen voor de Sparta escape room!";
             chosenroom = "Sparta";
         }
@@ -32,6 +35,9 @@ namespace Escaplication
         private void button2_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(1);
+            Reserveren1.Enabled = false;
+            Reserveren2.Enabled = true;
+            Reserveren3.Enabled = false;
             this.label1.Text = "Leuk dat je hebt gekozen voor de Last run escape room!";
             chosenroom = "The last run";
         }
@@ -39,6 +45,9 @@ namespace Escaplication
         private void button3_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(1);
+            Reserveren1.Enabled = false;
+            Reserveren2.Enabled = true;
+            Reserveren3.Enabled = false;
             this.label1.Text = "Leuk dat je hebt gekozen voor de Haunted escape, escape room!";
             chosenroom = "Haunted escape";
         }
@@ -46,11 +55,17 @@ namespace Escaplication
         private void button5_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(0);
+            Reserveren1.Enabled = true;
+            Reserveren2.Enabled = false;
+            Reserveren3.Enabled = false;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(0);
+            Reserveren1.Enabled = true;
+            Reserveren2.Enabled = false;
+            Reserveren3.Enabled = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -80,6 +95,9 @@ namespace Escaplication
                             ad.WriteLine(Datumprikkerbox.Text);
                         }
                             tabControl1.SelectTab(2);
+                            Reserveren1.Enabled = false;
+                            Reserveren2.Enabled = false;
+                            Reserveren3.Enabled = true;
                     }
                     else
                     {

@@ -43,6 +43,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Reserveren1 = new System.Windows.Forms.TabPage();
             this.Reserveren2 = new System.Windows.Forms.TabPage();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.Datumprikkerbox = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
@@ -56,15 +57,14 @@
             this.Reserveren3 = new System.Windows.Forms.TabPage();
             this.button6 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.Reserveren1.SuspendLayout();
             this.Reserveren2.SuspendLayout();
-            this.Reserveren3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.Reserveren3.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -174,10 +174,10 @@
             this.tabControl1.Controls.Add(this.Reserveren1);
             this.tabControl1.Controls.Add(this.Reserveren2);
             this.tabControl1.Controls.Add(this.Reserveren3);
-            this.tabControl1.Location = new System.Drawing.Point(1, -24);
+            this.tabControl1.Location = new System.Drawing.Point(1, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(882, 533);
+            this.tabControl1.Size = new System.Drawing.Size(882, 508);
             this.tabControl1.TabIndex = 11;
             // 
             // Reserveren1
@@ -217,10 +217,22 @@
             this.Reserveren2.Location = new System.Drawing.Point(4, 22);
             this.Reserveren2.Name = "Reserveren2";
             this.Reserveren2.Padding = new System.Windows.Forms.Padding(3);
-            this.Reserveren2.Size = new System.Drawing.Size(874, 482);
+            this.Reserveren2.Size = new System.Drawing.Size(874, 504);
             this.Reserveren2.TabIndex = 1;
             this.Reserveren2.Text = "Reserveren 2";
             this.Reserveren2.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(334, 222);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(187, 20);
+            this.numericUpDown1.TabIndex = 15;
             // 
             // label10
             // 
@@ -316,7 +328,7 @@
             this.Reserveren3.Location = new System.Drawing.Point(4, 22);
             this.Reserveren3.Name = "Reserveren3";
             this.Reserveren3.Padding = new System.Windows.Forms.Padding(3);
-            this.Reserveren3.Size = new System.Drawing.Size(874, 507);
+            this.Reserveren3.Size = new System.Drawing.Size(874, 504);
             this.Reserveren3.TabIndex = 2;
             this.Reserveren3.Text = "Reserveren 3";
             this.Reserveren3.UseVisualStyleBackColor = true;
@@ -340,18 +352,6 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Je reservering is verwerkt en is te zien op je account!";
             // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(334, 222);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(187, 20);
-            this.numericUpDown1.TabIndex = 15;
-            // 
             // Reserveren
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -368,9 +368,9 @@
             this.Reserveren1.PerformLayout();
             this.Reserveren2.ResumeLayout(false);
             this.Reserveren2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.Reserveren3.ResumeLayout(false);
             this.Reserveren3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
