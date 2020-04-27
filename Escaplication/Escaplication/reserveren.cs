@@ -42,6 +42,11 @@ namespace Escaplication
             chosenroom = "Haunted escape";
         }
 
+        private void PageTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button5_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(0);

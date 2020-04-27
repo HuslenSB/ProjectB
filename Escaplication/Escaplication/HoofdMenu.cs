@@ -68,5 +68,10 @@ namespace Escaplication
             Close();
             //Code voor openen form Recensies
         }
+
+        private void Hoofdpagina_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

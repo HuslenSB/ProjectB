@@ -40,6 +40,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.HoofdMenuPanel = new System.Windows.Forms.Panel();
             this.Hoofdpagina = new System.Windows.Forms.Label();
+            this.Account = new System.Windows.Forms.Button();
+            this.Recenties = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Thema = new System.Windows.Forms.Button();
+            this.Tarieven = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.Homepage = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Informatie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LocatieContact)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Reserveren)).BeginInit();
@@ -51,7 +58,7 @@
             // Informatie
             // 
             this.Informatie.Image = ((System.Drawing.Image)(resources.GetObject("Informatie.Image")));
-            this.Informatie.Location = new System.Drawing.Point(69, 27);
+            this.Informatie.Location = new System.Drawing.Point(320, 0);
             this.Informatie.Name = "Informatie";
             this.Informatie.Size = new System.Drawing.Size(283, 181);
             this.Informatie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -62,7 +69,7 @@
             // LocatieContact
             // 
             this.LocatieContact.Image = global::Escaplication.Properties.Resources.Locatie_en_Contactgegevens;
-            this.LocatieContact.Location = new System.Drawing.Point(433, 180);
+            this.LocatieContact.Location = new System.Drawing.Point(703, 153);
             this.LocatieContact.Name = "LocatieContact";
             this.LocatieContact.Size = new System.Drawing.Size(283, 181);
             this.LocatieContact.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -73,7 +80,7 @@
             // Reserveren
             // 
             this.Reserveren.Image = ((System.Drawing.Image)(resources.GetObject("Reserveren.Image")));
-            this.Reserveren.Location = new System.Drawing.Point(70, 437);
+            this.Reserveren.Location = new System.Drawing.Point(320, 228);
             this.Reserveren.Name = "Reserveren";
             this.Reserveren.Size = new System.Drawing.Size(283, 181);
             this.Reserveren.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -84,7 +91,7 @@
             // Recensies
             // 
             this.Recensies.Image = ((System.Drawing.Image)(resources.GetObject("Recensies.Image")));
-            this.Recensies.Location = new System.Drawing.Point(433, 437);
+            this.Recensies.Location = new System.Drawing.Point(703, 381);
             this.Recensies.Name = "Recensies";
             this.Recensies.Size = new System.Drawing.Size(283, 181);
             this.Recensies.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -95,9 +102,8 @@
             // ImagePanels
             // 
             this.ImagePanels.Controls.Add(this.Reserveertekst);
-            this.ImagePanels.Controls.Add(this.RecensieText);
-            this.ImagePanels.Controls.Add(this.Contact);
             this.ImagePanels.Controls.Add(this.label1);
+            this.ImagePanels.Controls.Add(this.Reserveren);
             this.ImagePanels.Controls.Add(this.Informatie);
             this.ImagePanels.Location = new System.Drawing.Point(1, 153);
             this.ImagePanels.Name = "ImagePanels";
@@ -108,7 +114,7 @@
             // 
             this.Reserveertekst.AutoSize = true;
             this.Reserveertekst.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
-            this.Reserveertekst.Location = new System.Drawing.Point(144, 483);
+            this.Reserveertekst.Location = new System.Drawing.Point(379, 422);
             this.Reserveertekst.Name = "Reserveertekst";
             this.Reserveertekst.Size = new System.Drawing.Size(138, 29);
             this.Reserveertekst.TabIndex = 4;
@@ -119,7 +125,7 @@
             // 
             this.RecensieText.AutoSize = true;
             this.RecensieText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
-            this.RecensieText.Location = new System.Drawing.Point(519, 483);
+            this.RecensieText.Location = new System.Drawing.Point(780, 575);
             this.RecensieText.Name = "RecensieText";
             this.RecensieText.Size = new System.Drawing.Size(127, 29);
             this.RecensieText.TabIndex = 3;
@@ -130,7 +136,7 @@
             // 
             this.Contact.AutoSize = true;
             this.Contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
-            this.Contact.Location = new System.Drawing.Point(413, 223);
+            this.Contact.Location = new System.Drawing.Point(694, 349);
             this.Contact.Name = "Contact";
             this.Contact.Size = new System.Drawing.Size(312, 29);
             this.Contact.TabIndex = 2;
@@ -141,7 +147,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
-            this.label1.Location = new System.Drawing.Point(75, 223);
+            this.label1.Location = new System.Drawing.Point(326, 196);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(277, 29);
             this.label1.TabIndex = 1;
@@ -150,30 +156,110 @@
             // 
             // HoofdMenuPanel
             // 
+            this.HoofdMenuPanel.Controls.Add(this.Account);
             this.HoofdMenuPanel.Controls.Add(this.Hoofdpagina);
+            this.HoofdMenuPanel.Controls.Add(this.Recenties);
+            this.HoofdMenuPanel.Controls.Add(this.Homepage);
+            this.HoofdMenuPanel.Controls.Add(this.button1);
+            this.HoofdMenuPanel.Controls.Add(this.button2);
+            this.HoofdMenuPanel.Controls.Add(this.Thema);
+            this.HoofdMenuPanel.Controls.Add(this.Tarieven);
             this.HoofdMenuPanel.Location = new System.Drawing.Point(1, 0);
             this.HoofdMenuPanel.Name = "HoofdMenuPanel";
-            this.HoofdMenuPanel.Size = new System.Drawing.Size(800, 147);
+            this.HoofdMenuPanel.Size = new System.Drawing.Size(1180, 147);
             this.HoofdMenuPanel.TabIndex = 5;
             // 
             // Hoofdpagina
             // 
             this.Hoofdpagina.AutoSize = true;
             this.Hoofdpagina.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.2F);
-            this.Hoofdpagina.Location = new System.Drawing.Point(301, 57);
+            this.Hoofdpagina.Location = new System.Drawing.Point(467, 83);
             this.Hoofdpagina.Name = "Hoofdpagina";
             this.Hoofdpagina.Size = new System.Drawing.Size(211, 39);
             this.Hoofdpagina.TabIndex = 3;
             this.Hoofdpagina.Text = "Hoofdpagina";
+            this.Hoofdpagina.Click += new System.EventHandler(this.Hoofdpagina_Click);
+            // 
+            // Account
+            // 
+            this.Account.Location = new System.Drawing.Point(1089, 9);
+            this.Account.Name = "Account";
+            this.Account.Size = new System.Drawing.Size(75, 23);
+            this.Account.TabIndex = 41;
+            this.Account.Text = "Account";
+            this.Account.UseVisualStyleBackColor = true;
+            // 
+            // Recenties
+            // 
+            this.Recenties.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Recenties.Location = new System.Drawing.Point(749, 22);
+            this.Recenties.Name = "Recenties";
+            this.Recenties.Size = new System.Drawing.Size(131, 39);
+            this.Recenties.TabIndex = 40;
+            this.Recenties.Text = "Recenties";
+            this.Recenties.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(899, 22);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(131, 39);
+            this.button1.TabIndex = 39;
+            this.button1.Text = "Contact";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // Thema
+            // 
+            this.Thema.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Thema.Location = new System.Drawing.Point(299, 22);
+            this.Thema.Name = "Thema";
+            this.Thema.Size = new System.Drawing.Size(131, 39);
+            this.Thema.TabIndex = 38;
+            this.Thema.Text = "Thema";
+            this.Thema.UseVisualStyleBackColor = true;
+            // 
+            // Tarieven
+            // 
+            this.Tarieven.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Tarieven.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tarieven.Location = new System.Drawing.Point(449, 22);
+            this.Tarieven.Name = "Tarieven";
+            this.Tarieven.Size = new System.Drawing.Size(131, 39);
+            this.Tarieven.TabIndex = 37;
+            this.Tarieven.Text = "Tarieven";
+            this.Tarieven.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(599, 22);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(131, 39);
+            this.button2.TabIndex = 36;
+            this.button2.Text = "Reserveren";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // Homepage
+            // 
+            this.Homepage.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Homepage.Location = new System.Drawing.Point(149, 22);
+            this.Homepage.Name = "Homepage";
+            this.Homepage.Size = new System.Drawing.Size(131, 39);
+            this.Homepage.TabIndex = 35;
+            this.Homepage.Text = "Homepage";
+            this.Homepage.UseVisualStyleBackColor = true;
             // 
             // HoofdMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 677);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1179, 629);
             this.Controls.Add(this.HoofdMenuPanel);
+            this.Controls.Add(this.RecensieText);
             this.Controls.Add(this.Recensies);
-            this.Controls.Add(this.Reserveren);
+            this.Controls.Add(this.Contact);
             this.Controls.Add(this.LocatieContact);
             this.Controls.Add(this.ImagePanels);
             this.Name = "HoofdMenu";
@@ -187,6 +273,7 @@
             this.HoofdMenuPanel.ResumeLayout(false);
             this.HoofdMenuPanel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -203,6 +290,13 @@
         private System.Windows.Forms.Label Hoofdpagina;
         private System.Windows.Forms.Label RecensieText;
         private System.Windows.Forms.Label Reserveertekst;
+        private System.Windows.Forms.Button Account;
+        private System.Windows.Forms.Button Recenties;
+        private System.Windows.Forms.Button Homepage;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Thema;
+        private System.Windows.Forms.Button Tarieven;
     }
 }
 

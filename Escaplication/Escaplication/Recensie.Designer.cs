@@ -49,6 +49,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.Account = new System.Windows.Forms.Button();
+            this.Recenties = new System.Windows.Forms.Button();
+            this.Contact = new System.Windows.Forms.Button();
+            this.Thema = new System.Windows.Forms.Button();
+            this.Tarieven = new System.Windows.Forms.Button();
+            this.Reserveren = new System.Windows.Forms.Button();
+            this.Homepage = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -67,42 +74,47 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(15, 12);
+            this.groupBox2.Location = new System.Drawing.Point(5, 83);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(380, 178);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(507, 219);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Schrijf een recensie";
-
             // 
             // sterrentxt
             // 
-            this.sterrentxt.Location = new System.Drawing.Point(144, 106);
+            this.sterrentxt.Location = new System.Drawing.Point(192, 130);
+            this.sterrentxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sterrentxt.Name = "sterrentxt";
-            this.sterrentxt.Size = new System.Drawing.Size(55, 20);
+            this.sterrentxt.Size = new System.Drawing.Size(72, 22);
             this.sterrentxt.TabIndex = 8;
             // 
             // Gebruikersnaamtxt
             // 
-            this.Gebruikersnaamtxt.Location = new System.Drawing.Point(144, 18);
+            this.Gebruikersnaamtxt.Location = new System.Drawing.Point(192, 22);
+            this.Gebruikersnaamtxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Gebruikersnaamtxt.Name = "Gebruikersnaamtxt";
-            this.Gebruikersnaamtxt.Size = new System.Drawing.Size(217, 20);
+            this.Gebruikersnaamtxt.Size = new System.Drawing.Size(288, 22);
             this.Gebruikersnaamtxt.TabIndex = 7;
             // 
             // Gbnaam
             // 
             this.Gbnaam.AutoSize = true;
-            this.Gbnaam.Location = new System.Drawing.Point(9, 25);
+            this.Gbnaam.Location = new System.Drawing.Point(12, 31);
+            this.Gbnaam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Gbnaam.Name = "Gbnaam";
-            this.Gbnaam.Size = new System.Drawing.Size(84, 13);
+            this.Gbnaam.Size = new System.Drawing.Size(113, 17);
             this.Gbnaam.TabIndex = 6;
             this.Gbnaam.Text = "Gebruikersnaam";
             // 
             // Recensiebtn
             // 
-            this.Recensiebtn.Location = new System.Drawing.Point(176, 137);
+            this.Recensiebtn.Location = new System.Drawing.Point(235, 169);
+            this.Recensiebtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Recensiebtn.Name = "Recensiebtn";
-            this.Recensiebtn.Size = new System.Drawing.Size(110, 23);
+            this.Recensiebtn.Size = new System.Drawing.Size(147, 28);
             this.Recensiebtn.TabIndex = 5;
             this.Recensiebtn.Text = "Verstuur recensie";
             this.Recensiebtn.UseVisualStyleBackColor = true;
@@ -110,44 +122,47 @@
             // 
             // commentaartxt
             // 
-            this.commentaartxt.Location = new System.Drawing.Point(144, 78);
+            this.commentaartxt.Location = new System.Drawing.Point(192, 96);
+            this.commentaartxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.commentaartxt.Name = "commentaartxt";
-            this.commentaartxt.Size = new System.Drawing.Size(217, 20);
+            this.commentaartxt.Size = new System.Drawing.Size(288, 22);
             this.commentaartxt.TabIndex = 4;
-       
             // 
             // kamertxt
             // 
-            this.kamertxt.Location = new System.Drawing.Point(144, 50);
+            this.kamertxt.Location = new System.Drawing.Point(192, 62);
+            this.kamertxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kamertxt.Name = "kamertxt";
-            this.kamertxt.Size = new System.Drawing.Size(217, 20);
+            this.kamertxt.Size = new System.Drawing.Size(288, 22);
             this.kamertxt.TabIndex = 3;
-   
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 106);
+            this.label4.Location = new System.Drawing.Point(12, 130);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 13);
+            this.label4.Size = new System.Drawing.Size(122, 17);
             this.label4.TabIndex = 2;
             this.label4.Text = "Aantal sterren 0-5";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 81);
+            this.label3.Location = new System.Drawing.Point(12, 100);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.Size = new System.Drawing.Size(88, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Commentaar";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 53);
+            this.label1.Location = new System.Drawing.Point(12, 65);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 13);
+            this.label1.Size = new System.Drawing.Size(115, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Naam van kamer";
             // 
@@ -156,9 +171,11 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.richTextBox1);
-            this.groupBox1.Location = new System.Drawing.Point(3, 168);
+            this.groupBox1.Location = new System.Drawing.Point(4, 207);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(432, 145);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(576, 178);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Peter";
@@ -166,9 +183,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 26);
+            this.label5.Location = new System.Drawing.Point(8, 32);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 13);
+            this.label5.Size = new System.Drawing.Size(79, 17);
             this.label5.TabIndex = 6;
             this.label5.Text = "Sterren 4/5";
             // 
@@ -176,17 +194,20 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label6.Location = new System.Drawing.Point(205, 117);
+            this.label6.Location = new System.Drawing.Point(273, 144);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(46, 17);
             this.label6.TabIndex = 4;
             this.label6.Text = "label6";
-            //
+            // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(91, 53);
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.richTextBox1.Location = new System.Drawing.Point(121, 65);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(270, 52);
+            this.richTextBox1.Size = new System.Drawing.Size(359, 63);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "Ago tijd wel een mier toch doel. Krachtiger monopolies verwachten begrenzing nu b" +
     "";
@@ -196,9 +217,11 @@
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.richTextBox2);
-            this.groupBox3.Location = new System.Drawing.Point(3, 15);
+            this.groupBox3.Location = new System.Drawing.Point(4, 18);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(432, 145);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(576, 178);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Pan";
@@ -207,47 +230,53 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label7.Location = new System.Drawing.Point(205, 114);
+            this.label7.Location = new System.Drawing.Point(273, 140);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.Size = new System.Drawing.Size(46, 17);
             this.label7.TabIndex = 5;
             this.label7.Text = "label7";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 24);
+            this.label2.Location = new System.Drawing.Point(8, 30);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
+            this.label2.Size = new System.Drawing.Size(79, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Sterren 4/5";
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(91, 51);
+            this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.richTextBox2.Location = new System.Drawing.Point(121, 63);
+            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(270, 49);
+            this.richTextBox2.Size = new System.Drawing.Size(359, 59);
             this.richTextBox2.TabIndex = 2;
             this.richTextBox2.Text = "Ago tijd wel een mier toch doel. Krachtiger monopolies verwachten begrenzing nu b" +
     "";
-   
             // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
             this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(6, 18);
+            this.panel1.Location = new System.Drawing.Point(8, 22);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(435, 544);
+            this.panel1.Size = new System.Drawing.Size(580, 670);
             this.panel1.TabIndex = 3;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.panel1);
-            this.groupBox4.Location = new System.Drawing.Point(397, 12);
+            this.groupBox4.Location = new System.Drawing.Point(514, 83);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(489, 568);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Size = new System.Drawing.Size(652, 699);
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "groupBox4";
@@ -255,20 +284,101 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(73, 315);
+            this.label8.Location = new System.Drawing.Point(82, 456);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(108, 13);
+            this.label8.Size = new System.Drawing.Size(138, 17);
             this.label8.TabIndex = 5;
             this.label8.Text = "TEST YOUR SKILLS";
             // 
+            // Account
+            // 
+            this.Account.Location = new System.Drawing.Point(1090, 11);
+            this.Account.Name = "Account";
+            this.Account.Size = new System.Drawing.Size(75, 23);
+            this.Account.TabIndex = 41;
+            this.Account.Text = "Account";
+            this.Account.UseVisualStyleBackColor = true;
+            // 
+            // Recenties
+            // 
+            this.Recenties.BackColor = System.Drawing.Color.Aqua;
+            this.Recenties.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Recenties.Location = new System.Drawing.Point(750, 24);
+            this.Recenties.Name = "Recenties";
+            this.Recenties.Size = new System.Drawing.Size(131, 39);
+            this.Recenties.TabIndex = 40;
+            this.Recenties.Text = "Recenties";
+            this.Recenties.UseVisualStyleBackColor = false;
+            // 
+            // Contact
+            // 
+            this.Contact.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Contact.Location = new System.Drawing.Point(900, 24);
+            this.Contact.Name = "Contact";
+            this.Contact.Size = new System.Drawing.Size(131, 39);
+            this.Contact.TabIndex = 39;
+            this.Contact.Text = "Contact";
+            this.Contact.UseVisualStyleBackColor = true;
+            // 
+            // Thema
+            // 
+            this.Thema.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Thema.Location = new System.Drawing.Point(300, 24);
+            this.Thema.Name = "Thema";
+            this.Thema.Size = new System.Drawing.Size(131, 39);
+            this.Thema.TabIndex = 38;
+            this.Thema.Text = "Thema";
+            this.Thema.UseVisualStyleBackColor = true;
+            // 
+            // Tarieven
+            // 
+            this.Tarieven.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Tarieven.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tarieven.Location = new System.Drawing.Point(450, 24);
+            this.Tarieven.Name = "Tarieven";
+            this.Tarieven.Size = new System.Drawing.Size(131, 39);
+            this.Tarieven.TabIndex = 37;
+            this.Tarieven.Text = "Tarieven";
+            this.Tarieven.UseVisualStyleBackColor = false;
+            // 
+            // Reserveren
+            // 
+            this.Reserveren.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reserveren.Location = new System.Drawing.Point(600, 24);
+            this.Reserveren.Name = "Reserveren";
+            this.Reserveren.Size = new System.Drawing.Size(131, 39);
+            this.Reserveren.TabIndex = 36;
+            this.Reserveren.Text = "Reserveren";
+            this.Reserveren.UseVisualStyleBackColor = true;
+            // 
+            // Homepage
+            // 
+            this.Homepage.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Homepage.Location = new System.Drawing.Point(150, 24);
+            this.Homepage.Name = "Homepage";
+            this.Homepage.Size = new System.Drawing.Size(131, 39);
+            this.Homepage.TabIndex = 35;
+            this.Homepage.Text = "Homepage";
+            this.Homepage.UseVisualStyleBackColor = true;
+            // 
             // Recensie
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 591);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1179, 629);
+            this.Controls.Add(this.Account);
+            this.Controls.Add(this.Recenties);
+            this.Controls.Add(this.Contact);
+            this.Controls.Add(this.Thema);
+            this.Controls.Add(this.Tarieven);
+            this.Controls.Add(this.Reserveren);
+            this.Controls.Add(this.Homepage);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Recensie";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -307,6 +417,13 @@
         private System.Windows.Forms.TextBox sterrentxt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button Account;
+        private System.Windows.Forms.Button Recenties;
+        private System.Windows.Forms.Button Contact;
+        private System.Windows.Forms.Button Thema;
+        private System.Windows.Forms.Button Tarieven;
+        private System.Windows.Forms.Button Reserveren;
+        private System.Windows.Forms.Button Homepage;
     }
 }
 
