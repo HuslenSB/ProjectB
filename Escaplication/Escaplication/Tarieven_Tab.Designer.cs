@@ -134,6 +134,7 @@
             this.Recenties.TabIndex = 23;
             this.Recenties.Text = "Recenties";
             this.Recenties.UseVisualStyleBackColor = true;
+            this.Recenties.Click += new System.EventHandler(this.Recenties_Click);
             // 
             // Contact
             // 
@@ -144,6 +145,7 @@
             this.Contact.TabIndex = 22;
             this.Contact.Text = "Contact";
             this.Contact.UseVisualStyleBackColor = true;
+            this.Contact.Click += new System.EventHandler(this.Contact_Click);
             // 
             // Thema
             // 
@@ -154,6 +156,7 @@
             this.Thema.TabIndex = 21;
             this.Thema.Text = "Thema";
             this.Thema.UseVisualStyleBackColor = true;
+            this.Thema.Click += new System.EventHandler(this.Thema_Click);
             // 
             // Tarieven
             // 
@@ -165,6 +168,7 @@
             this.Tarieven.TabIndex = 20;
             this.Tarieven.Text = "Tarieven";
             this.Tarieven.UseVisualStyleBackColor = false;
+            this.Tarieven.Click += new System.EventHandler(this.Tarieven_Click);
             // 
             // Reserveren
             // 
@@ -175,6 +179,7 @@
             this.Reserveren.TabIndex = 19;
             this.Reserveren.Text = "Reserveren";
             this.Reserveren.UseVisualStyleBackColor = true;
+            this.Reserveren.Click += new System.EventHandler(this.Reserveren_Click);
             // 
             // Homepage
             // 
@@ -185,6 +190,7 @@
             this.Homepage.TabIndex = 18;
             this.Homepage.Text = "Homepage";
             this.Homepage.UseVisualStyleBackColor = true;
+            this.Homepage.Click += new System.EventHandler(this.Homepage_Click);
             // 
             // pictureBox3
             // 
@@ -224,6 +230,7 @@
             this.Account.TabIndex = 34;
             this.Account.Text = "Account";
             this.Account.UseVisualStyleBackColor = true;
+            this.Account.Click += new System.EventHandler(this.Account_Click);
             // 
             // Tarieven_Tab
             // 

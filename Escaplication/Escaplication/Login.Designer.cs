@@ -55,7 +55,7 @@
             // Loginbtn
             // 
             this.Loginbtn.Location = new System.Drawing.Point(269, 247);
-            this.Loginbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Loginbtn.Margin = new System.Windows.Forms.Padding(4);
             this.Loginbtn.Name = "Loginbtn";
             this.Loginbtn.Size = new System.Drawing.Size(100, 28);
             this.Loginbtn.TabIndex = 0;
@@ -76,7 +76,7 @@
             // Wachtwoordtxt
             // 
             this.Wachtwoordtxt.Location = new System.Drawing.Point(269, 184);
-            this.Wachtwoordtxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Wachtwoordtxt.Margin = new System.Windows.Forms.Padding(4);
             this.Wachtwoordtxt.Name = "Wachtwoordtxt";
             this.Wachtwoordtxt.Size = new System.Drawing.Size(288, 22);
             this.Wachtwoordtxt.TabIndex = 2;
@@ -94,7 +94,7 @@
             // Gebruikersnaamtxt
             // 
             this.Gebruikersnaamtxt.Location = new System.Drawing.Point(269, 144);
-            this.Gebruikersnaamtxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Gebruikersnaamtxt.Margin = new System.Windows.Forms.Padding(4);
             this.Gebruikersnaamtxt.Name = "Gebruikersnaamtxt";
             this.Gebruikersnaamtxt.Size = new System.Drawing.Size(288, 22);
             this.Gebruikersnaamtxt.TabIndex = 4;
@@ -102,7 +102,7 @@
             // RegisterGebruikersnaam
             // 
             this.RegisterGebruikersnaam.Location = new System.Drawing.Point(269, 384);
-            this.RegisterGebruikersnaam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RegisterGebruikersnaam.Margin = new System.Windows.Forms.Padding(4);
             this.RegisterGebruikersnaam.Name = "RegisterGebruikersnaam";
             this.RegisterGebruikersnaam.Size = new System.Drawing.Size(288, 22);
             this.RegisterGebruikersnaam.TabIndex = 8;
@@ -120,7 +120,7 @@
             // RegisterWW
             // 
             this.RegisterWW.Location = new System.Drawing.Point(269, 424);
-            this.RegisterWW.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RegisterWW.Margin = new System.Windows.Forms.Padding(4);
             this.RegisterWW.Name = "RegisterWW";
             this.RegisterWW.Size = new System.Drawing.Size(288, 22);
             this.RegisterWW.TabIndex = 6;
@@ -158,7 +158,7 @@
             // RegisterWW2
             // 
             this.RegisterWW2.Location = new System.Drawing.Point(269, 459);
-            this.RegisterWW2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RegisterWW2.Margin = new System.Windows.Forms.Padding(4);
             this.RegisterWW2.Name = "RegisterWW2";
             this.RegisterWW2.Size = new System.Drawing.Size(288, 22);
             this.RegisterWW2.TabIndex = 11;
@@ -166,7 +166,7 @@
             // Registerbtn
             // 
             this.Registerbtn.Location = new System.Drawing.Point(269, 517);
-            this.Registerbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Registerbtn.Margin = new System.Windows.Forms.Padding(4);
             this.Registerbtn.Name = "Registerbtn";
             this.Registerbtn.Size = new System.Drawing.Size(100, 28);
             this.Registerbtn.TabIndex = 12;
@@ -214,6 +214,7 @@
             this.Recenties.TabIndex = 40;
             this.Recenties.Text = "Recenties";
             this.Recenties.UseVisualStyleBackColor = true;
+            this.Recenties.Click += new System.EventHandler(this.Recenties_Click);
             // 
             // Contact
             // 
@@ -224,6 +225,7 @@
             this.Contact.TabIndex = 39;
             this.Contact.Text = "Contact";
             this.Contact.UseVisualStyleBackColor = true;
+            this.Contact.Click += new System.EventHandler(this.Contact_Click);
             // 
             // Thema
             // 
@@ -234,6 +236,7 @@
             this.Thema.TabIndex = 38;
             this.Thema.Text = "Thema";
             this.Thema.UseVisualStyleBackColor = true;
+            this.Thema.Click += new System.EventHandler(this.Thema_Click);
             // 
             // Tarieven
             // 
@@ -245,6 +248,7 @@
             this.Tarieven.TabIndex = 37;
             this.Tarieven.Text = "Tarieven";
             this.Tarieven.UseVisualStyleBackColor = false;
+            this.Tarieven.Click += new System.EventHandler(this.Tarieven_Click);
             // 
             // Reserveren
             // 
@@ -255,6 +259,7 @@
             this.Reserveren.TabIndex = 36;
             this.Reserveren.Text = "Reserveren";
             this.Reserveren.UseVisualStyleBackColor = true;
+            this.Reserveren.Click += new System.EventHandler(this.Reserveren_Click);
             // 
             // Homepage
             // 
@@ -265,6 +270,7 @@
             this.Homepage.TabIndex = 35;
             this.Homepage.Text = "Homepage";
             this.Homepage.UseVisualStyleBackColor = true;
+            this.Homepage.Click += new System.EventHandler(this.Homepage_Click);
             // 
             // Login
             // 
@@ -294,7 +300,7 @@
             this.Controls.Add(this.Wachtwoordtxt);
             this.Controls.Add(this.Gbnaam);
             this.Controls.Add(this.Loginbtn);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.Text = "Login";
             this.ResumeLayout(false);
