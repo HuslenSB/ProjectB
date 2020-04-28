@@ -53,6 +53,7 @@
             this.Recenties.TabIndex = 29;
             this.Recenties.Text = "Recenties";
             this.Recenties.UseVisualStyleBackColor = true;
+            this.Recenties.Click += new System.EventHandler(this.Recenties_Click);
             // 
             // Contact
             // 
@@ -74,6 +75,7 @@
             this.Thema.TabIndex = 27;
             this.Thema.Text = "Thema";
             this.Thema.UseVisualStyleBackColor = true;
+            this.Thema.Click += new System.EventHandler(this.Thema_Click);
             // 
             // Tarieven
             // 
@@ -85,6 +87,7 @@
             this.Tarieven.TabIndex = 26;
             this.Tarieven.Text = "Tarieven";
             this.Tarieven.UseVisualStyleBackColor = false;
+            this.Tarieven.Click += new System.EventHandler(this.Tarieven_Click);
             // 
             // Reserveren
             // 
@@ -95,6 +98,7 @@
             this.Reserveren.TabIndex = 25;
             this.Reserveren.Text = "Reserveren";
             this.Reserveren.UseVisualStyleBackColor = true;
+            this.Reserveren.Click += new System.EventHandler(this.Reserveren_Click);
             // 
             // Homepage
             // 
@@ -105,6 +109,7 @@
             this.Homepage.TabIndex = 24;
             this.Homepage.Text = "Homepage";
             this.Homepage.UseVisualStyleBackColor = true;
+            this.Homepage.Click += new System.EventHandler(this.Homepage_Click);
             // 
             // linkLabel2
             // 
@@ -165,6 +170,7 @@
             this.Account.TabIndex = 36;
             this.Account.Text = "Account";
             this.Account.UseVisualStyleBackColor = true;
+            this.Account.Click += new System.EventHandler(this.Account_Click);
             // 
             // Contact_Tab
             // 

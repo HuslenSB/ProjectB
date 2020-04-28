@@ -90,7 +90,6 @@
             this.richTextBox1.Size = new System.Drawing.Size(300, 130);
             this.richTextBox1.TabIndex = 7;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // richTextBox2
             // 
@@ -102,7 +101,6 @@
             this.richTextBox2.Size = new System.Drawing.Size(180, 29);
             this.richTextBox2.TabIndex = 8;
             this.richTextBox2.Text = "This Is Sparta!";
-            this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
             // richTextBox3
             // 
@@ -114,7 +112,6 @@
             this.richTextBox3.Size = new System.Drawing.Size(263, 39);
             this.richTextBox3.TabIndex = 9;
             this.richTextBox3.Text = "The Haunted Escape";
-            this.richTextBox3.TextChanged += new System.EventHandler(this.richTextBox3_TextChanged);
             // 
             // richTextBox4
             // 
@@ -126,7 +123,6 @@
             this.richTextBox4.Size = new System.Drawing.Size(300, 130);
             this.richTextBox4.TabIndex = 10;
             this.richTextBox4.Text = resources.GetString("richTextBox4.Text");
-            this.richTextBox4.TextChanged += new System.EventHandler(this.richTextBox4_TextChanged);
             // 
             // richTextBox5
             // 
@@ -138,7 +134,6 @@
             this.richTextBox5.Size = new System.Drawing.Size(153, 39);
             this.richTextBox5.TabIndex = 11;
             this.richTextBox5.Text = "The Last Run";
-            this.richTextBox5.TextChanged += new System.EventHandler(this.richTextBox5_TextChanged);
             // 
             // richTextBox6
             // 
@@ -152,7 +147,6 @@
             this.richTextBox6.Text = "Lukt het jullie om in dit donkere doolhof de weg naar buiten te vinden? Conditie " +
     "en logica zullen je goed van pas komen als je de uitgang gaat zoeken. Will this " +
     "be your last run?";
-            this.richTextBox6.TextChanged += new System.EventHandler(this.richTextBox6_TextChanged);
             // 
             // Account
             // 
@@ -162,6 +156,7 @@
             this.Account.TabIndex = 41;
             this.Account.Text = "Account";
             this.Account.UseVisualStyleBackColor = true;
+            this.Account.Click += new System.EventHandler(this.Account_Click);
             // 
             // Recenties
             // 
@@ -172,6 +167,7 @@
             this.Recenties.TabIndex = 40;
             this.Recenties.Text = "Recenties";
             this.Recenties.UseVisualStyleBackColor = true;
+            this.Recenties.Click += new System.EventHandler(this.Recenties_Click);
             // 
             // Contact
             // 
@@ -182,6 +178,7 @@
             this.Contact.TabIndex = 39;
             this.Contact.Text = "Contact";
             this.Contact.UseVisualStyleBackColor = true;
+            this.Contact.Click += new System.EventHandler(this.Contact_Click);
             // 
             // Thema
             // 
@@ -204,6 +201,7 @@
             this.Tarieven.TabIndex = 37;
             this.Tarieven.Text = "Tarieven";
             this.Tarieven.UseVisualStyleBackColor = false;
+            this.Tarieven.Click += new System.EventHandler(this.Tarieven_Click);
             // 
             // Reserveren
             // 
@@ -214,6 +212,7 @@
             this.Reserveren.TabIndex = 36;
             this.Reserveren.Text = "Reserveren";
             this.Reserveren.UseVisualStyleBackColor = true;
+            this.Reserveren.Click += new System.EventHandler(this.Reserveren_Click);
             // 
             // Homepage
             // 
@@ -224,6 +223,7 @@
             this.Homepage.TabIndex = 35;
             this.Homepage.Text = "Homepage";
             this.Homepage.UseVisualStyleBackColor = true;
+            this.Homepage.Click += new System.EventHandler(this.Homepage_Click);
             // 
             // Informatie
             // 
@@ -249,7 +249,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Informatie";
             this.Text = "Escapelication informatie";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

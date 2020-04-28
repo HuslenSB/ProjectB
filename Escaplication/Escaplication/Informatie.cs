@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Escaplication;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,49 +18,63 @@ namespace Project_B_informatie
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Homepage_Click(object sender, EventArgs e)
         {
+            // Deze code zorgt ervoor dat als de gebruiker op de knop "Homepage" drukt, deze teruggaat naar het begin scherm.
 
+            var Hoofd = new HoofdMenu();
+            this.Hide();
+            Hoofd.ShowDialog();
+            this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Tarieven_Click(object sender, EventArgs e)
         {
+            // Deze code zorgt ervoor dat als de gebruiker op de knop "Tarieven" drukt, deze doorgaat naar het Tarieven scherm.
 
+            var tarief = new Tarieven_Tab();
+            this.Hide();
+            tarief.ShowDialog();
+            this.Close();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
 
+        private void Reserveren_Click(object sender, EventArgs e)
+        {
+            // Deze code zorgt ervoor dat als de gebruiker op de knop "Reserveren" drukt, deze doorgaat naar het reservatie scherm.
+
+            var Reserveer = new Reserveren();
+            this.Hide();
+            Reserveer.ShowDialog();
+            this.Close();
+        }
+        private void Recenties_Click(object sender, EventArgs e)
+        {
+            // Deze code zorgt ervoor dat als de gebruiker op de knop "Recenties" drukt, deze doorgaat naar het recenties scherm.
+
+            var Recenties = new Recensie();
+            this.Hide();
+            Recenties.ShowDialog();
+            this.Close();
+        }
+        private void Contact_Click(object sender, EventArgs e)
+        {
+            // Deze code zorgt ervoor dat als de gebruiker op de knop "Contact" drukt, deze doorgaat naar het contact scherm.
+
+            var Contacten = new Contact_Tab();
+            this.Hide();
+            Contacten.ShowDialog();
+            this.Close();
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        private void Account_Click(object sender, EventArgs e)
         {
+            // Deze code zorgt ervoor dat als de gebruiker op de knop "Acount" drukt, deze doorgaat naar het login scherm.
 
-        }
-
-        private void richTextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void richTextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void richTextBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void richTextBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void richTextBox4_TextChanged(object sender, EventArgs e)
-        {
-
+            var Login = new Login();
+            this.Hide();
+            Login.ShowDialog();
+            this.Close();
         }
     }
 }
