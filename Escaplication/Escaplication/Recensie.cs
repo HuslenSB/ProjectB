@@ -34,8 +34,8 @@ namespace Escaplication
             {
 
 
-                for (int i = 0, LocPointGB = 333, LocPointTB = 390, LocPointLabel = 359, LocPointSter = 25; i < totalfiles; i++, LocPointGB += 150, LocPointTB += 150, LocPointLabel += 150, LocPointSter += 20)
-                {
+                for (int i = 0, LocPointGB = 333, LocPointTB = 390, LocPointLabel = 359, LocPointSter = 32; i < totalfiles; i++, LocPointGB += 150, LocPointTB += 150, LocPointLabel += 150)
+                {//locpointster 25 ->32
                     string[] ArrayRecensies = File.ReadAllLines(Convert.ToString(RecensiePath[i]));
 
                     // Groupbox
@@ -48,9 +48,12 @@ namespace Escaplication
                     recensiegb.TabStop = false;
                     recensiegb.Text = ArrayRecensies[0];
 
+
+
                     // Commentaar
 
                     RichTextBox commentaar = new RichTextBox();
+                    commentaar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
                     commentaar.Text = ArrayRecensies[2];
                     commentaar.Location = new Point(91, LocPointTB);
                     commentaar.Size = new Size(270, 52);
@@ -68,15 +71,21 @@ namespace Escaplication
 
                     Label ster = new Label();
                     ster.AutoSize = true;
-                    ster.Name = "ster";
-                    ster.Text = ArrayRecensies[3];
-                    ster.Location = new Point(6, LocPointSter);
-                    ster.Size = new Size(100, 15);
+                    ster.Location = new System.Drawing.Point(8, LocPointSter);
+                    ster.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+                    ster.Name = "label5";
+                    ster.Size = new System.Drawing.Size(79, 17);
+                    ster.TabIndex = 6;
+                    ster.Text = "Sterren " + ArrayRecensies[3] + "/5";
+
+
+
+
 
                     panel1.Controls.Add(naamkamer);
                     panel1.Controls.Add(commentaar);
                     panel1.Controls.Add(recensiegb);
-                    panel1.Controls.Add(ster);
+                    recensiegb.Controls.Add(ster);
                 }
             }
 
