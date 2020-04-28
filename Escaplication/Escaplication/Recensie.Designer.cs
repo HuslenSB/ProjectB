@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Recensie));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.sterrentxt = new System.Windows.Forms.TextBox();
             this.Gebruikersnaamtxt = new System.Windows.Forms.TextBox();
@@ -48,7 +49,6 @@
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.Account = new System.Windows.Forms.Button();
             this.Recenties = new System.Windows.Forms.Button();
             this.Contact = new System.Windows.Forms.Button();
@@ -56,11 +56,13 @@
             this.Tarieven = new System.Windows.Forms.Button();
             this.Reserveren = new System.Windows.Forms.Button();
             this.Homepage = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -257,19 +259,10 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "groupBox4";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(62, 370);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(108, 13);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "TEST YOUR SKILLS";
-            // 
             // Account
             // 
             this.Account.Location = new System.Drawing.Point(818, 9);
-            this.Account.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Account.Margin = new System.Windows.Forms.Padding(2);
             this.Account.Name = "Account";
             this.Account.Size = new System.Drawing.Size(56, 19);
             this.Account.TabIndex = 41;
@@ -282,7 +275,7 @@
             this.Recenties.BackColor = System.Drawing.Color.Aqua;
             this.Recenties.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Recenties.Location = new System.Drawing.Point(562, 20);
-            this.Recenties.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Recenties.Margin = new System.Windows.Forms.Padding(2);
             this.Recenties.Name = "Recenties";
             this.Recenties.Size = new System.Drawing.Size(98, 32);
             this.Recenties.TabIndex = 40;
@@ -293,7 +286,7 @@
             // 
             this.Contact.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Contact.Location = new System.Drawing.Point(675, 20);
-            this.Contact.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Contact.Margin = new System.Windows.Forms.Padding(2);
             this.Contact.Name = "Contact";
             this.Contact.Size = new System.Drawing.Size(98, 32);
             this.Contact.TabIndex = 39;
@@ -305,7 +298,7 @@
             // 
             this.Thema.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Thema.Location = new System.Drawing.Point(225, 20);
-            this.Thema.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Thema.Margin = new System.Windows.Forms.Padding(2);
             this.Thema.Name = "Thema";
             this.Thema.Size = new System.Drawing.Size(98, 32);
             this.Thema.TabIndex = 38;
@@ -318,7 +311,7 @@
             this.Tarieven.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Tarieven.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tarieven.Location = new System.Drawing.Point(338, 20);
-            this.Tarieven.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Tarieven.Margin = new System.Windows.Forms.Padding(2);
             this.Tarieven.Name = "Tarieven";
             this.Tarieven.Size = new System.Drawing.Size(98, 32);
             this.Tarieven.TabIndex = 37;
@@ -330,7 +323,7 @@
             // 
             this.Reserveren.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Reserveren.Location = new System.Drawing.Point(450, 20);
-            this.Reserveren.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Reserveren.Margin = new System.Windows.Forms.Padding(2);
             this.Reserveren.Name = "Reserveren";
             this.Reserveren.Size = new System.Drawing.Size(98, 32);
             this.Reserveren.TabIndex = 36;
@@ -342,7 +335,7 @@
             // 
             this.Homepage.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Homepage.Location = new System.Drawing.Point(112, 20);
-            this.Homepage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Homepage.Margin = new System.Windows.Forms.Padding(2);
             this.Homepage.Name = "Homepage";
             this.Homepage.Size = new System.Drawing.Size(98, 32);
             this.Homepage.TabIndex = 35;
@@ -350,12 +343,23 @@
             this.Homepage.UseVisualStyleBackColor = true;
             this.Homepage.Click += new System.EventHandler(this.Homepage_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(8, 253);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(376, 175);
+            this.pictureBox1.TabIndex = 42;
+            this.pictureBox1.TabStop = false;
+            // 
             // Recensie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(884, 511);
+            this.ClientSize = new System.Drawing.Size(884, 636);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Account);
             this.Controls.Add(this.Recenties);
             this.Controls.Add(this.Contact);
@@ -363,7 +367,6 @@
             this.Controls.Add(this.Tarieven);
             this.Controls.Add(this.Reserveren);
             this.Controls.Add(this.Homepage);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Name = "Recensie";
@@ -377,8 +380,8 @@
             this.groupBox3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -403,7 +406,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox sterrentxt;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button Account;
         private System.Windows.Forms.Button Recenties;
         private System.Windows.Forms.Button Contact;
@@ -411,6 +413,7 @@
         private System.Windows.Forms.Button Tarieven;
         private System.Windows.Forms.Button Reserveren;
         private System.Windows.Forms.Button Homepage;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
