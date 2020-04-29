@@ -43,9 +43,11 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Reserveren1 = new System.Windows.Forms.TabPage();
             this.Reserveren2 = new System.Windows.Forms.TabPage();
+            this.yearbox = new System.Windows.Forms.NumericUpDown();
+            this.monthbox = new System.Windows.Forms.NumericUpDown();
+            this.daybox = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
-            this.Datumprikkerbox = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -63,6 +65,9 @@
             this.tabControl1.SuspendLayout();
             this.Reserveren1.SuspendLayout();
             this.Reserveren2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.yearbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.monthbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.daybox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.Reserveren3.SuspendLayout();
             this.SuspendLayout();
@@ -204,9 +209,11 @@
             // Reserveren2
             // 
             this.Reserveren2.BackColor = System.Drawing.Color.Turquoise;
+            this.Reserveren2.Controls.Add(this.yearbox);
+            this.Reserveren2.Controls.Add(this.monthbox);
+            this.Reserveren2.Controls.Add(this.daybox);
             this.Reserveren2.Controls.Add(this.numericUpDown1);
             this.Reserveren2.Controls.Add(this.label10);
-            this.Reserveren2.Controls.Add(this.Datumprikkerbox);
             this.Reserveren2.Controls.Add(this.label9);
             this.Reserveren2.Controls.Add(this.label8);
             this.Reserveren2.Controls.Add(this.label7);
@@ -221,6 +228,75 @@
             this.Reserveren2.Size = new System.Drawing.Size(874, 482);
             this.Reserveren2.TabIndex = 1;
             this.Reserveren2.Text = "Reserveren 2";
+            // 
+            // yearbox
+            // 
+            this.yearbox.Location = new System.Drawing.Point(460, 254);
+            this.yearbox.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
+            this.yearbox.Minimum = new decimal(new int[] {
+            2020,
+            0,
+            0,
+            0});
+            this.yearbox.Name = "yearbox";
+            this.yearbox.Size = new System.Drawing.Size(61, 20);
+            this.yearbox.TabIndex = 18;
+            this.yearbox.Value = new decimal(new int[] {
+            2020,
+            0,
+            0,
+            0});
+            this.yearbox.ValueChanged += new System.EventHandler(this.yearbox_ValueChanged);
+            // 
+            // monthbox
+            // 
+            this.monthbox.Location = new System.Drawing.Point(394, 253);
+            this.monthbox.Maximum = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            this.monthbox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.monthbox.Name = "monthbox";
+            this.monthbox.Size = new System.Drawing.Size(60, 20);
+            this.monthbox.TabIndex = 17;
+            this.monthbox.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.monthbox.ValueChanged += new System.EventHandler(this.monthbox_ValueChanged);
+            // 
+            // daybox
+            // 
+            this.daybox.Location = new System.Drawing.Point(335, 254);
+            this.daybox.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.daybox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.daybox.Name = "daybox";
+            this.daybox.Size = new System.Drawing.Size(53, 20);
+            this.daybox.TabIndex = 16;
+            this.daybox.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.daybox.ValueChanged += new System.EventHandler(this.daybox_ValueChanged);
             // 
             // numericUpDown1
             // 
@@ -242,14 +318,6 @@
             this.label10.Size = new System.Drawing.Size(92, 13);
             this.label10.TabIndex = 14;
             this.label10.Text = "Datum Selecteren";
-            // 
-            // Datumprikkerbox
-            // 
-            this.Datumprikkerbox.Location = new System.Drawing.Point(334, 248);
-            this.Datumprikkerbox.Name = "Datumprikkerbox";
-            this.Datumprikkerbox.Size = new System.Drawing.Size(187, 20);
-            this.Datumprikkerbox.TabIndex = 13;
-            this.Datumprikkerbox.Value = new System.DateTime(2020, 4, 26, 0, 0, 0, 0);
             // 
             // label9
             // 
@@ -368,6 +436,9 @@
             this.Reserveren1.PerformLayout();
             this.Reserveren2.ResumeLayout(false);
             this.Reserveren2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.yearbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.monthbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.daybox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.Reserveren3.ResumeLayout(false);
             this.Reserveren3.PerformLayout();
@@ -400,11 +471,13 @@
         private System.Windows.Forms.TextBox passwordtxtbox;
         private System.Windows.Forms.TextBox usernametxtbox;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker Datumprikkerbox;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown yearbox;
+        private System.Windows.Forms.NumericUpDown monthbox;
+        private System.Windows.Forms.NumericUpDown daybox;
     }
 }
 

@@ -43,6 +43,67 @@ namespace Escaplication
             chosenroom = "Haunted escape";
         }
 
+        private void daybox_ValueChanged(object sender, EventArgs e)
+        {
+            if ((int)monthbox.Value == 4 || (int)monthbox.Value == 6 || (int)monthbox.Value == 9 || (int)monthbox.Value == 11)
+            {
+                daybox.Maximum = 30;
+            }
+            else if((int)monthbox.Value == 1 || (int)monthbox.Value == 3 || (int)monthbox.Value == 5 || (int)monthbox.Value == 7 || (int)monthbox.Value == 8 || (int)monthbox.Value == 10 || (int)monthbox.Value == 12)
+            {
+                daybox.Maximum = 31;
+            }
+            if (((int)yearbox.Value % 4 == 0 || (int)yearbox.Value % 100 == 0 && (int)yearbox.Value % 400 == 0) && (int)monthbox.Value == 2)
+            {
+                daybox.Maximum = 29;
+            }
+            else if ((int)monthbox.Value == 2)
+            {
+                daybox.Maximum = 28;
+            }
+        }
+
+        private void monthbox_ValueChanged(object sender, EventArgs e)
+        {
+            if ((int)monthbox.Value == 4 || (int)monthbox.Value == 6 || (int)monthbox.Value == 9 || (int)monthbox.Value == 11)
+            {
+                daybox.Maximum = 30;
+            }
+            else if ((int)monthbox.Value == 1 || (int)monthbox.Value == 3 || (int)monthbox.Value == 5 || (int)monthbox.Value == 7 || (int)monthbox.Value == 8 || (int)monthbox.Value == 10 || (int)monthbox.Value == 12)
+            {
+                daybox.Maximum = 31;
+            }
+            if (((int)yearbox.Value % 4 == 0 || (int)yearbox.Value % 100 == 0 && (int)yearbox.Value % 400 == 0) && (int)monthbox.Value == 2)
+            {
+                daybox.Maximum = 29;
+            }
+            else if ((int)monthbox.Value == 2)
+            {
+                daybox.Maximum = 28;
+            }
+
+        }
+
+        private void yearbox_ValueChanged(object sender, EventArgs e)
+        {
+            if ((int)monthbox.Value == 4 || (int)monthbox.Value == 6 || (int)monthbox.Value == 9 || (int)monthbox.Value == 11)
+            {
+                daybox.Maximum = 30;
+            }
+            else if ((int)monthbox.Value == 1 || (int)monthbox.Value == 3 || (int)monthbox.Value == 5 || (int)monthbox.Value == 7 || (int)monthbox.Value == 8 || (int)monthbox.Value == 10 || (int)monthbox.Value == 12)
+            {
+                daybox.Maximum = 31;
+            }
+            if (((int)yearbox.Value % 4 == 0 || (int)yearbox.Value % 100 == 0 && (int)yearbox.Value % 400 == 0) && (int)monthbox.Value == 2)
+            {
+                daybox.Maximum = 29;
+            }
+            else if ((int)monthbox.Value == 2)
+            {
+                daybox.Maximum = 28;
+            }
+        }
+
         private void button5_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(0);
@@ -64,24 +125,28 @@ namespace Escaplication
             {
                 lines = File.ReadAllLines(path);
                 {
-                    if (lines[0] == usernametxt && lines[1] == passwordtxt)
-                    {
-                        using (StreamWriter ac = File.AppendText(Application.StartupPath + "\\Gebruikers\\" + usernametxt + ".txt"))
+                    DateTime date1 = new DateTime((int)yearbox.Value, (int)monthbox.Value, (int)daybox.Value);
+                    DateTime date2 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+                    int datecomparinson = DateTime.Compare(date1, date2);
+                    if (datecomparinson > 0) {
+                        if (lines[0] == usernametxt && lines[1] == passwordtxt)
                         {
-                            ac.WriteLine(chosenroom);
-                            ac.WriteLine(peopletxt);
-                            ac.WriteLine(Datumprikkerbox.Text);
-                        }
-                        using (StreamWriter ad = File.AppendText(Application.StartupPath + "\\Gebruikers\\" + "Reserveringen.txt"))
-                        {
-                            ad.WriteLine(usernametxt);
-                            ad.WriteLine(chosenroom);
-                            ad.WriteLine(peopletxt);
-                            ad.WriteLine(Datumprikkerbox.Text);
-                        }
+                            using (StreamWriter ac = File.AppendText(Application.StartupPath + "\\Gebruikers\\" + usernametxt + ".txt"))
+                            {
+                                ac.WriteLine(chosenroom);
+                                ac.WriteLine(peopletxt);
+                                ac.WriteLine(yearbox.Value);
+                                ac.WriteLine(monthbox.Value);
+                                ac.WriteLine(daybox.Value);
+                            }
                             tabControl1.SelectTab(2);
+                        }
                     }
                     else
+                    {
+                        MessageBox.Show("De datum die je hebt gekozen is niet beschikbaar");
+                    }
+                    if(lines[0] != usernametxt || lines[1] != passwordtxt)
                     {
                         MessageBox.Show("Verkeerde gebruikersnaam of wachtwoord");
                     }

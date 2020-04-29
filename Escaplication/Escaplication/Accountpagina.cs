@@ -13,8 +13,7 @@ namespace Escaplication
 {
     public partial class Accountpagina : Form
     {
-        public string[] lines;
-        public string[] lines2;
+        public string[] lines, lines2, lines3;
         public Accountpagina()
         {
             InitializeComponent();
@@ -31,7 +30,7 @@ namespace Escaplication
                 ab.Close();
                 MessageBox.Show("Registreren voltooid");
                 StreamWriter af = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Accounts.txt");
-                af.WriteLine(usernameregtxtbox.Text);
+                af.WriteLine(usernameregtxtbox.Text+"txt");
                 af.Close();
             }
             else
@@ -46,52 +45,71 @@ namespace Escaplication
             {
                 lines = File.ReadAllLines(path);
                 {
-                    if (lines[0] == usernamelogintxtbox.Text && lines[1] == passlogintxtbox.Text && usernamelogintxtbox.Text != "Admin") 
+                    if (lines[0] == usernamelogintxtbox.Text && lines[1] == passlogintxtbox.Text && usernamelogintxtbox.Text != "Admin")
                     {
                         tabControl1.SelectTab(1);
                         this.label6.Text = "Welkom " + usernamelogintxtbox.Text;
                         if (lines.Length != 0)
                         {
-                            for (int i = 2, j=1, LocPointGB = 0, LocPointLabel = 10; i < lines.Length-2; i+=3, j++, LocPointGB += 90, LocPointLabel += 90)
+                            for (int i = 2, j = 1, LocPointGB = 0, LocPointLabel = 10; i < lines.Length - 4; i += 5, j++, LocPointGB += 90, LocPointLabel += 90)
                             {
-                                GroupBox recensiegb = new GroupBox();
-                                recensiegb.Name = "";
-                                recensiegb.Size = new Size(220, 90);
-                                recensiegb.Location = new Point(0, LocPointGB);
+                                DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+                                DateTime date2 = new DateTime(Int32.Parse(lines[i + 2]), Int32.Parse(lines[i + 3]), Int32.Parse(lines[i + 4]));
+                                int datecomparinson = DateTime.Compare(date1, date2);
+                                if (datecomparinson < 0)
+                                {
+                                    GroupBox recensiegb = new GroupBox();
+                                    recensiegb.Name = "";
+                                    recensiegb.Size = new Size(220, 90);
+                                    recensiegb.Location = new Point(0, LocPointGB);
 
-                                Label naamkamer = new Label();
-                                naamkamer.AutoSize = true;
-                                naamkamer.Location = new Point(5, LocPointLabel);
-                                naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                                naamkamer.Text = j + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i+1] + "\nDatum: " + lines[i+2];
+                                    Label naamkamer = new Label();
+                                    naamkamer.AutoSize = true;
+                                    naamkamer.Location = new Point(5, LocPointLabel);
+                                    naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
+                                    naamkamer.Text = j + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i + 1] + "\nDatum: " + lines[i + 4] + "-" + lines[i + 3] + "-" + lines[i + 2];
 
-                                panel1.Controls.Add(naamkamer);
-                                panel1.Controls.Add(recensiegb);
-
+                                    panel1.Controls.Add(naamkamer);
+                                    panel1.Controls.Add(recensiegb);
+                                }
                             }
                         }
                     }
-                    else if("Admin" == usernamelogintxtbox.Text && "Admin" == passlogintxtbox.Text)
+                    else if ("Admin" == usernamelogintxtbox.Text && "Admin" == passlogintxtbox.Text)
                     {
-                        lines2 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Reserveringen.txt");
+                        lines2 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Accounts.txt");
                         tabControl1.SelectTab(2);
-                        if (lines.Length != 0)
+                        for (int k = 0, LocPointGB = 0, LocPointLabel = 10; k < lines2.Length; k++)
                         {
-                            for (int i = 0, j=0, LocPointGB = 0, LocPointLabel = 10; i < lines2.Length-3; i += 4, j++, LocPointGB += 100, LocPointLabel += 100)
+                            Console.WriteLine(lines2[k]);
+                            lines3 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + lines2[k]);
+                            if (lines3.Length != 0)
                             {
-                                GroupBox recensiegb = new GroupBox();
-                                recensiegb.Name = "";
-                                recensiegb.Size = new Size(220, 100);
-                                recensiegb.Location = new Point(0, LocPointGB);
+                                for (int i = 2, j = 1; i < lines3.Length - 4; i += 5, j++)
+                                {
+                                    DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+                                    DateTime date2 = new DateTime(Int32.Parse(lines3[i + 2]), Int32.Parse(lines3[i + 3]), Int32.Parse(lines3[i + 4]));
+                                    int datecomparinson = DateTime.Compare(date1, date2);
+                                    Console.WriteLine(date2);
+                                    if (datecomparinson < 0)
+                                    {
+                                        GroupBox recensiegb = new GroupBox();
+                                        recensiegb.Name = "";
+                                        recensiegb.Size = new Size(220, 100);
+                                        recensiegb.Location = new Point(0, LocPointGB);
 
-                                Label naamkamer = new Label();
-                                naamkamer.AutoSize = true;
-                                naamkamer.Location = new Point(5, LocPointLabel);
-                                naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                                naamkamer.Text = j + ".\nNaam: " + lines2[i] + "\nEscaperoom: " + lines2[i+1] + "\nAantal personen: " + lines2[i+2] + "\nDatum: " + lines2[i+3];
+                                        Label naamkamer = new Label();
+                                        naamkamer.AutoSize = true;
+                                        naamkamer.Location = new Point(5, LocPointLabel);
+                                        naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
+                                        naamkamer.Text = j + ".\nNaam: " + lines3[0] + "\nEscaperoom: " + lines3[i] + "\nAantal personen: " + lines3[i + 1] + "\nDatum: " + lines3[i + 2] + lines3[i + 3] + lines3[i + 4];
 
-                                panel2.Controls.Add(naamkamer);
-                                panel2.Controls.Add(recensiegb);
+                                        panel2.Controls.Add(naamkamer);
+                                        panel2.Controls.Add(recensiegb);
+                                        LocPointGB += 100;
+                                        LocPointLabel += 100;
+                                    }
+                                }
                             }
                         }
                     }
@@ -121,9 +139,11 @@ namespace Escaplication
             StreamWriter ae = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + usernamelogintxtbox.Text + ".txt");
             decimal k = numericUpDown1.Value;
             int n = (int)k;
-            lines[n*2] = "";
-            lines[n * 2+1] = "";
-            lines[n * 2+2] = "";
+            lines[(n-1) * 5+2] = "";
+            lines[((n - 1) * 5 + 2)+1] = "";
+            lines[((n - 1) * 5 + 2)+2] = "";
+            lines[((n - 1) * 5 + 2) + 3] = "";
+            lines[((n - 1) * 5 + 2) + 4] = "";
             for (int i = 0; i < lines.Length; i++)
             {
                 if (lines[i] != "")
