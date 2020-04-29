@@ -117,9 +117,9 @@ namespace Escaplication
         {
             // Deze code zorgt ervoor dat als de gebruiker op de knop "Acount" drukt, deze doorgaat naar het login scherm.
 
-            var Login = new Login();
+            var Accountpagina = new Accountpagina();
             this.Hide();
-            Login.ShowDialog();
+            Accountpagina.ShowDialog();
             this.Close();
 
         } 
@@ -198,7 +198,7 @@ namespace Escaplication
         {
             usernametxt = usernametxtbox.Text;
             passwordtxt = passwordtxtbox.Text;
-            peopletxt = numericUpDown1.Text;
+            peopletxt = peopletxtbox.Text;
             string path = Application.StartupPath + "\\Gebruikers\\" + usernametxt + ".txt";
 
             if (File.Exists(path))
