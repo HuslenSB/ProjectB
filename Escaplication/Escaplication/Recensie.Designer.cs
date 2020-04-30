@@ -57,6 +57,8 @@
             this.Reserveren = new System.Windows.Forms.Button();
             this.Homepage = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Wachtwoordtxt = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -67,6 +69,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.Wachtwoordtxt);
+            this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.sterrentxt);
             this.groupBox2.Controls.Add(this.Gebruikersnaamtxt);
             this.groupBox2.Controls.Add(this.Gbnaam);
@@ -78,14 +82,14 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(4, 67);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(380, 178);
+            this.groupBox2.Size = new System.Drawing.Size(380, 246);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Schrijf een recensie";
             // 
             // sterrentxt
             // 
-            this.sterrentxt.Location = new System.Drawing.Point(144, 106);
+            this.sterrentxt.Location = new System.Drawing.Point(144, 126);
             this.sterrentxt.Name = "sterrentxt";
             this.sterrentxt.Size = new System.Drawing.Size(55, 20);
             this.sterrentxt.TabIndex = 8;
@@ -108,7 +112,7 @@
             // 
             // Recensiebtn
             // 
-            this.Recensiebtn.Location = new System.Drawing.Point(176, 137);
+            this.Recensiebtn.Location = new System.Drawing.Point(251, 202);
             this.Recensiebtn.Name = "Recensiebtn";
             this.Recensiebtn.Size = new System.Drawing.Size(110, 23);
             this.Recensiebtn.TabIndex = 5;
@@ -118,14 +122,14 @@
             // 
             // commentaartxt
             // 
-            this.commentaartxt.Location = new System.Drawing.Point(144, 78);
+            this.commentaartxt.Location = new System.Drawing.Point(144, 98);
             this.commentaartxt.Name = "commentaartxt";
             this.commentaartxt.Size = new System.Drawing.Size(217, 20);
             this.commentaartxt.TabIndex = 4;
             // 
             // kamertxt
             // 
-            this.kamertxt.Location = new System.Drawing.Point(144, 50);
+            this.kamertxt.Location = new System.Drawing.Point(144, 70);
             this.kamertxt.Name = "kamertxt";
             this.kamertxt.Size = new System.Drawing.Size(217, 20);
             this.kamertxt.TabIndex = 3;
@@ -133,7 +137,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 106);
+            this.label4.Location = new System.Drawing.Point(9, 126);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(90, 13);
             this.label4.TabIndex = 2;
@@ -142,7 +146,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 81);
+            this.label3.Location = new System.Drawing.Point(9, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 13);
             this.label3.TabIndex = 2;
@@ -151,7 +155,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 53);
+            this.label1.Location = new System.Drawing.Point(9, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 13);
             this.label1.TabIndex = 0;
@@ -347,11 +351,27 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(8, 253);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 340);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(376, 175);
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
+            // 
+            // Wachtwoordtxt
+            // 
+            this.Wachtwoordtxt.Location = new System.Drawing.Point(144, 44);
+            this.Wachtwoordtxt.Name = "Wachtwoordtxt";
+            this.Wachtwoordtxt.Size = new System.Drawing.Size(217, 20);
+            this.Wachtwoordtxt.TabIndex = 10;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(9, 47);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(68, 13);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Wachtwoord";
             // 
             // Recensie
             // 
@@ -414,6 +434,8 @@
         private System.Windows.Forms.Button Reserveren;
         private System.Windows.Forms.Button Homepage;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox Wachtwoordtxt;
+        private System.Windows.Forms.Label label8;
     }
 }
 

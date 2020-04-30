@@ -95,25 +95,48 @@ namespace Escaplication
 
         private void Recensiebtn_Click(object sender, EventArgs e)
         {
+            string path = Application.StartupPath + "\\Gebruikers\\" + Gebruikersnaamtxt.Text + ".txt";
             int ster = Int32.Parse(sterrentxt.Text);
-            if (ster >= 0 && ster <= 5)
+
+            if (File.Exists(path))
             {
-                StreamWriter StrWriter = new StreamWriter(Application.StartupPath + "\\Recensies\\" + Gebruikersnaamtxt.Text + ".txt");
-                StrWriter.WriteLine(Gebruikersnaamtxt.Text);
-                StrWriter.WriteLine(kamertxt.Text);
-                StrWriter.WriteLine(commentaartxt.Text);
-                StrWriter.WriteLine(sterrentxt.Text);
-                StrWriter.Close();
-                MessageBox.Show("Recensie voltooid");
+                string[] lines = File.ReadAllLines(path);
+                if (lines[0] == Gebruikersnaamtxt.Text)//&& lines[1] == Wachtwoordtxt.Text)
+                {
+                    if (lines[1] == Wachtwoordtxt.Text)
+                    {
+                        if (ster >= 0 && ster <= 5)
+                        {
+                            StreamWriter StrWriter = new StreamWriter(Application.StartupPath + "\\Recensies\\" + Gebruikersnaamtxt.Text + ".txt");
+                            StrWriter.WriteLine(Gebruikersnaamtxt.Text);
+                            StrWriter.WriteLine(kamertxt.Text);
+                            StrWriter.WriteLine(commentaartxt.Text);
+                            StrWriter.WriteLine(sterrentxt.Text);
+                            StrWriter.Close();
+                            MessageBox.Show("Recensie voltooid");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Typ een getal tussen 0-5 bij sterren");
+                        }
+                    }
+                    else 
+                    {
+                        MessageBox.Show("Wachtwoord onjuist");
+                    }
+                }
+
 
             }
             else
             {
-                MessageBox.Show("Typ een getal tussen 0-5 bij sterren");
+                MessageBox.Show("Gebruikersnaam onjuist");
             }
 
 
-            
+
+
+
 
         }
 
@@ -178,5 +201,7 @@ namespace Escaplication
             Login.ShowDialog();
             this.Close();
         }
+
+
     }
 }
