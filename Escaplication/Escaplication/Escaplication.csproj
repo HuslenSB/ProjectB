@@ -70,12 +70,6 @@
     <Compile Include="Informatie.designer.cs">
       <DependentUpon>Informatie.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
     <Compile Include="Recensie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,9 +101,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Informatie.resx">
       <DependentUpon>Informatie.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Recensie.resx">
       <DependentUpon>Recensie.cs</DependentUpon>

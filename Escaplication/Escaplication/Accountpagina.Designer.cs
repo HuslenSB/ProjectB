@@ -30,18 +30,21 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button8 = new System.Windows.Forms.Button();
-            this.Contactbtn = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Account = new System.Windows.Forms.Button();
+            this.Contact = new System.Windows.Forms.Button();
+            this.Recenties = new System.Windows.Forms.Button();
+            this.Button8 = new System.Windows.Forms.Button();
+            this.Tarieven = new System.Windows.Forms.Button();
+            this.Thema = new System.Windows.Forms.Button();
+            this.Homepage = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.passwordrepeattxtbox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.regbtn = new System.Windows.Forms.Button();
+            this.Loginbtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.passwordregtxtbox = new System.Windows.Forms.TextBox();
@@ -53,7 +56,6 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.button9 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -62,8 +64,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.passwordrepeattxtbox = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.Reserveringtab = new System.Windows.Forms.TabPage();
+            this.oudereserveringtab = new System.Windows.Forms.TabPage();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -71,6 +75,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.Reserveringtab.SuspendLayout();
+            this.oudereserveringtab.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -82,27 +89,28 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(799, 448);
+            this.tabControl1.Size = new System.Drawing.Size(883, 508);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.TabStop = false;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Turquoise;
+            this.tabPage1.Controls.Add(this.Account);
+            this.tabPage1.Controls.Add(this.Contact);
+            this.tabPage1.Controls.Add(this.Recenties);
+            this.tabPage1.Controls.Add(this.Button8);
+            this.tabPage1.Controls.Add(this.Tarieven);
+            this.tabPage1.Controls.Add(this.Thema);
+            this.tabPage1.Controls.Add(this.Homepage);
             this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.passwordrepeattxtbox);
-            this.tabPage1.Controls.Add(this.button8);
-            this.tabPage1.Controls.Add(this.Contactbtn);
-            this.tabPage1.Controls.Add(this.button6);
-            this.tabPage1.Controls.Add(this.button5);
-            this.tabPage1.Controls.Add(this.button4);
-            this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.regbtn);
+            this.tabPage1.Controls.Add(this.Loginbtn);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.passwordregtxtbox);
@@ -112,63 +120,110 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(791, 422);
+            this.tabPage1.Size = new System.Drawing.Size(875, 482);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Login pagina";
             // 
-            // button8
+            // Account
             // 
-            this.button8.Location = new System.Drawing.Point(543, 7);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 17;
-            this.button8.Text = "Recencies";
-            this.button8.UseVisualStyleBackColor = true;
+            this.Account.BackColor = System.Drawing.Color.Aqua;
+            this.Account.Location = new System.Drawing.Point(813, 5);
+            this.Account.Margin = new System.Windows.Forms.Padding(2);
+            this.Account.Name = "Account";
+            this.Account.Size = new System.Drawing.Size(56, 19);
+            this.Account.TabIndex = 46;
+            this.Account.Text = "Account";
+            this.Account.UseVisualStyleBackColor = false;
             // 
-            // Contactbtn
+            // Contact
             // 
-            this.Contactbtn.Location = new System.Drawing.Point(462, 7);
-            this.Contactbtn.Name = "Contactbtn";
-            this.Contactbtn.Size = new System.Drawing.Size(75, 23);
-            this.Contactbtn.TabIndex = 16;
-            this.Contactbtn.Text = "Contact";
-            this.Contactbtn.UseVisualStyleBackColor = true;
+            this.Contact.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Contact.Location = new System.Drawing.Point(635, 19);
+            this.Contact.Margin = new System.Windows.Forms.Padding(2);
+            this.Contact.Name = "Contact";
+            this.Contact.Size = new System.Drawing.Size(98, 32);
+            this.Contact.TabIndex = 45;
+            this.Contact.Text = "Contact";
+            this.Contact.UseVisualStyleBackColor = true;
+            this.Contact.Click += new System.EventHandler(this.Contact_Click);
             // 
-            // button6
+            // Recenties
             // 
-            this.button6.Location = new System.Drawing.Point(381, 7);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 15;
-            this.button6.Text = "Reserveren";
-            this.button6.UseVisualStyleBackColor = true;
+            this.Recenties.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Recenties.Location = new System.Drawing.Point(533, 19);
+            this.Recenties.Margin = new System.Windows.Forms.Padding(2);
+            this.Recenties.Name = "Recenties";
+            this.Recenties.Size = new System.Drawing.Size(98, 32);
+            this.Recenties.TabIndex = 44;
+            this.Recenties.Text = "Recenties";
+            this.Recenties.UseVisualStyleBackColor = true;
+            this.Recenties.Click += new System.EventHandler(this.Recenties_Click);
             // 
-            // button5
+            // Button8
             // 
-            this.button5.Location = new System.Drawing.Point(300, 7);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 14;
-            this.button5.Text = "Tarieven";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Button8.BackColor = System.Drawing.Color.Transparent;
+            this.Button8.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button8.Location = new System.Drawing.Point(422, 19);
+            this.Button8.Margin = new System.Windows.Forms.Padding(2);
+            this.Button8.Name = "Button8";
+            this.Button8.Size = new System.Drawing.Size(107, 32);
+            this.Button8.TabIndex = 43;
+            this.Button8.Text = "Reserveren";
+            this.Button8.UseVisualStyleBackColor = false;
+            this.Button8.Click += new System.EventHandler(this.Button8_Click);
             // 
-            // button4
+            // Tarieven
             // 
-            this.button4.Location = new System.Drawing.Point(219, 7);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "Thema\'s";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Tarieven.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Tarieven.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tarieven.Location = new System.Drawing.Point(320, 19);
+            this.Tarieven.Margin = new System.Windows.Forms.Padding(2);
+            this.Tarieven.Name = "Tarieven";
+            this.Tarieven.Size = new System.Drawing.Size(98, 32);
+            this.Tarieven.TabIndex = 40;
+            this.Tarieven.Text = "Tarieven";
+            this.Tarieven.UseVisualStyleBackColor = false;
+            this.Tarieven.Click += new System.EventHandler(this.Tarieven_Click);
             // 
-            // button3
+            // Thema
             // 
-            this.button3.Location = new System.Drawing.Point(126, 7);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(87, 23);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Hoofdpagina";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Thema.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Thema.Location = new System.Drawing.Point(218, 19);
+            this.Thema.Margin = new System.Windows.Forms.Padding(2);
+            this.Thema.Name = "Thema";
+            this.Thema.Size = new System.Drawing.Size(98, 32);
+            this.Thema.TabIndex = 39;
+            this.Thema.Text = "Thema";
+            this.Thema.UseVisualStyleBackColor = true;
+            this.Thema.Click += new System.EventHandler(this.Thema_Click);
+            // 
+            // Homepage
+            // 
+            this.Homepage.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Homepage.Location = new System.Drawing.Point(106, 19);
+            this.Homepage.Margin = new System.Windows.Forms.Padding(2);
+            this.Homepage.Name = "Homepage";
+            this.Homepage.Size = new System.Drawing.Size(108, 32);
+            this.Homepage.TabIndex = 36;
+            this.Homepage.Text = "Homepage";
+            this.Homepage.UseVisualStyleBackColor = true;
+            this.Homepage.Click += new System.EventHandler(this.Homepage_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(153, 318);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(112, 13);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "Wachtwoord herhalen";
+            // 
+            // passwordrepeattxtbox
+            // 
+            this.passwordrepeattxtbox.Location = new System.Drawing.Point(271, 315);
+            this.passwordrepeattxtbox.Name = "passwordrepeattxtbox";
+            this.passwordrepeattxtbox.Size = new System.Drawing.Size(100, 20);
+            this.passwordrepeattxtbox.TabIndex = 18;
             // 
             // label9
             // 
@@ -206,25 +261,25 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Gebruikersnaam";
             // 
-            // button2
+            // regbtn
             // 
-            this.button2.Location = new System.Drawing.Point(271, 341);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Registreren";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.regbtn.Location = new System.Drawing.Point(271, 341);
+            this.regbtn.Name = "regbtn";
+            this.regbtn.Size = new System.Drawing.Size(75, 23);
+            this.regbtn.TabIndex = 7;
+            this.regbtn.Text = "Registreren";
+            this.regbtn.UseVisualStyleBackColor = true;
+            this.regbtn.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // Loginbtn
             // 
-            this.button1.Location = new System.Drawing.Point(271, 159);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Loginbtn.Location = new System.Drawing.Point(271, 159);
+            this.Loginbtn.Name = "Loginbtn";
+            this.Loginbtn.Size = new System.Drawing.Size(75, 23);
+            this.Loginbtn.TabIndex = 6;
+            this.Loginbtn.Text = "Login";
+            this.Loginbtn.UseVisualStyleBackColor = true;
+            this.Loginbtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
@@ -275,15 +330,14 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Turquoise;
-            this.tabPage2.Controls.Add(this.panel1);
+            this.tabPage2.Controls.Add(this.tabControl2);
             this.tabPage2.Controls.Add(this.button7);
-            this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(791, 422);
+            this.tabPage2.Size = new System.Drawing.Size(875, 482);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Usertab";
             // 
@@ -292,9 +346,9 @@
             this.panel1.AutoScroll = true;
             this.panel1.Controls.Add(this.numericUpDown1);
             this.panel1.Controls.Add(this.button9);
-            this.panel1.Location = new System.Drawing.Point(38, 115);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(453, 277);
+            this.panel1.Size = new System.Drawing.Size(472, 299);
             this.panel1.TabIndex = 0;
             // 
             // numericUpDown1
@@ -323,14 +377,6 @@
             this.button7.Text = "Uitloggen";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Location = new System.Drawing.Point(38, 108);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(453, 284);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
             // 
             // label7
             // 
@@ -361,7 +407,7 @@
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(791, 422);
+            this.tabPage3.Size = new System.Drawing.Size(875, 482);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Admin tab";
             // 
@@ -412,27 +458,51 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Admin account";
             // 
-            // passwordrepeattxtbox
+            // tabControl2
             // 
-            this.passwordrepeattxtbox.Location = new System.Drawing.Point(271, 315);
-            this.passwordrepeattxtbox.Name = "passwordrepeattxtbox";
-            this.passwordrepeattxtbox.Size = new System.Drawing.Size(100, 20);
-            this.passwordrepeattxtbox.TabIndex = 18;
+            this.tabControl2.Controls.Add(this.Reserveringtab);
+            this.tabControl2.Controls.Add(this.oudereserveringtab);
+            this.tabControl2.Location = new System.Drawing.Point(38, 119);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(480, 321);
+            this.tabControl2.TabIndex = 7;
             // 
-            // label11
+            // Reserveringtab
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(153, 318);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(112, 13);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "Wachtwoord herhalen";
+            this.Reserveringtab.Controls.Add(this.panel1);
+            this.Reserveringtab.Location = new System.Drawing.Point(4, 22);
+            this.Reserveringtab.Name = "Reserveringtab";
+            this.Reserveringtab.Padding = new System.Windows.Forms.Padding(3);
+            this.Reserveringtab.Size = new System.Drawing.Size(472, 295);
+            this.Reserveringtab.TabIndex = 0;
+            this.Reserveringtab.Text = "Reserveringen";
+            this.Reserveringtab.UseVisualStyleBackColor = true;
+            // 
+            // oudereserveringtab
+            // 
+            this.oudereserveringtab.Controls.Add(this.panel3);
+            this.oudereserveringtab.Location = new System.Drawing.Point(4, 22);
+            this.oudereserveringtab.Name = "oudereserveringtab";
+            this.oudereserveringtab.Padding = new System.Windows.Forms.Padding(3);
+            this.oudereserveringtab.Size = new System.Drawing.Size(472, 295);
+            this.oudereserveringtab.TabIndex = 1;
+            this.oudereserveringtab.Text = "Oude reserveringen";
+            this.oudereserveringtab.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            this.panel3.AutoScroll = true;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(472, 295);
+            this.panel3.TabIndex = 0;
             // 
             // Accountpagina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(884, 511);
             this.Controls.Add(this.tabControl1);
             this.Name = "Accountpagina";
             this.Text = "Accountpagina";
@@ -446,6 +516,9 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
+            this.Reserveringtab.ResumeLayout(false);
+            this.oudereserveringtab.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -459,8 +532,8 @@
         private System.Windows.Forms.TextBox usernameregtxtbox;
         private System.Windows.Forms.TextBox passlogintxtbox;
         private System.Windows.Forms.TextBox usernamelogintxtbox;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button regbtn;
+        private System.Windows.Forms.Button Loginbtn;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
@@ -471,13 +544,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button Contactbtn;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button11;
@@ -488,5 +554,16 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox passwordrepeattxtbox;
+        private System.Windows.Forms.Button Homepage;
+        private System.Windows.Forms.Button Thema;
+        private System.Windows.Forms.Button Tarieven;
+        private System.Windows.Forms.Button Button8;
+        private System.Windows.Forms.Button Recenties;
+        private System.Windows.Forms.Button Contact;
+        private System.Windows.Forms.Button Account;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage Reserveringtab;
+        private System.Windows.Forms.TabPage oudereserveringtab;
+        private System.Windows.Forms.Panel panel3;
     }
 }

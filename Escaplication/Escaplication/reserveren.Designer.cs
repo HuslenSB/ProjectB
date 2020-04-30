@@ -53,7 +53,7 @@
             this.yearbox = new System.Windows.Forms.NumericUpDown();
             this.monthbox = new System.Windows.Forms.NumericUpDown();
             this.daybox = new System.Windows.Forms.NumericUpDown();
-            this.peopletxtbox = new System.Windows.Forms.NumericUpDown();
+            this.peoplenumeric = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -76,7 +76,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.yearbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.monthbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.daybox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.peopletxtbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peoplenumeric)).BeginInit();
             this.Reserveren3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -196,6 +196,7 @@
             // 
             // Reserveren1
             // 
+            this.Reserveren1.AccessibleDescription = "s";
             this.Reserveren1.BackColor = System.Drawing.Color.Turquoise;
             this.Reserveren1.Controls.Add(this.button8);
             this.Reserveren1.Controls.Add(this.Account);
@@ -297,10 +298,10 @@
             // Homepage
             // 
             this.Homepage.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Homepage.Location = new System.Drawing.Point(107, 18);
+            this.Homepage.Location = new System.Drawing.Point(97, 18);
             this.Homepage.Margin = new System.Windows.Forms.Padding(2);
             this.Homepage.Name = "Homepage";
-            this.Homepage.Size = new System.Drawing.Size(98, 32);
+            this.Homepage.Size = new System.Drawing.Size(108, 32);
             this.Homepage.TabIndex = 35;
             this.Homepage.Text = "Homepage";
             this.Homepage.UseVisualStyleBackColor = true;
@@ -312,7 +313,7 @@
             this.Reserveren2.Controls.Add(this.yearbox);
             this.Reserveren2.Controls.Add(this.monthbox);
             this.Reserveren2.Controls.Add(this.daybox);
-            this.Reserveren2.Controls.Add(this.peopletxtbox);
+            this.Reserveren2.Controls.Add(this.peoplenumeric);
             this.Reserveren2.Controls.Add(this.label10);
             this.Reserveren2.Controls.Add(this.label9);
             this.Reserveren2.Controls.Add(this.label8);
@@ -401,18 +402,28 @@
             0});
             this.daybox.ValueChanged += new System.EventHandler(this.daybox_ValueChanged);
             // 
-            // peopletxtbox
+            // peoplenumeric
             // 
-            this.peopletxtbox.Location = new System.Drawing.Point(334, 181);
-            this.peopletxtbox.Margin = new System.Windows.Forms.Padding(2);
-            this.peopletxtbox.Maximum = new decimal(new int[] {
+            this.peoplenumeric.Location = new System.Drawing.Point(334, 181);
+            this.peoplenumeric.Margin = new System.Windows.Forms.Padding(2);
+            this.peoplenumeric.Maximum = new decimal(new int[] {
             8,
             0,
             0,
             0});
-            this.peopletxtbox.Name = "peopletxtbox";
-            this.peopletxtbox.Size = new System.Drawing.Size(140, 20);
-            this.peopletxtbox.TabIndex = 15;
+            this.peoplenumeric.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.peoplenumeric.Name = "peoplenumeric";
+            this.peoplenumeric.Size = new System.Drawing.Size(140, 20);
+            this.peoplenumeric.TabIndex = 15;
+            this.peoplenumeric.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
             // 
             // label10
             // 
@@ -558,7 +569,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.yearbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.monthbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.daybox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.peopletxtbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peoplenumeric)).EndInit();
             this.Reserveren3.ResumeLayout(false);
             this.Reserveren3.PerformLayout();
             this.ResumeLayout(false);
@@ -600,7 +611,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.NumericUpDown peopletxtbox;
+        private System.Windows.Forms.NumericUpDown peoplenumeric;
         private System.Windows.Forms.NumericUpDown yearbox;
         private System.Windows.Forms.NumericUpDown monthbox;
         private System.Windows.Forms.NumericUpDown daybox;

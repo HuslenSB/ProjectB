@@ -122,7 +122,7 @@ namespace Escaplication
         {
             // Deze code zorgt ervoor dat als de gebruiker op de knop "Account" drukt, deze doorgaat naar het login scherm.
 
-            var Login = new Login();
+            var Login = new Accountpagina();
             this.Hide();
             Login.ShowDialog();
             this.Close();
