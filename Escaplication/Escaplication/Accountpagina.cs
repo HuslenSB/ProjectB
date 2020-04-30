@@ -88,13 +88,13 @@ namespace Escaplication
                                     GroupBox recensiegb = new GroupBox();
                                     recensiegb.Name = "";
                                     recensiegb.Size = new Size(220, 90);
-                                    recensiegb.Location = new Point(0, LocPointGB);
+                                    recensiegb.Location = new Point(0, LocPointGB2);
 
                                     Label naamkamer = new Label();
                                     naamkamer.AutoSize = true;
-                                    naamkamer.Location = new Point(5, LocPointLabel);
+                                    naamkamer.Location = new Point(5, LocPointLabel2);
                                     naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                                    naamkamer.Text = j + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i + 1] + "\nDatum: " + lines[i + 4] + "-" + lines[i + 3] + "-" + lines[i + 2];
+                                    naamkamer.Text = k + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i + 1] + "\nDatum: " + lines[i + 4] + "-" + lines[i + 3] + "-" + lines[i + 2];
 
                                     panel3.Controls.Add(naamkamer);
                                     panel3.Controls.Add(recensiegb);
