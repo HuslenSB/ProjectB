@@ -59,7 +59,7 @@ namespace Escaplication
                         this.label6.Text = "Welkom " + usernamelogintxtbox.Text;
                         if (lines.Length != 0)
                         {
-                            for (int i = 2, j = 1, LocPointGB = 0, LocPointLabel = 10; i < lines.Length - 4; i += 5, j++, LocPointGB += 90, LocPointLabel += 90)
+                            for (int i = 2, j = 1, k = 1, LocPointGB = 0, LocPointLabel = 10, LocPointGB2 = 0, LocPointLabel2 = 10; i < lines.Length - 4; i += 5)
                             {
                                 DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
                                 DateTime date2 = new DateTime(Int32.Parse(lines[i + 2]), Int32.Parse(lines[i + 3]), Int32.Parse(lines[i + 4]));
@@ -79,6 +79,28 @@ namespace Escaplication
 
                                     panel1.Controls.Add(naamkamer);
                                     panel1.Controls.Add(recensiegb);
+                                    LocPointGB += 100;
+                                    LocPointLabel += 100;
+                                    j++;
+                                }
+                                else
+                                {
+                                    GroupBox recensiegb = new GroupBox();
+                                    recensiegb.Name = "";
+                                    recensiegb.Size = new Size(220, 90);
+                                    recensiegb.Location = new Point(0, LocPointGB);
+
+                                    Label naamkamer = new Label();
+                                    naamkamer.AutoSize = true;
+                                    naamkamer.Location = new Point(5, LocPointLabel);
+                                    naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
+                                    naamkamer.Text = j + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i + 1] + "\nDatum: " + lines[i + 4] + "-" + lines[i + 3] + "-" + lines[i + 2];
+
+                                    panel3.Controls.Add(naamkamer);
+                                    panel3.Controls.Add(recensiegb);
+                                    LocPointGB2 += 100;
+                                    LocPointLabel2 += 100;
+                                    k++;
                                 }
                             }
                         }
@@ -135,6 +157,54 @@ namespace Escaplication
         private void button11_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(0);
+        }
+
+        private void Homepage_Click(object sender, EventArgs e)
+        {
+            var Login = new HoofdMenu();
+            this.Hide();
+            Login.ShowDialog();
+            this.Close();
+        }
+
+        private void Thema_Click(object sender, EventArgs e)
+        {
+            var Login = new Informatie();
+            this.Hide();
+            Login.ShowDialog();
+            this.Close();
+        }
+
+        private void Tarieven_Click(object sender, EventArgs e)
+        {
+            var Login = new Tarieven_Tab();
+            this.Hide();
+            Login.ShowDialog();
+            this.Close();
+        }
+
+        private void Button8_Click(object sender, EventArgs e)
+        {
+            var Login = new Reserveren();
+            this.Hide();
+            Login.ShowDialog();
+            this.Close();
+        }
+
+        private void Recenties_Click(object sender, EventArgs e)
+        {
+            var Login = new Recensie();
+            this.Hide();
+            Login.ShowDialog();
+            this.Close();
+        }
+
+        private void Contact_Click(object sender, EventArgs e)
+        {
+            var Login = new Contact_Tab();
+            this.Hide();
+            Login.ShowDialog();
+            this.Close();
         }
 
         private void button7_Click(object sender, EventArgs e)

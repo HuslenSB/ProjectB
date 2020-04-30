@@ -42,6 +42,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Reserveren1 = new System.Windows.Forms.TabPage();
+            this.button8 = new System.Windows.Forms.Button();
             this.Account = new System.Windows.Forms.Button();
             this.Recenties = new System.Windows.Forms.Button();
             this.Contact = new System.Windows.Forms.Button();
@@ -52,7 +53,7 @@
             this.yearbox = new System.Windows.Forms.NumericUpDown();
             this.monthbox = new System.Windows.Forms.NumericUpDown();
             this.daybox = new System.Windows.Forms.NumericUpDown();
-            this.peopletxtbox = new System.Windows.Forms.NumericUpDown();
+            this.peoplenumeric = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -75,7 +76,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.yearbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.monthbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.daybox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.peopletxtbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peoplenumeric)).BeginInit();
             this.Reserveren3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -195,7 +196,9 @@
             // 
             // Reserveren1
             // 
+            this.Reserveren1.AccessibleDescription = "s";
             this.Reserveren1.BackColor = System.Drawing.Color.Turquoise;
+            this.Reserveren1.Controls.Add(this.button8);
             this.Reserveren1.Controls.Add(this.Account);
             this.Reserveren1.Controls.Add(this.Recenties);
             this.Reserveren1.Controls.Add(this.Contact);
@@ -215,15 +218,27 @@
             this.Reserveren1.Controls.Add(this.pictureBox3);
             this.Reserveren1.Location = new System.Drawing.Point(4, 22);
             this.Reserveren1.Name = "Reserveren1";
-            this.Reserveren1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Reserveren1.Padding = new System.Windows.Forms.Padding(3);
             this.Reserveren1.Size = new System.Drawing.Size(874, 482);
             this.Reserveren1.TabIndex = 0;
             this.Reserveren1.Text = "Reserveren 1";
             // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Aqua;
+            this.button8.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(410, 18);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(107, 32);
+            this.button8.TabIndex = 42;
+            this.button8.Text = "Reserveren";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
             // Account
             // 
             this.Account.Location = new System.Drawing.Point(812, 7);
-            this.Account.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Account.Margin = new System.Windows.Forms.Padding(2);
             this.Account.Name = "Account";
             this.Account.Size = new System.Drawing.Size(56, 19);
             this.Account.TabIndex = 41;
@@ -234,8 +249,8 @@
             // Recenties
             // 
             this.Recenties.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Recenties.Location = new System.Drawing.Point(557, 18);
-            this.Recenties.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Recenties.Location = new System.Drawing.Point(521, 18);
+            this.Recenties.Margin = new System.Windows.Forms.Padding(2);
             this.Recenties.Name = "Recenties";
             this.Recenties.Size = new System.Drawing.Size(98, 32);
             this.Recenties.TabIndex = 40;
@@ -246,8 +261,8 @@
             // Contact
             // 
             this.Contact.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Contact.Location = new System.Drawing.Point(670, 18);
-            this.Contact.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Contact.Location = new System.Drawing.Point(623, 18);
+            this.Contact.Margin = new System.Windows.Forms.Padding(2);
             this.Contact.Name = "Contact";
             this.Contact.Size = new System.Drawing.Size(98, 32);
             this.Contact.TabIndex = 39;
@@ -258,8 +273,8 @@
             // Thema
             // 
             this.Thema.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Thema.Location = new System.Drawing.Point(220, 18);
-            this.Thema.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Thema.Location = new System.Drawing.Point(209, 18);
+            this.Thema.Margin = new System.Windows.Forms.Padding(2);
             this.Thema.Name = "Thema";
             this.Thema.Size = new System.Drawing.Size(98, 32);
             this.Thema.TabIndex = 38;
@@ -271,8 +286,8 @@
             // 
             this.Tarieven.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Tarieven.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tarieven.Location = new System.Drawing.Point(332, 18);
-            this.Tarieven.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Tarieven.Location = new System.Drawing.Point(309, 18);
+            this.Tarieven.Margin = new System.Windows.Forms.Padding(2);
             this.Tarieven.Name = "Tarieven";
             this.Tarieven.Size = new System.Drawing.Size(98, 32);
             this.Tarieven.TabIndex = 37;
@@ -283,10 +298,10 @@
             // Homepage
             // 
             this.Homepage.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Homepage.Location = new System.Drawing.Point(107, 18);
-            this.Homepage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Homepage.Location = new System.Drawing.Point(97, 18);
+            this.Homepage.Margin = new System.Windows.Forms.Padding(2);
             this.Homepage.Name = "Homepage";
-            this.Homepage.Size = new System.Drawing.Size(98, 32);
+            this.Homepage.Size = new System.Drawing.Size(108, 32);
             this.Homepage.TabIndex = 35;
             this.Homepage.Text = "Homepage";
             this.Homepage.UseVisualStyleBackColor = true;
@@ -298,7 +313,7 @@
             this.Reserveren2.Controls.Add(this.yearbox);
             this.Reserveren2.Controls.Add(this.monthbox);
             this.Reserveren2.Controls.Add(this.daybox);
-            this.Reserveren2.Controls.Add(this.peopletxtbox);
+            this.Reserveren2.Controls.Add(this.peoplenumeric);
             this.Reserveren2.Controls.Add(this.label10);
             this.Reserveren2.Controls.Add(this.label9);
             this.Reserveren2.Controls.Add(this.label8);
@@ -310,21 +325,15 @@
             this.Reserveren2.Controls.Add(this.label1);
             this.Reserveren2.Location = new System.Drawing.Point(4, 22);
             this.Reserveren2.Name = "Reserveren2";
-            this.Reserveren2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Reserveren2.Padding = new System.Windows.Forms.Padding(3);
             this.Reserveren2.Size = new System.Drawing.Size(874, 482);
             this.Reserveren2.TabIndex = 1;
             this.Reserveren2.Text = "Reserveren 2";
             // 
             // yearbox
-            this.peopletxtbox.Location = new System.Drawing.Point(445, 273);
-            this.peopletxtbox.Margin = new System.Windows.Forms.Padding(4);
-            this.peopletxtbox.Name = "peopletxtbox";
-            this.peopletxtbox.Size = new System.Drawing.Size(248, 22);
-            this.peopletxtbox.TabIndex = 3;
-            this.peopletxtbox.Text = "Aantal mensen ";
             // 
             this.yearbox.Location = new System.Drawing.Point(428, 206);
-            this.yearbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.yearbox.Margin = new System.Windows.Forms.Padding(2);
             this.yearbox.Maximum = new decimal(new int[] {
             3000,
             0,
@@ -348,7 +357,7 @@
             // monthbox
             // 
             this.monthbox.Location = new System.Drawing.Point(379, 206);
-            this.monthbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.monthbox.Margin = new System.Windows.Forms.Padding(2);
             this.monthbox.Maximum = new decimal(new int[] {
             12,
             0,
@@ -372,7 +381,7 @@
             // daybox
             // 
             this.daybox.Location = new System.Drawing.Point(334, 206);
-            this.daybox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.daybox.Margin = new System.Windows.Forms.Padding(2);
             this.daybox.Maximum = new decimal(new int[] {
             31,
             0,
@@ -393,18 +402,28 @@
             0});
             this.daybox.ValueChanged += new System.EventHandler(this.daybox_ValueChanged);
             // 
-            // peopletxtbox
+            // peoplenumeric
             // 
-            this.peopletxtbox.Location = new System.Drawing.Point(334, 181);
-            this.peopletxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.peopletxtbox.Maximum = new decimal(new int[] {
+            this.peoplenumeric.Location = new System.Drawing.Point(334, 181);
+            this.peoplenumeric.Margin = new System.Windows.Forms.Padding(2);
+            this.peoplenumeric.Maximum = new decimal(new int[] {
             8,
             0,
             0,
             0});
-            this.peopletxtbox.Name = "peopletxtbox";
-            this.peopletxtbox.Size = new System.Drawing.Size(140, 20);
-            this.peopletxtbox.TabIndex = 15;
+            this.peoplenumeric.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.peoplenumeric.Name = "peoplenumeric";
+            this.peoplenumeric.Size = new System.Drawing.Size(140, 20);
+            this.peoplenumeric.TabIndex = 15;
+            this.peoplenumeric.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
             // 
             // label10
             // 
@@ -496,7 +515,7 @@
             this.Reserveren3.Controls.Add(this.label6);
             this.Reserveren3.Location = new System.Drawing.Point(4, 22);
             this.Reserveren3.Name = "Reserveren3";
-            this.Reserveren3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Reserveren3.Padding = new System.Windows.Forms.Padding(3);
             this.Reserveren3.Size = new System.Drawing.Size(874, 482);
             this.Reserveren3.TabIndex = 2;
             this.Reserveren3.Text = "Reserveren 3";
@@ -550,7 +569,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.yearbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.monthbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.daybox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.peopletxtbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peoplenumeric)).EndInit();
             this.Reserveren3.ResumeLayout(false);
             this.Reserveren3.PerformLayout();
             this.ResumeLayout(false);
@@ -592,10 +611,11 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.NumericUpDown peopletxtbox;
+        private System.Windows.Forms.NumericUpDown peoplenumeric;
         private System.Windows.Forms.NumericUpDown yearbox;
         private System.Windows.Forms.NumericUpDown monthbox;
         private System.Windows.Forms.NumericUpDown daybox;
+        private System.Windows.Forms.Button button8;
     }
 }
 
