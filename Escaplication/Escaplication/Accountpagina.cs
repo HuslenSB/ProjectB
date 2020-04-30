@@ -25,14 +25,21 @@ namespace Escaplication
         {
             if (!File.Exists(Application.StartupPath + "\\Gebruikers\\" + usernameregtxtbox.Text + ".txt"))
             {
-                StreamWriter ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + usernameregtxtbox.Text + ".txt");
-                ab.WriteLine(usernameregtxtbox.Text);
-                ab.WriteLine(passwordregtxtbox.Text);
-                ab.Close();
-                MessageBox.Show("Registreren voltooid");
-                StreamWriter af = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Accounts.txt");
-                af.WriteLine(usernameregtxtbox.Text+"txt");
-                af.Close();
+                if (passwordregtxtbox.Text == passwordrepeattxtbox.Text)
+                {
+                    StreamWriter ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + usernameregtxtbox.Text + ".txt");
+                    ab.WriteLine(usernameregtxtbox.Text);
+                    ab.WriteLine(passwordregtxtbox.Text);
+                    ab.Close();
+                    MessageBox.Show("Registreren voltooid");
+                    StreamWriter af = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Accounts.txt");
+                    af.WriteLine(usernameregtxtbox.Text + "txt");
+                    af.Close();
+                }
+                else
+                {
+                    MessageBox.Show("De wachtwoorden komen niet overeen");
+                }
             }
             else
             {

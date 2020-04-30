@@ -50,6 +50,8 @@
             this.usernamelogintxtbox = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.button9 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -60,15 +62,15 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.passwordrepeattxtbox = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -87,6 +89,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Turquoise;
+            this.tabPage1.Controls.Add(this.label11);
+            this.tabPage1.Controls.Add(this.passwordrepeattxtbox);
             this.tabPage1.Controls.Add(this.button8);
             this.tabPage1.Controls.Add(this.Contactbtn);
             this.tabPage1.Controls.Add(this.button6);
@@ -169,7 +173,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(181, 292);
+            this.label9.Location = new System.Drawing.Point(197, 292);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(68, 13);
             this.label9.TabIndex = 11;
@@ -204,7 +208,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(271, 316);
+            this.button2.Location = new System.Drawing.Point(271, 341);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 7;
@@ -292,6 +296,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(453, 277);
             this.panel1.TabIndex = 0;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(393, 46);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(54, 20);
+            this.numericUpDown1.TabIndex = 1;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(281, 12);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(106, 85);
+            this.button9.TabIndex = 0;
+            this.button9.Text = "Selecteer welke reservering u wilt verwijderen";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button7
             // 
@@ -391,22 +412,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Admin account";
             // 
-            // button9
+            // passwordrepeattxtbox
             // 
-            this.button9.Location = new System.Drawing.Point(281, 12);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(106, 85);
-            this.button9.TabIndex = 0;
-            this.button9.Text = "Selecteer welke reservering u wilt verwijderen";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.passwordrepeattxtbox.Location = new System.Drawing.Point(271, 315);
+            this.passwordrepeattxtbox.Name = "passwordrepeattxtbox";
+            this.passwordrepeattxtbox.Size = new System.Drawing.Size(100, 20);
+            this.passwordrepeattxtbox.TabIndex = 18;
             // 
-            // numericUpDown1
+            // label11
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(393, 46);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(54, 20);
-            this.numericUpDown1.TabIndex = 1;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(153, 318);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(112, 13);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "Wachtwoord herhalen";
             // 
             // Accountpagina
             // 
@@ -422,10 +442,10 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -466,5 +486,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox passwordrepeattxtbox;
     }
 }
