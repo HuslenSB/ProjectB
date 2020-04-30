@@ -30,12 +30,13 @@ namespace Escaplication
             int totalfiles = Directory.GetFiles(pathh).Length;
 
             // Recensie lijst
+
             if (totalfiles > 0)
             {
 
 
                 for (int i = 0, LocPointGB = 333, LocPointTB = 390, LocPointLabel = 359, LocPointSter = 32; i < totalfiles; i++, LocPointGB += 150, LocPointTB += 150, LocPointLabel += 150)
-                {//locpointster 25 ->32
+                {
                     string[] ArrayRecensies = File.ReadAllLines(Convert.ToString(RecensiePath[i]));
 
                     // Groupbox
@@ -78,10 +79,6 @@ namespace Escaplication
                     ster.TabIndex = 6;
                     ster.Text = "Sterren " + ArrayRecensies[3] + "/5";
 
-
-
-
-
                     panel1.Controls.Add(naamkamer);
                     panel1.Controls.Add(commentaar);
                     panel1.Controls.Add(recensiegb);
@@ -101,7 +98,7 @@ namespace Escaplication
             if (File.Exists(path))
             {
                 string[] lines = File.ReadAllLines(path);
-                if (lines[0] == Gebruikersnaamtxt.Text)//&& lines[1] == Wachtwoordtxt.Text)
+                if (lines[0] == Gebruikersnaamtxt.Text)
                 {
                     if (lines[1] == Wachtwoordtxt.Text)
                     {
