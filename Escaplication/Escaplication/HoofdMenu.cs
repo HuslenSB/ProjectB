@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Windows.Forms;
 
 namespace Escaplication
 {
@@ -16,6 +18,18 @@ namespace Escaplication
         public HoofdMenu()
         {
             InitializeComponent();
+            if (!Directory.Exists(Application.StartupPath + "\\Gebruikers\\") && !Directory.Exists(Environment.CurrentDirectory + "/Recensies/"))
+            {
+                Directory.CreateDirectory(Application.StartupPath + "\\Gebruikers\\");
+                Directory.CreateDirectory(Environment.CurrentDirectory + "/Recensies/");
+                File.Create(Application.StartupPath + "\\Gebruikers\\" + "Account.txt");
+                StreamWriter StrWriter = new StreamWriter(Application.StartupPath + "\\Recensies\\" + "Test.txt");
+                StrWriter.WriteLine("Huslen");
+                StrWriter.WriteLine("Sparta");
+                StrWriter.WriteLine("Leuke kamer!");
+                StrWriter.WriteLine("5");
+                StrWriter.Close();
+            }
         }
         //Escape room informatie link
         private void Label1_Click(object sender, EventArgs e)
