@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Recensie));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Wachtwoordtxt = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.sterrentxt = new System.Windows.Forms.TextBox();
             this.Gebruikersnaamtxt = new System.Windows.Forms.TextBox();
             this.Gbnaam = new System.Windows.Forms.Label();
@@ -57,8 +59,8 @@
             this.Reserveren = new System.Windows.Forms.Button();
             this.Homepage = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Wachtwoordtxt = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -69,6 +71,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.Wachtwoordtxt);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.sterrentxt);
@@ -86,6 +90,22 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Schrijf een recensie";
+            // 
+            // Wachtwoordtxt
+            // 
+            this.Wachtwoordtxt.Location = new System.Drawing.Point(144, 44);
+            this.Wachtwoordtxt.Name = "Wachtwoordtxt";
+            this.Wachtwoordtxt.Size = new System.Drawing.Size(217, 20);
+            this.Wachtwoordtxt.TabIndex = 10;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(9, 47);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(68, 13);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Wachtwoord";
             // 
             // sterrentxt
             // 
@@ -357,21 +377,24 @@
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
             // 
-            // Wachtwoordtxt
+            // button1
             // 
-            this.Wachtwoordtxt.Location = new System.Drawing.Point(144, 44);
-            this.Wachtwoordtxt.Name = "Wachtwoordtxt";
-            this.Wachtwoordtxt.Size = new System.Drawing.Size(217, 20);
-            this.Wachtwoordtxt.TabIndex = 10;
+            this.button1.Location = new System.Drawing.Point(202, 154);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Account";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label8
+            // label9
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 47);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 13);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "Wachtwoord";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(9, 159);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(187, 13);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Nog geen account? Registreer je hier:";
             // 
             // Recensie
             // 
@@ -436,6 +459,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox Wachtwoordtxt;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button1;
     }
 }
 

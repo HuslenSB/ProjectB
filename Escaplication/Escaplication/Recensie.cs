@@ -199,6 +199,12 @@ namespace Escaplication
             this.Close();
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var Login = new Accountpagina();
+            this.Hide();
+            Login.ShowDialog();
+            this.Close();
+        }
     }
 }
