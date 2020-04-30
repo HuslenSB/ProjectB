@@ -19,7 +19,7 @@ namespace Escaplication
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Accountpagina());
+            Application.Run(new HoofdMenu());
         }
     }
 }
