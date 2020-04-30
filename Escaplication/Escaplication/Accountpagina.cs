@@ -33,7 +33,7 @@ namespace Escaplication
                     ab.Close();
                     MessageBox.Show("Registreren voltooid");
                     StreamWriter af = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Accounts.txt");
-                    af.WriteLine(usernameregtxtbox.Text + "txt");
+                    af.WriteLine(usernameregtxtbox.Text + ".txt");
                     af.Close();
                 }
                 else
