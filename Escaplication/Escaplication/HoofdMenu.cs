@@ -33,54 +33,68 @@ namespace Escaplication
         //Escape room informatie link
         private void Label1_Click(object sender, EventArgs e)
         {
-            Close();
-            //Code voor openen form Informatie
+            var thema = new Informatie();
+            this.Hide();
+            thema.ShowDialog();
+            this.Close();
         }
 
         private void Informatie_Click(object sender, EventArgs e)
         {
-            Close();
-            //Code voor openen form Informatie
+            var thema = new Informatie();
+            this.Hide();
+            thema.ShowDialog();
+            this.Close();
         }
         //Locatie en contactgegevens link
         private void LocatieContact_Click(object sender, EventArgs e)
         {
-            Close();
-            //Code voor openen form Contact
+            var Contacten = new Contact_Tab();
+            this.Hide();
+            Contacten.ShowDialog();
+            this.Close();
         }
 
         private void Contact_Click(object sender, EventArgs e)
         {
-            Close();
-            //Code voor openen form Contact
+            var Contacten = new Contact_Tab();
+            this.Hide();
+            Contacten.ShowDialog();
+            this.Close();
         }
         //Resereer link
         private void Reserveren_Click(object sender, EventArgs e)
-        { 
-            Close();
-            Reserveren f2 = new Reserveren();
-            f2.ShowDialog();
+        {
+            var Reserveer = new Reserveren();
+            this.Hide();
+            Reserveer.ShowDialog();
+            this.Close();
 
         }
 
         private void Reserveertekst_Click(object sender, EventArgs e)
         {
-            Close();
-            Reserveren f2 = new Reserveren();
-            f2.ShowDialog();
+            var Reserveer = new Reserveren();
+            this.Hide();
+            Reserveer.ShowDialog();
+            this.Close();
         }
 
         //Escape room Recensies
         private void Recensies_Click(object sender, EventArgs e)
         {
-            Close();
-            //Code voor openen form Recensies
+            var Recenties = new Recensie();
+            this.Hide();
+            Recenties.ShowDialog();
+            this.Close();
         }
 
         private void RecensieText_Click(object sender, EventArgs e)
         {
-            Close();
-            //Code voor openen form Recensies
+            var Recenties = new Recensie();
+            this.Hide();
+            Recenties.ShowDialog();
+            this.Close();
         }
 
 

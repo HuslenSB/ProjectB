@@ -129,7 +129,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(277, 29);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Escape Room Infromatie";
+            this.label1.Text = "Escape Room Informatie";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // RecensieText
