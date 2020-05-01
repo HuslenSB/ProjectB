@@ -133,7 +133,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.richTextBox1.BackColor = System.Drawing.Color.White;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(151, 462);
             this.richTextBox1.Name = "richTextBox1";
@@ -144,7 +144,7 @@
             // 
             // richTextBox2
             // 
-            this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.richTextBox2.BackColor = System.Drawing.Color.White;
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox2.Location = new System.Drawing.Point(623, 426);
             this.richTextBox2.Name = "richTextBox2";

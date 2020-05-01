@@ -82,7 +82,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.richTextBox1.BackColor = System.Drawing.Color.White;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(792, 346);
@@ -115,7 +115,7 @@
             // 
             // richTextBox4
             // 
-            this.richTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.richTextBox4.BackColor = System.Drawing.Color.White;
             this.richTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox4.Location = new System.Drawing.Point(58, 346);
@@ -137,7 +137,7 @@
             // 
             // richTextBox6
             // 
-            this.richTextBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.richTextBox6.BackColor = System.Drawing.Color.White;
             this.richTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox6.Location = new System.Drawing.Point(431, 346);
