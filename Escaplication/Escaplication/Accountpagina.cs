@@ -59,7 +59,7 @@ namespace Escaplication
                         this.label6.Text = "Welkom " + usernamelogintxtbox.Text;
                         if (lines.Length != 0)
                         {
-                            for (int i = 2, j = 1, k = 1, LocPointGB = 0, LocPointLabel = 10, LocPointGB2 = 0, LocPointLabel2 = 10; i < lines.Length - 4; i += 5)
+                            for (int i = 2, j = 1, k = 1, LocPointGB = 0, LocPointLabel = 10, LocPointGB2 = 0, LocPointLabel2 = 10; i < lines.Length - 6; i += 7)
                             {
                                 DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
                                 DateTime date2 = new DateTime(Int32.Parse(lines[i + 2]), Int32.Parse(lines[i + 3]), Int32.Parse(lines[i + 4]));
@@ -75,7 +75,7 @@ namespace Escaplication
                                     naamkamer.AutoSize = true;
                                     naamkamer.Location = new Point(5, LocPointLabel);
                                     naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                                    naamkamer.Text = j + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i + 1] + "\nDatum: " + lines[i + 4] + "-" + lines[i + 3] + "-" + lines[i + 2];
+                                    naamkamer.Text = j + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i + 1] + "\nDatum: " + lines[i + 4] + "-" + lines[i + 3] + "-" + lines[i + 2] + "\nTijd: " + lines[i+5] + ":" + lines[i+6];
 
                                     panel1.Controls.Add(naamkamer);
                                     panel1.Controls.Add(recensiegb);
@@ -94,7 +94,7 @@ namespace Escaplication
                                     naamkamer.AutoSize = true;
                                     naamkamer.Location = new Point(5, LocPointLabel2);
                                     naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                                    naamkamer.Text = k + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i + 1] + "\nDatum: " + lines[i + 4] + "-" + lines[i + 3] + "-" + lines[i + 2];
+                                    naamkamer.Text = k + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i + 1] + "\nDatum: " + lines[i + 4] + "-" + lines[i + 3] + "-" + lines[i + 2] + "\nTijd: " + lines[i + 5] + ":" + lines[i + 6];
 
                                     panel3.Controls.Add(naamkamer);
                                     panel3.Controls.Add(recensiegb);
@@ -115,7 +115,7 @@ namespace Escaplication
                             lines3 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + lines2[k]);
                             if (lines3.Length != 0)
                             {
-                                for (int i = 2, j = 1; i < lines3.Length - 4; i += 5, j++)
+                                for (int i = 2, j = 1; i < lines3.Length - 6; i += 7, j++)
                                 {
                                     DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
                                     DateTime date2 = new DateTime(Int32.Parse(lines3[i + 2]), Int32.Parse(lines3[i + 3]), Int32.Parse(lines3[i + 4]));
@@ -217,11 +217,11 @@ namespace Escaplication
             StreamWriter ae = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + usernamelogintxtbox.Text + ".txt");
             decimal k = numericUpDown1.Value;
             int n = (int)k;
-            lines[(n-1) * 5+2] = "";
-            lines[((n - 1) * 5 + 2)+1] = "";
-            lines[((n - 1) * 5 + 2)+2] = "";
-            lines[((n - 1) * 5 + 2) + 3] = "";
-            lines[((n - 1) * 5 + 2) + 4] = "";
+            lines[(n-1) * 7+2] = "";
+            lines[((n - 1) * 7 + 2)+1] = "";
+            lines[((n - 1) * 7 + 2)+2] = "";
+            lines[((n - 1) * 7 + 2) + 3] = "";
+            lines[((n - 1) * 7 + 2) + 4] = "";
             for (int i = 0; i < lines.Length; i++)
             {
                 if (lines[i] != "")

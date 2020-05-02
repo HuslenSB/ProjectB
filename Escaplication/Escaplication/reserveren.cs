@@ -184,6 +184,14 @@ namespace Escaplication
             }
         }
 
+        private void toaccountbtn_Click(object sender, EventArgs e)
+        {
+            var Login = new Accountpagina();
+            this.Hide();
+            Login.ShowDialog();
+            this.Close();
+        }
+
         private void button5_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(0);
@@ -218,6 +226,8 @@ namespace Escaplication
                                 ac.WriteLine(yearbox.Value);
                                 ac.WriteLine(monthbox.Value);
                                 ac.WriteLine(daybox.Value);
+                                ac.WriteLine(hourbox.Value);
+                                ac.WriteLine(minutebox.Value);
                             }
                             tabControl1.SelectTab(2);
                         }
