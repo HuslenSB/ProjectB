@@ -222,6 +222,8 @@ namespace Escaplication
             lines[((n - 1) * 7 + 2)+2] = "";
             lines[((n - 1) * 7 + 2) + 3] = "";
             lines[((n - 1) * 7 + 2) + 4] = "";
+            lines[((n - 1) * 7 + 2) + 5] = "";
+            lines[((n - 1) * 7 + 2) + 6] = "";
             for (int i = 0; i < lines.Length; i++)
             {
                 if (lines[i] != "")
