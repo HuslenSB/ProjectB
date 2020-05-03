@@ -64,10 +64,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label10 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -77,7 +80,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.oudereserveringtab.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.tabControl3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -119,7 +124,7 @@
             this.tabPage1.Controls.Add(this.usernamelogintxtbox);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(875, 482);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Login pagina";
@@ -128,7 +133,7 @@
             // 
             this.Account.BackColor = System.Drawing.Color.Aqua;
             this.Account.Location = new System.Drawing.Point(813, 5);
-            this.Account.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Account.Margin = new System.Windows.Forms.Padding(2);
             this.Account.Name = "Account";
             this.Account.Size = new System.Drawing.Size(56, 19);
             this.Account.TabIndex = 46;
@@ -139,7 +144,7 @@
             // 
             this.Contact.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Contact.Location = new System.Drawing.Point(635, 19);
-            this.Contact.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Contact.Margin = new System.Windows.Forms.Padding(2);
             this.Contact.Name = "Contact";
             this.Contact.Size = new System.Drawing.Size(98, 32);
             this.Contact.TabIndex = 45;
@@ -151,7 +156,7 @@
             // 
             this.Recenties.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Recenties.Location = new System.Drawing.Point(533, 19);
-            this.Recenties.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Recenties.Margin = new System.Windows.Forms.Padding(2);
             this.Recenties.Name = "Recenties";
             this.Recenties.Size = new System.Drawing.Size(98, 32);
             this.Recenties.TabIndex = 44;
@@ -164,7 +169,7 @@
             this.Button8.BackColor = System.Drawing.Color.Transparent;
             this.Button8.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button8.Location = new System.Drawing.Point(422, 19);
-            this.Button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Button8.Margin = new System.Windows.Forms.Padding(2);
             this.Button8.Name = "Button8";
             this.Button8.Size = new System.Drawing.Size(107, 32);
             this.Button8.TabIndex = 43;
@@ -177,7 +182,7 @@
             this.Tarieven.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Tarieven.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tarieven.Location = new System.Drawing.Point(320, 19);
-            this.Tarieven.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Tarieven.Margin = new System.Windows.Forms.Padding(2);
             this.Tarieven.Name = "Tarieven";
             this.Tarieven.Size = new System.Drawing.Size(98, 32);
             this.Tarieven.TabIndex = 40;
@@ -189,7 +194,7 @@
             // 
             this.Thema.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Thema.Location = new System.Drawing.Point(218, 19);
-            this.Thema.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Thema.Margin = new System.Windows.Forms.Padding(2);
             this.Thema.Name = "Thema";
             this.Thema.Size = new System.Drawing.Size(98, 32);
             this.Thema.TabIndex = 39;
@@ -201,7 +206,7 @@
             // 
             this.Homepage.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Homepage.Location = new System.Drawing.Point(106, 19);
-            this.Homepage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Homepage.Margin = new System.Windows.Forms.Padding(2);
             this.Homepage.Name = "Homepage";
             this.Homepage.Size = new System.Drawing.Size(108, 32);
             this.Homepage.TabIndex = 36;
@@ -336,7 +341,7 @@
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(875, 482);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Usertab";
@@ -356,7 +361,7 @@
             this.Reserveringtab.Controls.Add(this.panel1);
             this.Reserveringtab.Location = new System.Drawing.Point(4, 22);
             this.Reserveringtab.Name = "Reserveringtab";
-            this.Reserveringtab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Reserveringtab.Padding = new System.Windows.Forms.Padding(3);
             this.Reserveringtab.Size = new System.Drawing.Size(472, 295);
             this.Reserveringtab.TabIndex = 0;
             this.Reserveringtab.Text = "Reserveringen";
@@ -404,7 +409,7 @@
             this.oudereserveringtab.Controls.Add(this.panel3);
             this.oudereserveringtab.Location = new System.Drawing.Point(4, 22);
             this.oudereserveringtab.Name = "oudereserveringtab";
-            this.oudereserveringtab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.oudereserveringtab.Padding = new System.Windows.Forms.Padding(3);
             this.oudereserveringtab.Size = new System.Drawing.Size(472, 295);
             this.oudereserveringtab.TabIndex = 1;
             this.oudereserveringtab.Text = "Oude reserveringen";
@@ -451,8 +456,8 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tabPage3.Controls.Add(this.tabControl3);
             this.tabPage3.Controls.Add(this.label10);
-            this.tabPage3.Controls.Add(this.groupBox2);
             this.tabPage3.Controls.Add(this.button11);
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
@@ -471,21 +476,12 @@
             this.label10.TabIndex = 11;
             this.label10.Text = "Reserveringen:";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.panel2);
-            this.groupBox2.Location = new System.Drawing.Point(24, 79);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(453, 284);
-            this.groupBox2.TabIndex = 10;
-            this.groupBox2.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.AutoScroll = true;
-            this.panel2.Location = new System.Drawing.Point(0, 10);
+            this.panel2.Location = new System.Drawing.Point(0, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(453, 274);
+            this.panel2.Size = new System.Drawing.Size(446, 274);
             this.panel2.TabIndex = 0;
             // 
             // button11
@@ -508,6 +504,46 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Admin account";
             // 
+            // tabControl3
+            // 
+            this.tabControl3.Controls.Add(this.tabPage4);
+            this.tabControl3.Controls.Add(this.tabPage5);
+            this.tabControl3.Location = new System.Drawing.Point(24, 79);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(460, 306);
+            this.tabControl3.TabIndex = 12;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.panel2);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(452, 280);
+            this.tabPage4.TabIndex = 0;
+            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.panel4);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(452, 280);
+            this.tabPage5.TabIndex = 1;
+            this.tabPage5.Text = "tabPage5";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            this.panel4.AutoScroll = true;
+            this.panel4.Location = new System.Drawing.Point(4, 4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(445, 273);
+            this.panel4.TabIndex = 0;
+            // 
             // Accountpagina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -528,7 +564,9 @@
             this.oudereserveringtab.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.tabControl3.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -555,7 +593,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
@@ -575,5 +612,9 @@
         private System.Windows.Forms.TabPage Reserveringtab;
         private System.Windows.Forms.TabPage oudereserveringtab;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TabControl tabControl3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Panel panel4;
     }
 }

@@ -111,23 +111,21 @@ namespace Escaplication
                     {
                         lines2 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Accounts.txt");
                         tabControl1.SelectTab(2);
-                        for (int k = 0, LocPointGB = 0, LocPointLabel = 10; k < lines2.Length; k++)
+                        for (int k = 0, LocPointGB = 0, LocPointLabel = 10, LocPointGB2 = 0, LocPointLabel2 = 10; k < lines2.Length; k++)
                         {
-                            Console.WriteLine(lines2[k]);
                             lines3 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + lines2[k]);
                             if (lines3.Length != 0)
                             {
-                                for (int i = 2, j = 1; i < lines3.Length - 6; i += 7, j++)
+                                for (int i = 2, j = 1, f = 1; i < lines3.Length - 6; i += 7, j++)
                                 {
                                     DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
                                     DateTime date2 = new DateTime(Int32.Parse(lines3[i + 2]), Int32.Parse(lines3[i + 3]), Int32.Parse(lines3[i + 4]));
                                     int datecomparinson = DateTime.Compare(date1, date2);
-                                    Console.WriteLine(date2);
                                     if (datecomparinson < 0)
                                     {
                                         GroupBox recensiegb = new GroupBox();
                                         recensiegb.Name = "";
-                                        recensiegb.Size = new Size(220, 100);
+                                        recensiegb.Size = new Size(220, 120);
                                         recensiegb.Location = new Point(0, LocPointGB);
 
                                         Label naamkamer = new Label();
@@ -139,8 +137,28 @@ namespace Escaplication
 
                                         panel2.Controls.Add(naamkamer);
                                         panel2.Controls.Add(recensiegb);
-                                        LocPointGB += 100;
-                                        LocPointLabel += 100;
+                                        LocPointGB += 120;
+                                        LocPointLabel += 120;
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("test");
+                                        GroupBox recensiegb = new GroupBox();
+                                        recensiegb.Name = "";
+                                        recensiegb.Size = new Size(220, 120);
+                                        recensiegb.Location = new Point(0, LocPointGB2);
+
+                                        Label naamkamer = new Label();
+                                        naamkamer.AutoSize = true;
+                                        naamkamer.Location = new Point(5, LocPointLabel2);
+                                        naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
+                                        naamkamer.Text = f + ".\nNaam: " + lines3[0] + ".\nEscaperoom: " + lines3[i] + "\nAantal personen: " + lines3[i + 1] + "\nDatum: " + lines3[i + 4] + "-" + lines3[i + 3] + "-" + lines3[i + 2] + "\nTijd: " + lines3[i + 5] + ":" + lines3[i + 6];
+
+                                        panel4.Controls.Add(naamkamer);
+                                        panel4.Controls.Add(recensiegb);
+                                        LocPointGB2 += 120;
+                                        LocPointLabel2 += 120;
+                                        f++;
                                     }
                                 }
                             }
