@@ -54,7 +54,7 @@ namespace Escaplication
                     // Commentaar
 
                     RichTextBox commentaar = new RichTextBox();
-                    commentaar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+         
                     commentaar.Text = ArrayRecensies[2];
                     commentaar.Location = new Point(91, LocPointTB);
                     commentaar.Size = new Size(270, 52);
@@ -68,7 +68,7 @@ namespace Escaplication
                     naamkamer.Name = "Kamernaam";
                     naamkamer.Text = ArrayRecensies[1];
 
-                    // Sterren
+                    // Sterreng
 
                     Label ster = new Label();
                     ster.AutoSize = true;
