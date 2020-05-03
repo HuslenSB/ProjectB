@@ -50,6 +50,11 @@
             this.Tarieven = new System.Windows.Forms.Button();
             this.Homepage = new System.Windows.Forms.Button();
             this.Reserveren2 = new System.Windows.Forms.TabPage();
+            this.toaccountbtn = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.minutebox = new System.Windows.Forms.NumericUpDown();
+            this.hourbox = new System.Windows.Forms.NumericUpDown();
             this.yearbox = new System.Windows.Forms.NumericUpDown();
             this.monthbox = new System.Windows.Forms.NumericUpDown();
             this.daybox = new System.Windows.Forms.NumericUpDown();
@@ -67,24 +72,19 @@
             this.button6 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
-            this.hourbox = new System.Windows.Forms.NumericUpDown();
-            this.minutebox = new System.Windows.Forms.NumericUpDown();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.toaccountbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.Reserveren1.SuspendLayout();
             this.Reserveren2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.minutebox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hourbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yearbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.monthbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.daybox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peoplenumeric)).BeginInit();
             this.Reserveren3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hourbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minutebox)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -225,7 +225,7 @@
             this.Reserveren1.Controls.Add(this.pictureBox3);
             this.Reserveren1.Location = new System.Drawing.Point(4, 22);
             this.Reserveren1.Name = "Reserveren1";
-            this.Reserveren1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Reserveren1.Padding = new System.Windows.Forms.Padding(3);
             this.Reserveren1.Size = new System.Drawing.Size(874, 482);
             this.Reserveren1.TabIndex = 0;
             this.Reserveren1.Text = "Reserveren 1";
@@ -235,7 +235,7 @@
             this.button8.BackColor = System.Drawing.Color.Aqua;
             this.button8.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Location = new System.Drawing.Point(410, 18);
-            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(107, 32);
             this.button8.TabIndex = 42;
@@ -245,7 +245,7 @@
             // Account
             // 
             this.Account.Location = new System.Drawing.Point(812, 7);
-            this.Account.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Account.Margin = new System.Windows.Forms.Padding(2);
             this.Account.Name = "Account";
             this.Account.Size = new System.Drawing.Size(56, 19);
             this.Account.TabIndex = 41;
@@ -257,7 +257,7 @@
             // 
             this.Recenties.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Recenties.Location = new System.Drawing.Point(521, 18);
-            this.Recenties.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Recenties.Margin = new System.Windows.Forms.Padding(2);
             this.Recenties.Name = "Recenties";
             this.Recenties.Size = new System.Drawing.Size(98, 32);
             this.Recenties.TabIndex = 40;
@@ -269,7 +269,7 @@
             // 
             this.Contact.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Contact.Location = new System.Drawing.Point(623, 18);
-            this.Contact.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Contact.Margin = new System.Windows.Forms.Padding(2);
             this.Contact.Name = "Contact";
             this.Contact.Size = new System.Drawing.Size(98, 32);
             this.Contact.TabIndex = 39;
@@ -281,7 +281,7 @@
             // 
             this.Thema.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Thema.Location = new System.Drawing.Point(209, 18);
-            this.Thema.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Thema.Margin = new System.Windows.Forms.Padding(2);
             this.Thema.Name = "Thema";
             this.Thema.Size = new System.Drawing.Size(98, 32);
             this.Thema.TabIndex = 38;
@@ -294,7 +294,7 @@
             this.Tarieven.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Tarieven.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tarieven.Location = new System.Drawing.Point(309, 18);
-            this.Tarieven.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Tarieven.Margin = new System.Windows.Forms.Padding(2);
             this.Tarieven.Name = "Tarieven";
             this.Tarieven.Size = new System.Drawing.Size(98, 32);
             this.Tarieven.TabIndex = 37;
@@ -306,7 +306,7 @@
             // 
             this.Homepage.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Homepage.Location = new System.Drawing.Point(97, 18);
-            this.Homepage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Homepage.Margin = new System.Windows.Forms.Padding(2);
             this.Homepage.Name = "Homepage";
             this.Homepage.Size = new System.Drawing.Size(108, 32);
             this.Homepage.TabIndex = 35;
@@ -337,15 +337,67 @@
             this.Reserveren2.Controls.Add(this.label1);
             this.Reserveren2.Location = new System.Drawing.Point(4, 22);
             this.Reserveren2.Name = "Reserveren2";
-            this.Reserveren2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Reserveren2.Padding = new System.Windows.Forms.Padding(3);
             this.Reserveren2.Size = new System.Drawing.Size(874, 482);
             this.Reserveren2.TabIndex = 1;
             this.Reserveren2.Text = "Reserveren 2";
             // 
+            // toaccountbtn
+            // 
+            this.toaccountbtn.Location = new System.Drawing.Point(334, 275);
+            this.toaccountbtn.Name = "toaccountbtn";
+            this.toaccountbtn.Size = new System.Drawing.Size(75, 23);
+            this.toaccountbtn.TabIndex = 23;
+            this.toaccountbtn.Text = "Account";
+            this.toaccountbtn.UseVisualStyleBackColor = true;
+            this.toaccountbtn.Click += new System.EventHandler(this.toaccountbtn_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(129, 280);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(176, 13);
+            this.label12.TabIndex = 22;
+            this.label12.Text = "Nog geen account? Registreer hier!";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(281, 234);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(24, 13);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Tijd";
+            // 
+            // minutebox
+            // 
+            this.minutebox.Location = new System.Drawing.Point(381, 231);
+            this.minutebox.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.minutebox.Name = "minutebox";
+            this.minutebox.Size = new System.Drawing.Size(43, 20);
+            this.minutebox.TabIndex = 20;
+            // 
+            // hourbox
+            // 
+            this.hourbox.Location = new System.Drawing.Point(334, 232);
+            this.hourbox.Maximum = new decimal(new int[] {
+            23,
+            0,
+            0,
+            0});
+            this.hourbox.Name = "hourbox";
+            this.hourbox.Size = new System.Drawing.Size(40, 20);
+            this.hourbox.TabIndex = 19;
+            // 
             // yearbox
             // 
             this.yearbox.Location = new System.Drawing.Point(428, 206);
-            this.yearbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.yearbox.Margin = new System.Windows.Forms.Padding(2);
             this.yearbox.Maximum = new decimal(new int[] {
             3000,
             0,
@@ -369,7 +421,7 @@
             // monthbox
             // 
             this.monthbox.Location = new System.Drawing.Point(379, 206);
-            this.monthbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.monthbox.Margin = new System.Windows.Forms.Padding(2);
             this.monthbox.Maximum = new decimal(new int[] {
             12,
             0,
@@ -393,7 +445,7 @@
             // daybox
             // 
             this.daybox.Location = new System.Drawing.Point(334, 206);
-            this.daybox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.daybox.Margin = new System.Windows.Forms.Padding(2);
             this.daybox.Maximum = new decimal(new int[] {
             31,
             0,
@@ -417,7 +469,7 @@
             // peoplenumeric
             // 
             this.peoplenumeric.Location = new System.Drawing.Point(334, 181);
-            this.peoplenumeric.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.peoplenumeric.Margin = new System.Windows.Forms.Padding(2);
             this.peoplenumeric.Maximum = new decimal(new int[] {
             8,
             0,
@@ -527,7 +579,7 @@
             this.Reserveren3.Controls.Add(this.label6);
             this.Reserveren3.Location = new System.Drawing.Point(4, 22);
             this.Reserveren3.Name = "Reserveren3";
-            this.Reserveren3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Reserveren3.Padding = new System.Windows.Forms.Padding(3);
             this.Reserveren3.Size = new System.Drawing.Size(874, 482);
             this.Reserveren3.TabIndex = 2;
             this.Reserveren3.Text = "Reserveren 3";
@@ -562,58 +614,6 @@
             this.button7.Text = "Reserveren";
             this.button7.UseVisualStyleBackColor = false;
             // 
-            // hourbox
-            // 
-            this.hourbox.Location = new System.Drawing.Point(334, 232);
-            this.hourbox.Maximum = new decimal(new int[] {
-            23,
-            0,
-            0,
-            0});
-            this.hourbox.Name = "hourbox";
-            this.hourbox.Size = new System.Drawing.Size(40, 20);
-            this.hourbox.TabIndex = 19;
-            // 
-            // minutebox
-            // 
-            this.minutebox.Location = new System.Drawing.Point(381, 231);
-            this.minutebox.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
-            this.minutebox.Name = "minutebox";
-            this.minutebox.Size = new System.Drawing.Size(43, 20);
-            this.minutebox.TabIndex = 20;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(281, 234);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(24, 13);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "Tijd";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(129, 280);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(176, 13);
-            this.label12.TabIndex = 22;
-            this.label12.Text = "Nog geen account? Registreer hier!";
-            // 
-            // toaccountbtn
-            // 
-            this.toaccountbtn.Location = new System.Drawing.Point(334, 275);
-            this.toaccountbtn.Name = "toaccountbtn";
-            this.toaccountbtn.Size = new System.Drawing.Size(75, 23);
-            this.toaccountbtn.TabIndex = 23;
-            this.toaccountbtn.Text = "Account";
-            this.toaccountbtn.UseVisualStyleBackColor = true;
-            this.toaccountbtn.Click += new System.EventHandler(this.toaccountbtn_Click);
-            // 
             // Reserveren
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -630,14 +630,14 @@
             this.Reserveren1.PerformLayout();
             this.Reserveren2.ResumeLayout(false);
             this.Reserveren2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.minutebox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hourbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yearbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.monthbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.daybox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.peoplenumeric)).EndInit();
             this.Reserveren3.ResumeLayout(false);
             this.Reserveren3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hourbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minutebox)).EndInit();
             this.ResumeLayout(false);
 
         }

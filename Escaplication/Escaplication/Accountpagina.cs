@@ -71,7 +71,7 @@ namespace Escaplication
                                 {
                                     GroupBox recensiegb = new GroupBox();
                                     recensiegb.Name = "";
-                                    recensiegb.Size = new Size(220, 90);
+                                    recensiegb.Size = new Size(220, 110);
                                     recensiegb.Location = new Point(0, LocPointGB);
 
                                     Label naamkamer = new Label();
@@ -82,8 +82,8 @@ namespace Escaplication
 
                                     panel1.Controls.Add(naamkamer);
                                     panel1.Controls.Add(recensiegb);
-                                    LocPointGB += 100;
-                                    LocPointLabel += 100;
+                                    LocPointGB += 110;
+                                    LocPointLabel += 110;
                                     j++;
                                     countres++;
                                 }
@@ -91,7 +91,7 @@ namespace Escaplication
                                 {
                                     GroupBox recensiegb = new GroupBox();
                                     recensiegb.Name = "";
-                                    recensiegb.Size = new Size(220, 90);
+                                    recensiegb.Size = new Size(220, 110);
                                     recensiegb.Location = new Point(0, LocPointGB2);
 
                                     Label naamkamer = new Label();
@@ -102,8 +102,8 @@ namespace Escaplication
 
                                     panel3.Controls.Add(naamkamer);
                                     panel3.Controls.Add(recensiegb);
-                                    LocPointGB2 += 100;
-                                    LocPointLabel2 += 100;
+                                    LocPointGB2 += 110;
+                                    LocPointLabel2 += 110;
                                     k++;
                                 }
                             }
