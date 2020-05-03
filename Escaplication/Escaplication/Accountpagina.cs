@@ -155,13 +155,12 @@ namespace Escaplication
                                         naamkamer.AutoSize = true;
                                         naamkamer.Location = new Point(5, LocPointLabel2);
                                         naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                                        naamkamer.Text = f + ".\nNaam: " + lines3[0] + ".\nEscaperoom: " + lines3[i] + "\nAantal personen: " + lines3[i + 1] + "\nDatum: " + lines3[i + 4] + "-" + lines3[i + 3] + "-" + lines3[i + 2] + "\nTijd: " + lines3[i + 5] + ":" + lines3[i + 6];
+                                        naamkamer.Text = j + ".\nNaam: " + lines3[0] + ".\nEscaperoom: " + lines3[i] + "\nAantal personen: " + lines3[i + 1] + "\nDatum: " + lines3[i + 4] + "-" + lines3[i + 3] + "-" + lines3[i + 2] + "\nTijd: " + lines3[i + 5] + ":" + lines3[i + 6];
 
                                         panel4.Controls.Add(naamkamer);
                                         panel4.Controls.Add(recensiegb);
                                         LocPointGB2 += 120;
                                         LocPointLabel2 += 120;
-                                        f++;
                                     }
                                 }
                             }
