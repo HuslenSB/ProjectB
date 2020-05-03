@@ -66,7 +66,7 @@ namespace Escaplication
                                 DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
                                 DateTime date2 = new DateTime(Int32.Parse(lines[i + 2]), Int32.Parse(lines[i + 3]), Int32.Parse(lines[i + 4]));
                                 int datecomparinson = DateTime.Compare(date1, date2);
-                                if (datecomparinson < 0)
+                                if (datecomparinson <= 0)
                                 {
                                     GroupBox recensiegb = new GroupBox();
                                     recensiegb.Name = "";
