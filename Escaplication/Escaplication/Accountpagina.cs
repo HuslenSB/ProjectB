@@ -32,9 +32,11 @@ namespace Escaplication
                     ab.WriteLine(passwordregtxtbox.Text);
                     ab.Close();
                     MessageBox.Show("Registreren voltooid");
-                    StreamWriter af = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Accounts.txt");
-                    af.WriteLine(usernameregtxtbox.Text + ".txt");
-                    af.Close();
+                    using (StreamWriter af = File.AppendText(Application.StartupPath + "\\Gebruikers\\" + "Accounts" + ".txt"))
+                    {
+                        af.WriteLine(usernameregtxtbox.Text + ".txt");
+                        af.Close();
+                    }
                 }
                 else
                 {
@@ -132,7 +134,8 @@ namespace Escaplication
                                         naamkamer.AutoSize = true;
                                         naamkamer.Location = new Point(5, LocPointLabel);
                                         naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                                        naamkamer.Text = j + ".\nNaam: " + lines3[0] + "\nEscaperoom: " + lines3[i] + "\nAantal personen: " + lines3[i + 1] + "\nDatum: " + lines3[i + 2] + lines3[i + 3] + lines3[i + 4];
+                                        naamkamer.Text = j + ".\nNaam: " + lines3[0] + "\nEscaperoom: " + lines3[i] + "\nAantal personen: " + lines3[i + 1] + "\nDatum: " + lines3[i + 4] + "-" + lines3[i + 3] + "-" + lines3[i + 2] + "\nTijd: " + lines3[i+5] + ":" + lines3[i+6];
+                                         
 
                                         panel2.Controls.Add(naamkamer);
                                         panel2.Controls.Add(recensiegb);
