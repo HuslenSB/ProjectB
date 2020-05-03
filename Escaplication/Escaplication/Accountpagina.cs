@@ -239,27 +239,31 @@ namespace Escaplication
 
         private void button9_Click(object sender, EventArgs e)
         {
+            int n = 0;
             StreamWriter ae = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + usernamelogintxtbox.Text + ".txt");
-            decimal k = deletenumericbox.Value;
-            int n = (int)k;
-            for (int i = 2; i < lines.Length - 6; i += 7)
+            for (int i = 2, g=0; i < lines.Length - 6; i += 7)
             {
+                n = i;
                 DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
-                DateTime date2 = new DateTime(Int32.Parse(lines[((n - 1) * 7 + 2) + 2]), Int32.Parse(lines[((n - 1) * 7 + 2) + 3]), Int32.Parse(lines[((n - 1) * 7 + 2) + 4]));
+                DateTime date2 = new DateTime(Int32.Parse(lines[i+2]), Int32.Parse(lines[i + 3]), Int32.Parse(lines[i + 4]));
                 int datecomparinson = DateTime.Compare(date1, date2);
-                if (datecomparinson < 0)
+                if (datecomparinson <= 0)
                 {
-                    break;
+                    g++;
+                    if (g == (int)deletenumericbox.Value)
+                    {
+                        break;
+                    }
                 }
-                n++;
             }
-            lines[(n-1) * 7+2] = "";
-            lines[((n - 1) * 7 + 2)+1] = "";
-            lines[((n - 1) * 7 + 2)+2] = "";
-            lines[((n - 1) * 7 + 2) + 3] = "";
-            lines[((n - 1) * 7 + 2) + 4] = "";
-            lines[((n - 1) * 7 + 2) + 5] = "";
-            lines[((n - 1) * 7 + 2) + 6] = "";
+            Console.WriteLine(n);
+            lines[n] = "";
+            lines[n+1] = "";
+            lines[n+2] = "";
+            lines[n + 3] = "";
+            lines[n + 4] = "";
+            lines[n + 5] = "";
+            lines[n + 6] = "";
             for (int i = 0; i < lines.Length; i++)
             {
                 if (lines[i] != "")
@@ -268,6 +272,7 @@ namespace Escaplication
                 }
             }
             ae.Close();
+            MessageBox.Show("Reservering verwijderd");
             this.Controls.Clear();
             this.InitializeComponent();
         }
