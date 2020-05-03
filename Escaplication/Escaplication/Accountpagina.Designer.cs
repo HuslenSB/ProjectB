@@ -55,7 +55,7 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.Reserveringtab = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.deletenumericbox = new System.Windows.Forms.NumericUpDown();
             this.button9 = new System.Windows.Forms.Button();
             this.oudereserveringtab = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -77,7 +77,7 @@
             this.tabControl2.SuspendLayout();
             this.Reserveringtab.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deletenumericbox)).BeginInit();
             this.oudereserveringtab.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabControl3.SuspendLayout();
@@ -370,25 +370,25 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.numericUpDown1);
+            this.panel1.Controls.Add(this.deletenumericbox);
             this.panel1.Controls.Add(this.button9);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(472, 299);
             this.panel1.TabIndex = 0;
             // 
-            // numericUpDown1
+            // deletenumericbox
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(393, 46);
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.deletenumericbox.Location = new System.Drawing.Point(393, 46);
+            this.deletenumericbox.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(54, 20);
-            this.numericUpDown1.TabIndex = 1;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.deletenumericbox.Name = "deletenumericbox";
+            this.deletenumericbox.Size = new System.Drawing.Size(54, 20);
+            this.deletenumericbox.TabIndex = 1;
+            this.deletenumericbox.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -560,7 +560,7 @@
             this.tabControl2.ResumeLayout(false);
             this.Reserveringtab.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deletenumericbox)).EndInit();
             this.oudereserveringtab.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
@@ -597,7 +597,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown deletenumericbox;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox passwordrepeattxtbox;

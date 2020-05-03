@@ -15,6 +15,7 @@ namespace Escaplication
     public partial class Accountpagina : Form
     {
         public string[] lines, lines2, lines3;
+        public int countres;
         public Accountpagina()
         {
             InitializeComponent();
@@ -84,6 +85,7 @@ namespace Escaplication
                                     LocPointGB += 100;
                                     LocPointLabel += 100;
                                     j++;
+                                    countres++;
                                 }
                                 else
                                 {
@@ -106,6 +108,7 @@ namespace Escaplication
                                 }
                             }
                         }
+                        deletenumericbox.Maximum = countres;
                     }
                     else if ("Admin" == usernamelogintxtbox.Text && "Admin" == passlogintxtbox.Text)
                     {
@@ -231,13 +234,25 @@ namespace Escaplication
         private void button7_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(0);
+            countres = 0;
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             StreamWriter ae = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + usernamelogintxtbox.Text + ".txt");
-            decimal k = numericUpDown1.Value;
+            decimal k = deletenumericbox.Value;
             int n = (int)k;
+            for (int i = 2; i < lines.Length - 6; i += 7)
+            {
+                DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+                DateTime date2 = new DateTime(Int32.Parse(lines[((n - 1) * 7 + 2) + 2]), Int32.Parse(lines[((n - 1) * 7 + 2) + 3]), Int32.Parse(lines[((n - 1) * 7 + 2) + 4]));
+                int datecomparinson = DateTime.Compare(date1, date2);
+                if (datecomparinson < 0)
+                {
+                    break;
+                }
+                n++;
+            }
             lines[(n-1) * 7+2] = "";
             lines[((n - 1) * 7 + 2)+1] = "";
             lines[((n - 1) * 7 + 2)+2] = "";
