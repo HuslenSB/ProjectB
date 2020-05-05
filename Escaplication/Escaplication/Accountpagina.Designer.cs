@@ -30,13 +30,8 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.checkBox = new System.Windows.Forms.CheckBox();
             this.Account = new System.Windows.Forms.Button();
-            this.Contact = new System.Windows.Forms.Button();
-            this.Recenties = new System.Windows.Forms.Button();
-            this.Button8 = new System.Windows.Forms.Button();
-            this.Tarieven = new System.Windows.Forms.Button();
-            this.Thema = new System.Windows.Forms.Button();
-            this.Homepage = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.passwordrepeattxtbox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -71,7 +66,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkBox = new System.Windows.Forms.CheckBox();
+            this.Contact = new System.Windows.Forms.Button();
+            this.Recenties = new System.Windows.Forms.Button();
+            this.Button8 = new System.Windows.Forms.Button();
+            this.Tarieven = new System.Windows.Forms.Button();
+            this.Thema = new System.Windows.Forms.Button();
+            this.Homepage = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -125,6 +125,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Login pagina";
             // 
+            // checkBox
+            // 
+            this.checkBox.AutoSize = true;
+            this.checkBox.Location = new System.Drawing.Point(271, 158);
+            this.checkBox.Name = "checkBox";
+            this.checkBox.Size = new System.Drawing.Size(112, 17);
+            this.checkBox.TabIndex = 47;
+            this.checkBox.Text = "Login onthouden?";
+            this.checkBox.UseVisualStyleBackColor = true;
+            // 
             // Account
             // 
             this.Account.BackColor = System.Drawing.Color.Aqua;
@@ -135,80 +145,6 @@
             this.Account.TabIndex = 46;
             this.Account.Text = "Account";
             this.Account.UseVisualStyleBackColor = false;
-            // 
-            // Contact
-            // 
-            this.Contact.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Contact.Location = new System.Drawing.Point(617, 11);
-            this.Contact.Margin = new System.Windows.Forms.Padding(2);
-            this.Contact.Name = "Contact";
-            this.Contact.Size = new System.Drawing.Size(98, 32);
-            this.Contact.TabIndex = 45;
-            this.Contact.Text = "Contact";
-            this.Contact.UseVisualStyleBackColor = true;
-            this.Contact.Click += new System.EventHandler(this.Contact_Click);
-            // 
-            // Recenties
-            // 
-            this.Recenties.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Recenties.Location = new System.Drawing.Point(515, 11);
-            this.Recenties.Margin = new System.Windows.Forms.Padding(2);
-            this.Recenties.Name = "Recenties";
-            this.Recenties.Size = new System.Drawing.Size(98, 32);
-            this.Recenties.TabIndex = 44;
-            this.Recenties.Text = "Recenties";
-            this.Recenties.UseVisualStyleBackColor = true;
-            this.Recenties.Click += new System.EventHandler(this.Recenties_Click);
-            // 
-            // Button8
-            // 
-            this.Button8.BackColor = System.Drawing.Color.Transparent;
-            this.Button8.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button8.Location = new System.Drawing.Point(404, 11);
-            this.Button8.Margin = new System.Windows.Forms.Padding(2);
-            this.Button8.Name = "Button8";
-            this.Button8.Size = new System.Drawing.Size(107, 32);
-            this.Button8.TabIndex = 43;
-            this.Button8.Text = "Reserveren";
-            this.Button8.UseVisualStyleBackColor = false;
-            this.Button8.Click += new System.EventHandler(this.Button8_Click);
-            // 
-            // Tarieven
-            // 
-            this.Tarieven.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Tarieven.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tarieven.Location = new System.Drawing.Point(302, 11);
-            this.Tarieven.Margin = new System.Windows.Forms.Padding(2);
-            this.Tarieven.Name = "Tarieven";
-            this.Tarieven.Size = new System.Drawing.Size(98, 32);
-            this.Tarieven.TabIndex = 40;
-            this.Tarieven.Text = "Tarieven";
-            this.Tarieven.UseVisualStyleBackColor = false;
-            this.Tarieven.Click += new System.EventHandler(this.Tarieven_Click);
-            // 
-            // Thema
-            // 
-            this.Thema.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Thema.Location = new System.Drawing.Point(200, 11);
-            this.Thema.Margin = new System.Windows.Forms.Padding(2);
-            this.Thema.Name = "Thema";
-            this.Thema.Size = new System.Drawing.Size(98, 32);
-            this.Thema.TabIndex = 39;
-            this.Thema.Text = "Thema";
-            this.Thema.UseVisualStyleBackColor = true;
-            this.Thema.Click += new System.EventHandler(this.Thema_Click);
-            // 
-            // Homepage
-            // 
-            this.Homepage.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Homepage.Location = new System.Drawing.Point(88, 11);
-            this.Homepage.Margin = new System.Windows.Forms.Padding(2);
-            this.Homepage.Name = "Homepage";
-            this.Homepage.Size = new System.Drawing.Size(108, 32);
-            this.Homepage.TabIndex = 36;
-            this.Homepage.Text = "Homepage";
-            this.Homepage.UseVisualStyleBackColor = true;
-            this.Homepage.Click += new System.EventHandler(this.Homepage_Click);
             // 
             // label11
             // 
@@ -225,6 +161,7 @@
             this.passwordrepeattxtbox.Name = "passwordrepeattxtbox";
             this.passwordrepeattxtbox.Size = new System.Drawing.Size(100, 20);
             this.passwordrepeattxtbox.TabIndex = 18;
+            this.passwordrepeattxtbox.TextChanged += new System.EventHandler(this.passwordrepeattxtbox_TextChanged);
             // 
             // label9
             // 
@@ -306,6 +243,7 @@
             this.passwordregtxtbox.Name = "passwordregtxtbox";
             this.passwordregtxtbox.Size = new System.Drawing.Size(100, 20);
             this.passwordregtxtbox.TabIndex = 3;
+            this.passwordregtxtbox.TextChanged += new System.EventHandler(this.passwordregtxtbox_TextChanged);
             // 
             // usernameregtxtbox
             // 
@@ -320,6 +258,7 @@
             this.passlogintxtbox.Name = "passlogintxtbox";
             this.passlogintxtbox.Size = new System.Drawing.Size(100, 20);
             this.passlogintxtbox.TabIndex = 1;
+            this.passlogintxtbox.TextChanged += new System.EventHandler(this.passlogintxtbox_TextChanged);
             // 
             // usernamelogintxtbox
             // 
@@ -406,7 +345,7 @@
             this.oudereserveringtab.Location = new System.Drawing.Point(4, 22);
             this.oudereserveringtab.Name = "oudereserveringtab";
             this.oudereserveringtab.Padding = new System.Windows.Forms.Padding(3);
-            this.oudereserveringtab.Size = new System.Drawing.Size(472, 295);
+            this.oudereserveringtab.Size = new System.Drawing.Size(472, 270);
             this.oudereserveringtab.TabIndex = 1;
             this.oudereserveringtab.Text = "Oude reserveringen";
             this.oudereserveringtab.UseVisualStyleBackColor = true;
@@ -458,7 +397,7 @@
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(875, 454);
+            this.tabPage3.Size = new System.Drawing.Size(875, 436);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Admin tab";
             // 
@@ -540,15 +479,79 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Admin account";
             // 
-            // checkBox
+            // Contact
             // 
-            this.checkBox.AutoSize = true;
-            this.checkBox.Location = new System.Drawing.Point(271, 158);
-            this.checkBox.Name = "checkBox";
-            this.checkBox.Size = new System.Drawing.Size(112, 17);
-            this.checkBox.TabIndex = 47;
-            this.checkBox.Text = "Login onthouden?";
-            this.checkBox.UseVisualStyleBackColor = true;
+            this.Contact.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Contact.Location = new System.Drawing.Point(617, 11);
+            this.Contact.Margin = new System.Windows.Forms.Padding(2);
+            this.Contact.Name = "Contact";
+            this.Contact.Size = new System.Drawing.Size(98, 32);
+            this.Contact.TabIndex = 45;
+            this.Contact.Text = "Contact";
+            this.Contact.UseVisualStyleBackColor = true;
+            this.Contact.Click += new System.EventHandler(this.Contact_Click);
+            // 
+            // Recenties
+            // 
+            this.Recenties.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Recenties.Location = new System.Drawing.Point(515, 11);
+            this.Recenties.Margin = new System.Windows.Forms.Padding(2);
+            this.Recenties.Name = "Recenties";
+            this.Recenties.Size = new System.Drawing.Size(98, 32);
+            this.Recenties.TabIndex = 44;
+            this.Recenties.Text = "Recenties";
+            this.Recenties.UseVisualStyleBackColor = true;
+            this.Recenties.Click += new System.EventHandler(this.Recenties_Click);
+            // 
+            // Button8
+            // 
+            this.Button8.BackColor = System.Drawing.Color.Transparent;
+            this.Button8.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button8.Location = new System.Drawing.Point(404, 11);
+            this.Button8.Margin = new System.Windows.Forms.Padding(2);
+            this.Button8.Name = "Button8";
+            this.Button8.Size = new System.Drawing.Size(107, 32);
+            this.Button8.TabIndex = 43;
+            this.Button8.Text = "Reserveren";
+            this.Button8.UseVisualStyleBackColor = false;
+            this.Button8.Click += new System.EventHandler(this.Button8_Click);
+            // 
+            // Tarieven
+            // 
+            this.Tarieven.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Tarieven.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tarieven.Location = new System.Drawing.Point(302, 11);
+            this.Tarieven.Margin = new System.Windows.Forms.Padding(2);
+            this.Tarieven.Name = "Tarieven";
+            this.Tarieven.Size = new System.Drawing.Size(98, 32);
+            this.Tarieven.TabIndex = 40;
+            this.Tarieven.Text = "Tarieven";
+            this.Tarieven.UseVisualStyleBackColor = false;
+            this.Tarieven.Click += new System.EventHandler(this.Tarieven_Click);
+            // 
+            // Thema
+            // 
+            this.Thema.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Thema.Location = new System.Drawing.Point(200, 11);
+            this.Thema.Margin = new System.Windows.Forms.Padding(2);
+            this.Thema.Name = "Thema";
+            this.Thema.Size = new System.Drawing.Size(98, 32);
+            this.Thema.TabIndex = 39;
+            this.Thema.Text = "Thema";
+            this.Thema.UseVisualStyleBackColor = true;
+            this.Thema.Click += new System.EventHandler(this.Thema_Click);
+            // 
+            // Homepage
+            // 
+            this.Homepage.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Homepage.Location = new System.Drawing.Point(88, 11);
+            this.Homepage.Margin = new System.Windows.Forms.Padding(2);
+            this.Homepage.Name = "Homepage";
+            this.Homepage.Size = new System.Drawing.Size(108, 32);
+            this.Homepage.TabIndex = 36;
+            this.Homepage.Text = "Homepage";
+            this.Homepage.UseVisualStyleBackColor = true;
+            this.Homepage.Click += new System.EventHandler(this.Homepage_Click);
             // 
             // Accountpagina
             // 

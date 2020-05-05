@@ -244,6 +244,21 @@ namespace Escaplication
             this.Close();
         }
 
+        private void passlogintxtbox_TextChanged(object sender, EventArgs e)
+        {
+            passlogintxtbox.PasswordChar = '●';
+        }
+
+        private void passwordregtxtbox_TextChanged(object sender, EventArgs e)
+        {
+            passwordregtxtbox.PasswordChar = '●';
+        }
+
+        private void passwordrepeattxtbox_TextChanged(object sender, EventArgs e)
+        {
+            passwordrepeattxtbox.PasswordChar = '●';
+        }
+
         private void Contact_Click(object sender, EventArgs e)
         {
             var Login = new Contact_Tab();

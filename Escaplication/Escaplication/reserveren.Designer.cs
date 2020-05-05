@@ -545,6 +545,7 @@
             this.passwordtxtbox.Name = "passwordtxtbox";
             this.passwordtxtbox.Size = new System.Drawing.Size(187, 20);
             this.passwordtxtbox.TabIndex = 2;
+            this.passwordtxtbox.TextChanged += new System.EventHandler(this.passwordtxtbox_TextChanged);
             // 
             // button4
             // 

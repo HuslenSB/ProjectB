@@ -227,5 +227,10 @@ namespace Escaplication
             Login.ShowDialog();
             this.Close();
         }
+
+        private void Wachtwoordtxt_TextChanged(object sender, EventArgs e)
+        {
+            Wachtwoordtxt.PasswordChar = '●';
+        }
     }
 }

@@ -201,6 +201,11 @@ namespace Escaplication
             this.Close();
         }
 
+        private void passwordtxtbox_TextChanged(object sender, EventArgs e)
+        {
+            passwordtxtbox.PasswordChar = '●';
+        }
+
         private void button5_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(0);

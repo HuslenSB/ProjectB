@@ -116,6 +116,7 @@
             this.Wachtwoordtxt.Name = "Wachtwoordtxt";
             this.Wachtwoordtxt.Size = new System.Drawing.Size(217, 20);
             this.Wachtwoordtxt.TabIndex = 10;
+            this.Wachtwoordtxt.TextChanged += new System.EventHandler(this.Wachtwoordtxt_TextChanged);
             // 
             // label8
             // 
@@ -303,7 +304,7 @@
             // Account
             // 
             this.Account.Location = new System.Drawing.Point(818, 9);
-            this.Account.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Account.Margin = new System.Windows.Forms.Padding(2);
             this.Account.Name = "Account";
             this.Account.Size = new System.Drawing.Size(56, 19);
             this.Account.TabIndex = 41;
@@ -316,7 +317,7 @@
             this.Recenties.BackColor = System.Drawing.Color.Aqua;
             this.Recenties.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Recenties.Location = new System.Drawing.Point(562, 20);
-            this.Recenties.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Recenties.Margin = new System.Windows.Forms.Padding(2);
             this.Recenties.Name = "Recenties";
             this.Recenties.Size = new System.Drawing.Size(98, 32);
             this.Recenties.TabIndex = 40;
@@ -327,7 +328,7 @@
             // 
             this.Contact.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Contact.Location = new System.Drawing.Point(675, 20);
-            this.Contact.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Contact.Margin = new System.Windows.Forms.Padding(2);
             this.Contact.Name = "Contact";
             this.Contact.Size = new System.Drawing.Size(98, 32);
             this.Contact.TabIndex = 39;
@@ -339,7 +340,7 @@
             // 
             this.Thema.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Thema.Location = new System.Drawing.Point(225, 20);
-            this.Thema.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Thema.Margin = new System.Windows.Forms.Padding(2);
             this.Thema.Name = "Thema";
             this.Thema.Size = new System.Drawing.Size(98, 32);
             this.Thema.TabIndex = 38;
@@ -352,7 +353,7 @@
             this.Tarieven.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Tarieven.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tarieven.Location = new System.Drawing.Point(338, 20);
-            this.Tarieven.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Tarieven.Margin = new System.Windows.Forms.Padding(2);
             this.Tarieven.Name = "Tarieven";
             this.Tarieven.Size = new System.Drawing.Size(98, 32);
             this.Tarieven.TabIndex = 37;
@@ -364,7 +365,7 @@
             // 
             this.Reserveren.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Reserveren.Location = new System.Drawing.Point(450, 20);
-            this.Reserveren.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Reserveren.Margin = new System.Windows.Forms.Padding(2);
             this.Reserveren.Name = "Reserveren";
             this.Reserveren.Size = new System.Drawing.Size(98, 32);
             this.Reserveren.TabIndex = 36;
@@ -376,7 +377,7 @@
             // 
             this.Homepage.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Homepage.Location = new System.Drawing.Point(112, 20);
-            this.Homepage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Homepage.Margin = new System.Windows.Forms.Padding(2);
             this.Homepage.Name = "Homepage";
             this.Homepage.Size = new System.Drawing.Size(98, 32);
             this.Homepage.TabIndex = 35;
