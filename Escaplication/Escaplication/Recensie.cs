@@ -14,11 +14,20 @@ namespace Escaplication
 {
     public partial class Recensie : Form
     {
-    
-    public Recensie()
+
+        public string[] checkpassword;
+
+        public Recensie()
         {
             InitializeComponent();
-
+            checkpassword = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+            if (Convert.ToBoolean(checkpassword[0]) == true)
+            {
+                Gbnaam.Dispose();
+                label8.Dispose();
+                Gebruikersnaamtxt.Dispose();
+                Wachtwoordtxt.Dispose();
+            }
         }
 
 
@@ -54,7 +63,7 @@ namespace Escaplication
                     // Commentaar
 
                     RichTextBox commentaar = new RichTextBox();
-         
+
                     commentaar.Text = ArrayRecensies[2];
                     commentaar.Location = new Point(91, LocPointTB);
                     commentaar.Size = new Size(270, 52);
@@ -88,24 +97,36 @@ namespace Escaplication
 
         }
 
-     
+
 
         private void Recensiebtn_Click(object sender, EventArgs e)
         {
-            string path = Application.StartupPath + "\\Gebruikers\\" + Gebruikersnaamtxt.Text + ".txt";
+            if (Convert.ToBoolean(checkpassword[0]) == false)
+            {
+                this.recensie(Gebruikersnaamtxt.Text, Wachtwoordtxt.Text);
+            }
+            else
+            {
+                this.recensie(checkpassword[1], checkpassword[2]);
+            }
+        }
+
+        public void recensie(string Gebruikersnaamtext, string Wachtwoordtext)
+        {
+            string path = Application.StartupPath + "\\Gebruikers\\" + Gebruikersnaamtext + ".txt";
             int ster = Int32.Parse(sterrentxt.Text);
 
             if (File.Exists(path))
             {
                 string[] lines = File.ReadAllLines(path);
-                if (lines[0] == Gebruikersnaamtxt.Text)
+                if (lines[0] == Gebruikersnaamtext)
                 {
-                    if (lines[1] == Wachtwoordtxt.Text)
+                    if (lines[1] == Wachtwoordtext)
                     {
                         if (ster >= 0 && ster <= 5)
                         {
-                            StreamWriter StrWriter = new StreamWriter(Application.StartupPath + "\\Recensies\\" + Gebruikersnaamtxt.Text + ".txt");
-                            StrWriter.WriteLine(Gebruikersnaamtxt.Text);
+                            StreamWriter StrWriter = new StreamWriter(Application.StartupPath + "\\Recensies\\" + Gebruikersnaamtext + ".txt");
+                            StrWriter.WriteLine(Gebruikersnaamtext);
                             StrWriter.WriteLine(kamertxt.Text);
                             StrWriter.WriteLine(commentaartxt.Text);
                             StrWriter.WriteLine(sterrentxt.Text);
@@ -117,7 +138,7 @@ namespace Escaplication
                             MessageBox.Show("Typ een getal tussen 0-5 bij sterren");
                         }
                     }
-                    else 
+                    else
                     {
                         MessageBox.Show("Wachtwoord onjuist");
                     }
@@ -129,13 +150,13 @@ namespace Escaplication
             {
                 MessageBox.Show("Gebruikersnaam onjuist");
             }
-
-
-
-
-
-
         }
+    
+
+
+
+
+        
 
         private void Homepage_Click(object sender, EventArgs e)
         {
