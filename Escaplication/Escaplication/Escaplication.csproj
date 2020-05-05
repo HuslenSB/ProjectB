@@ -52,7 +52,6 @@
     <Compile Include="Accountpagina.designer.cs">
       <DependentUpon>Accountpagina.cs</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="Contact_Tab.cs">
       <SubType>Form</SubType>
     </Compile>
