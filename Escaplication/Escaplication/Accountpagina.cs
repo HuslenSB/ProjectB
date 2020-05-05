@@ -14,12 +14,17 @@ namespace Escaplication
 {
     public partial class Accountpagina : Form
     {
-        public string[] lines, lines2, lines3;
+        public string[] lines, lines2, lines3, checkpassword;
         public int countres;
         public Accountpagina()
         {
             InitializeComponent();
             tabControl1.Appearance = TabAppearance.FlatButtons; tabControl1.ItemSize = new Size(0, 1); tabControl1.SizeMode = TabSizeMode.Fixed;
+            checkpassword = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+            if (Convert.ToBoolean(checkpassword[0]) == true)
+            {
+                this.login(checkpassword[1], checkpassword[2]);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -51,15 +56,32 @@ namespace Escaplication
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            string path = Application.StartupPath + "\\Gebruikers\\" + usernamelogintxtbox.Text + ".txt";
+            this.login(usernamelogintxtbox.Text, passlogintxtbox.Text);
+        }
+
+        public void login(string usernamelogintxt, string passlogintxt) { 
+            string path = Application.StartupPath + "\\Gebruikers\\" + usernamelogintxt + ".txt";
             if (File.Exists(path))
             {
                 lines = File.ReadAllLines(path);
                 {
-                    if (lines[0] == usernamelogintxtbox.Text && lines[1] == passlogintxtbox.Text && usernamelogintxtbox.Text != "Admin")
+                    if (lines[0] == usernamelogintxt && lines[1] == passlogintxt && usernamelogintxt != "Admin")
                     {
+                        StreamWriter ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+                        if (checkBox.Checked)
+                        {
+                            ab.WriteLine("true");
+                        }
+                        else
+                        {
+                            ab.WriteLine("false");
+                        }
+                        ab.WriteLine(usernamelogintxt);
+                        ab.WriteLine(passlogintxt);
+                        ab.Close();
                         tabControl1.SelectTab(1);
-                        this.label6.Text = "Welkom " + usernamelogintxtbox.Text;
+                        checkpassword = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+                        this.label6.Text = "Welkom " + usernamelogintxt;
                         if (lines.Length != 0)
                         {
                             for (int i = 2, j = 1, k = 1, LocPointGB = 0, LocPointLabel = 10, LocPointGB2 = 0, LocPointLabel2 = 10; i < lines.Length - 6; i += 7)
@@ -110,7 +132,7 @@ namespace Escaplication
                         }
                         deletenumericbox.Maximum = countres;
                     }
-                    else if ("Admin" == usernamelogintxtbox.Text && "Admin" == passlogintxtbox.Text)
+                    else if ("Admin" == usernamelogintxt && "Admin" == passlogintxt)
                     {
                         lines2 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Accounts.txt");
                         tabControl1.SelectTab(2);
@@ -119,7 +141,7 @@ namespace Escaplication
                             lines3 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + lines2[k]);
                             if (lines3.Length != 0)
                             {
-                                for (int i = 2, j = 1, f = 1; i < lines3.Length - 6; i += 7, j++)
+                                for (int i = 2, j = 1; i < lines3.Length - 6; i += 7, j++)
                                 {
                                     DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
                                     DateTime date2 = new DateTime(Int32.Parse(lines3[i + 2]), Int32.Parse(lines3[i + 3]), Int32.Parse(lines3[i + 4]));
@@ -234,12 +256,16 @@ namespace Escaplication
         {
             tabControl1.SelectTab(0);
             countres = 0;
+            StreamWriter ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+            ab.WriteLine("false");
+            ab.Close();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             int n = 0;
-            StreamWriter ae = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + usernamelogintxtbox.Text + ".txt");
+            StreamWriter ae = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + checkpassword[1] + ".txt");
+            Console.WriteLine(checkpassword[1]);
             for (int i = 2, g=0; i < lines.Length - 6; i += 7)
             {
                 n = i;
@@ -255,7 +281,6 @@ namespace Escaplication
                     }
                 }
             }
-            Console.WriteLine(n);
             lines[n] = "";
             lines[n+1] = "";
             lines[n+2] = "";

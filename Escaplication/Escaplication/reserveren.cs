@@ -15,11 +15,20 @@ namespace Escaplication
     public partial class Reserveren : Form
     {
         public string usernametxt, passwordtxt, peopletxt, chosenroom;
-        public string[] lines;
+        public string[] lines,checkpassword;
         public Reserveren()
         {
             InitializeComponent();
             tabControl1.Appearance = TabAppearance.FlatButtons; tabControl1.ItemSize = new Size(0, 1); tabControl1.SizeMode = TabSizeMode.Fixed;
+            checkpassword = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+            if (Convert.ToBoolean(checkpassword[0]) == true)
+            {
+                label7.Dispose();
+                label8.Dispose();
+                usernametxtbox.Dispose();
+                passwordtxtbox.Dispose();
+            }
+
         }
 
 
@@ -204,8 +213,17 @@ namespace Escaplication
 
         private void button4_Click(object sender, EventArgs e)
         {
-            usernametxt = usernametxtbox.Text;
-            passwordtxt = passwordtxtbox.Text;
+            if (Convert.ToBoolean(checkpassword[0]) == false)
+            {
+                this.reserveren(usernametxtbox.Text, passwordtxtbox.Text);
+            }
+            else
+            {
+                this.reserveren(checkpassword[1], checkpassword[2]);
+            }
+        }
+
+        public void reserveren(string usernametxt, string passwordtxt) { 
             peopletxt = peoplenumeric.Text;
             string path = Application.StartupPath + "\\Gebruikers\\" + usernametxt + ".txt";
 

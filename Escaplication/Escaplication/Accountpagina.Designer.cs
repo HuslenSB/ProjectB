@@ -71,6 +71,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.checkBox = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -91,23 +92,18 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tabControl1.Location = new System.Drawing.Point(0, 2);
+            this.tabControl1.Location = new System.Drawing.Point(0, 48);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(883, 508);
+            this.tabControl1.Size = new System.Drawing.Size(883, 462);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.TabStop = false;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tabPage1.Controls.Add(this.checkBox);
             this.tabPage1.Controls.Add(this.Account);
-            this.tabPage1.Controls.Add(this.Contact);
-            this.tabPage1.Controls.Add(this.Recenties);
-            this.tabPage1.Controls.Add(this.Button8);
-            this.tabPage1.Controls.Add(this.Tarieven);
-            this.tabPage1.Controls.Add(this.Thema);
-            this.tabPage1.Controls.Add(this.Homepage);
             this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.passwordrepeattxtbox);
             this.tabPage1.Controls.Add(this.label9);
@@ -125,7 +121,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(875, 482);
+            this.tabPage1.Size = new System.Drawing.Size(875, 436);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Login pagina";
             // 
@@ -143,7 +139,7 @@
             // Contact
             // 
             this.Contact.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Contact.Location = new System.Drawing.Point(635, 19);
+            this.Contact.Location = new System.Drawing.Point(617, 11);
             this.Contact.Margin = new System.Windows.Forms.Padding(2);
             this.Contact.Name = "Contact";
             this.Contact.Size = new System.Drawing.Size(98, 32);
@@ -155,7 +151,7 @@
             // Recenties
             // 
             this.Recenties.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Recenties.Location = new System.Drawing.Point(533, 19);
+            this.Recenties.Location = new System.Drawing.Point(515, 11);
             this.Recenties.Margin = new System.Windows.Forms.Padding(2);
             this.Recenties.Name = "Recenties";
             this.Recenties.Size = new System.Drawing.Size(98, 32);
@@ -168,7 +164,7 @@
             // 
             this.Button8.BackColor = System.Drawing.Color.Transparent;
             this.Button8.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button8.Location = new System.Drawing.Point(422, 19);
+            this.Button8.Location = new System.Drawing.Point(404, 11);
             this.Button8.Margin = new System.Windows.Forms.Padding(2);
             this.Button8.Name = "Button8";
             this.Button8.Size = new System.Drawing.Size(107, 32);
@@ -181,7 +177,7 @@
             // 
             this.Tarieven.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Tarieven.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tarieven.Location = new System.Drawing.Point(320, 19);
+            this.Tarieven.Location = new System.Drawing.Point(302, 11);
             this.Tarieven.Margin = new System.Windows.Forms.Padding(2);
             this.Tarieven.Name = "Tarieven";
             this.Tarieven.Size = new System.Drawing.Size(98, 32);
@@ -193,7 +189,7 @@
             // Thema
             // 
             this.Thema.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Thema.Location = new System.Drawing.Point(218, 19);
+            this.Thema.Location = new System.Drawing.Point(200, 11);
             this.Thema.Margin = new System.Windows.Forms.Padding(2);
             this.Thema.Name = "Thema";
             this.Thema.Size = new System.Drawing.Size(98, 32);
@@ -205,7 +201,7 @@
             // Homepage
             // 
             this.Homepage.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Homepage.Location = new System.Drawing.Point(106, 19);
+            this.Homepage.Location = new System.Drawing.Point(88, 11);
             this.Homepage.Margin = new System.Windows.Forms.Padding(2);
             this.Homepage.Name = "Homepage";
             this.Homepage.Size = new System.Drawing.Size(108, 32);
@@ -278,7 +274,7 @@
             // 
             // Loginbtn
             // 
-            this.Loginbtn.Location = new System.Drawing.Point(271, 159);
+            this.Loginbtn.Location = new System.Drawing.Point(271, 181);
             this.Loginbtn.Name = "Loginbtn";
             this.Loginbtn.Size = new System.Drawing.Size(75, 23);
             this.Loginbtn.TabIndex = 6;
@@ -342,7 +338,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(875, 482);
+            this.tabPage2.Size = new System.Drawing.Size(875, 436);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Usertab";
             // 
@@ -353,7 +349,7 @@
             this.tabControl2.Location = new System.Drawing.Point(38, 119);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(480, 321);
+            this.tabControl2.Size = new System.Drawing.Size(480, 296);
             this.tabControl2.TabIndex = 7;
             // 
             // Reserveringtab
@@ -362,7 +358,7 @@
             this.Reserveringtab.Location = new System.Drawing.Point(4, 22);
             this.Reserveringtab.Name = "Reserveringtab";
             this.Reserveringtab.Padding = new System.Windows.Forms.Padding(3);
-            this.Reserveringtab.Size = new System.Drawing.Size(472, 295);
+            this.Reserveringtab.Size = new System.Drawing.Size(472, 270);
             this.Reserveringtab.TabIndex = 0;
             this.Reserveringtab.Text = "Reserveringen";
             this.Reserveringtab.UseVisualStyleBackColor = true;
@@ -372,9 +368,9 @@
             this.panel1.AutoScroll = true;
             this.panel1.Controls.Add(this.deletenumericbox);
             this.panel1.Controls.Add(this.button9);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(472, 299);
+            this.panel1.Size = new System.Drawing.Size(472, 273);
             this.panel1.TabIndex = 0;
             // 
             // deletenumericbox
@@ -462,7 +458,7 @@
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(875, 482);
+            this.tabPage3.Size = new System.Drawing.Size(875, 454);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Admin tab";
             // 
@@ -544,12 +540,29 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Admin account";
             // 
+            // checkBox
+            // 
+            this.checkBox.AutoSize = true;
+            this.checkBox.Location = new System.Drawing.Point(271, 158);
+            this.checkBox.Name = "checkBox";
+            this.checkBox.Size = new System.Drawing.Size(112, 17);
+            this.checkBox.TabIndex = 47;
+            this.checkBox.Text = "Login onthouden?";
+            this.checkBox.UseVisualStyleBackColor = true;
+            // 
             // Accountpagina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(884, 511);
             this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.Contact);
+            this.Controls.Add(this.Homepage);
+            this.Controls.Add(this.Recenties);
+            this.Controls.Add(this.Thema);
+            this.Controls.Add(this.Button8);
+            this.Controls.Add(this.Tarieven);
             this.Name = "Accountpagina";
             this.Text = "Accountpagina";
             this.tabControl1.ResumeLayout(false);
@@ -616,5 +629,6 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.CheckBox checkBox;
     }
 }
