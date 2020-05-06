@@ -25,6 +25,7 @@ namespace Escaplication
             {
                 Gbnaam.Dispose();
                 label8.Dispose();
+                checkBox.Dispose();
                 Gebruikersnaamtxt.Dispose();
                 Wachtwoordtxt.Dispose();
             }
@@ -123,6 +124,21 @@ namespace Escaplication
                 {
                     if (lines[1] == Wachtwoordtext)
                     {
+                        if (Convert.ToBoolean(checkpassword[0]) == false)
+                        {
+                            StreamWriter ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+                            if (checkBox.Checked)
+                            {
+                                ab.WriteLine("true");
+                            }
+                            else
+                            {
+                                ab.WriteLine("false");
+                            }
+                            ab.WriteLine(Gebruikersnaamtext);
+                            ab.WriteLine(Wachtwoordtext);
+                            ab.Close();
+                        }
                         if (ster >= 0 && ster <= 5)
                         {
                             StreamWriter StrWriter = new StreamWriter(Application.StartupPath + "\\Recensies\\" + Gebruikersnaamtext + ".txt");

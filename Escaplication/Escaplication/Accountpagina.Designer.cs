@@ -130,9 +130,9 @@
             this.checkBox.AutoSize = true;
             this.checkBox.Location = new System.Drawing.Point(271, 158);
             this.checkBox.Name = "checkBox";
-            this.checkBox.Size = new System.Drawing.Size(112, 17);
+            this.checkBox.Size = new System.Drawing.Size(100, 17);
             this.checkBox.TabIndex = 47;
-            this.checkBox.Text = "Login onthouden?";
+            this.checkBox.Text = "Ingelogd blijven";
             this.checkBox.UseVisualStyleBackColor = true;
             // 
             // Account

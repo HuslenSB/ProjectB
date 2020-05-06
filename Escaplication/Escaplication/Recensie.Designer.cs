@@ -61,6 +61,7 @@
             this.Reserveren = new System.Windows.Forms.Button();
             this.Homepage = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.checkBox = new System.Windows.Forms.CheckBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -71,6 +72,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.checkBox);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.Wachtwoordtxt);
@@ -395,6 +397,16 @@
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
             // 
+            // checkBox
+            // 
+            this.checkBox.AutoSize = true;
+            this.checkBox.Location = new System.Drawing.Point(13, 186);
+            this.checkBox.Name = "checkBox";
+            this.checkBox.Size = new System.Drawing.Size(100, 17);
+            this.checkBox.TabIndex = 13;
+            this.checkBox.Text = "Ingelogd blijven";
+            this.checkBox.UseVisualStyleBackColor = true;
+            // 
             // Recensie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -460,6 +472,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox checkBox;
     }
 }
 

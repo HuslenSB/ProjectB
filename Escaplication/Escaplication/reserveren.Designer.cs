@@ -72,6 +72,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
+            this.checkBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -317,6 +318,7 @@
             // Reserveren2
             // 
             this.Reserveren2.BackColor = System.Drawing.Color.Turquoise;
+            this.Reserveren2.Controls.Add(this.checkBox);
             this.Reserveren2.Controls.Add(this.toaccountbtn);
             this.Reserveren2.Controls.Add(this.label12);
             this.Reserveren2.Controls.Add(this.label11);
@@ -344,7 +346,7 @@
             // 
             // toaccountbtn
             // 
-            this.toaccountbtn.Location = new System.Drawing.Point(334, 275);
+            this.toaccountbtn.Location = new System.Drawing.Point(334, 289);
             this.toaccountbtn.Name = "toaccountbtn";
             this.toaccountbtn.Size = new System.Drawing.Size(75, 23);
             this.toaccountbtn.TabIndex = 23;
@@ -355,7 +357,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(129, 280);
+            this.label12.Location = new System.Drawing.Point(129, 294);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(176, 13);
             this.label12.TabIndex = 22;
@@ -615,6 +617,16 @@
             this.button7.Text = "Reserveren";
             this.button7.UseVisualStyleBackColor = false;
             // 
+            // checkBox
+            // 
+            this.checkBox.AutoSize = true;
+            this.checkBox.Location = new System.Drawing.Point(334, 266);
+            this.checkBox.Name = "checkBox";
+            this.checkBox.Size = new System.Drawing.Size(100, 17);
+            this.checkBox.TabIndex = 24;
+            this.checkBox.Text = "Ingelogd blijven";
+            this.checkBox.UseVisualStyleBackColor = true;
+            // 
             // Reserveren
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -688,6 +700,7 @@
         private System.Windows.Forms.NumericUpDown hourbox;
         private System.Windows.Forms.Button toaccountbtn;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.CheckBox checkBox;
     }
 }
 

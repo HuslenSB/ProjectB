@@ -67,18 +67,21 @@ namespace Escaplication
                 {
                     if (lines[0] == usernamelogintxt && lines[1] == passlogintxt && usernamelogintxt != "Admin")
                     {
-                        StreamWriter ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
-                        if (checkBox.Checked)
+                        if (Convert.ToBoolean(checkpassword[0]) == false)
                         {
-                            ab.WriteLine("true");
+                            StreamWriter ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+                            if (checkBox.Checked)
+                            {
+                                ab.WriteLine("true");
+                            }
+                            else
+                            {
+                                ab.WriteLine("false");
+                            }
+                            ab.WriteLine(usernamelogintxt);
+                            ab.WriteLine(passlogintxt);
+                            ab.Close();
                         }
-                        else
-                        {
-                            ab.WriteLine("false");
-                        }
-                        ab.WriteLine(usernamelogintxt);
-                        ab.WriteLine(passlogintxt);
-                        ab.Close();
                         tabControl1.SelectTab(1);
                         checkpassword = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
                         this.label6.Text = "Welkom " + usernamelogintxt;
@@ -278,43 +281,48 @@ namespace Escaplication
 
         private void button9_Click(object sender, EventArgs e)
         {
-            int n = 0;
-            StreamWriter ae = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + checkpassword[1] + ".txt");
-            Console.WriteLine(checkpassword[1]);
-            for (int i = 2, g=0; i < lines.Length - 6; i += 7)
+            if (MessageBox.Show("Wil je deze reservering echt verwijderen?", "Verwijderen", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) { 
+                if (countres != 0)
             {
-                n = i;
-                DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
-                DateTime date2 = new DateTime(Int32.Parse(lines[i+2]), Int32.Parse(lines[i + 3]), Int32.Parse(lines[i + 4]));
-                int datecomparinson = DateTime.Compare(date1, date2);
-                if (datecomparinson <= 0)
+                int n = 0;
+                StreamWriter ae = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + checkpassword[1] + ".txt");
+                Console.WriteLine(checkpassword[1]);
+                for (int i = 2, g = 0; i < lines.Length - 6; i += 7)
                 {
-                    g++;
-                    if (g == (int)deletenumericbox.Value)
+                    n = i;
+                    DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+                    DateTime date2 = new DateTime(Int32.Parse(lines[i + 2]), Int32.Parse(lines[i + 3]), Int32.Parse(lines[i + 4]));
+                    int datecomparinson = DateTime.Compare(date1, date2);
+                    if (datecomparinson <= 0)
                     {
-                        break;
+                        g++;
+                        if (g == (int)deletenumericbox.Value)
+                        {
+                            break;
+                        }
                     }
                 }
-            }
-            lines[n] = "";
-            lines[n+1] = "";
-            lines[n+2] = "";
-            lines[n + 3] = "";
-            lines[n + 4] = "";
-            lines[n + 5] = "";
-            lines[n + 6] = "";
-            for (int i = 0; i < lines.Length; i++)
-            {
-                if (lines[i] != "")
+                lines[n] = "";
+                lines[n + 1] = "";
+                lines[n + 2] = "";
+                lines[n + 3] = "";
+                lines[n + 4] = "";
+                lines[n + 5] = "";
+                lines[n + 6] = "";
+                for (int i = 0; i < lines.Length; i++)
                 {
-                    ae.WriteLine(lines[i]);
+                    if (lines[i] != "")
+                    {
+                        ae.WriteLine(lines[i]);
+                    }
+                }
+                ae.Close();
+                    var Login = new Accountpagina();
+                    this.Hide();
+                    Login.ShowDialog();
+                    this.Close();
                 }
             }
-            ae.Close();
-            MessageBox.Show("Reservering verwijderd");
-            this.Controls.Clear();
-            this.InitializeComponent();
-            tabControl1.Appearance = TabAppearance.FlatButtons; tabControl1.ItemSize = new Size(0, 1); tabControl1.SizeMode = TabSizeMode.Fixed;
         }
     }
 }

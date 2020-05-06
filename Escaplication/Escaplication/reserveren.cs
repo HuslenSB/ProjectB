@@ -25,12 +25,12 @@ namespace Escaplication
             {
                 label7.Dispose();
                 label8.Dispose();
+                checkBox.Dispose();
                 usernametxtbox.Dispose();
                 passwordtxtbox.Dispose();
             }
 
         }
-
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -58,8 +58,6 @@ namespace Escaplication
 
         }
 
-
-
         private void Homepage_Click(object sender, EventArgs e)
         {
             // Deze code zorgt ervoor dat als de gebruiker op de knop "Homepage" drukt, deze teruggaat naar het begin scherm.
@@ -79,8 +77,6 @@ namespace Escaplication
             this.Close();
         }
 
-
-
         private void Tarieven_Click(object sender, EventArgs e)
         {
             // Deze code zorgt ervoor dat als de gebruiker op de knop "Tarieven" drukt, deze doorgaat naar het Tarieven scherm.
@@ -90,8 +86,6 @@ namespace Escaplication
             tarief.ShowDialog();
             this.Close();
         }
-
-
 
         private void Recenties_Click(object sender, EventArgs e)
         {
@@ -134,46 +128,15 @@ namespace Escaplication
         } 
         private void daybox_ValueChanged(object sender, EventArgs e)
         {
-            if ((int)monthbox.Value == 4 || (int)monthbox.Value == 6 || (int)monthbox.Value == 9 || (int)monthbox.Value == 11)
-            {
-                daybox.Maximum = 30;
-            }
-            else if((int)monthbox.Value == 1 || (int)monthbox.Value == 3 || (int)monthbox.Value == 5 || (int)monthbox.Value == 7 || (int)monthbox.Value == 8 || (int)monthbox.Value == 10 || (int)monthbox.Value == 12)
-            {
-                daybox.Maximum = 31;
-            }
-            if (((int)yearbox.Value % 4 == 0 || (int)yearbox.Value % 100 == 0 && (int)yearbox.Value % 400 == 0) && (int)monthbox.Value == 2)
-            {
-                daybox.Maximum = 29;
-            }
-            else if ((int)monthbox.Value == 2)
-            {
-                daybox.Maximum = 28;
-            }
+            checkdate();
         }
 
         private void monthbox_ValueChanged(object sender, EventArgs e)
         {
-            if ((int)monthbox.Value == 4 || (int)monthbox.Value == 6 || (int)monthbox.Value == 9 || (int)monthbox.Value == 11)
-            {
-                daybox.Maximum = 30;
-            }
-            else if ((int)monthbox.Value == 1 || (int)monthbox.Value == 3 || (int)monthbox.Value == 5 || (int)monthbox.Value == 7 || (int)monthbox.Value == 8 || (int)monthbox.Value == 10 || (int)monthbox.Value == 12)
-            {
-                daybox.Maximum = 31;
-            }
-            if (((int)yearbox.Value % 4 == 0 || (int)yearbox.Value % 100 == 0 && (int)yearbox.Value % 400 == 0) && (int)monthbox.Value == 2)
-            {
-                daybox.Maximum = 29;
-            }
-            else if ((int)monthbox.Value == 2)
-            {
-                daybox.Maximum = 28;
-            }
-
+            checkdate();
         }
 
-        private void yearbox_ValueChanged(object sender, EventArgs e)
+        public void checkdate()
         {
             if ((int)monthbox.Value == 4 || (int)monthbox.Value == 6 || (int)monthbox.Value == 9 || (int)monthbox.Value == 11)
             {
@@ -191,6 +154,11 @@ namespace Escaplication
             {
                 daybox.Maximum = 28;
             }
+        }
+
+        private void yearbox_ValueChanged(object sender, EventArgs e)
+        {
+            checkdate();
         }
 
         private void toaccountbtn_Click(object sender, EventArgs e)
@@ -242,6 +210,21 @@ namespace Escaplication
                     if (datecomparinson > 0) {
                         if (lines[0] == usernametxt && lines[1] == passwordtxt)
                         {
+                            if (Convert.ToBoolean(checkpassword[0]) == false)
+                            {
+                                StreamWriter ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+                                if (checkBox.Checked)
+                                {
+                                    ab.WriteLine("true");
+                                }
+                                else
+                                {
+                                    ab.WriteLine("false");
+                                }
+                                ab.WriteLine(usernametxt);
+                                ab.WriteLine(passwordtxt);
+                                ab.Close();
+                            }
                             using (StreamWriter ac = File.AppendText(Application.StartupPath + "\\Gebruikers\\" + usernametxt + ".txt"))
                             {
                                 ac.WriteLine(chosenroom);
