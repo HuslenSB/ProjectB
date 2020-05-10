@@ -31,7 +31,7 @@ namespace Escaplication
         {
             if (!File.Exists(Application.StartupPath + "\\Gebruikers\\" + usernameregtxtbox.Text + ".txt"))
             {
-                if (passwordregtxtbox.Text == passwordrepeattxtbox.Text)
+                if (passwordregtxtbox.Text == passwordrepeattxtbox.Text && usernameregtxtbox.Text.Length > 0)
                 {
                     StreamWriter ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + usernameregtxtbox.Text + ".txt");
                     ab.WriteLine(usernameregtxtbox.Text);
@@ -46,7 +46,7 @@ namespace Escaplication
                 }
                 else
                 {
-                    MessageBox.Show("De wachtwoorden komen niet overeen");
+                    MessageBox.Show("De wachtwoorden komen niet overeen of je hebt geen gebruikersnaam ingevoerd");
                 }
             }
             else
