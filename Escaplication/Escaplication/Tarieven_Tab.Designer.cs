@@ -140,7 +140,7 @@
             this.Recenties.Name = "Recenties";
             this.Recenties.Size = new System.Drawing.Size(131, 39);
             this.Recenties.TabIndex = 23;
-            this.Recenties.Text = "Recenties";
+            this.Recenties.Text = "Recensies";
             this.Recenties.UseVisualStyleBackColor = true;
             this.Recenties.Click += new System.EventHandler(this.Recenties_Click);
             // 

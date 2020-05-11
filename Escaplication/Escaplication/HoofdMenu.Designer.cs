@@ -196,7 +196,7 @@
             this.Recenties.Name = "Recenties";
             this.Recenties.Size = new System.Drawing.Size(131, 39);
             this.Recenties.TabIndex = 40;
-            this.Recenties.Text = "Recenties";
+            this.Recenties.Text = "Recensies";
             this.Recenties.UseVisualStyleBackColor = true;
             this.Recenties.Click += new System.EventHandler(this.Recenties_Click);
             // 
@@ -205,7 +205,7 @@
             this.Homepage.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Homepage.Location = new System.Drawing.Point(149, 22);
             this.Homepage.Name = "Homepage";
-            this.Homepage.Size = new System.Drawing.Size(131, 39);
+            this.Homepage.Size = new System.Drawing.Size(144, 39);
             this.Homepage.TabIndex = 35;
             this.Homepage.Text = "Homepage";
             this.Homepage.UseVisualStyleBackColor = true;
@@ -226,7 +226,7 @@
             this.Reserveer.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Reserveer.Location = new System.Drawing.Point(599, 22);
             this.Reserveer.Name = "Reserveer";
-            this.Reserveer.Size = new System.Drawing.Size(131, 39);
+            this.Reserveer.Size = new System.Drawing.Size(144, 39);
             this.Reserveer.TabIndex = 36;
             this.Reserveer.Text = "Reserveren";
             this.Reserveer.UseVisualStyleBackColor = true;

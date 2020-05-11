@@ -165,7 +165,7 @@
             this.Recenties.Name = "Recenties";
             this.Recenties.Size = new System.Drawing.Size(131, 39);
             this.Recenties.TabIndex = 40;
-            this.Recenties.Text = "Recenties";
+            this.Recenties.Text = "Recensies";
             this.Recenties.UseVisualStyleBackColor = true;
             this.Recenties.Click += new System.EventHandler(this.Recenties_Click);
             // 
@@ -206,9 +206,9 @@
             // Reserveren
             // 
             this.Reserveren.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Reserveren.Location = new System.Drawing.Point(600, 25);
+            this.Reserveren.Location = new System.Drawing.Point(587, 25);
             this.Reserveren.Name = "Reserveren";
-            this.Reserveren.Size = new System.Drawing.Size(131, 39);
+            this.Reserveren.Size = new System.Drawing.Size(144, 39);
             this.Reserveren.TabIndex = 36;
             this.Reserveren.Text = "Reserveren";
             this.Reserveren.UseVisualStyleBackColor = true;
