@@ -278,7 +278,7 @@
             // 
             // usernamelogintxtbox
             // 
-            this.usernamelogintxtbox.Location = new System.Drawing.Point(361, 130);
+            this.usernamelogintxtbox.Location = new System.Drawing.Point(609, 131);
             this.usernamelogintxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.usernamelogintxtbox.Name = "usernamelogintxtbox";
             this.usernamelogintxtbox.Size = new System.Drawing.Size(132, 22);
