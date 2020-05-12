@@ -54,30 +54,30 @@
             // 
             this.richTextBox4.BackColor = System.Drawing.Color.White;
             this.richTextBox4.Font = new System.Drawing.Font("Yu Gothic", 10.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox4.Location = new System.Drawing.Point(823, 318);
+            this.richTextBox4.Location = new System.Drawing.Point(831, 318);
             this.richTextBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(289, 175);
+            this.richTextBox4.Size = new System.Drawing.Size(276, 190);
             this.richTextBox4.TabIndex = 33;
-            this.richTextBox4.Text = "Intensiviteit: Gevorderd\n    Leeftijd: 16+\n\n    Capaciteit: 3 - 8 personen\n\n    3" +
-    " tot 4 personen = € 105,-\n    elke extra speler = € 12,- extra";
+            this.richTextBox4.Text = "Intensiviteit: Gevorderd\n\n    Leeftijd: 16+\n\n    Capaciteit: 3 - 8 personen\n\n    " +
+    "3 tot 4 personen = € 105,-\n    elke extra speler = € 12,- extra";
             // 
             // richTextBox3
             // 
             this.richTextBox3.BackColor = System.Drawing.Color.White;
             this.richTextBox3.Font = new System.Drawing.Font("Yu Gothic", 10.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox3.Location = new System.Drawing.Point(435, 318);
+            this.richTextBox3.Location = new System.Drawing.Point(460, 318);
             this.richTextBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(289, 175);
+            this.richTextBox3.Size = new System.Drawing.Size(276, 190);
             this.richTextBox3.TabIndex = 32;
-            this.richTextBox3.Text = "Intensiviteit: Gemiddeld\n    Leeftijd: 16+\n\n    Capaciteit: 3 - 8 personen\n\n    3" +
-    " tot 4 personen = € 80,-\n    elke extra speler = € 8,- extra";
+            this.richTextBox3.Text = "Intensiviteit: Gemiddeld\n\n    Leeftijd: 16+\n\n    Capaciteit: 3 - 8 personen\n\n    " +
+    "3 tot 4 personen = € 80,-\n    elke extra speler = € 8,- extra";
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(479, 105);
+            this.textBox3.Location = new System.Drawing.Point(496, 105);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(191, 44);
@@ -88,7 +88,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(837, 105);
+            this.textBox2.Location = new System.Drawing.Point(872, 105);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(191, 44);
@@ -99,7 +99,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(123, 105);
+            this.textBox1.Location = new System.Drawing.Point(129, 105);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(191, 44);
@@ -111,10 +111,10 @@
             // 
             this.richTextBox2.BackColor = System.Drawing.Color.White;
             this.richTextBox2.Font = new System.Drawing.Font("Yu Gothic", 10.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.Location = new System.Drawing.Point(375, 524);
+            this.richTextBox2.Location = new System.Drawing.Point(370, 532);
             this.richTextBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(456, 73);
+            this.richTextBox2.Size = new System.Drawing.Size(456, 54);
             this.richTextBox2.TabIndex = 25;
             this.richTextBox2.TabStop = false;
             this.richTextBox2.Text = "Alle prijzen zijn inclusief btw en een drankje achteraf.\nNa afloop is er gelegenh" +
@@ -124,13 +124,13 @@
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.White;
             this.richTextBox1.Font = new System.Drawing.Font("Yu Gothic", 10.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(67, 318);
+            this.richTextBox1.Location = new System.Drawing.Point(90, 318);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(289, 175);
+            this.richTextBox1.Size = new System.Drawing.Size(276, 190);
             this.richTextBox1.TabIndex = 24;
-            this.richTextBox1.Text = "Intensiviteit: Gemiddeld\n    Leeftijd: 16+\n\n    Capaciteit: 3 - 8 personen\n\n    3" +
-    " tot 4 personen = € 85,-\n    elke extra speler = € 10,- extra";
+            this.richTextBox1.Text = "Intensiviteit: Gemiddeld\n\n    Leeftijd: 16+\n\n    Capaciteit: 3 - 8 personen\n\n    " +
+    "3 tot 4 personen = € 85,-\n    elke extra speler = € 10,- extra";
             // 
             // Recenties
             // 
@@ -208,7 +208,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Escaplication.Properties.Resources.mountain;
-            this.pictureBox3.Location = new System.Drawing.Point(808, 164);
+            this.pictureBox3.Location = new System.Drawing.Point(831, 164);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(276, 123);
@@ -219,7 +219,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Escaplication.Properties.Resources.Running;
-            this.pictureBox2.Location = new System.Drawing.Point(435, 164);
+            this.pictureBox2.Location = new System.Drawing.Point(460, 164);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(276, 123);
@@ -230,7 +230,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Escaplication.Properties.Resources.Sparta;
-            this.pictureBox1.Location = new System.Drawing.Point(79, 164);
+            this.pictureBox1.Location = new System.Drawing.Point(90, 164);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(276, 123);

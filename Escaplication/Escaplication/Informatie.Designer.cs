@@ -53,30 +53,30 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Escaplication.Properties.Resources.Sparta;
-            this.pictureBox1.Location = new System.Drawing.Point(45, 107);
+            this.pictureBox1.Location = new System.Drawing.Point(100, 107);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(285, 161);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Escaplication.Properties.Resources.Running;
-            this.pictureBox2.Location = new System.Drawing.Point(434, 107);
+            this.pictureBox2.Location = new System.Drawing.Point(456, 107);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(273, 161);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Escaplication.Properties.Resources.mountain;
-            this.pictureBox3.Location = new System.Drawing.Point(792, 107);
+            this.pictureBox3.Location = new System.Drawing.Point(812, 107);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(263, 161);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
             // 
@@ -85,9 +85,9 @@
             this.richTextBox1.BackColor = System.Drawing.Color.White;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(792, 346);
+            this.richTextBox1.Location = new System.Drawing.Point(812, 346);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(300, 130);
+            this.richTextBox1.Size = new System.Drawing.Size(285, 167);
             this.richTextBox1.TabIndex = 7;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
@@ -96,7 +96,7 @@
             this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.Location = new System.Drawing.Point(101, 284);
+            this.richTextBox2.Location = new System.Drawing.Point(150, 284);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(180, 29);
             this.richTextBox2.TabIndex = 8;
@@ -107,9 +107,9 @@
             this.richTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox3.Location = new System.Drawing.Point(815, 284);
+            this.richTextBox3.Location = new System.Drawing.Point(812, 284);
             this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(263, 39);
+            this.richTextBox3.Size = new System.Drawing.Size(263, 29);
             this.richTextBox3.TabIndex = 9;
             this.richTextBox3.Text = "The Haunted Escape";
             // 
@@ -118,9 +118,9 @@
             this.richTextBox4.BackColor = System.Drawing.Color.White;
             this.richTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox4.Location = new System.Drawing.Point(58, 346);
+            this.richTextBox4.Location = new System.Drawing.Point(100, 346);
             this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(300, 130);
+            this.richTextBox4.Size = new System.Drawing.Size(285, 167);
             this.richTextBox4.TabIndex = 10;
             this.richTextBox4.Text = resources.GetString("richTextBox4.Text");
             // 
@@ -129,9 +129,9 @@
             this.richTextBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.richTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox5.Location = new System.Drawing.Point(495, 284);
+            this.richTextBox5.Location = new System.Drawing.Point(516, 284);
             this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.Size = new System.Drawing.Size(153, 39);
+            this.richTextBox5.Size = new System.Drawing.Size(153, 29);
             this.richTextBox5.TabIndex = 11;
             this.richTextBox5.Text = "The Last Run";
             // 
@@ -140,13 +140,13 @@
             this.richTextBox6.BackColor = System.Drawing.Color.White;
             this.richTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox6.Location = new System.Drawing.Point(431, 346);
+            this.richTextBox6.Location = new System.Drawing.Point(456, 346);
             this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.Size = new System.Drawing.Size(300, 130);
+            this.richTextBox6.Size = new System.Drawing.Size(285, 167);
             this.richTextBox6.TabIndex = 12;
-            this.richTextBox6.Text = "Lukt het jullie om in dit donkere doolhof de weg naar buiten te vinden? Conditie " +
-    "en logica zullen je goed van pas komen als je de uitgang gaat zoeken. Will this " +
-    "be your last run?";
+            this.richTextBox6.Text = "Lukt het jullie om in dit donkere doolhof de weg naar buiten te vinden?\nConditie " +
+    "en logica zullen je goed van pas komen als je de uitgang gaat zoeken. \nWill this" +
+    " be your last run?";
             // 
             // Account
             // 

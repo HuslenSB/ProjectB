@@ -58,10 +58,10 @@
             // Informatie
             // 
             this.Informatie.Image = ((System.Drawing.Image)(resources.GetObject("Informatie.Image")));
-            this.Informatie.Location = new System.Drawing.Point(320, 0);
+            this.Informatie.Location = new System.Drawing.Point(275, 0);
             this.Informatie.Name = "Informatie";
             this.Informatie.Size = new System.Drawing.Size(283, 181);
-            this.Informatie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Informatie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Informatie.TabIndex = 0;
             this.Informatie.TabStop = false;
             this.Informatie.Click += new System.EventHandler(this.Informatie_Click);
@@ -69,7 +69,7 @@
             // LocatieContact
             // 
             this.LocatieContact.Image = global::Escaplication.Properties.Resources.Locatie_en_Contactgegevens;
-            this.LocatieContact.Location = new System.Drawing.Point(703, 153);
+            this.LocatieContact.Location = new System.Drawing.Point(624, 0);
             this.LocatieContact.Name = "LocatieContact";
             this.LocatieContact.Size = new System.Drawing.Size(283, 181);
             this.LocatieContact.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -80,10 +80,10 @@
             // Reserveren
             // 
             this.Reserveren.Image = ((System.Drawing.Image)(resources.GetObject("Reserveren.Image")));
-            this.Reserveren.Location = new System.Drawing.Point(320, 228);
+            this.Reserveren.Location = new System.Drawing.Point(275, 228);
             this.Reserveren.Name = "Reserveren";
             this.Reserveren.Size = new System.Drawing.Size(283, 181);
-            this.Reserveren.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Reserveren.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Reserveren.TabIndex = 2;
             this.Reserveren.TabStop = false;
             this.Reserveren.Click += new System.EventHandler(this.Reserveren_Click);
@@ -91,10 +91,10 @@
             // Recensies
             // 
             this.Recensies.Image = ((System.Drawing.Image)(resources.GetObject("Recensies.Image")));
-            this.Recensies.Location = new System.Drawing.Point(703, 381);
+            this.Recensies.Location = new System.Drawing.Point(624, 228);
             this.Recensies.Name = "Recensies";
             this.Recensies.Size = new System.Drawing.Size(283, 181);
-            this.Recensies.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Recensies.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Recensies.TabIndex = 3;
             this.Recensies.TabStop = false;
             this.Recensies.Click += new System.EventHandler(this.Recensies_Click);
@@ -102,19 +102,23 @@
             // ImagePanels
             // 
             this.ImagePanels.Controls.Add(this.Reserveertekst);
+            this.ImagePanels.Controls.Add(this.Contact);
+            this.ImagePanels.Controls.Add(this.RecensieText);
             this.ImagePanels.Controls.Add(this.label1);
+            this.ImagePanels.Controls.Add(this.Recensies);
+            this.ImagePanels.Controls.Add(this.LocatieContact);
             this.ImagePanels.Controls.Add(this.Reserveren);
             this.ImagePanels.Controls.Add(this.Informatie);
             this.ImagePanels.Location = new System.Drawing.Point(1, 153);
             this.ImagePanels.Name = "ImagePanels";
-            this.ImagePanels.Size = new System.Drawing.Size(800, 524);
+            this.ImagePanels.Size = new System.Drawing.Size(1180, 524);
             this.ImagePanels.TabIndex = 4;
             // 
             // Reserveertekst
             // 
             this.Reserveertekst.AutoSize = true;
             this.Reserveertekst.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
-            this.Reserveertekst.Location = new System.Drawing.Point(379, 422);
+            this.Reserveertekst.Location = new System.Drawing.Point(355, 422);
             this.Reserveertekst.Name = "Reserveertekst";
             this.Reserveertekst.Size = new System.Drawing.Size(138, 29);
             this.Reserveertekst.TabIndex = 4;
@@ -125,7 +129,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
-            this.label1.Location = new System.Drawing.Point(326, 196);
+            this.label1.Location = new System.Drawing.Point(281, 196);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(277, 29);
             this.label1.TabIndex = 1;
@@ -136,7 +140,7 @@
             // 
             this.RecensieText.AutoSize = true;
             this.RecensieText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
-            this.RecensieText.Location = new System.Drawing.Point(780, 575);
+            this.RecensieText.Location = new System.Drawing.Point(705, 422);
             this.RecensieText.Name = "RecensieText";
             this.RecensieText.Size = new System.Drawing.Size(127, 29);
             this.RecensieText.TabIndex = 3;
@@ -147,7 +151,7 @@
             // 
             this.Contact.AutoSize = true;
             this.Contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
-            this.Contact.Location = new System.Drawing.Point(694, 349);
+            this.Contact.Location = new System.Drawing.Point(609, 196);
             this.Contact.Name = "Contact";
             this.Contact.Size = new System.Drawing.Size(312, 29);
             this.Contact.TabIndex = 2;
@@ -183,7 +187,7 @@
             // 
             this.Hoofdpagina.AutoSize = true;
             this.Hoofdpagina.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.2F);
-            this.Hoofdpagina.Location = new System.Drawing.Point(467, 83);
+            this.Hoofdpagina.Location = new System.Drawing.Point(493, 83);
             this.Hoofdpagina.Name = "Hoofdpagina";
             this.Hoofdpagina.Size = new System.Drawing.Size(211, 39);
             this.Hoofdpagina.TabIndex = 3;
@@ -262,10 +266,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1179, 629);
             this.Controls.Add(this.HoofdMenuPanel);
-            this.Controls.Add(this.RecensieText);
-            this.Controls.Add(this.Recensies);
-            this.Controls.Add(this.Contact);
-            this.Controls.Add(this.LocatieContact);
             this.Controls.Add(this.ImagePanels);
             this.Name = "HoofdMenu";
             this.Text = "Form1";
@@ -278,7 +278,6 @@
             this.HoofdMenuPanel.ResumeLayout(false);
             this.HoofdMenuPanel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
