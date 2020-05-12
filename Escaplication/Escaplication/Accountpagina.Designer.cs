@@ -93,7 +93,7 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabControl1.Location = new System.Drawing.Point(0, 59);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1177, 569);
@@ -120,9 +120,9 @@
             this.tabPage1.Controls.Add(this.passlogintxtbox);
             this.tabPage1.Controls.Add(this.usernamelogintxtbox);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(1169, 540);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Login pagina";
@@ -130,8 +130,8 @@
             // checkBox
             // 
             this.checkBox.AutoSize = true;
-            this.checkBox.Location = new System.Drawing.Point(361, 194);
-            this.checkBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox.Location = new System.Drawing.Point(455, 194);
+            this.checkBox.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox.Name = "checkBox";
             this.checkBox.Size = new System.Drawing.Size(128, 21);
             this.checkBox.TabIndex = 47;
@@ -152,7 +152,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(204, 391);
+            this.label11.Location = new System.Drawing.Point(452, 391);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(146, 17);
@@ -161,8 +161,8 @@
             // 
             // passwordrepeattxtbox
             // 
-            this.passwordrepeattxtbox.Location = new System.Drawing.Point(361, 388);
-            this.passwordrepeattxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passwordrepeattxtbox.Location = new System.Drawing.Point(644, 391);
+            this.passwordrepeattxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.passwordrepeattxtbox.Name = "passwordrepeattxtbox";
             this.passwordrepeattxtbox.Size = new System.Drawing.Size(132, 22);
             this.passwordrepeattxtbox.TabIndex = 18;
@@ -171,7 +171,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(263, 359);
+            this.label9.Location = new System.Drawing.Point(452, 359);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(86, 17);
@@ -181,7 +181,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(241, 327);
+            this.label8.Location = new System.Drawing.Point(452, 327);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(113, 17);
@@ -191,7 +191,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(245, 166);
+            this.label3.Location = new System.Drawing.Point(452, 166);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 17);
@@ -201,7 +201,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(245, 134);
+            this.label2.Location = new System.Drawing.Point(452, 131);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 17);
@@ -210,8 +210,8 @@
             // 
             // regbtn
             // 
-            this.regbtn.Location = new System.Drawing.Point(361, 420);
-            this.regbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.regbtn.Location = new System.Drawing.Point(535, 432);
+            this.regbtn.Margin = new System.Windows.Forms.Padding(4);
             this.regbtn.Name = "regbtn";
             this.regbtn.Size = new System.Drawing.Size(100, 28);
             this.regbtn.TabIndex = 7;
@@ -221,8 +221,8 @@
             // 
             // Loginbtn
             // 
-            this.Loginbtn.Location = new System.Drawing.Point(361, 223);
-            this.Loginbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Loginbtn.Location = new System.Drawing.Point(535, 223);
+            this.Loginbtn.Margin = new System.Windows.Forms.Padding(4);
             this.Loginbtn.Name = "Loginbtn";
             this.Loginbtn.Size = new System.Drawing.Size(100, 28);
             this.Loginbtn.TabIndex = 6;
@@ -232,28 +232,28 @@
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(361, 300);
+            this.label5.Location = new System.Drawing.Point(0, 299);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(321, 17);
+            this.label5.Size = new System.Drawing.Size(1169, 21);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Als je nog geen account hebt, registreer dan hier.";
+            this.label5.Text = "Nog geen account? Registreer dan hier.";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(361, 107);
+            this.label4.Location = new System.Drawing.Point(-3, 101);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(297, 17);
+            this.label4.Size = new System.Drawing.Size(1169, 21);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Als je al wel een account hebt, log hier dan in.";
+            this.label4.Text = "Heb je al een account? Log dan hier in.";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // passwordregtxtbox
             // 
-            this.passwordregtxtbox.Location = new System.Drawing.Point(361, 356);
-            this.passwordregtxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passwordregtxtbox.Location = new System.Drawing.Point(644, 359);
+            this.passwordregtxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.passwordregtxtbox.Name = "passwordregtxtbox";
             this.passwordregtxtbox.Size = new System.Drawing.Size(132, 22);
             this.passwordregtxtbox.TabIndex = 3;
@@ -261,16 +261,16 @@
             // 
             // usernameregtxtbox
             // 
-            this.usernameregtxtbox.Location = new System.Drawing.Point(361, 324);
-            this.usernameregtxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usernameregtxtbox.Location = new System.Drawing.Point(644, 327);
+            this.usernameregtxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.usernameregtxtbox.Name = "usernameregtxtbox";
             this.usernameregtxtbox.Size = new System.Drawing.Size(132, 22);
             this.usernameregtxtbox.TabIndex = 2;
             // 
             // passlogintxtbox
             // 
-            this.passlogintxtbox.Location = new System.Drawing.Point(361, 162);
-            this.passlogintxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passlogintxtbox.Location = new System.Drawing.Point(644, 166);
+            this.passlogintxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.passlogintxtbox.Name = "passlogintxtbox";
             this.passlogintxtbox.Size = new System.Drawing.Size(132, 22);
             this.passlogintxtbox.TabIndex = 1;
@@ -278,8 +278,8 @@
             // 
             // usernamelogintxtbox
             // 
-            this.usernamelogintxtbox.Location = new System.Drawing.Point(609, 131);
-            this.usernamelogintxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usernamelogintxtbox.Location = new System.Drawing.Point(644, 131);
+            this.usernamelogintxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.usernamelogintxtbox.Name = "usernamelogintxtbox";
             this.usernamelogintxtbox.Size = new System.Drawing.Size(132, 22);
             this.usernamelogintxtbox.TabIndex = 0;
@@ -292,9 +292,9 @@
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage2.Size = new System.Drawing.Size(1169, 540);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Usertab";
@@ -303,8 +303,8 @@
             // 
             this.tabControl2.Controls.Add(this.Reserveringtab);
             this.tabControl2.Controls.Add(this.oudereserveringtab);
-            this.tabControl2.Location = new System.Drawing.Point(51, 146);
-            this.tabControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl2.Location = new System.Drawing.Point(280, 100);
+            this.tabControl2.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
             this.tabControl2.Size = new System.Drawing.Size(640, 364);
@@ -314,9 +314,9 @@
             // 
             this.Reserveringtab.Controls.Add(this.panel1);
             this.Reserveringtab.Location = new System.Drawing.Point(4, 25);
-            this.Reserveringtab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Reserveringtab.Margin = new System.Windows.Forms.Padding(4);
             this.Reserveringtab.Name = "Reserveringtab";
-            this.Reserveringtab.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Reserveringtab.Padding = new System.Windows.Forms.Padding(4);
             this.Reserveringtab.Size = new System.Drawing.Size(632, 335);
             this.Reserveringtab.TabIndex = 0;
             this.Reserveringtab.Text = "Reserveringen";
@@ -328,7 +328,7 @@
             this.panel1.Controls.Add(this.deletenumericbox);
             this.panel1.Controls.Add(this.button9);
             this.panel1.Location = new System.Drawing.Point(0, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(629, 336);
             this.panel1.TabIndex = 0;
@@ -336,7 +336,7 @@
             // deletenumericbox
             // 
             this.deletenumericbox.Location = new System.Drawing.Point(524, 57);
-            this.deletenumericbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deletenumericbox.Margin = new System.Windows.Forms.Padding(4);
             this.deletenumericbox.Minimum = new decimal(new int[] {
             1,
             0,
@@ -354,7 +354,7 @@
             // button9
             // 
             this.button9.Location = new System.Drawing.Point(375, 15);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(141, 105);
             this.button9.TabIndex = 0;
@@ -366,9 +366,9 @@
             // 
             this.oudereserveringtab.Controls.Add(this.panel3);
             this.oudereserveringtab.Location = new System.Drawing.Point(4, 25);
-            this.oudereserveringtab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.oudereserveringtab.Margin = new System.Windows.Forms.Padding(4);
             this.oudereserveringtab.Name = "oudereserveringtab";
-            this.oudereserveringtab.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.oudereserveringtab.Padding = new System.Windows.Forms.Padding(4);
             this.oudereserveringtab.Size = new System.Drawing.Size(632, 335);
             this.oudereserveringtab.TabIndex = 1;
             this.oudereserveringtab.Text = "Oude reserveringen";
@@ -378,15 +378,15 @@
             // 
             this.panel3.AutoScroll = true;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(629, 363);
             this.panel3.TabIndex = 0;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(945, 9);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button7.Location = new System.Drawing.Point(1029, 8);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(100, 28);
             this.button7.TabIndex = 6;
@@ -398,7 +398,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label7.Location = new System.Drawing.Point(45, 105);
+            this.label7.Location = new System.Drawing.Point(279, 71);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(144, 25);
@@ -409,7 +409,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label6.Location = new System.Drawing.Point(43, 23);
+            this.label6.Location = new System.Drawing.Point(442, 21);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(340, 39);
@@ -424,7 +424,7 @@
             this.tabPage3.Controls.Add(this.button11);
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1169, 540);
             this.tabPage3.TabIndex = 2;
@@ -434,8 +434,8 @@
             // 
             this.tabControl3.Controls.Add(this.tabPage4);
             this.tabControl3.Controls.Add(this.tabPage5);
-            this.tabControl3.Location = new System.Drawing.Point(32, 97);
-            this.tabControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl3.Location = new System.Drawing.Point(301, 97);
+            this.tabControl3.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
             this.tabControl3.Size = new System.Drawing.Size(613, 377);
@@ -445,9 +445,9 @@
             // 
             this.tabPage4.Controls.Add(this.panel2);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage4.Size = new System.Drawing.Size(605, 348);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "Reserveringen";
@@ -457,7 +457,7 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.Location = new System.Drawing.Point(0, 4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(595, 337);
             this.panel2.TabIndex = 0;
@@ -466,9 +466,9 @@
             // 
             this.tabPage5.Controls.Add(this.panel4);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage5.Size = new System.Drawing.Size(605, 348);
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Oude reserveringen";
@@ -478,7 +478,7 @@
             // 
             this.panel4.AutoScroll = true;
             this.panel4.Location = new System.Drawing.Point(5, 5);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(593, 336);
             this.panel4.TabIndex = 0;
@@ -487,7 +487,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label10.Location = new System.Drawing.Point(27, 69);
+            this.label10.Location = new System.Drawing.Point(301, 68);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(144, 25);
@@ -496,8 +496,8 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(945, 4);
-            this.button11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button11.Location = new System.Drawing.Point(1029, 8);
+            this.button11.Margin = new System.Windows.Forms.Padding(4);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(100, 28);
             this.button11.TabIndex = 9;
@@ -509,7 +509,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.Location = new System.Drawing.Point(24, 20);
+            this.label1.Location = new System.Drawing.Point(477, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(242, 39);
@@ -603,7 +603,7 @@
             this.Controls.Add(this.Thema);
             this.Controls.Add(this.Button8);
             this.Controls.Add(this.Tarieven);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Accountpagina";
             this.Text = "Accountpagina";
             this.tabControl1.ResumeLayout(false);

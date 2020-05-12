@@ -118,9 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>In deze griezelige escape room is het van belang dat je samenwerkt om alle horrorstories op te lossen. Durven jullie het aan om in deze kleine ruimtes de uitgang te vinden? Jullie grootste angsten wachten op jullie!</value>
+    <value>In deze griezelige escape room is het van belang dat je samenwerkt om alle horror story’s op te lossen. 
+Durven jullie het aan om in deze kleine ruimtes de uitgang te vinden? Jullie grootste angsten wachten op jullie!
+</value>
   </data>
   <data name="richTextBox4.Text" xml:space="preserve">
-    <value>Wees voorbereid om teruggegooid te worden in de geschiedenis en de uitweg te vinden in deze Spartaanse escape room. Zijn jullie de "300" spartanen die doorgaan tot het bittere einde en vechten voor de overwinning?</value>
+    <value>Wees voorbereid om teruggegooid te worden in de geschiedenis en de uitweg te vinden in deze Spartaanse escape room. 
+Zijn jullie de "300" Spartanen die doorgaan tot het bittere einde en vechten voor de overwinning?</value>
   </data>
 </root>
