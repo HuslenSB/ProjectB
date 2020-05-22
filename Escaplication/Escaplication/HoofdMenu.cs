@@ -59,6 +59,7 @@ namespace Escaplication
             InitializeComponent();
         }
 
+        // Onderstaande code is voor de afbeeldingen en de text.
         // Escape room informatie link.
 
         private void InformatieText_Click(object sender, EventArgs e)
@@ -132,6 +133,8 @@ namespace Escaplication
 
         private void Recenties_Click(object sender, EventArgs e)
         {
+            // Deze code zorgt ervoor dat als de gebruiker op de knop "Recensie" drukt, deze doorgaat naar het recensie scherm.
+
             RecensieClick();
         }
 
