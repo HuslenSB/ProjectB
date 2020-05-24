@@ -15,10 +15,9 @@ namespace Escaplication
     public partial class Recensie : Form
     {
 
-        public string [] checkpassword;
-        public int totalfiles = Directory.GetFiles(PathRecensie).Length;
-        public static string PathRecensie = Application.StartupPath + "\\Recensies\\";
-        public static string [] ArrayRecensie = Directory.GetFiles(PathRecensie);
+        public string[] checkpassword;
+        public static string pathh = Application.StartupPath + "\\Recensies\\";
+        public static string[] RecensiePath = Directory.GetFiles(pathh);
 
         public Recensie()
         {
@@ -27,101 +26,84 @@ namespace Escaplication
             if (Convert.ToBoolean(checkpassword[0]) == true)
             {
                 Gbnaam.Dispose();
-                Wachtwoordlabel.Dispose();
+                Wachtwoord.Dispose();
                 checkBox.Dispose();
                 Gebruikersnaamtxt.Dispose();
                 Wachtwoordtxt.Dispose();
             }
+
         }
-
-
-
-        public void Recensie_Load(object sender, EventArgs e)
+        public void RecensieLoad(object sender, EventArgs e)
         {
+            int totalfiles = Directory.GetFiles(pathh).Length;
+
             if (totalfiles > 0)
             {
                 RecensieMaker(totalfiles);
             }
-        }
 
-        private void Recensiebtn_Click(object sender, EventArgs e)
-        {
-            if (Convert.ToBoolean(checkpassword[0]) == false)
-            {
-                this.RecensieUser(Gebruikersnaamtxt.Text, Wachtwoordtxt.Text);
-            }
-            else
-            {
-                this.RecensieUser(checkpassword[1], checkpassword[2]);
-            }
         }
 
         public void RecensieUser(string Gebruikersnaamtext, string Wachtwoordtext)
         {
             string pathGebruikers = Application.StartupPath + "\\Gebruikers\\" + Gebruikersnaamtext + ".txt";
-            int ster = Int32.Parse(sterrentxt.Text);
+            var ster = Int32.Parse(sterrentxt.Text);
 
             if (File.Exists(pathGebruikers))
             {
-                string[] linesRead = File.ReadAllLines(pathGebruikers);
-                if (linesRead[0] == Gebruikersnaamtext)
+                string[] lines = File.ReadAllLines(pathGebruikers);
+                if (lines[0] == Gebruikersnaamtext)
                 {
-                    if (linesRead[1] == Wachtwoordtext)
+                    if (lines[1] == Wachtwoordtext)
                     {
                         if (Convert.ToBoolean(checkpassword[0]) == false)
                         {
-                            StreamWriter writeText = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+                            StreamWriter WriteText = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
                             if (checkBox.Checked)
-                            {
-                                writeText.WriteLine("true");
+                            { 
+                                WriteText.WriteLine("true"); 
                             }
-                            else
-                            {
-                                writeText.WriteLine("false");
-                            }
-                            writeText.WriteLine(Gebruikersnaamtext);
-                            writeText.WriteLine(Wachtwoordtext);
-                            writeText.Close();
+
+                            else {WriteText.WriteLine("false");}
+
+                            WriteText.WriteLine(Gebruikersnaamtext);
+                            WriteText.WriteLine(Wachtwoordtext);
+                            WriteText.Close();
                         }
                         if (ster >= 0 && ster <= 5)
                         {
-                            StreamWriter WriteRecensieFile = new StreamWriter(Application.StartupPath + "\\Recensies\\" + Gebruikersnaamtext + ".txt");
-                            WriteRecensieFile.WriteLine(Gebruikersnaamtext);
-                            WriteRecensieFile.WriteLine(kamertxt.Text);
-                            WriteRecensieFile.WriteLine(commentaartxt.Text);
-                            WriteRecensieFile.WriteLine(sterrentxt.Text);
-                            WriteRecensieFile.Close();
-                            messagebox("Recensie voltooid");
+                            WriteRecensieFile();
                         }
-                        else
-                        {
-                            messagebox("Error: Typ een getal tussen 0-5 bij sterren");
-                        }
+                        else   {  messagebox("Typ een getal tussen 0-5 bij sterren"); }
                     }
-                    else
-                    {
-                        messagebox("Wachtwoord onjuist");
-                    }
+                    else   { messagebox("Wachtwoord onjuist");  }
                 }
             }
-            else
-            {
-                messagebox("Gebruikersnaam onjuist");
-            }
+            else {messagebox("Gebruikersnaam niet gevonden"); }
         }
-
+        public string folder;
+        public void WriteRecensieFile()
+        {
+            StreamWriter WriteText = new StreamWriter(Application.StartupPath + "\\Recensies\\" + Gebruikersnaamtxt.Text + ".txt");
+            WriteText.WriteLine(Gebruikersnaamtxt.Text);
+            WriteText.WriteLine(kamertxt.Text);
+            WriteText.WriteLine(commentaartxt.Text);
+            WriteText.WriteLine(sterrentxt.Text);
+            WriteText.Close();
+            messagebox("Recensie voltooid");
+        }
 
         public void messagebox(string text)
         {
             MessageBox.Show(text);
         }
 
-
         public void RecensieMaker(int totalfiles)
         {
             for (int i = 0, LocPointGB = 15, LocPointTB = 51, LocPointLabel = 18, LocPointSter = 24; i < totalfiles; i++, LocPointGB += 150, LocPointTB += 150, LocPointLabel += 150)
             {
-                string[] ArrayRecensies = File.ReadAllLines(Convert.ToString(ArrayRecensie[i]));
+                RecensiePath = Directory.GetFiles(pathh);
+                string[] ArrayRecensies = File.ReadAllLines(Convert.ToString(RecensiePath[i]));
 
                 GroupBox recensiegb = new GroupBox();
                 recensiegb.Name = "";
@@ -145,10 +127,10 @@ namespace Escaplication
 
                 Label ster = new Label();
                 ster.AutoSize = true;
-                ster.Location = new Point(6, LocPointSter);
+                ster.Location = new Point(8, LocPointSter);
                 ster.Margin = new Padding(4, 0, 4, 0);
                 ster.Name = "label5";
-                ster.Size = new Size(61,13);
+                ster.Size = new Size(63, 13);
                 ster.TabIndex = 6;
                 ster.Text = "Sterren " + ArrayRecensies[3] + "/5";
 
@@ -158,6 +140,7 @@ namespace Escaplication
                 recensiegb.Controls.Add(ster);
             }
         }
+
         
 
         private void Homepage_Click(object sender, EventArgs e)
