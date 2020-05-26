@@ -19,7 +19,9 @@ namespace Escaplication
         public Accountpagina()
         {
             InitializeComponent();
-            tabControl1.Appearance = TabAppearance.FlatButtons; tabControl1.ItemSize = new Size(0, 1); tabControl1.SizeMode = TabSizeMode.Fixed;
+            tabControl1.Appearance = TabAppearance.FlatButtons;
+            tabControl1.ItemSize = new Size(0, 1); 
+            tabControl1.SizeMode = TabSizeMode.Fixed;
             checkpassword = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
             if (Convert.ToBoolean(checkpassword[0]) == true)
             {
