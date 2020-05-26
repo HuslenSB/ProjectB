@@ -16,8 +16,8 @@ namespace Escaplication
     {
 
         public string[] checkpassword;
-        public static string pathh = Application.StartupPath + "\\Recensies\\";
-        public static string[] RecensiePath = Directory.GetFiles(pathh);
+        public static string RecensiePath = Application.StartupPath + "\\Recensies\\";
+        public static string[] RecensieArray = Directory.GetFiles(RecensiePath);
 
         public Recensie()
         {
@@ -35,7 +35,7 @@ namespace Escaplication
         }
         public void RecensieLoad(object sender, EventArgs e)
         {
-            int totalfiles = Directory.GetFiles(pathh).Length;
+            int totalfiles = Directory.GetFiles(RecensiePath).Length;
 
             if (totalfiles > 0)
             {
@@ -44,6 +44,8 @@ namespace Escaplication
 
         }
 
+        // Controleert of gebruikersnaam en wachtwoord correct zijn bij het schrijven van een recensie. 
+        // Checkt en onthoudt of de gebruiker "Ingelogd blijven" heeft aangevinkt.
         public void RecensieUser(string Gebruikersnaamtext, string Wachtwoordtext)
         {
             string pathGebruikers = Application.StartupPath + "\\Gebruikers\\" + Gebruikersnaamtext + ".txt";
@@ -64,7 +66,8 @@ namespace Escaplication
                                 WriteText.WriteLine("true"); 
                             }
 
-                            else {WriteText.WriteLine("false");}
+                            else{
+                                WriteText.WriteLine("false");}
 
                             WriteText.WriteLine(Gebruikersnaamtext);
                             WriteText.WriteLine(Wachtwoordtext);
@@ -74,14 +77,19 @@ namespace Escaplication
                         {
                             WriteRecensieFile();
                         }
-                        else   {  messagebox("Typ een getal tussen 0-5 bij sterren"); }
+                        else{ 
+                            messagebox("Typ een getal tussen 0-5 bij sterren"); }
                     }
-                    else   { messagebox("Wachtwoord onjuist");  }
+                    else{ 
+                        messagebox("Wachtwoord onjuist");  }
                 }
             }
-            else {messagebox("Gebruikersnaam niet gevonden"); }
+            else{
+                messagebox("Gebruikersnaam niet gevonden"); }
         }
-        public string folder;
+
+        // Functie die de recensie opslaat in een txt file.
+
         public void WriteRecensieFile()
         {
             StreamWriter WriteText = new StreamWriter(Application.StartupPath + "\\Recensies\\" + Gebruikersnaamtxt.Text + ".txt");
@@ -93,16 +101,13 @@ namespace Escaplication
             messagebox("Recensie voltooid");
         }
 
-        public void messagebox(string text)
-        {
-            MessageBox.Show(text);
-        }
 
+        // Functie die de opgeslagen recensies weergeeft in de recensielijst.
         public void RecensieMaker(int totalfiles)
         {
             for (int i = 0, LocPointGB = 15, LocPointTB = 51, LocPointLabel = 18, LocPointSter = 24; i < totalfiles; i++, LocPointGB += 150, LocPointTB += 150, LocPointLabel += 150)
             {
-                RecensiePath = Directory.GetFiles(pathh);
+                RecensieArray = Directory.GetFiles(RecensiePath);
                 string[] ArrayRecensies = File.ReadAllLines(Convert.ToString(RecensiePath[i]));
 
                 GroupBox recensiegb = new GroupBox();
@@ -140,82 +145,89 @@ namespace Escaplication
                 recensiegb.Controls.Add(ster);
             }
         }
-
         
+        // De buttons om van pagina te wisselen.
 
         private void Homepage_Click(object sender, EventArgs e)
         {
-            // Deze code zorgt ervoor dat als de gebruiker op de knop "Homepage" drukt, deze teruggaat naar het begin scherm.
-
-            var Hoofd = new HoofdMenu();
-            this.Hide();
-            Hoofd.ShowDialog();
-            this.Close();
+            HoofdmenuClick();
         }
         private void Thema_Click(object sender, EventArgs e)
         {
-            // Deze code zorgt ervoor dat als de gebruiker op de knop "Thema" drukt, deze doorgaat naar het informatie scherm.
+            ThemaClick();
+        }
+        private void Tarieven_Click(object sender, EventArgs e)
+        {
+            TarievenClick();
+        }
+        private void Reserveren_Click(object sender, EventArgs e)
+        {
+            ReserveerClick();
+        }
+        private void Contact_Click(object sender, EventArgs e)
+        {
+            ContactClick();
+        }
+        private void AccountPagina_Click(object sender, EventArgs e)
+        {
+            AccountpaginaClick();
+        }
+        private void Wachtwoordverberger(object sender, EventArgs e)
+        {
+            Wachtwoordtxt.PasswordChar = '●';
+        }
 
+        // Functie voor messagebox popup.
+
+        public void messagebox(string text)
+        {
+            MessageBox.Show(text);
+        }
+
+        // Functies voor het veranderen van de pagina met de knoppen.
+
+        public void ThemaClick()
+        {
             var thema = new Informatie();
             this.Hide();
             thema.ShowDialog();
             this.Close();
         }
-
-
-
-        private void Tarieven_Click(object sender, EventArgs e)
+        public void TarievenClick()
         {
-            // Deze code zorgt ervoor dat als de gebruiker op de knop "Tarieven" drukt, deze doorgaat naar het Tarieven scherm.
-
             var tarief = new Tarieven_Tab();
             this.Hide();
             tarief.ShowDialog();
             this.Close();
         }
-
-
-        private void Reserveren_Click(object sender, EventArgs e)
+        public void ContactClick()
         {
-            // Deze code zorgt ervoor dat als de gebruiker op de knop "Reserveren" drukt, deze doorgaat naar het reservatie scherm.
-
-            var Reserveer = new Reserveren();
-            this.Hide();
-            Reserveer.ShowDialog();
-            this.Close();
-        }
-
-        private void Contact_Click(object sender, EventArgs e)
-        {
-            // Deze code zorgt ervoor dat als de gebruiker op de knop "Contact" drukt, deze doorgaat naar het contact scherm.
-
             var Contacten = new Contact_Tab();
             this.Hide();
             Contacten.ShowDialog();
             this.Close();
         }
-
-        private void Account_Click(object sender, EventArgs e)
+        public void ReserveerClick()
         {
-            // Deze code zorgt ervoor dat als de gebruiker op de knop "Acount" drukt, deze doorgaat naar het login scherm.
-
-            var Login = new Accountpagina();
+            var Reserveer = new Reserveren();
             this.Hide();
-            Login.ShowDialog();
+            Reserveer.ShowDialog();
+            this.Close();
+        }
+        public void HoofdmenuClick()
+        {
+            var HoofdMenu = new HoofdMenu();
+            this.Hide();
+            HoofdMenu.ShowDialog();
+            this.Close();
+        }
+        public void AccountpaginaClick()
+        {
+            var Accountpagina = new Accountpagina();
+            this.Hide();
+            Accountpagina.ShowDialog();
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var Login = new Accountpagina();
-            this.Hide();
-            Login.ShowDialog();
-            this.Close();
-        }
-
-        private void Wachtwoordtxt_TextChanged(object sender, EventArgs e)
-        {
-            Wachtwoordtxt.PasswordChar = '●';
-        }
     }
 }

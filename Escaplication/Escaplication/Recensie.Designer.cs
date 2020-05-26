@@ -109,7 +109,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "Account";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.AccountPagina_Click);
             // 
             // Wachtwoordtxt
             // 
@@ -117,7 +117,7 @@
             this.Wachtwoordtxt.Name = "Wachtwoordtxt";
             this.Wachtwoordtxt.Size = new System.Drawing.Size(217, 20);
             this.Wachtwoordtxt.TabIndex = 10;
-            this.Wachtwoordtxt.TextChanged += new System.EventHandler(this.Wachtwoordtxt_TextChanged);
+            this.Wachtwoordtxt.TextChanged += new System.EventHandler(this.Wachtwoordverberger);
             // 
             // label8
             // 
@@ -229,7 +229,7 @@
             this.Account.TabIndex = 41;
             this.Account.Text = "Account";
             this.Account.UseVisualStyleBackColor = true;
-            this.Account.Click += new System.EventHandler(this.Account_Click);
+            this.Account.Click += new System.EventHandler(this.AccountPagina_Click);
             // 
             // Recenties
             // 
