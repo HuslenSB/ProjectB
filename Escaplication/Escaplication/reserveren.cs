@@ -174,6 +174,195 @@ namespace Escaplication
             passwordtxtbox.PasswordChar = '●';
         }
 
+        private void Korting_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(3);
+        }
+
+        private void Reserveren1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Reserveren3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Reserveren2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minutebox_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hourbox_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void peoplenumeric_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usernametxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Korting1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OK_Button_Click(object sender, EventArgs e)
+        {
+            // Deze code genereert een willekeurige kortingscode
+
+            var characters = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var random = new Random();
+            var code = "";
+            for (int i = 0; i < 10; i++)
+            {
+                code += characters[random.Next(characters.Length)];
+            }
+
+            // Als het antwoord goed is, krijgt de klant een kortingscode te zien
+
+            if (textBox_antwoord.Text == "105")
+            {
+                MessageBox.Show("Correct, uw kortingscode is: " + code);
+                var Hoofd = new HoofdMenu();
+                this.Hide();
+                Hoofd.ShowDialog();
+                this.Close();
+            }
+
+            // Als het antwoord fout is, krijgt de klant alleen te zien dat het fout is.
+
+            else
+            {
+                MessageBox.Show("Helaas, het antwoord is niet goed");
+                var Hoofd = new HoofdMenu();
+                this.Hide();
+                Hoofd.ShowDialog();
+                this.Close();
+            }
+        }
+
+        private void textBox_antwoord_TextChanged(object sender, EventArgs e)
+        {
+
+        }
 
         private void button5_Click(object sender, EventArgs e)
         {
