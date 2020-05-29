@@ -70,9 +70,16 @@
             this.usernametxtbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Reserveren3 = new System.Windows.Forms.TabPage();
+            this.Korting = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.Korting1 = new System.Windows.Forms.TabPage();
+            this.OK_Button = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox_antwoord = new System.Windows.Forms.TextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button7 = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -86,6 +93,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.daybox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peoplenumeric)).BeginInit();
             this.Reserveren3.SuspendLayout();
+            this.Korting1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -131,6 +139,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -142,6 +151,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
@@ -153,6 +163,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // PageTitle
             // 
@@ -174,6 +185,7 @@
             this.label2.Size = new System.Drawing.Size(283, 17);
             this.label2.TabIndex = 7;
             this.label2.Text = "Kies een escape room die je wilt reserveren";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -184,6 +196,7 @@
             this.label3.Size = new System.Drawing.Size(114, 17);
             this.label3.TabIndex = 8;
             this.label3.Text = "THIS IS SPARTA";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -194,6 +207,7 @@
             this.label4.Size = new System.Drawing.Size(109, 17);
             this.label4.TabIndex = 9;
             this.label4.Text = "THE LAST RUN";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -204,18 +218,21 @@
             this.label5.Size = new System.Drawing.Size(133, 17);
             this.label5.TabIndex = 10;
             this.label5.Text = "HAUNTED ESCAPE";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.Reserveren1);
             this.tabControl1.Controls.Add(this.Reserveren2);
             this.tabControl1.Controls.Add(this.Reserveren3);
+            this.tabControl1.Controls.Add(this.Korting1);
             this.tabControl1.Location = new System.Drawing.Point(1, 1);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1176, 625);
             this.tabControl1.TabIndex = 11;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // Reserveren1
             // 
@@ -246,6 +263,7 @@
             this.Reserveren1.Size = new System.Drawing.Size(1168, 596);
             this.Reserveren1.TabIndex = 0;
             this.Reserveren1.Text = "Reserveren 1";
+            this.Reserveren1.Click += new System.EventHandler(this.Reserveren1_Click);
             // 
             // button8
             // 
@@ -258,6 +276,7 @@
             this.button8.TabIndex = 42;
             this.button8.Text = "Reserveren";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Account
             // 
@@ -360,6 +379,7 @@
             this.Reserveren2.Size = new System.Drawing.Size(1168, 596);
             this.Reserveren2.TabIndex = 1;
             this.Reserveren2.Text = "Reserveren 2";
+            this.Reserveren2.Click += new System.EventHandler(this.Reserveren2_Click);
             // 
             // checkBox
             // 
@@ -371,6 +391,7 @@
             this.checkBox.TabIndex = 24;
             this.checkBox.Text = "Ingelogd blijven";
             this.checkBox.UseVisualStyleBackColor = true;
+            this.checkBox.CheckedChanged += new System.EventHandler(this.checkBox_CheckedChanged);
             // 
             // toaccountbtn
             // 
@@ -392,6 +413,7 @@
             this.label12.Size = new System.Drawing.Size(233, 17);
             this.label12.TabIndex = 22;
             this.label12.Text = "Nog geen account? Registreer hier!";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label11
             // 
@@ -402,6 +424,7 @@
             this.label11.Size = new System.Drawing.Size(31, 17);
             this.label11.TabIndex = 21;
             this.label11.Text = "Tijd";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // minutebox
             // 
@@ -415,6 +438,7 @@
             this.minutebox.Name = "minutebox";
             this.minutebox.Size = new System.Drawing.Size(57, 22);
             this.minutebox.TabIndex = 20;
+            this.minutebox.ValueChanged += new System.EventHandler(this.minutebox_ValueChanged);
             // 
             // hourbox
             // 
@@ -428,6 +452,7 @@
             this.hourbox.Name = "hourbox";
             this.hourbox.Size = new System.Drawing.Size(53, 22);
             this.hourbox.TabIndex = 19;
+            this.hourbox.ValueChanged += new System.EventHandler(this.hourbox_ValueChanged);
             // 
             // yearbox
             // 
@@ -523,6 +548,7 @@
             0,
             0,
             0});
+            this.peoplenumeric.ValueChanged += new System.EventHandler(this.peoplenumeric_ValueChanged);
             // 
             // label10
             // 
@@ -532,6 +558,7 @@
             this.label10.Size = new System.Drawing.Size(121, 17);
             this.label10.TabIndex = 14;
             this.label10.Text = "Datum Selecteren";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
@@ -541,6 +568,7 @@
             this.label9.Size = new System.Drawing.Size(102, 17);
             this.label9.TabIndex = 12;
             this.label9.Text = "Aantal mensen";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -550,6 +578,7 @@
             this.label8.Size = new System.Drawing.Size(86, 17);
             this.label8.TabIndex = 11;
             this.label8.Text = "Wachtwoord";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -559,6 +588,7 @@
             this.label7.Size = new System.Drawing.Size(113, 17);
             this.label7.TabIndex = 10;
             this.label7.Text = "Gebruikersnaam";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // button5
             // 
@@ -598,6 +628,7 @@
             this.usernametxtbox.Name = "usernametxtbox";
             this.usernametxtbox.Size = new System.Drawing.Size(248, 22);
             this.usernametxtbox.TabIndex = 0;
+            this.usernametxtbox.TextChanged += new System.EventHandler(this.usernametxtbox_TextChanged);
             // 
             // label1
             // 
@@ -608,10 +639,12 @@
             this.label1.Size = new System.Drawing.Size(46, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Reserveren3
             // 
             this.Reserveren3.BackColor = System.Drawing.Color.Turquoise;
+            this.Reserveren3.Controls.Add(this.Korting);
             this.Reserveren3.Controls.Add(this.button6);
             this.Reserveren3.Controls.Add(this.label6);
             this.Reserveren3.Location = new System.Drawing.Point(4, 25);
@@ -621,6 +654,18 @@
             this.Reserveren3.Size = new System.Drawing.Size(1168, 596);
             this.Reserveren3.TabIndex = 2;
             this.Reserveren3.Text = "Reserveren 3";
+            this.Reserveren3.Click += new System.EventHandler(this.Reserveren3_Click);
+            // 
+            // Korting
+            // 
+            this.Korting.Location = new System.Drawing.Point(505, 211);
+            this.Korting.Name = "Korting";
+            this.Korting.Size = new System.Drawing.Size(193, 34);
+            this.Korting.TabIndex = 5;
+            this.Korting.TabStop = false;
+            this.Korting.Text = "Extra korting? Klik Hier!";
+            this.Korting.UseVisualStyleBackColor = true;
+            this.Korting.Click += new System.EventHandler(this.Korting_Click);
             // 
             // button6
             // 
@@ -636,12 +681,72 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(428, 193);
+            this.label6.Location = new System.Drawing.Point(429, 168);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(342, 17);
             this.label6.TabIndex = 1;
             this.label6.Text = "Je reservering is verwerkt en is te zien op je account!";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // Korting1
+            // 
+            this.Korting1.BackColor = System.Drawing.Color.Turquoise;
+            this.Korting1.Controls.Add(this.OK_Button);
+            this.Korting1.Controls.Add(this.label13);
+            this.Korting1.Controls.Add(this.textBox_antwoord);
+            this.Korting1.Controls.Add(this.richTextBox1);
+            this.Korting1.Location = new System.Drawing.Point(4, 25);
+            this.Korting1.Name = "Korting1";
+            this.Korting1.Size = new System.Drawing.Size(1168, 596);
+            this.Korting1.TabIndex = 3;
+            this.Korting1.Text = "Korting";
+            this.Korting1.Click += new System.EventHandler(this.Korting1_Click);
+            // 
+            // OK_Button
+            // 
+            this.OK_Button.Location = new System.Drawing.Point(668, 356);
+            this.OK_Button.Name = "OK_Button";
+            this.OK_Button.Size = new System.Drawing.Size(75, 23);
+            this.OK_Button.TabIndex = 12;
+            this.OK_Button.Text = "Ok";
+            this.OK_Button.UseVisualStyleBackColor = true;
+            this.OK_Button.Click += new System.EventHandler(this.OK_Button_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(427, 353);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(101, 25);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "Antwoord:";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // textBox_antwoord
+            // 
+            this.textBox_antwoord.Location = new System.Drawing.Point(535, 356);
+            this.textBox_antwoord.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_antwoord.Name = "textBox_antwoord";
+            this.textBox_antwoord.Size = new System.Drawing.Size(102, 22);
+            this.textBox_antwoord.TabIndex = 2;
+            this.textBox_antwoord.TextChanged += new System.EventHandler(this.textBox_antwoord_TextChanged);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.AutoWordSelection = true;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(329, 231);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(543, 89);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "Een Escape room samen met de drankjes kost € 110,-.\nDe Escape room is € 100,- mee" +
+    "r dan de drankjes. \nHoeveel kost de Escape room?";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // button7
             // 
@@ -653,6 +758,7 @@
             this.button7.TabIndex = 36;
             this.button7.Text = "Reserveren";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Reserveren
             // 
@@ -679,6 +785,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.peoplenumeric)).EndInit();
             this.Reserveren3.ResumeLayout(false);
             this.Reserveren3.PerformLayout();
+            this.Korting1.ResumeLayout(false);
+            this.Korting1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -729,6 +837,13 @@
         private System.Windows.Forms.Button toaccountbtn;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.CheckBox checkBox;
+        private System.Windows.Forms.Button Korting;
+        private System.Windows.Forms.TabPage Korting1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox_antwoord;
+        private System.Windows.Forms.Button OK_Button;
     }
 }
 
