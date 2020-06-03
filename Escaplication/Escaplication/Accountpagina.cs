@@ -19,7 +19,9 @@ namespace Escaplication
         public Accountpagina()
         {
             InitializeComponent();
-            tabControl1.Appearance = TabAppearance.FlatButtons; tabControl1.ItemSize = new Size(0, 1); tabControl1.SizeMode = TabSizeMode.Fixed;
+            tabControl1.Appearance = TabAppearance.FlatButtons;
+            tabControl1.ItemSize = new Size(0, 1); 
+            tabControl1.SizeMode = TabSizeMode.Fixed;
             checkpassword = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
             if (Convert.ToBoolean(checkpassword[0]) == true)
             {
@@ -260,6 +262,36 @@ namespace Escaplication
         private void passwordrepeattxtbox_TextChanged(object sender, EventArgs e)
         {
             passwordrepeattxtbox.PasswordChar = '●';
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            panel5.Controls.Clear();
+            lines = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + textBox1.Text + ".txt");
+            string path = Application.StartupPath + "\\Gebruikers\\" + textBox1.Text + ".txt";
+            if (File.Exists(path))
+            {
+                for (int i = 2, j = 1, LocPointGB = 0, LocPointLabel = 10; i < lines.Length - 6; i += 7)
+                {
+                    GroupBox recensiegb = new GroupBox();
+                    recensiegb.Name = "";
+                    recensiegb.Size = new Size(220, 110);
+                    recensiegb.Location = new Point(0, LocPointGB);
+
+                    Label naamkamer = new Label();
+                    naamkamer.AutoSize = true;
+                    naamkamer.Location = new Point(5, LocPointLabel);
+                    naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
+                    naamkamer.Text = j + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i + 1] + "\nDatum: " + lines[i + 4] + "-" + lines[i + 3] + "-" + lines[i + 2] + "\nTijd: " + lines[i + 5] + ":" + lines[i + 6];
+
+                    panel5.Controls.Add(naamkamer);
+                    panel5.Controls.Add(recensiegb);
+                    LocPointGB += 110;
+                    LocPointLabel += 110;
+                    j++;
+                    countres++;
+                }
+            }
         }
 
         private void Contact_Click(object sender, EventArgs e)
