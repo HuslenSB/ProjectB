@@ -87,7 +87,7 @@ namespace Escaplication
                         this.label6.Text = "Welkom " + usernamelogintxt;
                         if (lines.Length != 0)
                         {
-                            for (int i = 2, j = 1, k = 1, LocPointGB = 0, LocPointLabel = 10, LocPointGB2 = 0, LocPointLabel2 = 10; i < lines.Length - 6; i += 7)
+                            for (int i = 2, j = 1, k = 1, LocPointGB = 0, LocPointLabel = 10, LocPointGB2 = 0, LocPointLabel2 = 10; i < lines.Length - 5; i += 6)
                             {
                                 DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
                                 DateTime date2 = new DateTime(Int32.Parse(lines[i + 2]), Int32.Parse(lines[i + 3]), Int32.Parse(lines[i + 4]));
@@ -103,7 +103,7 @@ namespace Escaplication
                                     naamkamer.AutoSize = true;
                                     naamkamer.Location = new Point(5, LocPointLabel);
                                     naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                                    naamkamer.Text = j + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i + 1] + "\nDatum: " + lines[i + 4] + "-" + lines[i + 3] + "-" + lines[i + 2] + "\nTijd: " + lines[i+5] + ":" + lines[i+6];
+                                    naamkamer.Text = j + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i + 1] + "\nDatum: " + lines[i + 4] + "-" + lines[i + 3] + "-" + lines[i + 2] + "\nTijd: " + lines[i+5];
 
                                     panel1.Controls.Add(naamkamer);
                                     panel1.Controls.Add(recensiegb);
@@ -144,7 +144,7 @@ namespace Escaplication
                             lines3 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + lines2[k]);
                             if (lines3.Length != 0)
                             {
-                                for (int i = 2, j = 1; i < lines3.Length - 6; i += 7, j++)
+                                for (int i = 2, j = 1; i < lines3.Length - 5; i += 6, j++)
                                 {
                                     DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
                                     DateTime date2 = new DateTime(Int32.Parse(lines3[i + 2]), Int32.Parse(lines3[i + 3]), Int32.Parse(lines3[i + 4]));
@@ -287,7 +287,7 @@ namespace Escaplication
                 int n = 0;
                 StreamWriter ae = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + checkpassword[1] + ".txt");
                 Console.WriteLine(checkpassword[1]);
-                for (int i = 2, g = 0; i < lines.Length - 6; i += 7)
+                for (int i = 2, g = 0; i < lines.Length - 5; i += 6)
                 {
                     n = i;
                     DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
