@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Escaplication
 {
@@ -89,6 +90,7 @@ namespace Escaplication
                         {
                             for (int i = 2, j = 1, k = 1, LocPointGB = 0, LocPointLabel = 10, LocPointGB2 = 0, LocPointLabel2 = 10; i < lines.Length - 5; i += 6)
                             {
+                                Debug.WriteLine(Int32.Parse(lines[i + 2]));
                                 DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
                                 DateTime date2 = new DateTime(Int32.Parse(lines[i + 2]), Int32.Parse(lines[i + 3]), Int32.Parse(lines[i + 4]));
                                 int datecomparinson = DateTime.Compare(date1, date2);
@@ -308,7 +310,6 @@ namespace Escaplication
                 lines[n + 3] = "";
                 lines[n + 4] = "";
                 lines[n + 5] = "";
-                lines[n + 6] = "";
                 for (int i = 0; i < lines.Length; i++)
                 {
                     if (lines[i] != "")

@@ -178,9 +178,7 @@ namespace Escaplication
                 {
                     for (int i = 2, j = 1; i < lines3.Length - 5; i += 6, j++)
                     {
-                        Debug.WriteLine(lines3[i + 1], chosenroom);
                         if (chosenroom == lines3[i]) {
-                            
                             if ((int)yearbox.Value == Int32.Parse(lines3[i + 2]))
                             {
                                 if ((int)monthbox.Value == Int32.Parse(lines3[i + 3]))
@@ -249,7 +247,7 @@ namespace Escaplication
                     DateTime date1 = new DateTime((int)yearbox.Value, (int)monthbox.Value, (int)daybox.Value);
                     DateTime date2 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
                     int datecomparinson = DateTime.Compare(date1, date2);
-                    if (datecomparinson > 0 && TimeBox.Text != null) {
+                    if (datecomparinson > 0 && TimeBox.Text != "") {
                         if (lines[0] == usernametxt && lines[1] == passwordtxt)
                         {
                             if (Convert.ToBoolean(checkpassword[0]) == false)

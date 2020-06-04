@@ -377,7 +377,6 @@ namespace Escaplication
             this.TimeBox.Name = "TimeBox";
             this.TimeBox.Size = new System.Drawing.Size(152, 24);
             this.TimeBox.TabIndex = 25;
-            this.TimeBox.Text = "9:00";
             this.TimeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // checkBox
