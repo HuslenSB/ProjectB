@@ -108,7 +108,7 @@ namespace Escaplication
             for (int i = 0, LocPointGB = 15, LocPointTB = 51, LocPointLabel = 18, LocPointSter = 24; i < totalfiles; i++, LocPointGB += 150, LocPointTB += 150, LocPointLabel += 150)
             {
                 RecensieArray = Directory.GetFiles(RecensiePath);
-                string[] ArrayRecensies = File.ReadAllLines(Convert.ToString(RecensiePath[i]));
+                string[] ArrayRecensies = File.ReadAllLines(Convert.ToString(RecensieArray[i]));
 
                 GroupBox recensiegb = new GroupBox();
                 recensiegb.Name = "";
