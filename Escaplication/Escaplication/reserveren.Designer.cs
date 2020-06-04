@@ -1,4 +1,8 @@
-﻿namespace Escaplication
+﻿using Project_B_informatie;
+using System.IO;
+using System.Windows.Forms;
+
+namespace Escaplication
 {
     partial class Reserveren
     {
@@ -50,12 +54,11 @@
             this.Tarieven = new System.Windows.Forms.Button();
             this.Homepage = new System.Windows.Forms.Button();
             this.Reserveren2 = new System.Windows.Forms.TabPage();
+            this.TimeBox = new System.Windows.Forms.ComboBox();
             this.checkBox = new System.Windows.Forms.CheckBox();
             this.toaccountbtn = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.minutebox = new System.Windows.Forms.NumericUpDown();
-            this.hourbox = new System.Windows.Forms.NumericUpDown();
             this.yearbox = new System.Windows.Forms.NumericUpDown();
             this.monthbox = new System.Windows.Forms.NumericUpDown();
             this.daybox = new System.Windows.Forms.NumericUpDown();
@@ -86,8 +89,6 @@
             this.tabControl1.SuspendLayout();
             this.Reserveren1.SuspendLayout();
             this.Reserveren2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.minutebox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hourbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yearbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.monthbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.daybox)).BeginInit();
@@ -353,12 +354,11 @@
             // Reserveren2
             // 
             this.Reserveren2.BackColor = System.Drawing.Color.Turquoise;
+            this.Reserveren2.Controls.Add(this.TimeBox);
             this.Reserveren2.Controls.Add(this.checkBox);
             this.Reserveren2.Controls.Add(this.toaccountbtn);
             this.Reserveren2.Controls.Add(this.label12);
             this.Reserveren2.Controls.Add(this.label11);
-            this.Reserveren2.Controls.Add(this.minutebox);
-            this.Reserveren2.Controls.Add(this.hourbox);
             this.Reserveren2.Controls.Add(this.yearbox);
             this.Reserveren2.Controls.Add(this.monthbox);
             this.Reserveren2.Controls.Add(this.daybox);
@@ -380,6 +380,24 @@
             this.Reserveren2.TabIndex = 1;
             this.Reserveren2.Text = "Reserveren 2";
             this.Reserveren2.Click += new System.EventHandler(this.Reserveren2_Click);
+            // 
+            // TimeBox
+            // 
+            this.TimeBox.AllowDrop = true;
+            this.TimeBox.Items.AddRange(new object[] {
+            "9:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00"});
+            this.TimeBox.Location = new System.Drawing.Point(535, 288);
+            this.TimeBox.Name = "TimeBox";
+            this.TimeBox.Size = new System.Drawing.Size(152, 24);
+            this.TimeBox.TabIndex = 25;
+            this.TimeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
             // checkBox
             // 
@@ -425,34 +443,6 @@
             this.label11.TabIndex = 21;
             this.label11.Text = "Tijd";
             this.label11.Click += new System.EventHandler(this.label11_Click);
-            // 
-            // minutebox
-            // 
-            this.minutebox.Location = new System.Drawing.Point(597, 286);
-            this.minutebox.Margin = new System.Windows.Forms.Padding(4);
-            this.minutebox.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
-            this.minutebox.Name = "minutebox";
-            this.minutebox.Size = new System.Drawing.Size(57, 22);
-            this.minutebox.TabIndex = 20;
-            this.minutebox.ValueChanged += new System.EventHandler(this.minutebox_ValueChanged);
-            // 
-            // hourbox
-            // 
-            this.hourbox.Location = new System.Drawing.Point(534, 288);
-            this.hourbox.Margin = new System.Windows.Forms.Padding(4);
-            this.hourbox.Maximum = new decimal(new int[] {
-            23,
-            0,
-            0,
-            0});
-            this.hourbox.Name = "hourbox";
-            this.hourbox.Size = new System.Drawing.Size(53, 22);
-            this.hourbox.TabIndex = 19;
-            this.hourbox.ValueChanged += new System.EventHandler(this.hourbox_ValueChanged);
             // 
             // yearbox
             // 
@@ -777,8 +767,6 @@
             this.Reserveren1.PerformLayout();
             this.Reserveren2.ResumeLayout(false);
             this.Reserveren2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.minutebox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hourbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yearbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.monthbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.daybox)).EndInit();
@@ -832,8 +820,6 @@
         private System.Windows.Forms.NumericUpDown daybox;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.NumericUpDown minutebox;
-        private System.Windows.Forms.NumericUpDown hourbox;
         private System.Windows.Forms.Button toaccountbtn;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.CheckBox checkBox;
@@ -844,6 +830,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox_antwoord;
         private System.Windows.Forms.Button OK_Button;
+        private ComboBox TimeBox;
+
     }
 }
 
