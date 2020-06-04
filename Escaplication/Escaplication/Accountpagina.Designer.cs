@@ -28,138 +28,138 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.checkBox = new System.Windows.Forms.CheckBox();
+            this.Paginatabs = new System.Windows.Forms.TabControl();
+            this.Loginpaginatab = new System.Windows.Forms.TabPage();
+            this.remembertxtbox = new System.Windows.Forms.CheckBox();
             this.Account = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
+            this.repeatpasslbl = new System.Windows.Forms.Label();
             this.passwordrepeattxtbox = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.regbtn = new System.Windows.Forms.Button();
+            this.regpasswordlbl = new System.Windows.Forms.Label();
+            this.regusernamelbl = new System.Windows.Forms.Label();
+            this.Passwordlbl = new System.Windows.Forms.Label();
+            this.Usernamelbl = new System.Windows.Forms.Label();
+            this.Regbtn = new System.Windows.Forms.Button();
             this.Loginbtn = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Registerlbl = new System.Windows.Forms.Label();
+            this.Loginlbl = new System.Windows.Forms.Label();
             this.passwordregtxtbox = new System.Windows.Forms.TextBox();
             this.usernameregtxtbox = new System.Windows.Forms.TextBox();
             this.passlogintxtbox = new System.Windows.Forms.TextBox();
             this.usernamelogintxtbox = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.Userpaginatab = new System.Windows.Forms.TabPage();
+            this.reserveringentab = new System.Windows.Forms.TabControl();
             this.Reserveringtab = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.Reserveringpnl = new System.Windows.Forms.Panel();
             this.deletenumericbox = new System.Windows.Forms.NumericUpDown();
-            this.button9 = new System.Windows.Forms.Button();
+            this.Deletebtn = new System.Windows.Forms.Button();
             this.oudereserveringtab = new System.Windows.Forms.TabPage();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.oldreserverpnl = new System.Windows.Forms.Panel();
+            this.loguitbtn = new System.Windows.Forms.Button();
+            this.headerlbl = new System.Windows.Forms.Label();
+            this.usertabtitel = new System.Windows.Forms.Label();
+            this.Adminpaginatab = new System.Windows.Forms.TabPage();
+            this.Reservertab = new System.Windows.Forms.TabControl();
             this.Reserveringen = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.reservpnl = new System.Windows.Forms.Panel();
             this.Oude_reserveringen = new System.Windows.Forms.TabPage();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.oldreservpnl = new System.Windows.Forms.Panel();
+            this.Zoeken = new System.Windows.Forms.TabPage();
+            this.resultspnl = new System.Windows.Forms.Panel();
+            this.searchbtn = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Adminheader = new System.Windows.Forms.Label();
+            this.logoutbtn2 = new System.Windows.Forms.Button();
+            this.Admintitle = new System.Windows.Forms.Label();
             this.Contact = new System.Windows.Forms.Button();
             this.Recenties = new System.Windows.Forms.Button();
             this.Button8 = new System.Windows.Forms.Button();
             this.Tarieven = new System.Windows.Forms.Button();
             this.Thema = new System.Windows.Forms.Button();
             this.Homepage = new System.Windows.Forms.Button();
-            this.Zoeken = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabControl2.SuspendLayout();
+            this.Paginatabs.SuspendLayout();
+            this.Loginpaginatab.SuspendLayout();
+            this.Userpaginatab.SuspendLayout();
+            this.reserveringentab.SuspendLayout();
             this.Reserveringtab.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.Reserveringpnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.deletenumericbox)).BeginInit();
             this.oudereserveringtab.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabControl3.SuspendLayout();
+            this.Adminpaginatab.SuspendLayout();
+            this.Reservertab.SuspendLayout();
             this.Reserveringen.SuspendLayout();
             this.Oude_reserveringen.SuspendLayout();
             this.Zoeken.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // Paginatabs
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tabControl1.Location = new System.Drawing.Point(0, 48);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(883, 462);
-            this.tabControl1.TabIndex = 0;
-            this.tabControl1.TabStop = false;
+            this.Paginatabs.Controls.Add(this.Loginpaginatab);
+            this.Paginatabs.Controls.Add(this.Userpaginatab);
+            this.Paginatabs.Controls.Add(this.Adminpaginatab);
+            this.Paginatabs.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Paginatabs.Location = new System.Drawing.Point(0, 48);
+            this.Paginatabs.Name = "Paginatabs";
+            this.Paginatabs.SelectedIndex = 0;
+            this.Paginatabs.Size = new System.Drawing.Size(883, 462);
+            this.Paginatabs.TabIndex = 0;
+            this.Paginatabs.TabStop = false;
             // 
-            // tabPage1
+            // Loginpaginatab
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.tabPage1.Controls.Add(this.checkBox);
-            this.tabPage1.Controls.Add(this.Account);
-            this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.passwordrepeattxtbox);
-            this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.regbtn);
-            this.tabPage1.Controls.Add(this.Loginbtn);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.passwordregtxtbox);
-            this.tabPage1.Controls.Add(this.usernameregtxtbox);
-            this.tabPage1.Controls.Add(this.passlogintxtbox);
-            this.tabPage1.Controls.Add(this.usernamelogintxtbox);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage1.Size = new System.Drawing.Size(875, 436);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Login pagina";
+            this.Loginpaginatab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Loginpaginatab.Controls.Add(this.remembertxtbox);
+            this.Loginpaginatab.Controls.Add(this.Account);
+            this.Loginpaginatab.Controls.Add(this.repeatpasslbl);
+            this.Loginpaginatab.Controls.Add(this.passwordrepeattxtbox);
+            this.Loginpaginatab.Controls.Add(this.regpasswordlbl);
+            this.Loginpaginatab.Controls.Add(this.regusernamelbl);
+            this.Loginpaginatab.Controls.Add(this.Passwordlbl);
+            this.Loginpaginatab.Controls.Add(this.Usernamelbl);
+            this.Loginpaginatab.Controls.Add(this.Regbtn);
+            this.Loginpaginatab.Controls.Add(this.Loginbtn);
+            this.Loginpaginatab.Controls.Add(this.Registerlbl);
+            this.Loginpaginatab.Controls.Add(this.Loginlbl);
+            this.Loginpaginatab.Controls.Add(this.passwordregtxtbox);
+            this.Loginpaginatab.Controls.Add(this.usernameregtxtbox);
+            this.Loginpaginatab.Controls.Add(this.passlogintxtbox);
+            this.Loginpaginatab.Controls.Add(this.usernamelogintxtbox);
+            this.Loginpaginatab.Location = new System.Drawing.Point(4, 22);
+            this.Loginpaginatab.Name = "Loginpaginatab";
+            this.Loginpaginatab.Padding = new System.Windows.Forms.Padding(3);
+            this.Loginpaginatab.Size = new System.Drawing.Size(875, 436);
+            this.Loginpaginatab.TabIndex = 0;
+            this.Loginpaginatab.Text = "Login pagina";
             // 
-            // checkBox
+            // remembertxtbox
             // 
-            this.checkBox.AutoSize = true;
-            this.checkBox.Location = new System.Drawing.Point(341, 158);
-            this.checkBox.Name = "checkBox";
-            this.checkBox.Size = new System.Drawing.Size(100, 17);
-            this.checkBox.TabIndex = 47;
-            this.checkBox.Text = "Ingelogd blijven";
-            this.checkBox.UseVisualStyleBackColor = true;
+            this.remembertxtbox.AutoSize = true;
+            this.remembertxtbox.Location = new System.Drawing.Point(341, 158);
+            this.remembertxtbox.Name = "remembertxtbox";
+            this.remembertxtbox.Size = new System.Drawing.Size(100, 17);
+            this.remembertxtbox.TabIndex = 47;
+            this.remembertxtbox.Text = "Ingelogd blijven";
+            this.remembertxtbox.UseVisualStyleBackColor = true;
             // 
             // Account
             // 
             this.Account.BackColor = System.Drawing.Color.Aqua;
             this.Account.Location = new System.Drawing.Point(813, 5);
-            this.Account.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Account.Margin = new System.Windows.Forms.Padding(2);
             this.Account.Name = "Account";
             this.Account.Size = new System.Drawing.Size(56, 19);
             this.Account.TabIndex = 46;
             this.Account.Text = "Account";
             this.Account.UseVisualStyleBackColor = false;
             // 
-            // label11
+            // repeatpasslbl
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(339, 318);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(112, 13);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "Wachtwoord herhalen";
+            this.repeatpasslbl.AutoSize = true;
+            this.repeatpasslbl.Location = new System.Drawing.Point(339, 318);
+            this.repeatpasslbl.Name = "repeatpasslbl";
+            this.repeatpasslbl.Size = new System.Drawing.Size(112, 13);
+            this.repeatpasslbl.TabIndex = 19;
+            this.repeatpasslbl.Text = "Wachtwoord herhalen";
             // 
             // passwordrepeattxtbox
             // 
@@ -169,51 +169,51 @@
             this.passwordrepeattxtbox.TabIndex = 18;
             this.passwordrepeattxtbox.TextChanged += new System.EventHandler(this.passwordrepeattxtbox_TextChanged);
             // 
-            // label9
+            // regpasswordlbl
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(339, 292);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 13);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "Wachtwoord";
+            this.regpasswordlbl.AutoSize = true;
+            this.regpasswordlbl.Location = new System.Drawing.Point(339, 292);
+            this.regpasswordlbl.Name = "regpasswordlbl";
+            this.regpasswordlbl.Size = new System.Drawing.Size(68, 13);
+            this.regpasswordlbl.TabIndex = 11;
+            this.regpasswordlbl.Text = "Wachtwoord";
             // 
-            // label8
+            // regusernamelbl
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(339, 266);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 13);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Gebruikersnaam";
+            this.regusernamelbl.AutoSize = true;
+            this.regusernamelbl.Location = new System.Drawing.Point(339, 266);
+            this.regusernamelbl.Name = "regusernamelbl";
+            this.regusernamelbl.Size = new System.Drawing.Size(84, 13);
+            this.regusernamelbl.TabIndex = 10;
+            this.regusernamelbl.Text = "Gebruikersnaam";
             // 
-            // label3
+            // Passwordlbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(339, 135);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Wachtwoord";
+            this.Passwordlbl.AutoSize = true;
+            this.Passwordlbl.Location = new System.Drawing.Point(339, 135);
+            this.Passwordlbl.Name = "Passwordlbl";
+            this.Passwordlbl.Size = new System.Drawing.Size(68, 13);
+            this.Passwordlbl.TabIndex = 9;
+            this.Passwordlbl.Text = "Wachtwoord";
             // 
-            // label2
+            // Usernamelbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(339, 106);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Gebruikersnaam";
+            this.Usernamelbl.AutoSize = true;
+            this.Usernamelbl.Location = new System.Drawing.Point(339, 106);
+            this.Usernamelbl.Name = "Usernamelbl";
+            this.Usernamelbl.Size = new System.Drawing.Size(84, 13);
+            this.Usernamelbl.TabIndex = 8;
+            this.Usernamelbl.Text = "Gebruikersnaam";
             // 
-            // regbtn
+            // Regbtn
             // 
-            this.regbtn.Location = new System.Drawing.Point(401, 351);
-            this.regbtn.Name = "regbtn";
-            this.regbtn.Size = new System.Drawing.Size(75, 23);
-            this.regbtn.TabIndex = 7;
-            this.regbtn.Text = "Registreren";
-            this.regbtn.UseVisualStyleBackColor = true;
-            this.regbtn.Click += new System.EventHandler(this.button2_Click);
+            this.Regbtn.Location = new System.Drawing.Point(401, 351);
+            this.Regbtn.Name = "Regbtn";
+            this.Regbtn.Size = new System.Drawing.Size(75, 23);
+            this.Regbtn.TabIndex = 7;
+            this.Regbtn.Text = "Registreren";
+            this.Regbtn.UseVisualStyleBackColor = true;
+            this.Regbtn.Click += new System.EventHandler(this.Regbtn_Click);
             // 
             // Loginbtn
             // 
@@ -223,25 +223,25 @@
             this.Loginbtn.TabIndex = 6;
             this.Loginbtn.Text = "Login";
             this.Loginbtn.UseVisualStyleBackColor = true;
-            this.Loginbtn.Click += new System.EventHandler(this.button1_Click);
+            this.Loginbtn.Click += new System.EventHandler(this.Loginbtn_Click);
             // 
-            // label5
+            // Registerlbl
             // 
-            this.label5.Location = new System.Drawing.Point(0, 243);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(877, 17);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Nog geen account? Registreer dan hier.";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Registerlbl.Location = new System.Drawing.Point(0, 243);
+            this.Registerlbl.Name = "Registerlbl";
+            this.Registerlbl.Size = new System.Drawing.Size(877, 17);
+            this.Registerlbl.TabIndex = 5;
+            this.Registerlbl.Text = "Nog geen account? Registreer dan hier.";
+            this.Registerlbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // Loginlbl
             // 
-            this.label4.Location = new System.Drawing.Point(-2, 82);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(877, 17);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Heb je al een account? Log dan hier in.";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Loginlbl.Location = new System.Drawing.Point(-2, 82);
+            this.Loginlbl.Name = "Loginlbl";
+            this.Loginlbl.Size = new System.Drawing.Size(877, 17);
+            this.Loginlbl.TabIndex = 4;
+            this.Loginlbl.Text = "Heb je al een account? Log dan hier in.";
+            this.Loginlbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // passwordregtxtbox
             // 
@@ -273,50 +273,50 @@
             this.usernamelogintxtbox.Size = new System.Drawing.Size(100, 20);
             this.usernamelogintxtbox.TabIndex = 0;
             // 
-            // tabPage2
+            // Userpaginatab
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.tabPage2.Controls.Add(this.tabControl2);
-            this.tabPage2.Controls.Add(this.button7);
-            this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage2.Size = new System.Drawing.Size(875, 436);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Usertab";
+            this.Userpaginatab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Userpaginatab.Controls.Add(this.reserveringentab);
+            this.Userpaginatab.Controls.Add(this.loguitbtn);
+            this.Userpaginatab.Controls.Add(this.headerlbl);
+            this.Userpaginatab.Controls.Add(this.usertabtitel);
+            this.Userpaginatab.Location = new System.Drawing.Point(4, 22);
+            this.Userpaginatab.Name = "Userpaginatab";
+            this.Userpaginatab.Padding = new System.Windows.Forms.Padding(3);
+            this.Userpaginatab.Size = new System.Drawing.Size(875, 436);
+            this.Userpaginatab.TabIndex = 1;
+            this.Userpaginatab.Text = "Usertab";
             // 
-            // tabControl2
+            // reserveringentab
             // 
-            this.tabControl2.Controls.Add(this.Reserveringtab);
-            this.tabControl2.Controls.Add(this.oudereserveringtab);
-            this.tabControl2.Location = new System.Drawing.Point(210, 81);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(480, 296);
-            this.tabControl2.TabIndex = 7;
+            this.reserveringentab.Controls.Add(this.Reserveringtab);
+            this.reserveringentab.Controls.Add(this.oudereserveringtab);
+            this.reserveringentab.Location = new System.Drawing.Point(210, 81);
+            this.reserveringentab.Name = "reserveringentab";
+            this.reserveringentab.SelectedIndex = 0;
+            this.reserveringentab.Size = new System.Drawing.Size(480, 296);
+            this.reserveringentab.TabIndex = 7;
             // 
             // Reserveringtab
             // 
-            this.Reserveringtab.Controls.Add(this.panel1);
+            this.Reserveringtab.Controls.Add(this.Reserveringpnl);
             this.Reserveringtab.Location = new System.Drawing.Point(4, 22);
             this.Reserveringtab.Name = "Reserveringtab";
-            this.Reserveringtab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Reserveringtab.Padding = new System.Windows.Forms.Padding(3);
             this.Reserveringtab.Size = new System.Drawing.Size(472, 270);
             this.Reserveringtab.TabIndex = 0;
             this.Reserveringtab.Text = "Reserveringen";
             this.Reserveringtab.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // Reserveringpnl
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.deletenumericbox);
-            this.panel1.Controls.Add(this.button9);
-            this.panel1.Location = new System.Drawing.Point(0, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(472, 273);
-            this.panel1.TabIndex = 0;
+            this.Reserveringpnl.AutoScroll = true;
+            this.Reserveringpnl.Controls.Add(this.deletenumericbox);
+            this.Reserveringpnl.Controls.Add(this.Deletebtn);
+            this.Reserveringpnl.Location = new System.Drawing.Point(0, 3);
+            this.Reserveringpnl.Name = "Reserveringpnl";
+            this.Reserveringpnl.Size = new System.Drawing.Size(472, 273);
+            this.Reserveringpnl.TabIndex = 0;
             // 
             // deletenumericbox
             // 
@@ -335,162 +335,209 @@
             0,
             0});
             // 
-            // button9
+            // Deletebtn
             // 
-            this.button9.Location = new System.Drawing.Point(281, 12);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(106, 85);
-            this.button9.TabIndex = 0;
-            this.button9.Text = "Selecteer welke reservering u wilt verwijderen";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.Deletebtn.Location = new System.Drawing.Point(281, 12);
+            this.Deletebtn.Name = "Deletebtn";
+            this.Deletebtn.Size = new System.Drawing.Size(106, 85);
+            this.Deletebtn.TabIndex = 0;
+            this.Deletebtn.Text = "Selecteer welke reservering u wilt verwijderen";
+            this.Deletebtn.UseVisualStyleBackColor = true;
+            this.Deletebtn.Click += new System.EventHandler(this.button9_Click);
             // 
             // oudereserveringtab
             // 
-            this.oudereserveringtab.Controls.Add(this.panel3);
+            this.oudereserveringtab.Controls.Add(this.oldreserverpnl);
             this.oudereserveringtab.Location = new System.Drawing.Point(4, 22);
             this.oudereserveringtab.Name = "oudereserveringtab";
-            this.oudereserveringtab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.oudereserveringtab.Padding = new System.Windows.Forms.Padding(3);
             this.oudereserveringtab.Size = new System.Drawing.Size(472, 270);
             this.oudereserveringtab.TabIndex = 1;
             this.oudereserveringtab.Text = "Oude reserveringen";
             this.oudereserveringtab.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // oldreserverpnl
             // 
-            this.panel3.AutoScroll = true;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(472, 295);
-            this.panel3.TabIndex = 0;
+            this.oldreserverpnl.AutoScroll = true;
+            this.oldreserverpnl.Location = new System.Drawing.Point(0, 0);
+            this.oldreserverpnl.Name = "oldreserverpnl";
+            this.oldreserverpnl.Size = new System.Drawing.Size(472, 295);
+            this.oldreserverpnl.TabIndex = 0;
             // 
-            // button7
+            // loguitbtn
             // 
-            this.button7.Location = new System.Drawing.Point(772, 6);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Uitloggen";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.loguitbtn.Location = new System.Drawing.Point(772, 6);
+            this.loguitbtn.Name = "loguitbtn";
+            this.loguitbtn.Size = new System.Drawing.Size(75, 23);
+            this.loguitbtn.TabIndex = 6;
+            this.loguitbtn.Text = "Uitloggen";
+            this.loguitbtn.UseVisualStyleBackColor = true;
+            this.loguitbtn.Click += new System.EventHandler(this.Loguitbtn_Click);
             // 
-            // label7
+            // headerlbl
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label7.Location = new System.Drawing.Point(209, 58);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 20);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Reserveringen:";
+            this.headerlbl.AutoSize = true;
+            this.headerlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.headerlbl.Location = new System.Drawing.Point(209, 58);
+            this.headerlbl.Name = "headerlbl";
+            this.headerlbl.Size = new System.Drawing.Size(116, 20);
+            this.headerlbl.TabIndex = 4;
+            this.headerlbl.Text = "Reserveringen:";
             // 
-            // label6
+            // usertabtitel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label6.Location = new System.Drawing.Point(332, 17);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(270, 31);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Welkom <username>";
+            this.usertabtitel.AutoSize = true;
+            this.usertabtitel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.usertabtitel.Location = new System.Drawing.Point(332, 17);
+            this.usertabtitel.Name = "usertabtitel";
+            this.usertabtitel.Size = new System.Drawing.Size(270, 31);
+            this.usertabtitel.TabIndex = 3;
+            this.usertabtitel.Text = "Welkom <username>";
             // 
-            // tabPage3
+            // Adminpaginatab
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.tabPage3.Controls.Add(this.tabControl3);
-            this.tabPage3.Controls.Add(this.label10);
-            this.tabPage3.Controls.Add(this.button11);
-            this.tabPage3.Controls.Add(this.label1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(875, 436);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Admin tab";
+            this.Adminpaginatab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Adminpaginatab.Controls.Add(this.Reservertab);
+            this.Adminpaginatab.Controls.Add(this.Adminheader);
+            this.Adminpaginatab.Controls.Add(this.logoutbtn2);
+            this.Adminpaginatab.Controls.Add(this.Admintitle);
+            this.Adminpaginatab.Location = new System.Drawing.Point(4, 22);
+            this.Adminpaginatab.Name = "Adminpaginatab";
+            this.Adminpaginatab.Size = new System.Drawing.Size(875, 436);
+            this.Adminpaginatab.TabIndex = 2;
+            this.Adminpaginatab.Text = "Admin tab";
             // 
-            // tabControl3
+            // Reservertab
             // 
-            this.tabControl3.Controls.Add(this.Reserveringen);
-            this.tabControl3.Controls.Add(this.Oude_reserveringen);
-            this.tabControl3.Controls.Add(this.Zoeken);
-            this.tabControl3.Location = new System.Drawing.Point(226, 79);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(460, 306);
-            this.tabControl3.TabIndex = 12;
+            this.Reservertab.Controls.Add(this.Reserveringen);
+            this.Reservertab.Controls.Add(this.Oude_reserveringen);
+            this.Reservertab.Controls.Add(this.Zoeken);
+            this.Reservertab.Location = new System.Drawing.Point(226, 79);
+            this.Reservertab.Name = "Reservertab";
+            this.Reservertab.SelectedIndex = 0;
+            this.Reservertab.Size = new System.Drawing.Size(460, 306);
+            this.Reservertab.TabIndex = 12;
             // 
             // Reserveringen
             // 
-            this.Reserveringen.Controls.Add(this.panel2);
+            this.Reserveringen.Controls.Add(this.reservpnl);
             this.Reserveringen.Location = new System.Drawing.Point(4, 22);
             this.Reserveringen.Name = "Reserveringen";
-            this.Reserveringen.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Reserveringen.Padding = new System.Windows.Forms.Padding(3);
             this.Reserveringen.Size = new System.Drawing.Size(452, 280);
             this.Reserveringen.TabIndex = 0;
             this.Reserveringen.Text = "Reserveringen";
             this.Reserveringen.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // reservpnl
             // 
-            this.panel2.AutoScroll = true;
-            this.panel2.Location = new System.Drawing.Point(0, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(446, 274);
-            this.panel2.TabIndex = 0;
+            this.reservpnl.AutoScroll = true;
+            this.reservpnl.Location = new System.Drawing.Point(0, 3);
+            this.reservpnl.Name = "reservpnl";
+            this.reservpnl.Size = new System.Drawing.Size(446, 274);
+            this.reservpnl.TabIndex = 0;
             // 
             // Oude_reserveringen
             // 
-            this.Oude_reserveringen.Controls.Add(this.panel4);
+            this.Oude_reserveringen.Controls.Add(this.oldreservpnl);
             this.Oude_reserveringen.Location = new System.Drawing.Point(4, 22);
             this.Oude_reserveringen.Name = "Oude_reserveringen";
-            this.Oude_reserveringen.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Oude_reserveringen.Padding = new System.Windows.Forms.Padding(3);
             this.Oude_reserveringen.Size = new System.Drawing.Size(452, 280);
             this.Oude_reserveringen.TabIndex = 1;
             this.Oude_reserveringen.Text = "Oude reserveringen";
             this.Oude_reserveringen.UseVisualStyleBackColor = true;
             // 
-            // panel4
+            // oldreservpnl
             // 
-            this.panel4.AutoScroll = true;
-            this.panel4.Location = new System.Drawing.Point(4, 4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(445, 273);
-            this.panel4.TabIndex = 0;
+            this.oldreservpnl.AutoScroll = true;
+            this.oldreservpnl.Location = new System.Drawing.Point(4, 4);
+            this.oldreservpnl.Name = "oldreservpnl";
+            this.oldreservpnl.Size = new System.Drawing.Size(445, 273);
+            this.oldreservpnl.TabIndex = 0;
             // 
-            // label10
+            // Zoeken
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label10.Location = new System.Drawing.Point(226, 55);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(116, 20);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "Reserveringen:";
+            this.Zoeken.Controls.Add(this.resultspnl);
+            this.Zoeken.Controls.Add(this.searchbtn);
+            this.Zoeken.Controls.Add(this.label12);
+            this.Zoeken.Controls.Add(this.textBox1);
+            this.Zoeken.Location = new System.Drawing.Point(4, 22);
+            this.Zoeken.Name = "Zoeken";
+            this.Zoeken.Size = new System.Drawing.Size(452, 280);
+            this.Zoeken.TabIndex = 2;
+            this.Zoeken.Text = "Zoeken";
+            this.Zoeken.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // resultspnl
             // 
-            this.button11.Location = new System.Drawing.Point(772, 6);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
-            this.button11.TabIndex = 9;
-            this.button11.Text = "Uitloggen";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.resultspnl.AutoScroll = true;
+            this.resultspnl.Location = new System.Drawing.Point(4, 41);
+            this.resultspnl.Name = "resultspnl";
+            this.resultspnl.Size = new System.Drawing.Size(445, 236);
+            this.resultspnl.TabIndex = 3;
             // 
-            // label1
+            // searchbtn
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.Location = new System.Drawing.Point(358, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Admin account";
+            this.searchbtn.Location = new System.Drawing.Point(271, 12);
+            this.searchbtn.Name = "searchbtn";
+            this.searchbtn.Size = new System.Drawing.Size(75, 23);
+            this.searchbtn.TabIndex = 2;
+            this.searchbtn.Text = "Zoeken";
+            this.searchbtn.UseVisualStyleBackColor = true;
+            this.searchbtn.Click += new System.EventHandler(this.searchbtn_Click_1);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(14, 17);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(137, 13);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Zoeken op gebruikersnaam";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(157, 14);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(108, 20);
+            this.textBox1.TabIndex = 0;
+            // 
+            // Adminheader
+            // 
+            this.Adminheader.AutoSize = true;
+            this.Adminheader.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Adminheader.Location = new System.Drawing.Point(226, 55);
+            this.Adminheader.Name = "Adminheader";
+            this.Adminheader.Size = new System.Drawing.Size(116, 20);
+            this.Adminheader.TabIndex = 11;
+            this.Adminheader.Text = "Reserveringen:";
+            // 
+            // logoutbtn2
+            // 
+            this.logoutbtn2.Location = new System.Drawing.Point(772, 6);
+            this.logoutbtn2.Name = "logoutbtn2";
+            this.logoutbtn2.Size = new System.Drawing.Size(75, 23);
+            this.logoutbtn2.TabIndex = 9;
+            this.logoutbtn2.Text = "Uitloggen";
+            this.logoutbtn2.UseVisualStyleBackColor = true;
+            this.logoutbtn2.Click += new System.EventHandler(this.logoutbtn2_Click);
+            // 
+            // Admintitle
+            // 
+            this.Admintitle.AutoSize = true;
+            this.Admintitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.Admintitle.Location = new System.Drawing.Point(358, 16);
+            this.Admintitle.Name = "Admintitle";
+            this.Admintitle.Size = new System.Drawing.Size(193, 31);
+            this.Admintitle.TabIndex = 0;
+            this.Admintitle.Text = "Admin account";
             // 
             // Contact
             // 
             this.Contact.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Contact.Location = new System.Drawing.Point(617, 11);
-            this.Contact.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Contact.Margin = new System.Windows.Forms.Padding(2);
             this.Contact.Name = "Contact";
             this.Contact.Size = new System.Drawing.Size(98, 32);
             this.Contact.TabIndex = 45;
@@ -502,7 +549,7 @@
             // 
             this.Recenties.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Recenties.Location = new System.Drawing.Point(515, 11);
-            this.Recenties.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Recenties.Margin = new System.Windows.Forms.Padding(2);
             this.Recenties.Name = "Recenties";
             this.Recenties.Size = new System.Drawing.Size(98, 32);
             this.Recenties.TabIndex = 44;
@@ -515,7 +562,7 @@
             this.Button8.BackColor = System.Drawing.Color.Transparent;
             this.Button8.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button8.Location = new System.Drawing.Point(404, 11);
-            this.Button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Button8.Margin = new System.Windows.Forms.Padding(2);
             this.Button8.Name = "Button8";
             this.Button8.Size = new System.Drawing.Size(107, 32);
             this.Button8.TabIndex = 43;
@@ -528,7 +575,7 @@
             this.Tarieven.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Tarieven.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tarieven.Location = new System.Drawing.Point(302, 11);
-            this.Tarieven.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Tarieven.Margin = new System.Windows.Forms.Padding(2);
             this.Tarieven.Name = "Tarieven";
             this.Tarieven.Size = new System.Drawing.Size(98, 32);
             this.Tarieven.TabIndex = 40;
@@ -540,7 +587,7 @@
             // 
             this.Thema.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Thema.Location = new System.Drawing.Point(200, 11);
-            this.Thema.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Thema.Margin = new System.Windows.Forms.Padding(2);
             this.Thema.Name = "Thema";
             this.Thema.Size = new System.Drawing.Size(98, 32);
             this.Thema.TabIndex = 39;
@@ -552,7 +599,7 @@
             // 
             this.Homepage.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Homepage.Location = new System.Drawing.Point(88, 11);
-            this.Homepage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Homepage.Margin = new System.Windows.Forms.Padding(2);
             this.Homepage.Name = "Homepage";
             this.Homepage.Size = new System.Drawing.Size(108, 32);
             this.Homepage.TabIndex = 36;
@@ -560,60 +607,13 @@
             this.Homepage.UseVisualStyleBackColor = true;
             this.Homepage.Click += new System.EventHandler(this.Homepage_Click);
             // 
-            // Zoeken
-            // 
-            this.Zoeken.Controls.Add(this.panel5);
-            this.Zoeken.Controls.Add(this.button1);
-            this.Zoeken.Controls.Add(this.label12);
-            this.Zoeken.Controls.Add(this.textBox1);
-            this.Zoeken.Location = new System.Drawing.Point(4, 22);
-            this.Zoeken.Name = "Zoeken";
-            this.Zoeken.Size = new System.Drawing.Size(452, 280);
-            this.Zoeken.TabIndex = 2;
-            this.Zoeken.Text = "Zoeken";
-            this.Zoeken.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(157, 14);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(108, 20);
-            this.textBox1.TabIndex = 0;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(14, 17);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(137, 13);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Zoeken op gebruikersnaam";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(271, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Zoeken";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // panel5
-            // 
-            this.panel5.AutoScroll = true;
-            this.panel5.Location = new System.Drawing.Point(4, 41);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(445, 236);
-            this.panel5.TabIndex = 3;
-            // 
             // Accountpagina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(884, 511);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.Paginatabs);
             this.Controls.Add(this.Contact);
             this.Controls.Add(this.Homepage);
             this.Controls.Add(this.Recenties);
@@ -622,19 +622,19 @@
             this.Controls.Add(this.Tarieven);
             this.Name = "Accountpagina";
             this.Text = "Accountpagina";
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tabControl2.ResumeLayout(false);
+            this.Paginatabs.ResumeLayout(false);
+            this.Loginpaginatab.ResumeLayout(false);
+            this.Loginpaginatab.PerformLayout();
+            this.Userpaginatab.ResumeLayout(false);
+            this.Userpaginatab.PerformLayout();
+            this.reserveringentab.ResumeLayout(false);
             this.Reserveringtab.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.Reserveringpnl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.deletenumericbox)).EndInit();
             this.oudereserveringtab.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabControl3.ResumeLayout(false);
+            this.Adminpaginatab.ResumeLayout(false);
+            this.Adminpaginatab.PerformLayout();
+            this.Reservertab.ResumeLayout(false);
             this.Reserveringen.ResumeLayout(false);
             this.Oude_reserveringen.ResumeLayout(false);
             this.Zoeken.ResumeLayout(false);
@@ -645,33 +645,33 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabControl Paginatabs;
+        private System.Windows.Forms.TabPage Loginpaginatab;
+        private System.Windows.Forms.TabPage Userpaginatab;
         private System.Windows.Forms.TextBox passwordregtxtbox;
         private System.Windows.Forms.TextBox usernameregtxtbox;
         private System.Windows.Forms.TextBox passlogintxtbox;
         private System.Windows.Forms.TextBox usernamelogintxtbox;
-        private System.Windows.Forms.Button regbtn;
+        private System.Windows.Forms.Button Regbtn;
         private System.Windows.Forms.Button Loginbtn;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label Registerlbl;
+        private System.Windows.Forms.Label Loginlbl;
+        private System.Windows.Forms.Label usertabtitel;
+        private System.Windows.Forms.TabPage Adminpaginatab;
+        private System.Windows.Forms.Label headerlbl;
+        private System.Windows.Forms.Label Admintitle;
+        private System.Windows.Forms.Label regpasswordlbl;
+        private System.Windows.Forms.Label regusernamelbl;
+        private System.Windows.Forms.Label Passwordlbl;
+        private System.Windows.Forms.Label Usernamelbl;
+        private System.Windows.Forms.Button loguitbtn;
+        private System.Windows.Forms.Button logoutbtn2;
+        private System.Windows.Forms.Panel Reserveringpnl;
+        private System.Windows.Forms.Label Adminheader;
+        private System.Windows.Forms.Panel reservpnl;
         private System.Windows.Forms.NumericUpDown deletenumericbox;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button Deletebtn;
+        private System.Windows.Forms.Label repeatpasslbl;
         private System.Windows.Forms.TextBox passwordrepeattxtbox;
         private System.Windows.Forms.Button Homepage;
         private System.Windows.Forms.Button Thema;
@@ -680,18 +680,18 @@
         private System.Windows.Forms.Button Recenties;
         private System.Windows.Forms.Button Contact;
         private System.Windows.Forms.Button Account;
-        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabControl reserveringentab;
         private System.Windows.Forms.TabPage Reserveringtab;
         private System.Windows.Forms.TabPage oudereserveringtab;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TabControl tabControl3;
+        private System.Windows.Forms.Panel oldreserverpnl;
+        private System.Windows.Forms.TabControl Reservertab;
         private System.Windows.Forms.TabPage Reserveringen;
         private System.Windows.Forms.TabPage Oude_reserveringen;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.CheckBox checkBox;
+        private System.Windows.Forms.Panel oldreservpnl;
+        private System.Windows.Forms.CheckBox remembertxtbox;
         private System.Windows.Forms.TabPage Zoeken;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel resultspnl;
+        private System.Windows.Forms.Button searchbtn;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox1;
     }

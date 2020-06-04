@@ -16,31 +16,37 @@ namespace Escaplication
     {
         public string[] lines, lines2, lines3, checkpassword;
         public int countres;
+
         public Accountpagina()
         {
             InitializeComponent();
-            tabControl1.Appearance = TabAppearance.FlatButtons;
-            tabControl1.ItemSize = new Size(0, 1); 
-            tabControl1.SizeMode = TabSizeMode.Fixed;
+            Paginatabs.Appearance = TabAppearance.FlatButtons;
+            Paginatabs.ItemSize = new Size(0, 1); 
+            Paginatabs.SizeMode = TabSizeMode.Fixed;
             checkpassword = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+            //Deze methode checkt of er al is ingelogd
             if (Convert.ToBoolean(checkpassword[0]) == true)
             {
                 this.login(checkpassword[1], checkpassword[2]);
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Regbtn_Click(object sender, EventArgs e)
         {
+            // Deze code kijkt of de gebruikersnaam bruikbaar is
+
             if (!File.Exists(Application.StartupPath + "\\Gebruikers\\" + usernameregtxtbox.Text + ".txt"))
             {
+                // Deze code kijkt of de wachtwoorden overeenkomen
+
                 if (passwordregtxtbox.Text == passwordrepeattxtbox.Text && usernameregtxtbox.Text.Length > 0)
                 {
-                    StreamWriter ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + usernameregtxtbox.Text + ".txt");
+                    var ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + usernameregtxtbox.Text + ".txt");
                     ab.WriteLine(usernameregtxtbox.Text);
                     ab.WriteLine(passwordregtxtbox.Text);
                     ab.Close();
                     MessageBox.Show("Registreren voltooid");
-                    using (StreamWriter af = File.AppendText(Application.StartupPath + "\\Gebruikers\\" + "Accounts" + ".txt"))
+                    using (var af = File.AppendText(Application.StartupPath + "\\Gebruikers\\" + "Accounts" + ".txt"))
                     {
                         af.WriteLine(usernameregtxtbox.Text + ".txt");
                         af.Close();
@@ -56,23 +62,27 @@ namespace Escaplication
                 MessageBox.Show("Deze gebruikersnaam bestaat al");
             }
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void Loginbtn_Click(object sender, EventArgs e)
         {
             this.login(usernamelogintxtbox.Text, passlogintxtbox.Text);
         }
 
+        // Deze methode logt de gebruiker in.
+
         public void login(string usernamelogintxt, string passlogintxt) { 
-            string path = Application.StartupPath + "\\Gebruikers\\" + usernamelogintxt + ".txt";
+            var path = Application.StartupPath + "\\Gebruikers\\" + usernamelogintxt + ".txt";
             if (File.Exists(path))
             {
                 lines = File.ReadAllLines(path);
                 {
                     if (lines[0] == usernamelogintxt && lines[1] == passlogintxt && usernamelogintxt != "Admin")
                     {
+                        // Als de gebruiker het wachtwoord wilt onthouden zorgt deze code daarvoor
+
                         if (Convert.ToBoolean(checkpassword[0]) == false)
                         {
-                            StreamWriter ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
-                            if (checkBox.Checked)
+                            var ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+                            if (remembertxtbox.Checked)
                             {
                                 ab.WriteLine("true");
                             }
@@ -84,55 +94,61 @@ namespace Escaplication
                             ab.WriteLine(passlogintxt);
                             ab.Close();
                         }
-                        tabControl1.SelectTab(1);
+                        Paginatabs.SelectTab(1);
                         checkpassword = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
-                        this.label6.Text = "Welkom " + usernamelogintxt;
+                        this.usertabtitel.Text = "Welkom " + usernamelogintxt;
                         if (lines.Length != 0)
                         {
-                            for (int i = 2, j = 1, k = 1, LocPointGB = 0, LocPointLabel = 10, LocPointGB2 = 0, LocPointLabel2 = 10; i < lines.Length - 6; i += 7)
+                            int i = 2, j = 1, k = 1, LocPointGB = 0, LocPointLabel = 10, LocPointGB2 = 0, LocPointLabel2 = 10;
+                            while (i < lines.Length - 6)
                             {
-                                DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
-                                DateTime date2 = new DateTime(Int32.Parse(lines[i + 2]), Int32.Parse(lines[i + 3]), Int32.Parse(lines[i + 4]));
-                                int datecomparinson = DateTime.Compare(date1, date2);
+                                var date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+                                var date2 = new DateTime(Int32.Parse(lines[i + 2]), Int32.Parse(lines[i + 3]), Int32.Parse(lines[i + 4]));
+                                var datecomparinson = DateTime.Compare(date1, date2);
+                                // Deze code zorgt ervoor dat de nieuwe reserveringen van de user worden weergegeven
+
                                 if (datecomparinson <= 0)
                                 {
-                                    GroupBox recensiegb = new GroupBox();
+                                    var recensiegb = new GroupBox();
                                     recensiegb.Name = "";
                                     recensiegb.Size = new Size(220, 110);
                                     recensiegb.Location = new Point(0, LocPointGB);
 
-                                    Label naamkamer = new Label();
+                                    var naamkamer = new Label();
                                     naamkamer.AutoSize = true;
                                     naamkamer.Location = new Point(5, LocPointLabel);
                                     naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
                                     naamkamer.Text = j + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i + 1] + "\nDatum: " + lines[i + 4] + "-" + lines[i + 3] + "-" + lines[i + 2] + "\nTijd: " + lines[i+5] + ":" + lines[i+6];
 
-                                    panel1.Controls.Add(naamkamer);
-                                    panel1.Controls.Add(recensiegb);
+                                    Reserveringpnl.Controls.Add(naamkamer);
+                                    Reserveringpnl.Controls.Add(recensiegb);
                                     LocPointGB += 110;
                                     LocPointLabel += 110;
                                     j++;
                                     countres++;
                                 }
+                                // Deze code zorgt ervoor dat de oude reserveringen van de user worden weergegeven
+
                                 else
                                 {
-                                    GroupBox recensiegb = new GroupBox();
+                                    var recensiegb = new GroupBox();
                                     recensiegb.Name = "";
                                     recensiegb.Size = new Size(220, 110);
                                     recensiegb.Location = new Point(0, LocPointGB2);
 
-                                    Label naamkamer = new Label();
+                                    var naamkamer = new Label();
                                     naamkamer.AutoSize = true;
                                     naamkamer.Location = new Point(5, LocPointLabel2);
                                     naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
                                     naamkamer.Text = k + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i + 1] + "\nDatum: " + lines[i + 4] + "-" + lines[i + 3] + "-" + lines[i + 2] + "\nTijd: " + lines[i + 5] + ":" + lines[i + 6];
 
-                                    panel3.Controls.Add(naamkamer);
-                                    panel3.Controls.Add(recensiegb);
+                                    oldreserverpnl.Controls.Add(naamkamer);
+                                    oldreserverpnl.Controls.Add(recensiegb);
                                     LocPointGB2 += 110;
                                     LocPointLabel2 += 110;
                                     k++;
                                 }
+                                i += 7;
                             }
                         }
                         deletenumericbox.Maximum = countres;
@@ -140,57 +156,62 @@ namespace Escaplication
                     else if ("Admin" == usernamelogintxt && "Admin" == passlogintxt)
                     {
                         lines2 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Accounts.txt");
-                        tabControl1.SelectTab(2);
-                        for (int k = 0, LocPointGB = 0, LocPointLabel = 10, LocPointGB2 = 0, LocPointLabel2 = 10; k < lines2.Length; k++)
+                        Paginatabs.SelectTab(2);
+                        int k = 0, LocPointGB = 0, LocPointLabel = 10, LocPointGB2 = 0, LocPointLabel2 = 10;
+                        while ( k < lines2.Length)
                         {
                             lines3 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + lines2[k]);
                             if (lines3.Length != 0)
                             {
                                 for (int i = 2, j = 1; i < lines3.Length - 6; i += 7, j++)
                                 {
-                                    DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
-                                    DateTime date2 = new DateTime(Int32.Parse(lines3[i + 2]), Int32.Parse(lines3[i + 3]), Int32.Parse(lines3[i + 4]));
-                                    int datecomparinson = DateTime.Compare(date1, date2);
+                                    var date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+                                    var date2 = new DateTime(Int32.Parse(lines3[i + 2]), Int32.Parse(lines3[i + 3]), Int32.Parse(lines3[i + 4]));
+                                    var datecomparinson = DateTime.Compare(date1, date2);
+                                    // Deze functie zorgt ervoor dat de admin alle nieuwe reserveringen ziet
+
                                     if (datecomparinson < 0)
                                     {
-                                        GroupBox recensiegb = new GroupBox();
+                                        var recensiegb = new GroupBox();
                                         recensiegb.Name = "";
                                         recensiegb.Size = new Size(220, 120);
                                         recensiegb.Location = new Point(0, LocPointGB);
 
-                                        Label naamkamer = new Label();
+                                        var naamkamer = new Label();
                                         naamkamer.AutoSize = true;
                                         naamkamer.Location = new Point(5, LocPointLabel);
                                         naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
                                         naamkamer.Text = j + ".\nNaam: " + lines3[0] + "\nEscaperoom: " + lines3[i] + "\nAantal personen: " + lines3[i + 1] + "\nDatum: " + lines3[i + 4] + "-" + lines3[i + 3] + "-" + lines3[i + 2] + "\nTijd: " + lines3[i+5] + ":" + lines3[i+6];
                                          
 
-                                        panel2.Controls.Add(naamkamer);
-                                        panel2.Controls.Add(recensiegb);
+                                        reservpnl.Controls.Add(naamkamer);
+                                        reservpnl.Controls.Add(recensiegb);
                                         LocPointGB += 120;
                                         LocPointLabel += 120;
                                     }
+                                    //Deze functie zorgt ervoor dat de admin alle oude reserveringen ziet
+
                                     else
                                     {
-                                        Console.WriteLine("test");
-                                        GroupBox recensiegb = new GroupBox();
+                                        var recensiegb = new GroupBox();
                                         recensiegb.Name = "";
                                         recensiegb.Size = new Size(220, 120);
                                         recensiegb.Location = new Point(0, LocPointGB2);
 
-                                        Label naamkamer = new Label();
+                                        var naamkamer = new Label();
                                         naamkamer.AutoSize = true;
                                         naamkamer.Location = new Point(5, LocPointLabel2);
                                         naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
                                         naamkamer.Text = j + ".\nNaam: " + lines3[0] + ".\nEscaperoom: " + lines3[i] + "\nAantal personen: " + lines3[i + 1] + "\nDatum: " + lines3[i + 4] + "-" + lines3[i + 3] + "-" + lines3[i + 2] + "\nTijd: " + lines3[i + 5] + ":" + lines3[i + 6];
 
-                                        panel4.Controls.Add(naamkamer);
-                                        panel4.Controls.Add(recensiegb);
+                                        oldreservpnl.Controls.Add(naamkamer);
+                                        oldreservpnl.Controls.Add(recensiegb);
                                         LocPointGB2 += 120;
                                         LocPointLabel2 += 120;
                                     }
                                 }
                             }
+                            k++;
                         }
                     }
                     else
@@ -204,9 +225,9 @@ namespace Escaplication
             }
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void logoutbtn2_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(0);
+            Paginatabs.SelectTab(0);
         }
 
         private void Homepage_Click(object sender, EventArgs e)
@@ -249,6 +270,8 @@ namespace Escaplication
             this.Close();
         }
 
+        // Deze stukken code zorgen ervoor dat het wachtwoord verborgen blijft
+
         private void passlogintxtbox_TextChanged(object sender, EventArgs e)
         {
             passlogintxtbox.PasswordChar = '●';
@@ -264,32 +287,36 @@ namespace Escaplication
             passwordrepeattxtbox.PasswordChar = '●';
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        // Deze code zorgt ervoor dat de admin specifieke gebruikers kan zoeken
+
+        private void searchbtn_Click_1(object sender, EventArgs e)
         {
-            panel5.Controls.Clear();
+            resultspnl.Controls.Clear();
             lines = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + textBox1.Text + ".txt");
-            string path = Application.StartupPath + "\\Gebruikers\\" + textBox1.Text + ".txt";
+            var path = Application.StartupPath + "\\Gebruikers\\" + textBox1.Text + ".txt";
             if (File.Exists(path))
             {
-                for (int i = 2, j = 1, LocPointGB = 0, LocPointLabel = 10; i < lines.Length - 6; i += 7)
+                int i = 2, j = 1, LocPointGB = 0, LocPointLabel = 10;
+                while (i < lines.Length - 6)
                 {
-                    GroupBox recensiegb = new GroupBox();
+                    var recensiegb = new GroupBox();
                     recensiegb.Name = "";
                     recensiegb.Size = new Size(220, 110);
                     recensiegb.Location = new Point(0, LocPointGB);
 
-                    Label naamkamer = new Label();
+                    var naamkamer = new Label();
                     naamkamer.AutoSize = true;
                     naamkamer.Location = new Point(5, LocPointLabel);
                     naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
                     naamkamer.Text = j + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i + 1] + "\nDatum: " + lines[i + 4] + "-" + lines[i + 3] + "-" + lines[i + 2] + "\nTijd: " + lines[i + 5] + ":" + lines[i + 6];
 
-                    panel5.Controls.Add(naamkamer);
-                    panel5.Controls.Add(recensiegb);
+                    resultspnl.Controls.Add(naamkamer);
+                    resultspnl.Controls.Add(recensiegb);
                     LocPointGB += 110;
                     LocPointLabel += 110;
                     j++;
                     countres++;
+                    i += 7;
                 }
             }
         }
@@ -302,29 +329,31 @@ namespace Escaplication
             this.Close();
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void Loguitbtn_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(0);
+            Paginatabs.SelectTab(0);
             countres = 0;
-            StreamWriter ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+            var ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
             ab.WriteLine("false");
             ab.Close();
         }
+
+        // Deze code zorgt ervoor dat de gebruiker een reserveringen kan verwijderen
 
         private void button9_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Wil je deze reservering echt verwijderen?", "Verwijderen", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) { 
                 if (countres != 0)
             {
-                int n = 0;
-                StreamWriter ae = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + checkpassword[1] + ".txt");
+                var n = 0;
+                var ae = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + checkpassword[1] + ".txt");
                 Console.WriteLine(checkpassword[1]);
                 for (int i = 2, g = 0; i < lines.Length - 6; i += 7)
                 {
                     n = i;
-                    DateTime date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
-                    DateTime date2 = new DateTime(Int32.Parse(lines[i + 2]), Int32.Parse(lines[i + 3]), Int32.Parse(lines[i + 4]));
-                    int datecomparinson = DateTime.Compare(date1, date2);
+                    var date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+                    var date2 = new DateTime(Int32.Parse(lines[i + 2]), Int32.Parse(lines[i + 3]), Int32.Parse(lines[i + 4]));
+                    var datecomparinson = DateTime.Compare(date1, date2);
                     if (datecomparinson <= 0)
                     {
                         g++;
