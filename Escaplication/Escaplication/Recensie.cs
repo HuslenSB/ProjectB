@@ -58,6 +58,32 @@ namespace Escaplication
                 if (checkBox.Checked)
                 {
                     WriteText.WriteLine("true");
+                    if (lines[1] == Wachtwoordtext)
+                    {
+                        if (Convert.ToBoolean(checkpassword[0]) == false)
+                        {
+                            StreamWriter WriteText = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+                            if (checkBox.Checked)
+                            { 
+                                WriteText.WriteLine("true"); 
+                            }
+
+                            else{
+                                WriteText.WriteLine("false");}
+
+                            WriteText.WriteLine(Gebruikersnaamtext);
+                            WriteText.WriteLine(Wachtwoordtext);
+                            WriteText.Close();
+                        }
+                        if (ster >= 0 && ster <= 5)
+                        {
+                            WriteRecensieFile(Gebruikersnaamtext);
+                        }
+                        else{ 
+                            messagebox("Typ een getal tussen 0-5 bij sterren"); }
+                    }
+                    else{ 
+                        messagebox("Wachtwoord onjuist");  }
                 }
 
                 else
@@ -73,10 +99,10 @@ namespace Escaplication
 
         // Functie die de recensie opslaat in een txt file.
 
-        public void WriteRecensieFile()
+        public void WriteRecensieFile(string usernametext)
         {
-            StreamWriter WriteText = new StreamWriter(Application.StartupPath + "\\Recensies\\" + Gebruikersnaamtxt.Text + ".txt");
-            WriteText.WriteLine(Gebruikersnaamtxt.Text);
+            StreamWriter WriteText = new StreamWriter(Application.StartupPath + "\\Recensies\\" + usernametext + ".txt");
+            WriteText.WriteLine(usernametext);
             WriteText.WriteLine(kamertxt.Text);
             WriteText.WriteLine(commentaartxt.Text);
             WriteText.WriteLine(sterrentxt.Text);
@@ -275,6 +301,22 @@ namespace Escaplication
             var Accountpagina = new Accountpagina();
             this.Hide();
             Accountpagina.ShowDialog();
+            this.Close();
+        }
+
+        private void Recensiebtn_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToBoolean(checkpassword[0]) == false)
+            {
+                RecensieUser(Gebruikersnaamtxt.Text, Wachtwoordtxt.Text);
+            }
+            else
+            {
+                RecensieUser(checkpassword[1], checkpassword[2]);
+            }
+            var Recensie = new Recensie();
+            this.Hide();
+            Recensie.ShowDialog();
             this.Close();
         }
     }
