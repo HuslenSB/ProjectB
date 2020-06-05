@@ -101,7 +101,7 @@ namespace Escaplication
                         if (lines.Length != 0)
                         {
                             int i = 2, j = 1, k = 1, LocPointGB = 0, LocPointLabel = 10, LocPointGB2 = 0, LocPointLabel2 = 10;
-                            while (i < lines.Length - 6)
+                            while (i < lines.Length - 5)
                             {
                                 var date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
                                 var date2 = new DateTime(Int32.Parse(lines[i + 2]), Int32.Parse(lines[i + 3]), Int32.Parse(lines[i + 4]));
@@ -149,7 +149,7 @@ namespace Escaplication
                                     LocPointLabel2 += 110;
                                     k++;
                                 }
-                                i += 7;
+                                i += 6;
                             }
                         }
                         deletenumericbox.Maximum = countres;

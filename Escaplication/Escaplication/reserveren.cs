@@ -51,6 +51,10 @@ namespace Escaplication
             tabControl1.SelectTab(1);
             this.label1.Text = "Leuk dat je hebt gekozen voor de Sparta escape room!";
             chosenroom = "Sparta";
+            TimeBoxFill();
+            yearbox.Value = 2020;
+            monthbox.Value = 1;
+            daybox.Value = 1;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -58,6 +62,10 @@ namespace Escaplication
             tabControl1.SelectTab(1);
             this.label1.Text = "Leuk dat je hebt gekozen voor de Last run escape room!";
             chosenroom = "The last run";
+            TimeBoxFill();
+            yearbox.Value = 2020;
+            monthbox.Value = 1;
+            daybox.Value = 1;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -65,6 +73,10 @@ namespace Escaplication
             tabControl1.SelectTab(1);
             this.label1.Text = "Leuk dat je hebt gekozen voor de Haunted escape, escape room!";
             chosenroom = "Haunted escape";
+            TimeBoxFill();
+            yearbox.Value = 2020;
+            monthbox.Value = 1;
+            daybox.Value = 1;
         }
 
         private void Homepage_Click(object sender, EventArgs e)
