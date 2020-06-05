@@ -213,7 +213,18 @@ namespace Escaplication
             string pathGebruikers = Application.StartupPath + "\\Gebruikers\\" + Gebruikersnaamtext + ".txt";
             var ster = Int32.Parse(sterrentxt.Text);
 
-            if (File.Exists(pathGebruikers))
+            if (Convert.ToBoolean(checkpassword[0]) == true)
+            {
+                if (ster >= 0 && ster <= 5)
+                {
+                    WriteRecensieFile();
+                }
+                else
+                {
+                    messagebox("Typ een getal tussen 0-5 bij sterren");
+                }
+            }
+            else if (File.Exists(pathGebruikers))
             {
                 string[] lines = File.ReadAllLines(pathGebruikers);
                 if (lines[0] == Gebruikersnaamtext)
@@ -252,10 +263,7 @@ namespace Escaplication
                     }
                 }
             }
-            else
-            {
-                messagebox("Gebruikersnaam niet gevonden");
-            }
+
         }
     }
 }
