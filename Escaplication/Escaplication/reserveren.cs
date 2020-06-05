@@ -53,11 +53,6 @@ namespace Escaplication
             chosenroom = "Haunted escape";
         }
 
-        private void PageTitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Homepage_Click(object sender, EventArgs e)
         {
             // Deze code zorgt ervoor dat als de gebruiker op de knop "Homepage" drukt, deze teruggaat naar het begin scherm.
@@ -372,6 +367,10 @@ namespace Escaplication
         private void button6_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(0);
+            var Login = new Reserveren();
+            this.Hide();
+            Login.ShowDialog();
+            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)

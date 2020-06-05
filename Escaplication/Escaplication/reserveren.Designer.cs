@@ -174,7 +174,6 @@
             this.PageTitle.Size = new System.Drawing.Size(82, 17);
             this.PageTitle.TabIndex = 6;
             this.PageTitle.Text = "Reserveren";
-            this.PageTitle.Click += new System.EventHandler(this.PageTitle_Click);
             // 
             // label2
             // 
