@@ -229,5 +229,13 @@ namespace Escaplication
             this.Close();
         }
 
+        private void Recensiebtn_Click(object sender, EventArgs e)
+        {
+            RecensieUser(Gebruikersnaamtxt.Text, Wachtwoordtxt.Text);
+            var Recensie = new Recensie();
+            this.Hide();
+            Recensie.ShowDialog();
+            this.Close();
+        }
     }
 }
