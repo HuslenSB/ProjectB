@@ -9,13 +9,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Escaplication
 {
     public partial class Reserveren : Form
     {
         public string usernametxt, passwordtxt, peopletxt, chosenroom;
-        public string[] lines,checkpassword;
+        public string[] lines,checkpassword, lines2, lines3;
         public Reserveren()
         {
             InitializeComponent();
@@ -30,6 +31,19 @@ namespace Escaplication
                 passwordtxtbox.Dispose();
             }
 
+        }
+
+        public void TimeBoxFill()
+        {
+            TimeBox.Items.Clear();
+            TimeBox.Items.Add("9:00");
+            TimeBox.Items.Add("10:00");
+            TimeBox.Items.Add("11:00");
+            TimeBox.Items.Add("12:00");
+            TimeBox.Items.Add("13:00");
+            TimeBox.Items.Add("14:00");
+            TimeBox.Items.Add("15:00");
+            TimeBox.Items.Add("16:00");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -148,6 +162,31 @@ namespace Escaplication
             else if ((int)monthbox.Value == 2)
             {
                 daybox.Maximum = 28;
+            }
+
+            TimeBoxFill();
+            lines2 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Accounts.txt");
+            for (int k = 0; k < lines2.Length; k++)
+            {
+                lines3 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + lines2[k]);
+                if (lines3.Length != 0)
+                {
+                    for (int i = 2, j = 1; i < lines3.Length - 5; i += 6, j++)
+                    {
+                        if (chosenroom == lines3[i]) {
+                            if ((int)yearbox.Value == Int32.Parse(lines3[i + 2]))
+                            {
+                                if ((int)monthbox.Value == Int32.Parse(lines3[i + 3]))
+                                {
+                                    if ((int)daybox.Value == Int32.Parse(lines3[i + 4]))
+                                    {
+                                        TimeBox.Items.Remove(lines3[i + 5]);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -396,7 +435,7 @@ namespace Escaplication
                     DateTime date1 = new DateTime((int)yearbox.Value, (int)monthbox.Value, (int)daybox.Value);
                     DateTime date2 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
                     int datecomparinson = DateTime.Compare(date1, date2);
-                    if (datecomparinson > 0) {
+                    if (datecomparinson > 0 && TimeBox.Text != "") {
                         if (lines[0] == usernametxt && lines[1] == passwordtxt)
                         {
                             if (Convert.ToBoolean(checkpassword[0]) == false)
@@ -421,8 +460,7 @@ namespace Escaplication
                                 ac.WriteLine(yearbox.Value);
                                 ac.WriteLine(monthbox.Value);
                                 ac.WriteLine(daybox.Value);
-                                ac.WriteLine(hourbox.Value);
-                                ac.WriteLine(minutebox.Value);
+                                ac.WriteLine(TimeBox.Text);
                             }
                             tabControl1.SelectTab(2);
                         }

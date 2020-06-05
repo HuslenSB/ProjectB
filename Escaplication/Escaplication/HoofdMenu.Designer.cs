@@ -35,9 +35,9 @@
             this.Recensies = new System.Windows.Forms.PictureBox();
             this.ImagePanels = new System.Windows.Forms.Panel();
             this.Reserveertekst = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.ContactText = new System.Windows.Forms.Label();
             this.RecensieText = new System.Windows.Forms.Label();
-            this.Contact = new System.Windows.Forms.Label();
+            this.InformatieText = new System.Windows.Forms.Label();
             this.HoofdMenuPanel = new System.Windows.Forms.Panel();
             this.Account = new System.Windows.Forms.Button();
             this.Hoofdpagina = new System.Windows.Forms.Label();
@@ -102,9 +102,9 @@
             // ImagePanels
             // 
             this.ImagePanels.Controls.Add(this.Reserveertekst);
-            this.ImagePanels.Controls.Add(this.Contact);
+            this.ImagePanels.Controls.Add(this.ContactText);
             this.ImagePanels.Controls.Add(this.RecensieText);
-            this.ImagePanels.Controls.Add(this.label1);
+            this.ImagePanels.Controls.Add(this.InformatieText);
             this.ImagePanels.Controls.Add(this.Recensies);
             this.ImagePanels.Controls.Add(this.LocatieContact);
             this.ImagePanels.Controls.Add(this.Reserveren);
@@ -125,16 +125,16 @@
             this.Reserveertekst.Text = "Reserveren";
             this.Reserveertekst.Click += new System.EventHandler(this.Reserveertekst_Click);
             // 
-            // label1
+            // ContactText
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
-            this.label1.Location = new System.Drawing.Point(281, 196);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Escape Room Informatie";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
+            this.ContactText.AutoSize = true;
+            this.ContactText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
+            this.ContactText.Location = new System.Drawing.Point(609, 196);
+            this.ContactText.Name = "ContactText";
+            this.ContactText.Size = new System.Drawing.Size(312, 29);
+            this.ContactText.TabIndex = 2;
+            this.ContactText.Text = "Locatie en contactgegevens";
+            this.ContactText.Click += new System.EventHandler(this.Contact_Click);
             // 
             // RecensieText
             // 
@@ -147,16 +147,16 @@
             this.RecensieText.Text = "Recensies";
             this.RecensieText.Click += new System.EventHandler(this.RecensieText_Click);
             // 
-            // Contact
+            // InformatieText
             // 
-            this.Contact.AutoSize = true;
-            this.Contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
-            this.Contact.Location = new System.Drawing.Point(609, 196);
-            this.Contact.Name = "Contact";
-            this.Contact.Size = new System.Drawing.Size(312, 29);
-            this.Contact.TabIndex = 2;
-            this.Contact.Text = "Locatie en contactgegevens";
-            this.Contact.Click += new System.EventHandler(this.Contact_Click);
+            this.InformatieText.AutoSize = true;
+            this.InformatieText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
+            this.InformatieText.Location = new System.Drawing.Point(281, 196);
+            this.InformatieText.Name = "InformatieText";
+            this.InformatieText.Size = new System.Drawing.Size(277, 29);
+            this.InformatieText.TabIndex = 1;
+            this.InformatieText.Text = "Escape Room Informatie";
+            this.InformatieText.Click += new System.EventHandler(this.InformatieText_Click);
             // 
             // HoofdMenuPanel
             // 
@@ -289,8 +289,8 @@
         private System.Windows.Forms.PictureBox Recensies;
         private System.Windows.Forms.Panel ImagePanels;
         private System.Windows.Forms.Panel HoofdMenuPanel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label Contact;
+        private System.Windows.Forms.Label InformatieText;
+        private System.Windows.Forms.Label ContactText;
         private System.Windows.Forms.Label Hoofdpagina;
         private System.Windows.Forms.Label RecensieText;
         private System.Windows.Forms.Label Reserveertekst;
