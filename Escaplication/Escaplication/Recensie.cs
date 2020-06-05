@@ -92,7 +92,7 @@ namespace Escaplication
 
         public void WriteRecensieFile(string usernametext)
         {
-            StreamWriter WriteText = new StreamWriter(Application.StartupPath + "\\Recensies\\" + Gebruikersnaamtxt.Text + ".txt");
+            StreamWriter WriteText = new StreamWriter(Application.StartupPath + "\\Recensies\\" + usernametext + ".txt");
             WriteText.WriteLine(usernametext);
             WriteText.WriteLine(kamertxt.Text);
             WriteText.WriteLine(commentaartxt.Text);
