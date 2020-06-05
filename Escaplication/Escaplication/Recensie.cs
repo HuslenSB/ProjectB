@@ -48,16 +48,6 @@ namespace Escaplication
         // Checkt en onthoudt of de gebruiker "Ingelogd blijven" heeft aangevinkt.
         public void RecensieUser(string Gebruikersnaamtext, string Wachtwoordtext)
         {
-            string pathGebruikers = Application.StartupPath + "\\Gebruikers\\" + Gebruikersnaamtext + ".txt";
-            var ster = Int32.Parse(sterrentxt.Text);
-
-            if (File.Exists(pathGebruikers))
-            {
-                string[] lines = File.ReadAllLines(pathGebruikers);
-                if (lines[0] == Gebruikersnaamtext)
-                {
-                    if (lines[1] == Wachtwoordtext)
-                    {
                         if (Convert.ToBoolean(checkpassword[0]) == false)
                         {
                             StreamWriter WriteText = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
@@ -73,19 +63,6 @@ namespace Escaplication
                             WriteText.WriteLine(Wachtwoordtext);
                             WriteText.Close();
                         }
-                        if (ster >= 0 && ster <= 5)
-                        {
-                            WriteRecensieFile();
-                        }
-                        else{ 
-                            messagebox("Typ een getal tussen 0-5 bij sterren"); }
-                    }
-                    else{ 
-                        messagebox("Wachtwoord onjuist");  }
-                }
-            }
-            else{
-                messagebox("Gebruikersnaam niet gevonden"); }
         }
 
         // Functie die de recensie opslaat in een txt file.
@@ -108,7 +85,7 @@ namespace Escaplication
             for (int i = 0, LocPointGB = 15, LocPointTB = 51, LocPointLabel = 18, LocPointSter = 24; i < totalfiles; i++, LocPointGB += 150, LocPointTB += 150, LocPointLabel += 150)
             {
                 RecensieArray = Directory.GetFiles(RecensiePath);
-                string[] ArrayRecensies = File.ReadAllLines(Convert.ToString(RecensiePath[i]));
+                string[] ArrayRecensies = File.ReadAllLines(Convert.ToString(RecensieArray[i]));
 
                 GroupBox recensiegb = new GroupBox();
                 recensiegb.Name = "";
@@ -229,5 +206,56 @@ namespace Escaplication
             this.Close();
         }
 
+        private void Recensiebtn_Click(object sender, EventArgs e)
+        {
+            string Gebruikersnaamtext = Gebruikersnaamtxt.Text;
+            string Wachtwoordtext = Wachtwoordtxt.Text;
+            string pathGebruikers = Application.StartupPath + "\\Gebruikers\\" + Gebruikersnaamtext + ".txt";
+            var ster = Int32.Parse(sterrentxt.Text);
+
+            if (File.Exists(pathGebruikers))
+            {
+                string[] lines = File.ReadAllLines(pathGebruikers);
+                if (lines[0] == Gebruikersnaamtext)
+                {
+                    if (lines[1] == Wachtwoordtext)
+                    {
+                        if (Convert.ToBoolean(checkpassword[0]) == false)
+                        {
+                            StreamWriter WriteText = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+                            if (checkBox.Checked)
+                            {
+                                WriteText.WriteLine("true");
+                            }
+
+                            else
+                            {
+                                WriteText.WriteLine("false");
+                            }
+
+                            WriteText.WriteLine(Gebruikersnaamtext);
+                            WriteText.WriteLine(Wachtwoordtext);
+                            WriteText.Close();
+                        }
+                        if (ster >= 0 && ster <= 5)
+                        {
+                            WriteRecensieFile();
+                        }
+                        else
+                        {
+                            messagebox("Typ een getal tussen 0-5 bij sterren");
+                        }
+                    }
+                    else
+                    {
+                        messagebox("Wachtwoord onjuist");
+                    }
+                }
+            }
+            else
+            {
+                messagebox("Gebruikersnaam niet gevonden");
+            }
+        }
     }
 }
