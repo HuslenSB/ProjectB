@@ -33,6 +33,7 @@ namespace Escaplication
             }
 
         }
+
         public void RecensieLoad(object sender, EventArgs e)
         {
             int totalfiles = Directory.GetFiles(RecensiePath).Length;
@@ -51,41 +52,23 @@ namespace Escaplication
             string pathGebruikers = Application.StartupPath + "\\Gebruikers\\" + Gebruikersnaamtext + ".txt";
             var ster = Int32.Parse(sterrentxt.Text);
 
-            if (File.Exists(pathGebruikers))
+            if (Convert.ToBoolean(checkpassword[0]) == false)
             {
-                string[] lines = File.ReadAllLines(pathGebruikers);
-                if (lines[0] == Gebruikersnaamtext)
+                StreamWriter WriteText = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+                if (checkBox.Checked)
                 {
-                    if (lines[1] == Wachtwoordtext)
-                    {
-                        if (Convert.ToBoolean(checkpassword[0]) == false)
-                        {
-                            StreamWriter WriteText = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
-                            if (checkBox.Checked)
-                            { 
-                                WriteText.WriteLine("true"); 
-                            }
-
-                            else{
-                                WriteText.WriteLine("false");}
-
-                            WriteText.WriteLine(Gebruikersnaamtext);
-                            WriteText.WriteLine(Wachtwoordtext);
-                            WriteText.Close();
-                        }
-                        if (ster >= 0 && ster <= 5)
-                        {
-                            WriteRecensieFile();
-                        }
-                        else{ 
-                            messagebox("Typ een getal tussen 0-5 bij sterren"); }
-                    }
-                    else{ 
-                        messagebox("Wachtwoord onjuist");  }
+                    WriteText.WriteLine("true");
                 }
+
+                else
+                {
+                    WriteText.WriteLine("false");
+                }
+
+                WriteText.WriteLine(Gebruikersnaamtext);
+                WriteText.WriteLine(Wachtwoordtext);
+                WriteText.Close();
             }
-            else{
-                messagebox("Gebruikersnaam niet gevonden"); }
         }
 
         // Functie die de recensie opslaat in een txt file.
@@ -145,7 +128,73 @@ namespace Escaplication
                 recensiegb.Controls.Add(ster);
             }
         }
-        
+
+        private void Recensiebtn_Click(object sender, EventArgs e)
+        {
+            RecensieUser(Gebruikersnaamtxt.Text, Wachtwoordtxt.Text);
+
+            string Gebruikersnaamtext = Gebruikersnaamtxt.Text;
+            string Wachtwoordtext = Wachtwoordtxt.Text;
+            string pathGebruikers = Application.StartupPath + "\\Gebruikers\\" + Gebruikersnaamtext + ".txt";
+            var ster = Int32.Parse(sterrentxt.Text);
+
+            if (Convert.ToBoolean(checkpassword[0]) == true)
+            {
+                if (ster >= 0 && ster <= 5)
+                {
+                    StreamWriter WriteText = new StreamWriter(Application.StartupPath + "\\Recensies\\" + Gebruikersnaamtxt.Text + ".txt");
+                    WriteText.WriteLine(checkpassword[1]);
+                    WriteText.WriteLine(kamertxt.Text);
+                    WriteText.WriteLine(commentaartxt.Text);
+                    WriteText.WriteLine(sterrentxt.Text);
+                    WriteText.Close();
+                    messagebox("Recensie voltooid");
+                }
+                else
+                {
+                    messagebox("Typ een getal tussen 0-5 bij sterren");
+                }
+            }
+            else if (File.Exists(pathGebruikers))
+            {
+                string[] lines = File.ReadAllLines(pathGebruikers);
+                if (lines[0] == Gebruikersnaamtext && lines[1] == Wachtwoordtext)
+                {
+
+                    if (Convert.ToBoolean(checkpassword[0]) == false)
+                    {
+                        StreamWriter WriteText = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+                        if (checkBox.Checked)
+                        {
+                            WriteText.WriteLine("true");
+                        }
+                        else
+                        {
+                            WriteText.WriteLine("false");
+                        }
+                        WriteText.WriteLine(Gebruikersnaamtext);
+                        WriteText.WriteLine(Wachtwoordtext);
+                        WriteText.Close();
+                    }
+                    if (ster >= 0 && ster <= 5)
+                    {
+                        WriteRecensieFile();
+                    }
+                    else
+                    {
+                        messagebox("Typ een getal tussen 0-5 bij sterren");
+                    }
+                }
+                else
+                {
+                    messagebox("Gebruikersnaam of wachtwoord onjuist");
+                }
+            }
+
+        }
+
+
+
         // De buttons om van pagina te wisselen.
 
         private void Homepage_Click(object sender, EventArgs e)
@@ -226,15 +275,6 @@ namespace Escaplication
             var Accountpagina = new Accountpagina();
             this.Hide();
             Accountpagina.ShowDialog();
-            this.Close();
-        }
-
-        private void Recensiebtn_Click(object sender, EventArgs e)
-        {
-            RecensieUser(Gebruikersnaamtxt.Text, Wachtwoordtxt.Text);
-            var Recensie = new Recensie();
-            this.Hide();
-            Recensie.ShowDialog();
             this.Close();
         }
     }
