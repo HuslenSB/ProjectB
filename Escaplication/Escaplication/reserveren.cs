@@ -16,7 +16,7 @@ namespace Escaplication
     public partial class Reserveren : Form
     {
         public string usernametxt, passwordtxt, peopletxt, chosenroom;
-        public string[] lines,checkpassword, lines2, lines3;
+        public string[] lines,checkpassword, GetAllAccounts, GetAccount;
         public Reserveren()
         {
             InitializeComponent();
@@ -170,22 +170,22 @@ namespace Escaplication
             }
 
             TimeBoxFill();
-            lines2 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Accounts.txt");
-            for (int k = 0; k < lines2.Length; k++)
+            GetAllAccounts = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Accounts.txt");
+            for (int k = 0; k < GetAllAccounts.Length; k++)
             {
-                lines3 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + lines2[k]);
-                if (lines3.Length != 0)
+                GetAccount = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + GetAllAccounts[k]);
+                if (GetAccount.Length != 0)
                 {
-                    for (int i = 2, j = 1; i < lines3.Length - 5; i += 6, j++)
+                    for (int i = 2, j = 1; i < GetAccount.Length - 5; i += 6, j++)
                     {
-                        if (chosenroom == lines3[i]) {
-                            if ((int)yearbox.Value == Int32.Parse(lines3[i + 2]))
+                        if (chosenroom == GetAccount[i]) {
+                            if ((int)yearbox.Value == Int32.Parse(GetAccount[i + 2]))
                             {
-                                if ((int)monthbox.Value == Int32.Parse(lines3[i + 3]))
+                                if ((int)monthbox.Value == Int32.Parse(GetAccount[i + 3]))
                                 {
-                                    if ((int)daybox.Value == Int32.Parse(lines3[i + 4]))
+                                    if ((int)daybox.Value == Int32.Parse(GetAccount[i + 4]))
                                     {
-                                        TimeBox.Items.Remove(lines3[i + 5]);
+                                        TimeBox.Items.Remove(GetAccount[i + 5]);
                                     }
                                 }
                             }
