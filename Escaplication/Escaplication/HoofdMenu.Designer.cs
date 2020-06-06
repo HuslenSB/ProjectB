@@ -58,9 +58,10 @@
             // Informatie
             // 
             this.Informatie.Image = ((System.Drawing.Image)(resources.GetObject("Informatie.Image")));
-            this.Informatie.Location = new System.Drawing.Point(275, 0);
+            this.Informatie.Location = new System.Drawing.Point(206, 0);
+            this.Informatie.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Informatie.Name = "Informatie";
-            this.Informatie.Size = new System.Drawing.Size(283, 181);
+            this.Informatie.Size = new System.Drawing.Size(212, 147);
             this.Informatie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Informatie.TabIndex = 0;
             this.Informatie.TabStop = false;
@@ -69,9 +70,10 @@
             // LocatieContact
             // 
             this.LocatieContact.Image = global::Escaplication.Properties.Resources.Locatie_en_Contactgegevens;
-            this.LocatieContact.Location = new System.Drawing.Point(624, 0);
+            this.LocatieContact.Location = new System.Drawing.Point(468, 0);
+            this.LocatieContact.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LocatieContact.Name = "LocatieContact";
-            this.LocatieContact.Size = new System.Drawing.Size(283, 181);
+            this.LocatieContact.Size = new System.Drawing.Size(212, 147);
             this.LocatieContact.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LocatieContact.TabIndex = 1;
             this.LocatieContact.TabStop = false;
@@ -80,9 +82,10 @@
             // Reserveren
             // 
             this.Reserveren.Image = ((System.Drawing.Image)(resources.GetObject("Reserveren.Image")));
-            this.Reserveren.Location = new System.Drawing.Point(275, 228);
+            this.Reserveren.Location = new System.Drawing.Point(206, 185);
+            this.Reserveren.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Reserveren.Name = "Reserveren";
-            this.Reserveren.Size = new System.Drawing.Size(283, 181);
+            this.Reserveren.Size = new System.Drawing.Size(212, 147);
             this.Reserveren.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Reserveren.TabIndex = 2;
             this.Reserveren.TabStop = false;
@@ -91,9 +94,10 @@
             // Recensies
             // 
             this.Recensies.Image = ((System.Drawing.Image)(resources.GetObject("Recensies.Image")));
-            this.Recensies.Location = new System.Drawing.Point(624, 228);
+            this.Recensies.Location = new System.Drawing.Point(468, 185);
+            this.Recensies.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Recensies.Name = "Recensies";
-            this.Recensies.Size = new System.Drawing.Size(283, 181);
+            this.Recensies.Size = new System.Drawing.Size(212, 147);
             this.Recensies.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Recensies.TabIndex = 3;
             this.Recensies.TabStop = false;
@@ -109,18 +113,20 @@
             this.ImagePanels.Controls.Add(this.LocatieContact);
             this.ImagePanels.Controls.Add(this.Reserveren);
             this.ImagePanels.Controls.Add(this.Informatie);
-            this.ImagePanels.Location = new System.Drawing.Point(1, 153);
+            this.ImagePanels.Location = new System.Drawing.Point(1, 124);
+            this.ImagePanels.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ImagePanels.Name = "ImagePanels";
-            this.ImagePanels.Size = new System.Drawing.Size(1180, 524);
+            this.ImagePanels.Size = new System.Drawing.Size(885, 426);
             this.ImagePanels.TabIndex = 4;
             // 
             // Reserveertekst
             // 
             this.Reserveertekst.AutoSize = true;
             this.Reserveertekst.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
-            this.Reserveertekst.Location = new System.Drawing.Point(355, 422);
+            this.Reserveertekst.Location = new System.Drawing.Point(266, 343);
+            this.Reserveertekst.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Reserveertekst.Name = "Reserveertekst";
-            this.Reserveertekst.Size = new System.Drawing.Size(138, 29);
+            this.Reserveertekst.Size = new System.Drawing.Size(108, 24);
             this.Reserveertekst.TabIndex = 4;
             this.Reserveertekst.Text = "Reserveren";
             this.Reserveertekst.Click += new System.EventHandler(this.Reserveertekst_Click);
@@ -129,9 +135,10 @@
             // 
             this.ContactText.AutoSize = true;
             this.ContactText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
-            this.ContactText.Location = new System.Drawing.Point(609, 196);
+            this.ContactText.Location = new System.Drawing.Point(457, 159);
+            this.ContactText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ContactText.Name = "ContactText";
-            this.ContactText.Size = new System.Drawing.Size(312, 29);
+            this.ContactText.Size = new System.Drawing.Size(246, 24);
             this.ContactText.TabIndex = 2;
             this.ContactText.Text = "Locatie en contactgegevens";
             this.ContactText.Click += new System.EventHandler(this.Contact_Click);
@@ -140,9 +147,10 @@
             // 
             this.RecensieText.AutoSize = true;
             this.RecensieText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
-            this.RecensieText.Location = new System.Drawing.Point(705, 422);
+            this.RecensieText.Location = new System.Drawing.Point(529, 343);
+            this.RecensieText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RecensieText.Name = "RecensieText";
-            this.RecensieText.Size = new System.Drawing.Size(127, 29);
+            this.RecensieText.Size = new System.Drawing.Size(99, 24);
             this.RecensieText.TabIndex = 3;
             this.RecensieText.Text = "Recensies";
             this.RecensieText.Click += new System.EventHandler(this.RecensieText_Click);
@@ -151,9 +159,10 @@
             // 
             this.InformatieText.AutoSize = true;
             this.InformatieText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F);
-            this.InformatieText.Location = new System.Drawing.Point(281, 196);
+            this.InformatieText.Location = new System.Drawing.Point(211, 159);
+            this.InformatieText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.InformatieText.Name = "InformatieText";
-            this.InformatieText.Size = new System.Drawing.Size(277, 29);
+            this.InformatieText.Size = new System.Drawing.Size(216, 24);
             this.InformatieText.TabIndex = 1;
             this.InformatieText.Text = "Escape Room Informatie";
             this.InformatieText.Click += new System.EventHandler(this.InformatieText_Click);
@@ -169,15 +178,17 @@
             this.HoofdMenuPanel.Controls.Add(this.Thema);
             this.HoofdMenuPanel.Controls.Add(this.Tarieven);
             this.HoofdMenuPanel.Location = new System.Drawing.Point(1, 0);
+            this.HoofdMenuPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HoofdMenuPanel.Name = "HoofdMenuPanel";
-            this.HoofdMenuPanel.Size = new System.Drawing.Size(1180, 147);
+            this.HoofdMenuPanel.Size = new System.Drawing.Size(885, 119);
             this.HoofdMenuPanel.TabIndex = 5;
             // 
             // Account
             // 
-            this.Account.Location = new System.Drawing.Point(1089, 9);
+            this.Account.Location = new System.Drawing.Point(817, 7);
+            this.Account.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Account.Name = "Account";
-            this.Account.Size = new System.Drawing.Size(75, 23);
+            this.Account.Size = new System.Drawing.Size(56, 19);
             this.Account.TabIndex = 41;
             this.Account.Text = "Account";
             this.Account.UseVisualStyleBackColor = true;
@@ -187,18 +198,20 @@
             // 
             this.Hoofdpagina.AutoSize = true;
             this.Hoofdpagina.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.2F);
-            this.Hoofdpagina.Location = new System.Drawing.Point(493, 83);
+            this.Hoofdpagina.Location = new System.Drawing.Point(370, 67);
+            this.Hoofdpagina.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Hoofdpagina.Name = "Hoofdpagina";
-            this.Hoofdpagina.Size = new System.Drawing.Size(211, 39);
+            this.Hoofdpagina.Size = new System.Drawing.Size(175, 31);
             this.Hoofdpagina.TabIndex = 3;
-            this.Hoofdpagina.Text = "Hoofdpagina";
+            this.Hoofdpagina.Text = "Escaplication";
             // 
             // Recenties
             // 
             this.Recenties.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Recenties.Location = new System.Drawing.Point(749, 22);
+            this.Recenties.Location = new System.Drawing.Point(562, 18);
+            this.Recenties.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Recenties.Name = "Recenties";
-            this.Recenties.Size = new System.Drawing.Size(131, 39);
+            this.Recenties.Size = new System.Drawing.Size(98, 32);
             this.Recenties.TabIndex = 40;
             this.Recenties.Text = "Recensies";
             this.Recenties.UseVisualStyleBackColor = true;
@@ -207,9 +220,10 @@
             // Homepage
             // 
             this.Homepage.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Homepage.Location = new System.Drawing.Point(149, 22);
+            this.Homepage.Location = new System.Drawing.Point(112, 18);
+            this.Homepage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Homepage.Name = "Homepage";
-            this.Homepage.Size = new System.Drawing.Size(144, 39);
+            this.Homepage.Size = new System.Drawing.Size(108, 32);
             this.Homepage.TabIndex = 35;
             this.Homepage.Text = "Homepage";
             this.Homepage.UseVisualStyleBackColor = true;
@@ -217,9 +231,10 @@
             // Contacten
             // 
             this.Contacten.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Contacten.Location = new System.Drawing.Point(899, 22);
+            this.Contacten.Location = new System.Drawing.Point(674, 18);
+            this.Contacten.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Contacten.Name = "Contacten";
-            this.Contacten.Size = new System.Drawing.Size(131, 39);
+            this.Contacten.Size = new System.Drawing.Size(98, 32);
             this.Contacten.TabIndex = 39;
             this.Contacten.Text = "Contact";
             this.Contacten.UseVisualStyleBackColor = true;
@@ -228,9 +243,10 @@
             // Reserveer
             // 
             this.Reserveer.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Reserveer.Location = new System.Drawing.Point(599, 22);
+            this.Reserveer.Location = new System.Drawing.Point(449, 18);
+            this.Reserveer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Reserveer.Name = "Reserveer";
-            this.Reserveer.Size = new System.Drawing.Size(144, 39);
+            this.Reserveer.Size = new System.Drawing.Size(108, 32);
             this.Reserveer.TabIndex = 36;
             this.Reserveer.Text = "Reserveren";
             this.Reserveer.UseVisualStyleBackColor = true;
@@ -239,9 +255,10 @@
             // Thema
             // 
             this.Thema.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Thema.Location = new System.Drawing.Point(299, 22);
+            this.Thema.Location = new System.Drawing.Point(224, 18);
+            this.Thema.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Thema.Name = "Thema";
-            this.Thema.Size = new System.Drawing.Size(131, 39);
+            this.Thema.Size = new System.Drawing.Size(98, 32);
             this.Thema.TabIndex = 38;
             this.Thema.Text = "Thema";
             this.Thema.UseVisualStyleBackColor = true;
@@ -251,9 +268,10 @@
             // 
             this.Tarieven.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Tarieven.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tarieven.Location = new System.Drawing.Point(449, 22);
+            this.Tarieven.Location = new System.Drawing.Point(337, 18);
+            this.Tarieven.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Tarieven.Name = "Tarieven";
-            this.Tarieven.Size = new System.Drawing.Size(131, 39);
+            this.Tarieven.Size = new System.Drawing.Size(98, 32);
             this.Tarieven.TabIndex = 37;
             this.Tarieven.Text = "Tarieven";
             this.Tarieven.UseVisualStyleBackColor = false;
@@ -261,12 +279,13 @@
             // 
             // HoofdMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1179, 629);
+            this.ClientSize = new System.Drawing.Size(884, 511);
             this.Controls.Add(this.HoofdMenuPanel);
             this.Controls.Add(this.ImagePanels);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "HoofdMenu";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.Informatie)).EndInit();
