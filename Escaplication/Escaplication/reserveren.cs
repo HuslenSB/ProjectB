@@ -448,7 +448,7 @@ namespace Escaplication
                     DateTime date2 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
                     int datecomparinson = DateTime.Compare(date1, date2);
                     if (datecomparinson > 0 && TimeBox.Text != "") {
-                        if (lines[0] == usernametxt && lines[1] == passwordtxt)
+                        if (lines[0] == usernametxt && lines[1] == passwordtxt && usernametxt != "Admin")
                         {
                             if (Convert.ToBoolean(checkpassword[0]) == false)
                             {

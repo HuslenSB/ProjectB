@@ -40,7 +40,7 @@ namespace Escaplication
             {
                 // Deze code kijkt of de wachtwoorden overeenkomen
 
-                if (passwordregtxtbox.Text == passwordrepeattxtbox.Text && usernameregtxtbox.Text.Length > 0)
+                if ((passwordregtxtbox.Text == passwordrepeattxtbox.Text) && (usernameregtxtbox.Text.Length > 0))
                 {
                     var ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + usernameregtxtbox.Text + ".txt");
                     ab.WriteLine(usernameregtxtbox.Text);
@@ -76,7 +76,7 @@ namespace Escaplication
             {
                 lines = File.ReadAllLines(path);
                 {
-                    if (lines[0] == usernamelogintxt && lines[1] == passlogintxt && usernamelogintxt != "Admin")
+                    if ((lines[0] == usernamelogintxt) && (lines[1] == passlogintxt) && (usernamelogintxt != "Admin"))
                     {
                         // Als de gebruiker het wachtwoord wilt onthouden zorgt deze code daarvoor
 
@@ -100,7 +100,13 @@ namespace Escaplication
                         this.usertabtitel.Text = "Welkom " + usernamelogintxt;
                         if (lines.Length != 0)
                         {
-                            int i = 2, j = 1, k = 1, LocPointGB = 0, LocPointLabel = 10, LocPointGB2 = 0, LocPointLabel2 = 10;
+                            var i = 2;
+                            var j = 1;
+                            var k = 1;
+                            var LocPointGB = 0;
+                            var LocPointLabel = 10;
+                            var LocPointGB2 = 0;
+                            var LocPointLabel2 = 10;
                             while (i < lines.Length - 5)
                             {
                                 var date1 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
@@ -154,11 +160,15 @@ namespace Escaplication
                         }
                         deletenumericbox.Maximum = countres;
                     }
-                    else if ("Admin" == usernamelogintxt && "Admin" == passlogintxt)
+                    else if (("Admin" == usernamelogintxt) && ("Admin" == passlogintxt))
                     {
                         lines2 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Accounts.txt");
                         Paginatabs.SelectTab(2);
-                        int k = 0, LocPointGB = 0, LocPointLabel = 10, LocPointGB2 = 0, LocPointLabel2 = 10;
+                        int k = 0;
+                        var LocPointGB = 0;
+                        var LocPointLabel = 10;
+                        var LocPointGB2 = 0;
+                        var LocPointLabel2 = 10;
                         while ( k < lines2.Length)
                         {
                             lines3 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + lines2[k]);
@@ -182,7 +192,7 @@ namespace Escaplication
                                         naamkamer.AutoSize = true;
                                         naamkamer.Location = new Point(5, LocPointLabel);
                                         naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                                        naamkamer.Text = j + ".\nNaam: " + lines3[0] + "\nEscaperoom: " + lines3[i] + "\nAantal personen: " + lines3[i + 1] + "\nDatum: " + lines3[i + 4] + "-" + lines3[i + 3] + "-" + lines3[i + 2] + "\nTijd: " + lines3[i+5] + ":" + lines3[i+6];
+                                        naamkamer.Text = j + ".\nNaam: " + lines3[0] + "\nEscaperoom: " + lines3[i] + "\nAantal personen: " + lines3[i + 1] + "\nDatum: " + lines3[i + 4] + "-" + lines3[i + 3] + "-" + lines3[i + 2] + "\nTijd: " + lines3[i+5];
                                          
 
                                         reservpnl.Controls.Add(naamkamer);

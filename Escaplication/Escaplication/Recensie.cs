@@ -59,7 +59,7 @@ namespace Escaplication
                 {
                     if (lines[1] == Wachtwoordtext)
                     {
-                        if (Convert.ToBoolean(checkpassword[0]) == false)
+                        if ((Convert.ToBoolean(checkpassword[0]) == false) && (Gebruikersnaamtext != "Admin"))
                         {
                             StreamWriter WriteText = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
                             if (checkBox.Checked)
