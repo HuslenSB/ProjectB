@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Recensie));
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.GroupBoxRecensie = new System.Windows.Forms.GroupBox();
             this.checkBox = new System.Windows.Forms.CheckBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.labelRegistreren = new System.Windows.Forms.Label();
+            this.buttonAccount = new System.Windows.Forms.Button();
             this.Wachtwoordtxt = new System.Windows.Forms.TextBox();
             this.Wachtwoord = new System.Windows.Forms.Label();
             this.sterrentxt = new System.Windows.Forms.TextBox();
@@ -41,46 +41,46 @@
             this.Recensiebtn = new System.Windows.Forms.Button();
             this.commentaartxt = new System.Windows.Forms.TextBox();
             this.kamertxt = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ScrollPanel = new System.Windows.Forms.Panel();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.labelSter = new System.Windows.Forms.Label();
+            this.labelCommentaar = new System.Windows.Forms.Label();
+            this.labelNaamKamer = new System.Windows.Forms.Label();
+            this.ScrollRecensielijst = new System.Windows.Forms.Panel();
+            this.GroupBoxRecensielijst = new System.Windows.Forms.GroupBox();
             this.Account = new System.Windows.Forms.Button();
-            this.Recenties = new System.Windows.Forms.Button();
+            this.Recencies = new System.Windows.Forms.Button();
             this.Contact = new System.Windows.Forms.Button();
             this.Thema = new System.Windows.Forms.Button();
             this.Tarieven = new System.Windows.Forms.Button();
             this.Reserveren = new System.Windows.Forms.Button();
             this.Homepage = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
+            this.GroupBoxRecensie.SuspendLayout();
+            this.GroupBoxRecensielijst.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.checkBox);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.Wachtwoordtxt);
-            this.groupBox2.Controls.Add(this.Wachtwoord);
-            this.groupBox2.Controls.Add(this.sterrentxt);
-            this.groupBox2.Controls.Add(this.Gebruikersnaamtxt);
-            this.groupBox2.Controls.Add(this.Gbnaam);
-            this.groupBox2.Controls.Add(this.Recensiebtn);
-            this.groupBox2.Controls.Add(this.commentaartxt);
-            this.groupBox2.Controls.Add(this.kamertxt);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(4, 67);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(380, 246);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Schrijf een recensie";
+            this.GroupBoxRecensie.Controls.Add(this.checkBox);
+            this.GroupBoxRecensie.Controls.Add(this.labelRegistreren);
+            this.GroupBoxRecensie.Controls.Add(this.buttonAccount);
+            this.GroupBoxRecensie.Controls.Add(this.Wachtwoordtxt);
+            this.GroupBoxRecensie.Controls.Add(this.Wachtwoord);
+            this.GroupBoxRecensie.Controls.Add(this.sterrentxt);
+            this.GroupBoxRecensie.Controls.Add(this.Gebruikersnaamtxt);
+            this.GroupBoxRecensie.Controls.Add(this.Gbnaam);
+            this.GroupBoxRecensie.Controls.Add(this.Recensiebtn);
+            this.GroupBoxRecensie.Controls.Add(this.commentaartxt);
+            this.GroupBoxRecensie.Controls.Add(this.kamertxt);
+            this.GroupBoxRecensie.Controls.Add(this.labelSter);
+            this.GroupBoxRecensie.Controls.Add(this.labelCommentaar);
+            this.GroupBoxRecensie.Controls.Add(this.labelNaamKamer);
+            this.GroupBoxRecensie.Location = new System.Drawing.Point(4, 67);
+            this.GroupBoxRecensie.Name = "groupBox2";
+            this.GroupBoxRecensie.Size = new System.Drawing.Size(380, 246);
+            this.GroupBoxRecensie.TabIndex = 1;
+            this.GroupBoxRecensie.TabStop = false;
+            this.GroupBoxRecensie.Text = "Schrijf een recensie";
             // 
             // checkBox
             // 
@@ -92,24 +92,24 @@
             this.checkBox.Text = "Ingelogd blijven";
             this.checkBox.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // labelRegistreren
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(9, 159);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(187, 13);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Nog geen account? Registreer je hier:";
+            this.labelRegistreren.AutoSize = true;
+            this.labelRegistreren.Location = new System.Drawing.Point(9, 159);
+            this.labelRegistreren.Name = "label9";
+            this.labelRegistreren.Size = new System.Drawing.Size(187, 13);
+            this.labelRegistreren.TabIndex = 12;
+            this.labelRegistreren.Text = "Nog geen account? Registreer je hier:";
             // 
-            // button1
+            // buttonAccount
             // 
-            this.button1.Location = new System.Drawing.Point(202, 154);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Account";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.AccountPagina_Click);
+            this.buttonAccount.Location = new System.Drawing.Point(202, 154);
+            this.buttonAccount.Name = "button1";
+            this.buttonAccount.Size = new System.Drawing.Size(75, 23);
+            this.buttonAccount.TabIndex = 11;
+            this.buttonAccount.Text = "Account";
+            this.buttonAccount.UseVisualStyleBackColor = true;
+            this.buttonAccount.Click += new System.EventHandler(this.AccountPagina_Click);
             // 
             // Wachtwoordtxt
             // 
@@ -175,50 +175,50 @@
             this.kamertxt.Size = new System.Drawing.Size(217, 20);
             this.kamertxt.TabIndex = 3;
             // 
-            // label4
+            // labelSter
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 126);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Aantal sterren 0-5";
+            this.labelSter.AutoSize = true;
+            this.labelSter.Location = new System.Drawing.Point(9, 126);
+            this.labelSter.Name = "label4";
+            this.labelSter.Size = new System.Drawing.Size(90, 13);
+            this.labelSter.TabIndex = 2;
+            this.labelSter.Text = "Aantal sterren 0-5";
             // 
-            // label3
+            // labelCommentaar
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 101);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Commentaar";
+            this.labelCommentaar.AutoSize = true;
+            this.labelCommentaar.Location = new System.Drawing.Point(9, 101);
+            this.labelCommentaar.Name = "label3";
+            this.labelCommentaar.Size = new System.Drawing.Size(66, 13);
+            this.labelCommentaar.TabIndex = 2;
+            this.labelCommentaar.Text = "Commentaar";
             // 
-            // label1
+            // labelNaamKamer
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Naam van kamer";
+            this.labelNaamKamer.AutoSize = true;
+            this.labelNaamKamer.Location = new System.Drawing.Point(9, 73);
+            this.labelNaamKamer.Name = "label1";
+            this.labelNaamKamer.Size = new System.Drawing.Size(88, 13);
+            this.labelNaamKamer.TabIndex = 0;
+            this.labelNaamKamer.Text = "Naam van kamer";
             // 
             // ScrollPanel
             // 
-            this.ScrollPanel.AutoScroll = true;
-            this.ScrollPanel.Location = new System.Drawing.Point(6, 18);
-            this.ScrollPanel.Name = "ScrollPanel";
-            this.ScrollPanel.Size = new System.Drawing.Size(435, 544);
-            this.ScrollPanel.TabIndex = 3;
+            this.ScrollRecensielijst.AutoScroll = true;
+            this.ScrollRecensielijst.Location = new System.Drawing.Point(6, 18);
+            this.ScrollRecensielijst.Name = "ScrollPanel";
+            this.ScrollRecensielijst.Size = new System.Drawing.Size(435, 544);
+            this.ScrollRecensielijst.TabIndex = 3;
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.ScrollPanel);
-            this.groupBox4.Location = new System.Drawing.Point(386, 67);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(489, 568);
-            this.groupBox4.TabIndex = 4;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Recensies";
+            this.GroupBoxRecensielijst.Controls.Add(this.ScrollRecensielijst);
+            this.GroupBoxRecensielijst.Location = new System.Drawing.Point(386, 67);
+            this.GroupBoxRecensielijst.Name = "groupBox4";
+            this.GroupBoxRecensielijst.Size = new System.Drawing.Size(489, 568);
+            this.GroupBoxRecensielijst.TabIndex = 4;
+            this.GroupBoxRecensielijst.TabStop = false;
+            this.GroupBoxRecensielijst.Text = "Recensies";
             // 
             // Account
             // 
@@ -233,15 +233,15 @@
             // 
             // Recenties
             // 
-            this.Recenties.BackColor = System.Drawing.Color.Aqua;
-            this.Recenties.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Recenties.Location = new System.Drawing.Point(562, 20);
-            this.Recenties.Margin = new System.Windows.Forms.Padding(2);
-            this.Recenties.Name = "Recenties";
-            this.Recenties.Size = new System.Drawing.Size(98, 32);
-            this.Recenties.TabIndex = 40;
-            this.Recenties.Text = "Recensies";
-            this.Recenties.UseVisualStyleBackColor = false;
+            this.Recencies.BackColor = System.Drawing.Color.Aqua;
+            this.Recencies.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Recencies.Location = new System.Drawing.Point(562, 20);
+            this.Recencies.Margin = new System.Windows.Forms.Padding(2);
+            this.Recencies.Name = "Recenties";
+            this.Recencies.Size = new System.Drawing.Size(98, 32);
+            this.Recencies.TabIndex = 40;
+            this.Recencies.Text = "Recensies";
+            this.Recencies.UseVisualStyleBackColor = false;
             // 
             // Contact
             // 
@@ -322,40 +322,40 @@
             this.ClientSize = new System.Drawing.Size(884, 636);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Account);
-            this.Controls.Add(this.Recenties);
+            this.Controls.Add(this.Recencies);
             this.Controls.Add(this.Contact);
             this.Controls.Add(this.Thema);
             this.Controls.Add(this.Tarieven);
             this.Controls.Add(this.Reserveren);
             this.Controls.Add(this.Homepage);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.GroupBoxRecensielijst);
+            this.Controls.Add(this.GroupBoxRecensie);
             this.Name = "Recensie";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.RecensieLoad);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
+            this.GroupBoxRecensie.ResumeLayout(false);
+            this.GroupBoxRecensie.PerformLayout();
+            this.GroupBoxRecensielijst.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelCommentaar;
+        private System.Windows.Forms.GroupBox GroupBoxRecensie;
+        private System.Windows.Forms.Label labelNaamKamer;
+        private System.Windows.Forms.Label labelSter;
         private System.Windows.Forms.TextBox commentaartxt;
         private System.Windows.Forms.TextBox kamertxt;
         private System.Windows.Forms.Button Recensiebtn;
         private System.Windows.Forms.TextBox Gebruikersnaamtxt;
         private System.Windows.Forms.Label Gbnaam;
-        private System.Windows.Forms.Panel ScrollPanel;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Panel ScrollRecensielijst;
+        private System.Windows.Forms.GroupBox GroupBoxRecensielijst;
         private System.Windows.Forms.TextBox sterrentxt;
         private System.Windows.Forms.Button Account;
-        private System.Windows.Forms.Button Recenties;
+        private System.Windows.Forms.Button Recencies;
         private System.Windows.Forms.Button Contact;
         private System.Windows.Forms.Button Thema;
         private System.Windows.Forms.Button Tarieven;
@@ -364,8 +364,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox Wachtwoordtxt;
         private System.Windows.Forms.Label Wachtwoord;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelRegistreren;
+        private System.Windows.Forms.Button buttonAccount;
         private System.Windows.Forms.CheckBox checkBox;
     }
 }

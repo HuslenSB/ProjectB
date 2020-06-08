@@ -148,9 +148,9 @@ namespace Escaplication
                 ster.TabIndex = 6;
                 ster.Text = "Sterren " + ArrayRecensies[3] + "/5";
 
-                ScrollPanel.Controls.Add(naamkamer);
-                ScrollPanel.Controls.Add(commentaar);
-                ScrollPanel.Controls.Add(recensiegb);
+                ScrollRecensielijst.Controls.Add(naamkamer);
+                ScrollRecensielijst.Controls.Add(commentaar);
+                ScrollRecensielijst.Controls.Add(recensiegb);
                 recensiegb.Controls.Add(ster);
             }
         }
