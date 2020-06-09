@@ -63,6 +63,7 @@ namespace Escaplication
                 MessageBox.Show("Deze gebruikersnaam bestaat al");
             }
         }
+
         private void Loginbtn_Click(object sender, EventArgs e)
         {
             this.login(usernamelogintxtbox.Text, passlogintxtbox.Text);
@@ -125,7 +126,7 @@ namespace Escaplication
                                     naamkamer.AutoSize = true;
                                     naamkamer.Location = new Point(5, LocPointLabel);
                                     naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                                    naamkamer.Text = j + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i + 1] + "\nDatum: " + lines[i + 4] + "-" + lines[i + 3] + "-" + lines[i + 2] + "\nTijd: " + lines[i+5];
+                                    naamkamer.Text = $"{k}.\nEscaperoom: {lines[i]}\nAantal personen: {lines[i + 1]}\nDatum: {lines[i + 4]}-{lines[i + 3]}-{lines[i + 2]}\nTijd: {lines[i + 5]}";
 
                                     Reserveringpnl.Controls.Add(naamkamer);
                                     Reserveringpnl.Controls.Add(recensiegb);
@@ -147,7 +148,7 @@ namespace Escaplication
                                     naamkamer.AutoSize = true;
                                     naamkamer.Location = new Point(5, LocPointLabel2);
                                     naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                                    naamkamer.Text = k + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i + 1] + "\nDatum: " + lines[i + 4] + "-" + lines[i + 3] + "-" + lines[i + 2] + "\nTijd: " + lines[i + 5] + ":" + lines[i + 6];
+                                    naamkamer.Text = $"{k}.\nEscaperoom: {lines[i]}\nAantal personen: {lines[i + 1]}\nDatum: {lines[i + 4]}-{lines[i + 3]}-{lines[i + 2]}\nTijd: {lines[i + 5]}";
 
                                     oldreserverpnl.Controls.Add(naamkamer);
                                     oldreserverpnl.Controls.Add(recensiegb);
@@ -192,7 +193,7 @@ namespace Escaplication
                                         naamkamer.AutoSize = true;
                                         naamkamer.Location = new Point(5, LocPointLabel);
                                         naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                                        naamkamer.Text = j + ".\nNaam: " + lines3[0] + "\nEscaperoom: " + lines3[i] + "\nAantal personen: " + lines3[i + 1] + "\nDatum: " + lines3[i + 4] + "-" + lines3[i + 3] + "-" + lines3[i + 2] + "\nTijd: " + lines3[i+5];
+                                        naamkamer.Text = $"{j}.\nNaam: {lines3[0]}\nEscaperoom: {lines3[i]}\nAantal personen: {lines3[i + 1]}\nDatum: {lines3[i + 4]}-{lines3[i + 3]}-{lines3[i + 2]}\nTijd: {lines3[i+5]}";
                                          
 
                                         reservpnl.Controls.Add(naamkamer);
@@ -213,7 +214,7 @@ namespace Escaplication
                                         naamkamer.AutoSize = true;
                                         naamkamer.Location = new Point(5, LocPointLabel2);
                                         naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                                        naamkamer.Text = j + ".\nNaam: " + lines3[0] + ".\nEscaperoom: " + lines3[i] + "\nAantal personen: " + lines3[i + 1] + "\nDatum: " + lines3[i + 4] + "-" + lines3[i + 3] + "-" + lines3[i + 2] + "\nTijd: " + lines3[i + 5] + ":" + lines3[i + 6];
+                                        naamkamer.Text = $"{j}.\nNaam: {lines3[0]}\nEscaperoom: {lines3[i]}\nAantal personen: {lines3[i + 1]}\nDatum: {lines3[i + 4]}-{lines3[i + 3]}-{lines3[i + 2]}\nTijd: {lines3[i + 5]}";
 
                                         oldreservpnl.Controls.Add(naamkamer);
                                         oldreservpnl.Controls.Add(recensiegb);
@@ -319,7 +320,7 @@ namespace Escaplication
                     naamkamer.AutoSize = true;
                     naamkamer.Location = new Point(5, LocPointLabel);
                     naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                    naamkamer.Text = j + ".\nEscaperoom: " + lines[i] + "\nAantal personen: " + lines[i + 1] + "\nDatum: " + lines[i + 4] + "-" + lines[i + 3] + "-" + lines[i + 2] + "\nTijd: " + lines[i + 5] + ":" + lines[i + 6];
+                    naamkamer.Text = $"{j}.\nEscaperoom: {lines[i]}\nAantal personen: {lines[i + 1]}\nDatum: {lines[i + 4]}-{lines[i + 3]}-{lines[i + 2]}\nTijd: {lines[i + 5]}";
 
                     resultspnl.Controls.Add(naamkamer);
                     resultspnl.Controls.Add(recensiegb);
