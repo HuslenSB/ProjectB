@@ -20,12 +20,15 @@ namespace Escaplication
 
         public Accountpagina()
         {
+            //Deze code verbergt de tabbuttons. 
+
             InitializeComponent();
             Paginatabs.Appearance = TabAppearance.FlatButtons;
             Paginatabs.ItemSize = new Size(0, 1); 
             Paginatabs.SizeMode = TabSizeMode.Fixed;
             checkpassword = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
             //Deze methode checkt of er al is ingelogd
+
             if (Convert.ToBoolean(checkpassword[0]) == true)
             {
                 this.login(checkpassword[1], checkpassword[2]);
@@ -126,7 +129,8 @@ namespace Escaplication
                                     naamkamer.AutoSize = true;
                                     naamkamer.Location = new Point(5, LocPointLabel);
                                     naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                                    naamkamer.Text = $"{k}.\nEscaperoom: {userinfolines[i]}\nAantal personen: {userinfolines[i + 1]}\nDatum: {userinfolines[i + 4]}-{userinfolines[i + 3]}-{userinfolines[i + 2]}\nTijd: {userinfolines[i + 5]}";
+                                    naamkamer.Text = $"{k}.\nEscaperoom: {userinfolines[i]}\nAantal personen: {userinfolines[i + 1]}\nDatum: " +
+                                        $"{userinfolines[i + 4]}-{userinfolines[i + 3]}-{userinfolines[i + 2]}\nTijd: {userinfolines[i + 5]}";
 
                                     Reserveringpnl.Controls.Add(naamkamer);
                                     Reserveringpnl.Controls.Add(recensiegb);
@@ -148,7 +152,8 @@ namespace Escaplication
                                     naamkamer.AutoSize = true;
                                     naamkamer.Location = new Point(5, LocPointLabel2);
                                     naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                                    naamkamer.Text = $"{k}.\nEscaperoom: {userinfolines[i]}\nAantal personen: {userinfolines[i + 1]}\nDatum: {userinfolines[i + 4]}-{userinfolines[i + 3]}-{userinfolines[i + 2]}\nTijd: {userinfolines[i + 5]}";
+                                    naamkamer.Text = $"{k}.\nEscaperoom: {userinfolines[i]}\nAantal personen: {userinfolines[i + 1]}\nDatum: {userinfolines[i + 4]}-" +
+                                        $"{userinfolines[i + 3]}-{userinfolines[i + 2]}\nTijd: {userinfolines[i + 5]}";
 
                                     oldreserverpnl.Controls.Add(naamkamer);
                                     oldreserverpnl.Controls.Add(recensiegb);
@@ -193,7 +198,8 @@ namespace Escaplication
                                         naamkamer.AutoSize = true;
                                         naamkamer.Location = new Point(5, LocPointLabel);
                                         naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                                        naamkamer.Text = $"{j}.\nNaam: {adminlines[0]}\nEscaperoom: {adminlines[i]}\nAantal personen: {adminlines[i + 1]}\nDatum: {adminlines[i + 4]}-{adminlines[i + 3]}-{adminlines[i + 2]}\nTijd: {adminlines[i+5]}";
+                                        naamkamer.Text = $"{j}.\nNaam: {adminlines[0]}\nEscaperoom: {adminlines[i]}\nAantal personen: {adminlines[i + 1]}\nDatum:" +
+                                            $" {adminlines[i + 4]}-{adminlines[i + 3]}-{adminlines[i + 2]}\nTijd: {adminlines[i+5]}";
                                          
 
                                         reservpnl.Controls.Add(naamkamer);
@@ -214,7 +220,8 @@ namespace Escaplication
                                         naamkamer.AutoSize = true;
                                         naamkamer.Location = new Point(5, LocPointLabel2);
                                         naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                                        naamkamer.Text = $"{j}.\nNaam: {adminlines[0]}\nEscaperoom: {adminlines[i]}\nAantal personen: {adminlines[i + 1]}\nDatum: {adminlines[i + 4]}-{adminlines[i + 3]}-{adminlines[i + 2]}\nTijd: {adminlines[i + 5]}";
+                                        naamkamer.Text = $"{j}.\nNaam: {adminlines[0]}\nEscaperoom: {adminlines[i]}\nAantal personen: {adminlines[i + 1]}\nDatum: " +
+                                            $"{adminlines[i + 4]}-{adminlines[i + 3]}-{adminlines[i + 2]}\nTijd: {adminlines[i + 5]}";
 
                                         oldreservpnl.Controls.Add(naamkamer);
                                         oldreservpnl.Controls.Add(recensiegb);
@@ -236,11 +243,13 @@ namespace Escaplication
             MessageBox.Show("Verkeerde gebruikersnaam of wachtwoord");
             }
         }
+        //Deze code logt de Admin uit.
 
         private void logoutbtn2_Click(object sender, EventArgs e)
         {
             Paginatabs.SelectTab(0);
         }
+        //De volgende functies sturen de gebruiker naar de andere schermen. 
 
         private void Homepage_Click(object sender, EventArgs e)
         {
@@ -282,6 +291,14 @@ namespace Escaplication
             this.Close();
         }
 
+        private void Contact_Click(object sender, EventArgs e)
+        {
+            var Contact = new Contact_Tab();
+            this.Hide();
+            Contact.ShowDialog();
+            this.Close();
+        }
+
         // Deze stukken code zorgen ervoor dat het wachtwoord verborgen blijft
 
         private void passlogintxtbox_TextChanged(object sender, EventArgs e)
@@ -320,7 +337,8 @@ namespace Escaplication
                     naamkamer.AutoSize = true;
                     naamkamer.Location = new Point(5, LocPointLabel);
                     naamkamer.Font = new Font("Microsoft Sans Serif", 10.0f);
-                    naamkamer.Text = $"{j}.\nEscaperoom: {userinfolines[i]}\nAantal personen: {userinfolines[i + 1]}\nDatum: {userinfolines[i + 4]}-{userinfolines[i + 3]}-{userinfolines[i + 2]}\nTijd: {userinfolines[i + 5]}";
+                    naamkamer.Text = $"{j}.\nEscaperoom: {userinfolines[i]}\nAantal personen: {userinfolines[i + 1]}\nDatum:" +
+                        $" {userinfolines[i + 4]}-{userinfolines[i + 3]}-{userinfolines[i + 2]}\nTijd: {userinfolines[i + 5]}";
 
                     resultspnl.Controls.Add(naamkamer);
                     resultspnl.Controls.Add(recensiegb);
@@ -332,14 +350,7 @@ namespace Escaplication
                 }
             }
         }
-
-        private void Contact_Click(object sender, EventArgs e)
-        {
-            var Contact = new Contact_Tab();
-            this.Hide();
-            Contact.ShowDialog();
-            this.Close();
-        }
+        //Deze button logt de gebruiker uit.
 
         private void Loguitbtn_Click(object sender, EventArgs e)
         {
