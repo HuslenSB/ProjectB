@@ -17,21 +17,27 @@ namespace Escaplication
     {
         public string usernametxt, passwordtxt, peopletxt, chosenroom;
         public string[] lines,checkpassword, lines2, lines3;
+
+        //Deze code zorgt ervoor dat de tabbuttons verborgen zijn en dat de code checkt of de gebruiker al was ingelogd.
+
         public Reserveren()
         {
             InitializeComponent();
-            tabControl1.Appearance = TabAppearance.FlatButtons; tabControl1.ItemSize = new Size(0, 1); tabControl1.SizeMode = TabSizeMode.Fixed;
+            Reservpagetabs.Appearance = TabAppearance.FlatButtons; 
+            Reservpagetabs.ItemSize = new Size(0, 1); 
+            Reservpagetabs.SizeMode = TabSizeMode.Fixed;
             checkpassword = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
             if (Convert.ToBoolean(checkpassword[0]) == true)
             {
-                label7.Dispose();
-                label8.Dispose();
-                checkBox.Dispose();
+                Usernamelbl.Dispose();
+                Passwordlbl.Dispose();
+                logincheckBox.Dispose();
                 usernametxtbox.Dispose();
                 passwordtxtbox.Dispose();
             }
-
         }
+
+        //Deze code vult de combobox met tijden.
 
         public void TimeBoxFill()
         {
@@ -46,10 +52,12 @@ namespace Escaplication
             TimeBox.Items.Add("16:00");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        //Met deze button kies je de sparta escaperoom.
+
+        private void Spartabtn_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(1);
-            this.label1.Text = "Leuk dat je hebt gekozen voor de Sparta escape room!";
+            Reservpagetabs.SelectTab(1);
+            this.Reserverentitlelbl.Text = "Leuk dat je hebt gekozen voor de Sparta escape room!";
             chosenroom = "Sparta";
             TimeBoxFill();
             yearbox.Value = 2020;
@@ -57,10 +65,12 @@ namespace Escaplication
             daybox.Value = 1;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        //Met deze button kies je the last run escaperoom.
+
+        private void TLRbtn_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(1);
-            this.label1.Text = "Leuk dat je hebt gekozen voor de Last run escape room!";
+            Reservpagetabs.SelectTab(1);
+            this.Reserverentitlelbl.Text = "Leuk dat je hebt gekozen voor de Last run escape room!";
             chosenroom = "The last run";
             TimeBoxFill();
             yearbox.Value = 2020;
@@ -68,10 +78,12 @@ namespace Escaplication
             daybox.Value = 1;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        //Met deze button kies je de haunted escape escaperoom.
+
+        private void Hauntedbtn_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(1);
-            this.label1.Text = "Leuk dat je hebt gekozen voor de Haunted escape, escape room!";
+            Reservpagetabs.SelectTab(1);
+            this.Reserverentitlelbl.Text = "Leuk dat je hebt gekozen voor de Haunted escape, escape room!";
             chosenroom = "Haunted escape";
             TimeBoxFill();
             yearbox.Value = 2020;
@@ -88,6 +100,7 @@ namespace Escaplication
             Hoofd.ShowDialog();
             this.Close();
         }
+
         private void Thema_Click(object sender, EventArgs e)
         {
             // Deze code zorgt ervoor dat als de gebruiker op de knop "Thema" drukt, deze doorgaat naar het informatie scherm.
@@ -117,6 +130,7 @@ namespace Escaplication
             Recenties.ShowDialog();
             this.Close();
         }
+
         private void Contact_Click(object sender, EventArgs e)
         {
             // Deze code zorgt ervoor dat als de gebruiker op de knop "Contact" drukt, deze doorgaat naar het contact scherm.
@@ -137,16 +151,6 @@ namespace Escaplication
             this.Close();
         }
 
-        private void Account_Click_1(object sender, EventArgs e)
-        {
-            // Deze code zorgt ervoor dat als de gebruiker op de knop "Acount" drukt, deze doorgaat naar het login scherm.
-
-            var Accountpagina = new Accountpagina();
-            this.Hide();
-            Accountpagina.ShowDialog();
-            this.Close();
-
-        } 
         private void daybox_ValueChanged(object sender, EventArgs e)
         {
             checkdate();
@@ -157,17 +161,19 @@ namespace Escaplication
             checkdate();
         }
 
+        //Deze code zorgt ervoor dat de datum boxes er niet out of index kunnen door bijvoorbeeld schrikkeljaren. 
+
         public void checkdate()
         {
-            if ((int)monthbox.Value == 4 || (int)monthbox.Value == 6 || (int)monthbox.Value == 9 || (int)monthbox.Value == 11)
+            if (((int)monthbox.Value == 4) || ((int)monthbox.Value == 6) || ((int)monthbox.Value == 9) || ((int)monthbox.Value == 11))
             {
                 daybox.Maximum = 30;
             }
-            else if ((int)monthbox.Value == 1 || (int)monthbox.Value == 3 || (int)monthbox.Value == 5 || (int)monthbox.Value == 7 || (int)monthbox.Value == 8 || (int)monthbox.Value == 10 || (int)monthbox.Value == 12)
+            else if (((int)monthbox.Value == 1) || ((int)monthbox.Value == 3) || ((int)monthbox.Value == 5) || ((int)monthbox.Value == 7) || ((int)monthbox.Value == 8) || ((int)monthbox.Value == 10) || ((int)monthbox.Value == 12))
             {
                 daybox.Maximum = 31;
             }
-            if (((int)yearbox.Value % 4 == 0 || (int)yearbox.Value % 100 == 0 && (int)yearbox.Value % 400 == 0) && (int)monthbox.Value == 2)
+            if ((((int)yearbox.Value % 4 == 0) || ((int)yearbox.Value % 100 == 0) && ((int)yearbox.Value % 400 == 0)) && ((int)monthbox.Value == 2))
             {
                 daybox.Maximum = 29;
             }
@@ -175,6 +181,8 @@ namespace Escaplication
             {
                 daybox.Maximum = 28;
             }
+
+            //Deze code checkt of er als een reservering staat voor die escaperoom en die dag.
 
             TimeBoxFill();
             lines2 = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + "Accounts.txt");
@@ -207,6 +215,8 @@ namespace Escaplication
             checkdate();
         }
 
+        //Deze code brengt de gebruiker naar de accountpagina.
+
         private void toaccountbtn_Click(object sender, EventArgs e)
         {
             var Login = new Accountpagina();
@@ -215,159 +225,18 @@ namespace Escaplication
             this.Close();
         }
 
+        //Deze code verbergt het wachtwoord.
+
         private void passwordtxtbox_TextChanged(object sender, EventArgs e)
         {
             passwordtxtbox.PasswordChar = '●';
         }
 
+        //Deze code brengt je naar de kortingspagina.
+
         private void Korting_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(3);
-        }
-
-        private void Reserveren1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Reserveren3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Reserveren2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minutebox_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void hourbox_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void peoplenumeric_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void usernametxtbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Korting1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            Reservpagetabs.SelectTab(3);
         }
 
         private void OK_Button_Click(object sender, EventArgs e)
@@ -405,26 +274,25 @@ namespace Escaplication
             }
         }
 
-        private void textBox_antwoord_TextChanged(object sender, EventArgs e)
-        {
+        //Deze code brengt de gebruiker terug naar het escaperoom overzicht. 
 
+        private void overzichtbtn_Click(object sender, EventArgs e)
+        {
+            Reservpagetabs.SelectTab(0);
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectTab(0);
-        }
+        //Deze code brengt de gebruiker terug naar het escaperoom overzicht en laadt de form opnieuw in.  
 
-        private void button6_Click(object sender, EventArgs e)
+        private void overzicht2btn_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(0);
+            Reservpagetabs.SelectTab(0);
             var Login = new Reserveren();
             this.Hide();
             Login.ShowDialog();
             this.Close();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Reserverenbtn_Click(object sender, EventArgs e)
         {
             if (Convert.ToBoolean(checkpassword[0]) == false)
             {
@@ -436,52 +304,54 @@ namespace Escaplication
             }
         }
 
+        //Deze code laat de gebruiker een reservering plaatsen. 
+
         public void reserveren(string usernametxt, string passwordtxt) { 
             peopletxt = peoplenumeric.Text;
-            string path = Application.StartupPath + "\\Gebruikers\\" + usernametxt + ".txt";
+            var path = Application.StartupPath + "\\Gebruikers\\" + usernametxt + ".txt";
 
             if (File.Exists(path))
             {
                 lines = File.ReadAllLines(path);
                 {
-                    DateTime date1 = new DateTime((int)yearbox.Value, (int)monthbox.Value, (int)daybox.Value);
-                    DateTime date2 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+                    var date1 = new DateTime((int)yearbox.Value, (int)monthbox.Value, (int)daybox.Value);
+                    var date2 = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
                     int datecomparinson = DateTime.Compare(date1, date2);
-                    if (datecomparinson > 0 && TimeBox.Text != "") {
-                        if (lines[0] == usernametxt && lines[1] == passwordtxt && usernametxt != "Admin")
+                    if ((datecomparinson > 0) && (TimeBox.Text != "")) {
+                        if ((lines[0] == usernametxt) && (lines[1] == passwordtxt) && (usernametxt != "Admin"))
                         {
                             if (Convert.ToBoolean(checkpassword[0]) == false)
                             {
-                                StreamWriter ab = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
-                                if (checkBox.Checked)
+                                StreamWriter checkstrmwriter = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+                                if (logincheckBox.Checked)
                                 {
-                                    ab.WriteLine("true");
+                                    checkstrmwriter.WriteLine("true");
                                 }
                                 else
                                 {
-                                    ab.WriteLine("false");
+                                    checkstrmwriter.WriteLine("false");
                                 }
-                                ab.WriteLine(usernametxt);
-                                ab.WriteLine(passwordtxt);
-                                ab.Close();
+                                checkstrmwriter.WriteLine(usernametxt);
+                                checkstrmwriter.WriteLine(passwordtxt);
+                                checkstrmwriter.Close();
                             }
-                            using (StreamWriter ac = File.AppendText(Application.StartupPath + "\\Gebruikers\\" + usernametxt + ".txt"))
+                            using (StreamWriter reserverenstrmwriter = File.AppendText(Application.StartupPath + "\\Gebruikers\\" + usernametxt + ".txt"))
                             {
-                                ac.WriteLine(chosenroom);
-                                ac.WriteLine(peopletxt);
-                                ac.WriteLine(yearbox.Value);
-                                ac.WriteLine(monthbox.Value);
-                                ac.WriteLine(daybox.Value);
-                                ac.WriteLine(TimeBox.Text);
+                                reserverenstrmwriter.WriteLine(chosenroom);
+                                reserverenstrmwriter.WriteLine(peopletxt);
+                                reserverenstrmwriter.WriteLine(yearbox.Value);
+                                reserverenstrmwriter.WriteLine(monthbox.Value);
+                                reserverenstrmwriter.WriteLine(daybox.Value);
+                                reserverenstrmwriter.WriteLine(TimeBox.Text);
                             }
-                            tabControl1.SelectTab(2);
+                            Reservpagetabs.SelectTab(2);
                         }
                     }
                     else
                     {
                         MessageBox.Show("De datum die je hebt gekozen is niet beschikbaar");
                     }
-                    if(lines[0] != usernametxt || lines[1] != passwordtxt)
+                    if((lines[0] != usernametxt) || (lines[1] != passwordtxt))
                     {
                         MessageBox.Show("Verkeerde gebruikersnaam of wachtwoord");
                     }

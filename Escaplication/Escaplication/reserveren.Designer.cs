@@ -33,18 +33,18 @@ namespace Escaplication
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reserveren));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.Spartabtn = new System.Windows.Forms.Button();
+            this.TLRbtn = new System.Windows.Forms.Button();
+            this.Hauntedbtn = new System.Windows.Forms.Button();
+            this.Spartapic = new System.Windows.Forms.PictureBox();
+            this.TLRpic = new System.Windows.Forms.PictureBox();
+            this.Hauntedpic = new System.Windows.Forms.PictureBox();
             this.PageTitle = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Subtitlelbl = new System.Windows.Forms.Label();
+            this.Spartalbl = new System.Windows.Forms.Label();
+            this.TLRlbl = new System.Windows.Forms.Label();
+            this.Hauntedlbl = new System.Windows.Forms.Label();
+            this.Reservpagetabs = new System.Windows.Forms.TabControl();
             this.Reserveren1 = new System.Windows.Forms.TabPage();
             this.button8 = new System.Windows.Forms.Button();
             this.Account = new System.Windows.Forms.Button();
@@ -55,38 +55,38 @@ namespace Escaplication
             this.Homepage = new System.Windows.Forms.Button();
             this.Reserveren2 = new System.Windows.Forms.TabPage();
             this.TimeBox = new System.Windows.Forms.ComboBox();
-            this.checkBox = new System.Windows.Forms.CheckBox();
+            this.logincheckBox = new System.Windows.Forms.CheckBox();
             this.toaccountbtn = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.Registerlbl = new System.Windows.Forms.Label();
+            this.Timelbl = new System.Windows.Forms.Label();
             this.yearbox = new System.Windows.Forms.NumericUpDown();
             this.monthbox = new System.Windows.Forms.NumericUpDown();
             this.daybox = new System.Windows.Forms.NumericUpDown();
             this.peoplenumeric = new System.Windows.Forms.NumericUpDown();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.Datelbl = new System.Windows.Forms.Label();
+            this.Peoplelbl = new System.Windows.Forms.Label();
+            this.Passwordlbl = new System.Windows.Forms.Label();
+            this.Usernamelbl = new System.Windows.Forms.Label();
+            this.overzichtbtn = new System.Windows.Forms.Button();
             this.passwordtxtbox = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Reserverenbtn = new System.Windows.Forms.Button();
             this.usernametxtbox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Reserverentitlelbl = new System.Windows.Forms.Label();
             this.Reserveren3 = new System.Windows.Forms.TabPage();
-            this.Korting = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
+            this.Kortingbtn = new System.Windows.Forms.Button();
+            this.overzicht2btn = new System.Windows.Forms.Button();
+            this.Meldinglbl = new System.Windows.Forms.Label();
             this.Korting1 = new System.Windows.Forms.TabPage();
             this.OK_Button = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
+            this.answerlbl = new System.Windows.Forms.Label();
             this.textBox_antwoord = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.raadseltxtbox = new System.Windows.Forms.RichTextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Spartapic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TLRpic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Hauntedpic)).BeginInit();
+            this.Reservpagetabs.SuspendLayout();
             this.Reserveren1.SuspendLayout();
             this.Reserveren2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yearbox)).BeginInit();
@@ -97,142 +97,122 @@ namespace Escaplication
             this.Korting1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // Spartabtn
             // 
-            this.button1.Location = new System.Drawing.Point(210, 500);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Ik kies deze!";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Spartabtn.Location = new System.Drawing.Point(158, 406);
+            this.Spartabtn.Name = "Spartabtn";
+            this.Spartabtn.Size = new System.Drawing.Size(75, 23);
+            this.Spartabtn.TabIndex = 0;
+            this.Spartabtn.Text = "Ik kies deze!";
+            this.Spartabtn.UseVisualStyleBackColor = true;
+            this.Spartabtn.Click += new System.EventHandler(this.Spartabtn_Click);
             // 
-            // button2
+            // TLRbtn
             // 
-            this.button2.Location = new System.Drawing.Point(549, 500);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Ik kies deze!";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.TLRbtn.Location = new System.Drawing.Point(412, 406);
+            this.TLRbtn.Name = "TLRbtn";
+            this.TLRbtn.Size = new System.Drawing.Size(75, 23);
+            this.TLRbtn.TabIndex = 1;
+            this.TLRbtn.Text = "Ik kies deze!";
+            this.TLRbtn.UseVisualStyleBackColor = true;
+            this.TLRbtn.Click += new System.EventHandler(this.TLRbtn_Click);
             // 
-            // button3
+            // Hauntedbtn
             // 
-            this.button3.Location = new System.Drawing.Point(886, 500);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 28);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Ik kies deze!";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.Hauntedbtn.Location = new System.Drawing.Point(664, 406);
+            this.Hauntedbtn.Name = "Hauntedbtn";
+            this.Hauntedbtn.Size = new System.Drawing.Size(75, 23);
+            this.Hauntedbtn.TabIndex = 2;
+            this.Hauntedbtn.Text = "Ik kies deze!";
+            this.Hauntedbtn.UseVisualStyleBackColor = true;
+            this.Hauntedbtn.Click += new System.EventHandler(this.Hauntedbtn_Click);
             // 
-            // pictureBox1
+            // Spartapic
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(150, 197);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(221, 293);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.Spartapic.Image = ((System.Drawing.Image)(resources.GetObject("Spartapic.Image")));
+            this.Spartapic.Location = new System.Drawing.Point(112, 160);
+            this.Spartapic.Name = "Spartapic";
+            this.Spartapic.Size = new System.Drawing.Size(166, 238);
+            this.Spartapic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Spartapic.TabIndex = 3;
+            this.Spartapic.TabStop = false;
             // 
-            // pictureBox2
+            // TLRpic
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(488, 197);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(221, 293);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.TLRpic.Image = ((System.Drawing.Image)(resources.GetObject("TLRpic.Image")));
+            this.TLRpic.Location = new System.Drawing.Point(366, 160);
+            this.TLRpic.Name = "TLRpic";
+            this.TLRpic.Size = new System.Drawing.Size(166, 238);
+            this.TLRpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.TLRpic.TabIndex = 4;
+            this.TLRpic.TabStop = false;
             // 
-            // pictureBox3
+            // Hauntedpic
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(826, 197);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(221, 293);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.Hauntedpic.Image = ((System.Drawing.Image)(resources.GetObject("Hauntedpic.Image")));
+            this.Hauntedpic.Location = new System.Drawing.Point(620, 160);
+            this.Hauntedpic.Name = "Hauntedpic";
+            this.Hauntedpic.Size = new System.Drawing.Size(166, 238);
+            this.Hauntedpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Hauntedpic.TabIndex = 5;
+            this.Hauntedpic.TabStop = false;
             // 
             // PageTitle
             // 
             this.PageTitle.AutoSize = true;
-            this.PageTitle.Location = new System.Drawing.Point(558, 96);
-            this.PageTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PageTitle.Location = new System.Drawing.Point(418, 78);
             this.PageTitle.Name = "PageTitle";
-            this.PageTitle.Size = new System.Drawing.Size(82, 17);
+            this.PageTitle.Size = new System.Drawing.Size(62, 13);
             this.PageTitle.TabIndex = 6;
             this.PageTitle.Text = "Reserveren";
             // 
-            // label2
+            // Subtitlelbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(457, 129);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(283, 17);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Kies een escape room die je wilt reserveren";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.Subtitlelbl.AutoSize = true;
+            this.Subtitlelbl.Location = new System.Drawing.Point(343, 105);
+            this.Subtitlelbl.Name = "Subtitlelbl";
+            this.Subtitlelbl.Size = new System.Drawing.Size(211, 13);
+            this.Subtitlelbl.TabIndex = 7;
+            this.Subtitlelbl.Text = "Kies een escape room die je wilt reserveren";
             // 
-            // label3
+            // Spartalbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(203, 162);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 17);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "THIS IS SPARTA";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.Spartalbl.AutoSize = true;
+            this.Spartalbl.Location = new System.Drawing.Point(152, 132);
+            this.Spartalbl.Name = "Spartalbl";
+            this.Spartalbl.Size = new System.Drawing.Size(91, 13);
+            this.Spartalbl.TabIndex = 8;
+            this.Spartalbl.Text = "THIS IS SPARTA";
             // 
-            // label4
+            // TLRlbl
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(544, 162);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 17);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "THE LAST RUN";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.TLRlbl.AutoSize = true;
+            this.TLRlbl.Location = new System.Drawing.Point(408, 132);
+            this.TLRlbl.Name = "TLRlbl";
+            this.TLRlbl.Size = new System.Drawing.Size(86, 13);
+            this.TLRlbl.TabIndex = 9;
+            this.TLRlbl.Text = "THE LAST RUN";
             // 
-            // label5
+            // Hauntedlbl
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(870, 162);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(133, 17);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "HAUNTED ESCAPE";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.Hauntedlbl.AutoSize = true;
+            this.Hauntedlbl.Location = new System.Drawing.Point(652, 132);
+            this.Hauntedlbl.Name = "Hauntedlbl";
+            this.Hauntedlbl.Size = new System.Drawing.Size(105, 13);
+            this.Hauntedlbl.TabIndex = 10;
+            this.Hauntedlbl.Text = "HAUNTED ESCAPE";
             // 
-            // tabControl1
+            // Reservpagetabs
             // 
-            this.tabControl1.Controls.Add(this.Reserveren1);
-            this.tabControl1.Controls.Add(this.Reserveren2);
-            this.tabControl1.Controls.Add(this.Reserveren3);
-            this.tabControl1.Controls.Add(this.Korting1);
-            this.tabControl1.Location = new System.Drawing.Point(1, 1);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1176, 625);
-            this.tabControl1.TabIndex = 11;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            this.Reservpagetabs.Controls.Add(this.Reserveren1);
+            this.Reservpagetabs.Controls.Add(this.Reserveren2);
+            this.Reservpagetabs.Controls.Add(this.Reserveren3);
+            this.Reservpagetabs.Controls.Add(this.Korting1);
+            this.Reservpagetabs.Location = new System.Drawing.Point(1, 1);
+            this.Reservpagetabs.Name = "Reservpagetabs";
+            this.Reservpagetabs.SelectedIndex = 0;
+            this.Reservpagetabs.Size = new System.Drawing.Size(882, 508);
+            this.Reservpagetabs.TabIndex = 11;
             // 
             // Reserveren1
             // 
@@ -245,57 +225,53 @@ namespace Escaplication
             this.Reserveren1.Controls.Add(this.Thema);
             this.Reserveren1.Controls.Add(this.Tarieven);
             this.Reserveren1.Controls.Add(this.Homepage);
-            this.Reserveren1.Controls.Add(this.pictureBox2);
-            this.Reserveren1.Controls.Add(this.label4);
-            this.Reserveren1.Controls.Add(this.label5);
-            this.Reserveren1.Controls.Add(this.pictureBox1);
-            this.Reserveren1.Controls.Add(this.label3);
-            this.Reserveren1.Controls.Add(this.button3);
+            this.Reserveren1.Controls.Add(this.TLRpic);
+            this.Reserveren1.Controls.Add(this.TLRlbl);
+            this.Reserveren1.Controls.Add(this.Hauntedlbl);
+            this.Reserveren1.Controls.Add(this.Spartapic);
+            this.Reserveren1.Controls.Add(this.Spartalbl);
+            this.Reserveren1.Controls.Add(this.Hauntedbtn);
             this.Reserveren1.Controls.Add(this.PageTitle);
-            this.Reserveren1.Controls.Add(this.label2);
-            this.Reserveren1.Controls.Add(this.button2);
-            this.Reserveren1.Controls.Add(this.button1);
-            this.Reserveren1.Controls.Add(this.pictureBox3);
-            this.Reserveren1.Location = new System.Drawing.Point(4, 25);
-            this.Reserveren1.Margin = new System.Windows.Forms.Padding(4);
+            this.Reserveren1.Controls.Add(this.Subtitlelbl);
+            this.Reserveren1.Controls.Add(this.TLRbtn);
+            this.Reserveren1.Controls.Add(this.Spartabtn);
+            this.Reserveren1.Controls.Add(this.Hauntedpic);
+            this.Reserveren1.Location = new System.Drawing.Point(4, 22);
             this.Reserveren1.Name = "Reserveren1";
-            this.Reserveren1.Padding = new System.Windows.Forms.Padding(4);
-            this.Reserveren1.Size = new System.Drawing.Size(1168, 596);
+            this.Reserveren1.Padding = new System.Windows.Forms.Padding(3);
+            this.Reserveren1.Size = new System.Drawing.Size(874, 482);
             this.Reserveren1.TabIndex = 0;
             this.Reserveren1.Text = "Reserveren 1";
-            this.Reserveren1.Click += new System.EventHandler(this.Reserveren1_Click);
             // 
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.Aqua;
             this.button8.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(547, 22);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button8.Location = new System.Drawing.Point(410, 18);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(143, 39);
+            this.button8.Size = new System.Drawing.Size(107, 32);
             this.button8.TabIndex = 42;
             this.button8.Text = "Reserveren";
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Account
             // 
-            this.Account.Location = new System.Drawing.Point(1083, 9);
-            this.Account.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Account.Location = new System.Drawing.Point(812, 7);
+            this.Account.Margin = new System.Windows.Forms.Padding(2);
             this.Account.Name = "Account";
-            this.Account.Size = new System.Drawing.Size(75, 23);
+            this.Account.Size = new System.Drawing.Size(56, 19);
             this.Account.TabIndex = 41;
             this.Account.Text = "Account";
             this.Account.UseVisualStyleBackColor = true;
-            this.Account.Click += new System.EventHandler(this.Account_Click_1);
             // 
             // Recenties
             // 
             this.Recenties.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Recenties.Location = new System.Drawing.Point(695, 22);
-            this.Recenties.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Recenties.Location = new System.Drawing.Point(521, 18);
+            this.Recenties.Margin = new System.Windows.Forms.Padding(2);
             this.Recenties.Name = "Recenties";
-            this.Recenties.Size = new System.Drawing.Size(131, 39);
+            this.Recenties.Size = new System.Drawing.Size(98, 32);
             this.Recenties.TabIndex = 40;
             this.Recenties.Text = "Recensies";
             this.Recenties.UseVisualStyleBackColor = true;
@@ -304,10 +280,10 @@ namespace Escaplication
             // Contact
             // 
             this.Contact.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Contact.Location = new System.Drawing.Point(831, 22);
-            this.Contact.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Contact.Location = new System.Drawing.Point(623, 18);
+            this.Contact.Margin = new System.Windows.Forms.Padding(2);
             this.Contact.Name = "Contact";
-            this.Contact.Size = new System.Drawing.Size(131, 39);
+            this.Contact.Size = new System.Drawing.Size(98, 32);
             this.Contact.TabIndex = 39;
             this.Contact.Text = "Contact";
             this.Contact.UseVisualStyleBackColor = true;
@@ -316,10 +292,10 @@ namespace Escaplication
             // Thema
             // 
             this.Thema.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Thema.Location = new System.Drawing.Point(279, 22);
-            this.Thema.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Thema.Location = new System.Drawing.Point(209, 18);
+            this.Thema.Margin = new System.Windows.Forms.Padding(2);
             this.Thema.Name = "Thema";
-            this.Thema.Size = new System.Drawing.Size(131, 39);
+            this.Thema.Size = new System.Drawing.Size(98, 32);
             this.Thema.TabIndex = 38;
             this.Thema.Text = "Thema";
             this.Thema.UseVisualStyleBackColor = true;
@@ -329,10 +305,10 @@ namespace Escaplication
             // 
             this.Tarieven.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Tarieven.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tarieven.Location = new System.Drawing.Point(412, 22);
-            this.Tarieven.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Tarieven.Location = new System.Drawing.Point(309, 18);
+            this.Tarieven.Margin = new System.Windows.Forms.Padding(2);
             this.Tarieven.Name = "Tarieven";
-            this.Tarieven.Size = new System.Drawing.Size(131, 39);
+            this.Tarieven.Size = new System.Drawing.Size(98, 32);
             this.Tarieven.TabIndex = 37;
             this.Tarieven.Text = "Tarieven";
             this.Tarieven.UseVisualStyleBackColor = false;
@@ -341,10 +317,10 @@ namespace Escaplication
             // Homepage
             // 
             this.Homepage.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Homepage.Location = new System.Drawing.Point(129, 22);
-            this.Homepage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Homepage.Location = new System.Drawing.Point(97, 18);
+            this.Homepage.Margin = new System.Windows.Forms.Padding(2);
             this.Homepage.Name = "Homepage";
-            this.Homepage.Size = new System.Drawing.Size(144, 39);
+            this.Homepage.Size = new System.Drawing.Size(108, 32);
             this.Homepage.TabIndex = 35;
             this.Homepage.Text = "Homepage";
             this.Homepage.UseVisualStyleBackColor = true;
@@ -354,35 +330,34 @@ namespace Escaplication
             // 
             this.Reserveren2.BackColor = System.Drawing.Color.Turquoise;
             this.Reserveren2.Controls.Add(this.TimeBox);
-            this.Reserveren2.Controls.Add(this.checkBox);
+            this.Reserveren2.Controls.Add(this.logincheckBox);
             this.Reserveren2.Controls.Add(this.toaccountbtn);
-            this.Reserveren2.Controls.Add(this.label12);
-            this.Reserveren2.Controls.Add(this.label11);
+            this.Reserveren2.Controls.Add(this.Registerlbl);
+            this.Reserveren2.Controls.Add(this.Timelbl);
             this.Reserveren2.Controls.Add(this.yearbox);
             this.Reserveren2.Controls.Add(this.monthbox);
             this.Reserveren2.Controls.Add(this.daybox);
             this.Reserveren2.Controls.Add(this.peoplenumeric);
-            this.Reserveren2.Controls.Add(this.label10);
-            this.Reserveren2.Controls.Add(this.label9);
-            this.Reserveren2.Controls.Add(this.label8);
-            this.Reserveren2.Controls.Add(this.label7);
-            this.Reserveren2.Controls.Add(this.button5);
+            this.Reserveren2.Controls.Add(this.Datelbl);
+            this.Reserveren2.Controls.Add(this.Peoplelbl);
+            this.Reserveren2.Controls.Add(this.Passwordlbl);
+            this.Reserveren2.Controls.Add(this.Usernamelbl);
+            this.Reserveren2.Controls.Add(this.overzichtbtn);
             this.Reserveren2.Controls.Add(this.passwordtxtbox);
-            this.Reserveren2.Controls.Add(this.button4);
+            this.Reserveren2.Controls.Add(this.Reserverenbtn);
             this.Reserveren2.Controls.Add(this.usernametxtbox);
-            this.Reserveren2.Controls.Add(this.label1);
-            this.Reserveren2.Location = new System.Drawing.Point(4, 25);
-            this.Reserveren2.Margin = new System.Windows.Forms.Padding(4);
+            this.Reserveren2.Controls.Add(this.Reserverentitlelbl);
+            this.Reserveren2.Location = new System.Drawing.Point(4, 22);
             this.Reserveren2.Name = "Reserveren2";
-            this.Reserveren2.Padding = new System.Windows.Forms.Padding(4);
-            this.Reserveren2.Size = new System.Drawing.Size(1168, 596);
+            this.Reserveren2.Padding = new System.Windows.Forms.Padding(3);
+            this.Reserveren2.Size = new System.Drawing.Size(874, 482);
             this.Reserveren2.TabIndex = 1;
             this.Reserveren2.Text = "Reserveren 2";
-            this.Reserveren2.Click += new System.EventHandler(this.Reserveren2_Click);
             // 
             // TimeBox
             // 
             this.TimeBox.AllowDrop = true;
+            this.TimeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TimeBox.Items.AddRange(new object[] {
             "9:00",
             "10:00",
@@ -392,61 +367,54 @@ namespace Escaplication
             "14:00",
             "15:00",
             "16:00"});
-            this.TimeBox.Location = new System.Drawing.Point(535, 288);
+            this.TimeBox.Location = new System.Drawing.Point(401, 234);
+            this.TimeBox.Margin = new System.Windows.Forms.Padding(2);
             this.TimeBox.Name = "TimeBox";
-            this.TimeBox.Size = new System.Drawing.Size(152, 24);
+            this.TimeBox.Size = new System.Drawing.Size(115, 21);
             this.TimeBox.TabIndex = 25;
-            this.TimeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             // 
-            // checkBox
+            // logincheckBox
             // 
-            this.checkBox.AutoSize = true;
-            this.checkBox.Location = new System.Drawing.Point(520, 327);
-            this.checkBox.Margin = new System.Windows.Forms.Padding(4);
-            this.checkBox.Name = "checkBox";
-            this.checkBox.Size = new System.Drawing.Size(128, 21);
-            this.checkBox.TabIndex = 24;
-            this.checkBox.Text = "Ingelogd blijven";
-            this.checkBox.UseVisualStyleBackColor = true;
-            this.checkBox.CheckedChanged += new System.EventHandler(this.checkBox_CheckedChanged);
+            this.logincheckBox.AutoSize = true;
+            this.logincheckBox.Location = new System.Drawing.Point(390, 266);
+            this.logincheckBox.Name = "logincheckBox";
+            this.logincheckBox.Size = new System.Drawing.Size(100, 17);
+            this.logincheckBox.TabIndex = 24;
+            this.logincheckBox.Text = "Ingelogd blijven";
+            this.logincheckBox.UseVisualStyleBackColor = true;
             // 
             // toaccountbtn
             // 
-            this.toaccountbtn.Location = new System.Drawing.Point(622, 365);
-            this.toaccountbtn.Margin = new System.Windows.Forms.Padding(4);
+            this.toaccountbtn.Location = new System.Drawing.Point(466, 297);
             this.toaccountbtn.Name = "toaccountbtn";
-            this.toaccountbtn.Size = new System.Drawing.Size(100, 28);
+            this.toaccountbtn.Size = new System.Drawing.Size(75, 23);
             this.toaccountbtn.TabIndex = 23;
             this.toaccountbtn.Text = "Account";
             this.toaccountbtn.UseVisualStyleBackColor = true;
             this.toaccountbtn.Click += new System.EventHandler(this.toaccountbtn_Click);
             // 
-            // label12
+            // Registerlbl
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(351, 365);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(233, 17);
-            this.label12.TabIndex = 22;
-            this.label12.Text = "Nog geen account? Registreer hier!";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+            this.Registerlbl.AutoSize = true;
+            this.Registerlbl.Location = new System.Drawing.Point(265, 302);
+            this.Registerlbl.Name = "Registerlbl";
+            this.Registerlbl.Size = new System.Drawing.Size(176, 13);
+            this.Registerlbl.TabIndex = 22;
+            this.Registerlbl.Text = "Nog geen account? Registreer hier!";
             // 
-            // label11
+            // Timelbl
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(467, 288);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(31, 17);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "Tijd";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+            this.Timelbl.AutoSize = true;
+            this.Timelbl.Location = new System.Drawing.Point(350, 234);
+            this.Timelbl.Name = "Timelbl";
+            this.Timelbl.Size = new System.Drawing.Size(24, 13);
+            this.Timelbl.TabIndex = 21;
+            this.Timelbl.Text = "Tijd";
             // 
             // yearbox
             // 
-            this.yearbox.Location = new System.Drawing.Point(660, 256);
-            this.yearbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.yearbox.Location = new System.Drawing.Point(495, 208);
+            this.yearbox.Margin = new System.Windows.Forms.Padding(2);
             this.yearbox.Maximum = new decimal(new int[] {
             3000,
             0,
@@ -458,7 +426,7 @@ namespace Escaplication
             0,
             0});
             this.yearbox.Name = "yearbox";
-            this.yearbox.Size = new System.Drawing.Size(61, 22);
+            this.yearbox.Size = new System.Drawing.Size(46, 20);
             this.yearbox.TabIndex = 18;
             this.yearbox.Value = new decimal(new int[] {
             2020,
@@ -469,8 +437,8 @@ namespace Escaplication
             // 
             // monthbox
             // 
-            this.monthbox.Location = new System.Drawing.Point(594, 256);
-            this.monthbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.monthbox.Location = new System.Drawing.Point(446, 208);
+            this.monthbox.Margin = new System.Windows.Forms.Padding(2);
             this.monthbox.Maximum = new decimal(new int[] {
             12,
             0,
@@ -482,7 +450,7 @@ namespace Escaplication
             0,
             0});
             this.monthbox.Name = "monthbox";
-            this.monthbox.Size = new System.Drawing.Size(60, 22);
+            this.monthbox.Size = new System.Drawing.Size(45, 20);
             this.monthbox.TabIndex = 17;
             this.monthbox.Value = new decimal(new int[] {
             1,
@@ -493,8 +461,8 @@ namespace Escaplication
             // 
             // daybox
             // 
-            this.daybox.Location = new System.Drawing.Point(535, 256);
-            this.daybox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.daybox.Location = new System.Drawing.Point(401, 208);
+            this.daybox.Margin = new System.Windows.Forms.Padding(2);
             this.daybox.Maximum = new decimal(new int[] {
             31,
             0,
@@ -506,7 +474,7 @@ namespace Escaplication
             0,
             0});
             this.daybox.Name = "daybox";
-            this.daybox.Size = new System.Drawing.Size(53, 22);
+            this.daybox.Size = new System.Drawing.Size(40, 20);
             this.daybox.TabIndex = 16;
             this.daybox.Value = new decimal(new int[] {
             1,
@@ -517,8 +485,8 @@ namespace Escaplication
             // 
             // peoplenumeric
             // 
-            this.peoplenumeric.Location = new System.Drawing.Point(535, 225);
-            this.peoplenumeric.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.peoplenumeric.Location = new System.Drawing.Point(401, 183);
+            this.peoplenumeric.Margin = new System.Windows.Forms.Padding(2);
             this.peoplenumeric.Maximum = new decimal(new int[] {
             8,
             0,
@@ -530,212 +498,199 @@ namespace Escaplication
             0,
             0});
             this.peoplenumeric.Name = "peoplenumeric";
-            this.peoplenumeric.Size = new System.Drawing.Size(187, 22);
+            this.peoplenumeric.Size = new System.Drawing.Size(140, 20);
             this.peoplenumeric.TabIndex = 15;
             this.peoplenumeric.Value = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.peoplenumeric.ValueChanged += new System.EventHandler(this.peoplenumeric_ValueChanged);
             // 
-            // label10
+            // Datelbl
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(377, 256);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(121, 17);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "Datum Selecteren";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
+            this.Datelbl.AutoSize = true;
+            this.Datelbl.Location = new System.Drawing.Point(283, 208);
+            this.Datelbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Datelbl.Name = "Datelbl";
+            this.Datelbl.Size = new System.Drawing.Size(92, 13);
+            this.Datelbl.TabIndex = 14;
+            this.Datelbl.Text = "Datum Selecteren";
             // 
-            // label9
+            // Peoplelbl
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(396, 225);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(102, 17);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Aantal mensen";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            this.Peoplelbl.AutoSize = true;
+            this.Peoplelbl.Location = new System.Drawing.Point(297, 183);
+            this.Peoplelbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Peoplelbl.Name = "Peoplelbl";
+            this.Peoplelbl.Size = new System.Drawing.Size(77, 13);
+            this.Peoplelbl.TabIndex = 12;
+            this.Peoplelbl.Text = "Aantal mensen";
             // 
-            // label8
+            // Passwordlbl
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(412, 200);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 17);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Wachtwoord";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            this.Passwordlbl.AutoSize = true;
+            this.Passwordlbl.Location = new System.Drawing.Point(309, 162);
+            this.Passwordlbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Passwordlbl.Name = "Passwordlbl";
+            this.Passwordlbl.Size = new System.Drawing.Size(68, 13);
+            this.Passwordlbl.TabIndex = 11;
+            this.Passwordlbl.Text = "Wachtwoord";
             // 
-            // label7
+            // Usernamelbl
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(385, 171);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 17);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Gebruikersnaam";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.Usernamelbl.AutoSize = true;
+            this.Usernamelbl.Location = new System.Drawing.Point(289, 139);
+            this.Usernamelbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Usernamelbl.Name = "Usernamelbl";
+            this.Usernamelbl.Size = new System.Drawing.Size(84, 13);
+            this.Usernamelbl.TabIndex = 10;
+            this.Usernamelbl.Text = "Gebruikersnaam";
             // 
-            // button5
+            // overzichtbtn
             // 
-            this.button5.Location = new System.Drawing.Point(285, 429);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(213, 106);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Terug naar overzicht";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.overzichtbtn.Location = new System.Drawing.Point(214, 349);
+            this.overzichtbtn.Name = "overzichtbtn";
+            this.overzichtbtn.Size = new System.Drawing.Size(160, 86);
+            this.overzichtbtn.TabIndex = 9;
+            this.overzichtbtn.Text = "Terug naar overzicht";
+            this.overzichtbtn.UseVisualStyleBackColor = true;
+            this.overzichtbtn.Click += new System.EventHandler(this.overzichtbtn_Click);
             // 
             // passwordtxtbox
             // 
-            this.passwordtxtbox.Location = new System.Drawing.Point(535, 195);
-            this.passwordtxtbox.Margin = new System.Windows.Forms.Padding(4);
+            this.passwordtxtbox.Location = new System.Drawing.Point(401, 158);
             this.passwordtxtbox.Name = "passwordtxtbox";
-            this.passwordtxtbox.Size = new System.Drawing.Size(248, 22);
+            this.passwordtxtbox.Size = new System.Drawing.Size(187, 20);
             this.passwordtxtbox.TabIndex = 2;
             this.passwordtxtbox.TextChanged += new System.EventHandler(this.passwordtxtbox_TextChanged);
             // 
-            // button4
+            // Reserverenbtn
             // 
-            this.button4.Location = new System.Drawing.Point(704, 429);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(179, 106);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Reserveren!";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.Reserverenbtn.Location = new System.Drawing.Point(528, 349);
+            this.Reserverenbtn.Name = "Reserverenbtn";
+            this.Reserverenbtn.Size = new System.Drawing.Size(134, 86);
+            this.Reserverenbtn.TabIndex = 8;
+            this.Reserverenbtn.Text = "Reserveren!";
+            this.Reserverenbtn.UseVisualStyleBackColor = true;
+            this.Reserverenbtn.Click += new System.EventHandler(this.Reserverenbtn_Click);
             // 
             // usernametxtbox
             // 
-            this.usernametxtbox.Location = new System.Drawing.Point(535, 167);
-            this.usernametxtbox.Margin = new System.Windows.Forms.Padding(4);
+            this.usernametxtbox.Location = new System.Drawing.Point(401, 136);
             this.usernametxtbox.Name = "usernametxtbox";
-            this.usernametxtbox.Size = new System.Drawing.Size(248, 22);
+            this.usernametxtbox.Size = new System.Drawing.Size(187, 20);
             this.usernametxtbox.TabIndex = 0;
-            this.usernametxtbox.TextChanged += new System.EventHandler(this.usernametxtbox_TextChanged);
             // 
-            // label1
+            // Reserverentitlelbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(404, 102);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.Reserverentitlelbl.AutoSize = true;
+            this.Reserverentitlelbl.Location = new System.Drawing.Point(303, 83);
+            this.Reserverentitlelbl.Name = "Reserverentitlelbl";
+            this.Reserverentitlelbl.Size = new System.Drawing.Size(35, 13);
+            this.Reserverentitlelbl.TabIndex = 0;
+            this.Reserverentitlelbl.Text = "label1";
             // 
             // Reserveren3
             // 
             this.Reserveren3.BackColor = System.Drawing.Color.Turquoise;
-            this.Reserveren3.Controls.Add(this.Korting);
-            this.Reserveren3.Controls.Add(this.button6);
-            this.Reserveren3.Controls.Add(this.label6);
-            this.Reserveren3.Location = new System.Drawing.Point(4, 25);
-            this.Reserveren3.Margin = new System.Windows.Forms.Padding(4);
+            this.Reserveren3.Controls.Add(this.Kortingbtn);
+            this.Reserveren3.Controls.Add(this.overzicht2btn);
+            this.Reserveren3.Controls.Add(this.Meldinglbl);
+            this.Reserveren3.Location = new System.Drawing.Point(4, 22);
             this.Reserveren3.Name = "Reserveren3";
-            this.Reserveren3.Padding = new System.Windows.Forms.Padding(4);
-            this.Reserveren3.Size = new System.Drawing.Size(1168, 596);
+            this.Reserveren3.Padding = new System.Windows.Forms.Padding(3);
+            this.Reserveren3.Size = new System.Drawing.Size(874, 482);
             this.Reserveren3.TabIndex = 2;
             this.Reserveren3.Text = "Reserveren 3";
-            this.Reserveren3.Click += new System.EventHandler(this.Reserveren3_Click);
             // 
-            // Korting
+            // Kortingbtn
             // 
-            this.Korting.Location = new System.Drawing.Point(505, 211);
-            this.Korting.Name = "Korting";
-            this.Korting.Size = new System.Drawing.Size(193, 34);
-            this.Korting.TabIndex = 5;
-            this.Korting.TabStop = false;
-            this.Korting.Text = "Extra korting? Klik Hier!";
-            this.Korting.UseVisualStyleBackColor = true;
-            this.Korting.Click += new System.EventHandler(this.Korting_Click);
+            this.Kortingbtn.Location = new System.Drawing.Point(380, 165);
+            this.Kortingbtn.Margin = new System.Windows.Forms.Padding(2);
+            this.Kortingbtn.Name = "Kortingbtn";
+            this.Kortingbtn.Size = new System.Drawing.Size(145, 28);
+            this.Kortingbtn.TabIndex = 5;
+            this.Kortingbtn.TabStop = false;
+            this.Kortingbtn.Text = "Extra korting? Klik Hier!";
+            this.Kortingbtn.UseVisualStyleBackColor = true;
+            this.Kortingbtn.Click += new System.EventHandler(this.Korting_Click);
             // 
-            // button6
+            // overzicht2btn
             // 
-            this.button6.Location = new System.Drawing.Point(463, 277);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(271, 150);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Terug naar overzicht";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.overzicht2btn.Location = new System.Drawing.Point(347, 225);
+            this.overzicht2btn.Name = "overzicht2btn";
+            this.overzicht2btn.Size = new System.Drawing.Size(203, 122);
+            this.overzicht2btn.TabIndex = 2;
+            this.overzicht2btn.Text = "Terug naar overzicht";
+            this.overzicht2btn.UseVisualStyleBackColor = true;
+            this.overzicht2btn.Click += new System.EventHandler(this.overzicht2btn_Click);
             // 
-            // label6
+            // Meldinglbl
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(429, 168);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(342, 17);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Je reservering is verwerkt en is te zien op je account!";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.Meldinglbl.AutoSize = true;
+            this.Meldinglbl.Location = new System.Drawing.Point(322, 136);
+            this.Meldinglbl.Name = "Meldinglbl";
+            this.Meldinglbl.Size = new System.Drawing.Size(257, 13);
+            this.Meldinglbl.TabIndex = 1;
+            this.Meldinglbl.Text = "Je reservering is verwerkt en is te zien op je account!";
             // 
             // Korting1
             // 
             this.Korting1.BackColor = System.Drawing.Color.Turquoise;
             this.Korting1.Controls.Add(this.OK_Button);
-            this.Korting1.Controls.Add(this.label13);
+            this.Korting1.Controls.Add(this.answerlbl);
             this.Korting1.Controls.Add(this.textBox_antwoord);
-            this.Korting1.Controls.Add(this.richTextBox1);
-            this.Korting1.Location = new System.Drawing.Point(4, 25);
+            this.Korting1.Controls.Add(this.raadseltxtbox);
+            this.Korting1.Location = new System.Drawing.Point(4, 22);
+            this.Korting1.Margin = new System.Windows.Forms.Padding(2);
             this.Korting1.Name = "Korting1";
-            this.Korting1.Size = new System.Drawing.Size(1168, 596);
+            this.Korting1.Size = new System.Drawing.Size(874, 482);
             this.Korting1.TabIndex = 3;
             this.Korting1.Text = "Korting";
-            this.Korting1.Click += new System.EventHandler(this.Korting1_Click);
             // 
             // OK_Button
             // 
-            this.OK_Button.Location = new System.Drawing.Point(668, 356);
+            this.OK_Button.Location = new System.Drawing.Point(501, 289);
+            this.OK_Button.Margin = new System.Windows.Forms.Padding(2);
             this.OK_Button.Name = "OK_Button";
-            this.OK_Button.Size = new System.Drawing.Size(75, 23);
+            this.OK_Button.Size = new System.Drawing.Size(56, 19);
             this.OK_Button.TabIndex = 12;
             this.OK_Button.Text = "Ok";
             this.OK_Button.UseVisualStyleBackColor = true;
             this.OK_Button.Click += new System.EventHandler(this.OK_Button_Click);
             // 
-            // label13
+            // answerlbl
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(427, 353);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(101, 25);
-            this.label13.TabIndex = 11;
-            this.label13.Text = "Antwoord:";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
+            this.answerlbl.AutoSize = true;
+            this.answerlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerlbl.Location = new System.Drawing.Point(320, 287);
+            this.answerlbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.answerlbl.Name = "answerlbl";
+            this.answerlbl.Size = new System.Drawing.Size(81, 20);
+            this.answerlbl.TabIndex = 11;
+            this.answerlbl.Text = "Antwoord:";
             // 
             // textBox_antwoord
             // 
-            this.textBox_antwoord.Location = new System.Drawing.Point(535, 356);
-            this.textBox_antwoord.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_antwoord.Location = new System.Drawing.Point(401, 289);
             this.textBox_antwoord.Name = "textBox_antwoord";
-            this.textBox_antwoord.Size = new System.Drawing.Size(102, 22);
+            this.textBox_antwoord.Size = new System.Drawing.Size(78, 20);
             this.textBox_antwoord.TabIndex = 2;
-            this.textBox_antwoord.TextChanged += new System.EventHandler(this.textBox_antwoord_TextChanged);
             // 
-            // richTextBox1
+            // raadseltxtbox
             // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.raadseltxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.AutoWordSelection = true;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(329, 231);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(543, 89);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "Een Escape room samen met de drankjes kost € 110,-.\nDe Escape room is € 100,- mee" +
+            this.raadseltxtbox.AutoWordSelection = true;
+            this.raadseltxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.raadseltxtbox.Location = new System.Drawing.Point(247, 188);
+            this.raadseltxtbox.Margin = new System.Windows.Forms.Padding(2);
+            this.raadseltxtbox.Name = "raadseltxtbox";
+            this.raadseltxtbox.Size = new System.Drawing.Size(408, 73);
+            this.raadseltxtbox.TabIndex = 1;
+            this.raadseltxtbox.Text = "Een Escape room samen met de drankjes kost € 110,-.\nDe Escape room is € 100,- mee" +
     "r dan de drankjes. \nHoeveel kost de Escape room?";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // button7
             // 
@@ -747,21 +702,19 @@ namespace Escaplication
             this.button7.TabIndex = 36;
             this.button7.Text = "Reserveren";
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Reserveren
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1179, 629);
-            this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.ClientSize = new System.Drawing.Size(884, 511);
+            this.Controls.Add(this.Reservpagetabs);
             this.Name = "Reserveren";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Spartapic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TLRpic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Hauntedpic)).EndInit();
+            this.Reservpagetabs.ResumeLayout(false);
             this.Reserveren1.ResumeLayout(false);
             this.Reserveren1.PerformLayout();
             this.Reserveren2.ResumeLayout(false);
@@ -780,26 +733,26 @@ namespace Escaplication
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button Spartabtn;
+        private System.Windows.Forms.Button TLRbtn;
+        private System.Windows.Forms.Button Hauntedbtn;
+        private System.Windows.Forms.PictureBox Spartapic;
+        private System.Windows.Forms.PictureBox TLRpic;
+        private System.Windows.Forms.PictureBox Hauntedpic;
         private System.Windows.Forms.Label PageTitle;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.Label Subtitlelbl;
+        private System.Windows.Forms.Label Spartalbl;
+        private System.Windows.Forms.Label TLRlbl;
+        private System.Windows.Forms.Label Hauntedlbl;
+        private System.Windows.Forms.TabControl Reservpagetabs;
         private System.Windows.Forms.TabPage Reserveren1;
         private System.Windows.Forms.TabPage Reserveren2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label Reserverentitlelbl;
+        private System.Windows.Forms.Button Reserverenbtn;
+        private System.Windows.Forms.Button overzichtbtn;
         private System.Windows.Forms.TabPage Reserveren3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label Meldinglbl;
+        private System.Windows.Forms.Button overzicht2btn;
         private System.Windows.Forms.TextBox passwordtxtbox;
         private System.Windows.Forms.TextBox usernametxtbox;
         private System.Windows.Forms.Button Account;
@@ -809,24 +762,24 @@ namespace Escaplication
         private System.Windows.Forms.Button Tarieven;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button Homepage;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label Datelbl;
+        private System.Windows.Forms.Label Peoplelbl;
+        private System.Windows.Forms.Label Passwordlbl;
+        private System.Windows.Forms.Label Usernamelbl;
         private System.Windows.Forms.NumericUpDown peoplenumeric;
         private System.Windows.Forms.NumericUpDown yearbox;
         private System.Windows.Forms.NumericUpDown monthbox;
         private System.Windows.Forms.NumericUpDown daybox;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label Timelbl;
         private System.Windows.Forms.Button toaccountbtn;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.CheckBox checkBox;
-        private System.Windows.Forms.Button Korting;
+        private System.Windows.Forms.Label Registerlbl;
+        private System.Windows.Forms.CheckBox logincheckBox;
+        private System.Windows.Forms.Button Kortingbtn;
         private System.Windows.Forms.TabPage Korting1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox raadseltxtbox;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label answerlbl;
         private System.Windows.Forms.TextBox textBox_antwoord;
         private System.Windows.Forms.Button OK_Button;
         private ComboBox TimeBox;

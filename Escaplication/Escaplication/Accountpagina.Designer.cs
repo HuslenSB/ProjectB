@@ -343,7 +343,7 @@
             this.Deletebtn.TabIndex = 0;
             this.Deletebtn.Text = "Selecteer welke reservering u wilt verwijderen";
             this.Deletebtn.UseVisualStyleBackColor = true;
-            this.Deletebtn.Click += new System.EventHandler(this.button9_Click);
+            this.Deletebtn.Click += new System.EventHandler(this.Deletebtn_Click);
             // 
             // oudereserveringtab
             // 
@@ -568,7 +568,7 @@
             this.Button8.TabIndex = 43;
             this.Button8.Text = "Reserveren";
             this.Button8.UseVisualStyleBackColor = false;
-            this.Button8.Click += new System.EventHandler(this.Button8_Click);
+            this.Button8.Click += new System.EventHandler(this.Reserveren_Click);
             // 
             // Tarieven
             // 
