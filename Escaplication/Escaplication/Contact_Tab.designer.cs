@@ -35,13 +35,13 @@
             this.Tarieven = new System.Windows.Forms.Button();
             this.Reserveren = new System.Windows.Forms.Button();
             this.Homepage = new System.Windows.Forms.Button();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.GoogleMapsRedirectlabel = new System.Windows.Forms.LinkLabel();
+            this.RoutePlanner = new System.Windows.Forms.WebBrowser();
+            this.Contactgegevenstxtbox = new System.Windows.Forms.RichTextBox();
+            this.Openingstijdentxtbox = new System.Windows.Forms.RichTextBox();
+            this.LogoHRLocatie = new System.Windows.Forms.PictureBox();
             this.Account = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoHRLocatie)).BeginInit();
             this.SuspendLayout();
             // 
             // Recenties
@@ -111,56 +111,57 @@
             this.Homepage.UseVisualStyleBackColor = true;
             this.Homepage.Click += new System.EventHandler(this.Homepage_Click);
             // 
-            // linkLabel2
+            // GoogleMapsRedirectlabel
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.Location = new System.Drawing.Point(144, 426);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(209, 29);
-            this.linkLabel2.TabIndex = 31;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Plan hier via Maps";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            this.GoogleMapsRedirectlabel.AutoSize = true;
+            this.GoogleMapsRedirectlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GoogleMapsRedirectlabel.Location = new System.Drawing.Point(144, 426);
+            this.GoogleMapsRedirectlabel.Name = "GoogleMapsRedirectlabel";
+            this.GoogleMapsRedirectlabel.Size = new System.Drawing.Size(209, 29);
+            this.GoogleMapsRedirectlabel.TabIndex = 31;
+            this.GoogleMapsRedirectlabel.TabStop = true;
+            this.GoogleMapsRedirectlabel.Text = "Plan hier via Maps";
+            this.GoogleMapsRedirectlabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GoogleMapsRedirectlabel_LinkClicked);
             // 
-            // webBrowser1
+            // RoutePlanner
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(149, 61);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(888, 362);
-            this.webBrowser1.TabIndex = 32;
+            this.RoutePlanner.Location = new System.Drawing.Point(149, 61);
+            this.RoutePlanner.MinimumSize = new System.Drawing.Size(20, 20);
+            this.RoutePlanner.Name = "RoutePlanner";
+            this.RoutePlanner.Size = new System.Drawing.Size(888, 362);
+            this.RoutePlanner.TabIndex = 32;
+            this.RoutePlanner.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
-            // richTextBox1
+            // Contactgegevenstxtbox
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.White;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(151, 462);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(330, 161);
-            this.richTextBox1.TabIndex = 33;
-            this.richTextBox1.Text = "Plaats: Wijnhaven 107\nTelefoonnummer: 010 794 4000\nE-mail: Info@HR.nl\nPostcode: 3" +
+            this.Contactgegevenstxtbox.BackColor = System.Drawing.Color.White;
+            this.Contactgegevenstxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Contactgegevenstxtbox.Location = new System.Drawing.Point(151, 462);
+            this.Contactgegevenstxtbox.Name = "Contactgegevenstxtbox";
+            this.Contactgegevenstxtbox.Size = new System.Drawing.Size(330, 161);
+            this.Contactgegevenstxtbox.TabIndex = 33;
+            this.Contactgegevenstxtbox.Text = "Plaats: Wijnhaven 107\nTelefoonnummer: 010 794 4000\nE-mail: Info@HR.nl\nPostcode: 3" +
     "011 WN Rotterdam\n";
             // 
-            // richTextBox2
+            // Openingstijdentxtbox
             // 
-            this.richTextBox2.BackColor = System.Drawing.Color.White;
-            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.Location = new System.Drawing.Point(623, 426);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(413, 205);
-            this.richTextBox2.TabIndex = 34;
-            this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
+            this.Openingstijdentxtbox.BackColor = System.Drawing.Color.White;
+            this.Openingstijdentxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Openingstijdentxtbox.Location = new System.Drawing.Point(623, 426);
+            this.Openingstijdentxtbox.Name = "Openingstijdentxtbox";
+            this.Openingstijdentxtbox.Size = new System.Drawing.Size(413, 205);
+            this.Openingstijdentxtbox.TabIndex = 34;
+            this.Openingstijdentxtbox.Text = resources.GetString("Openingstijdentxtbox.Text");
             // 
-            // pictureBox1
+            // LogoHRLocatie
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(149, 156);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 35;
-            this.pictureBox1.TabStop = false;
+            this.LogoHRLocatie.Image = ((System.Drawing.Image)(resources.GetObject("LogoHRLocatie.Image")));
+            this.LogoHRLocatie.Location = new System.Drawing.Point(0, 2);
+            this.LogoHRLocatie.Name = "LogoHRLocatie";
+            this.LogoHRLocatie.Size = new System.Drawing.Size(149, 156);
+            this.LogoHRLocatie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LogoHRLocatie.TabIndex = 35;
+            this.LogoHRLocatie.TabStop = false;
             // 
             // Account
             // 
@@ -179,11 +180,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1179, 629);
             this.Controls.Add(this.Account);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.webBrowser1);
-            this.Controls.Add(this.linkLabel2);
+            this.Controls.Add(this.LogoHRLocatie);
+            this.Controls.Add(this.Openingstijdentxtbox);
+            this.Controls.Add(this.Contactgegevenstxtbox);
+            this.Controls.Add(this.RoutePlanner);
+            this.Controls.Add(this.GoogleMapsRedirectlabel);
             this.Controls.Add(this.Recenties);
             this.Controls.Add(this.Contact);
             this.Controls.Add(this.Thema);
@@ -192,7 +193,8 @@
             this.Controls.Add(this.Homepage);
             this.Name = "Contact_Tab";
             this.Text = "Contact_Tab";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.Contact_Tab_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.LogoHRLocatie)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,11 +208,11 @@
         private System.Windows.Forms.Button Tarieven;
         private System.Windows.Forms.Button Reserveren;
         private System.Windows.Forms.Button Homepage;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.WebBrowser webBrowser1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel GoogleMapsRedirectlabel;
+        private System.Windows.Forms.WebBrowser RoutePlanner;
+        private System.Windows.Forms.RichTextBox Contactgegevenstxtbox;
+        private System.Windows.Forms.RichTextBox Openingstijdentxtbox;
+        private System.Windows.Forms.PictureBox LogoHRLocatie;
         private System.Windows.Forms.Button Account;
     }
 }

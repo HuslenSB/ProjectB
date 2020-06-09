@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox2.Text" xml:space="preserve">
+  <data name="Openingstijdentxtbox.Text" xml:space="preserve">
     <value>Openingstijden:
 Maandag:                         7:30-22:00
 Dinsdag:                           7:30-21:00
@@ -129,7 +129,7 @@ Zondag:                            Gesloten
 </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="LogoHRLocatie.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAABGdBTUEAALGPC/xhBQAAAJxQTFRFyS9L
         ///+////yC5LyCA+z0FTxhU889TU9t3byCpIyCdGyCtJ/v/9/fz7xyBCxho+yilExQM223qD9+Tiz0pb
