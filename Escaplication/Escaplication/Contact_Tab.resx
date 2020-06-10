@@ -119,13 +119,14 @@
   </resheader>
   <data name="Openingstijdentxtbox.Text" xml:space="preserve">
     <value>Openingstijden:
-Maandag:                         7:30-22:00
-Dinsdag:                           7:30-21:00
-Woensdag:                       7:30-22:00
-Donderdag:                      7:30-19:30
-Vrijdag:                             7:30-17:30
-Zaterdag:                          Gesloten
-Zondag:                            Gesloten
+Maandag:                         9:00-17:00
+Dinsdag:                           9:00-17:00
+Woensdag:                       9:00-17:00
+Donderdag:                      9:00-17:00
+Vrijdag:                             9:00-17:00
+Zaterdag:                          9:00-17:00
+Zondag:                            9:00-17:00
+
 </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />

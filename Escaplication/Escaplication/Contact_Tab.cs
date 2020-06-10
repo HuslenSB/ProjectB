@@ -92,5 +92,10 @@ namespace Escaplication
         {
 
         }
+
+        private void Openingstijdentxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

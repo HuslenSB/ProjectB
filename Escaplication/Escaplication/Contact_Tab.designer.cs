@@ -147,11 +147,12 @@
             // 
             this.Openingstijdentxtbox.BackColor = System.Drawing.Color.White;
             this.Openingstijdentxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Openingstijdentxtbox.Location = new System.Drawing.Point(623, 426);
+            this.Openingstijdentxtbox.Location = new System.Drawing.Point(612, 426);
             this.Openingstijdentxtbox.Name = "Openingstijdentxtbox";
-            this.Openingstijdentxtbox.Size = new System.Drawing.Size(413, 205);
+            this.Openingstijdentxtbox.Size = new System.Drawing.Size(425, 240);
             this.Openingstijdentxtbox.TabIndex = 34;
             this.Openingstijdentxtbox.Text = resources.GetString("Openingstijdentxtbox.Text");
+            this.Openingstijdentxtbox.TextChanged += new System.EventHandler(this.Openingstijdentxtbox_TextChanged);
             // 
             // LogoHRLocatie
             // 
