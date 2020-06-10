@@ -141,16 +141,6 @@ namespace Escaplication
             this.Close();
         }
 
-        private void Account_Click(object sender, EventArgs e)
-        {
-            // Deze code zorgt ervoor dat als de gebruiker op de knop "Acount" drukt, deze doorgaat naar het login scherm.
-
-            var Login = new Accountpagina();
-            this.Hide();
-            Login.ShowDialog();
-            this.Close();
-        }
-
         private void daybox_ValueChanged(object sender, EventArgs e)
         {
             checkdate();
@@ -235,6 +225,8 @@ namespace Escaplication
 
         private void Account_Click_1(object sender, EventArgs e)
         {
+            // Deze code zorgt ervoor dat als de gebruiker op de knop "Acount" drukt, deze doorgaat naar het login scherm.
+
             var Login = new Accountpagina();
             this.Hide();
             Login.ShowDialog();
