@@ -111,10 +111,10 @@
             // 
             this.richTextBox2.BackColor = System.Drawing.Color.White;
             this.richTextBox2.Font = new System.Drawing.Font("Yu Gothic", 10.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.Location = new System.Drawing.Point(370, 532);
+            this.richTextBox2.Location = new System.Drawing.Point(380, 525);
             this.richTextBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(456, 54);
+            this.richTextBox2.Size = new System.Drawing.Size(456, 74);
             this.richTextBox2.TabIndex = 25;
             this.richTextBox2.TabStop = false;
             this.richTextBox2.Text = "Alle prijzen zijn inclusief btw en een drankje achteraf.\nNa afloop is er gelegenh" +
@@ -184,7 +184,7 @@
             // Reserveren
             // 
             this.Reserveren.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Reserveren.Location = new System.Drawing.Point(600, 25);
+            this.Reserveren.Location = new System.Drawing.Point(592, 25);
             this.Reserveren.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Reserveren.Name = "Reserveren";
             this.Reserveren.Size = new System.Drawing.Size(144, 39);
