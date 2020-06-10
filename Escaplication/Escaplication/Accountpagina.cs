@@ -321,12 +321,13 @@ namespace Escaplication
         private void searchbtn_Click_1(object sender, EventArgs e)
         {
             resultspnl.Controls.Clear();
-            userinfolines = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + textBox1.Text + ".txt");
             var path = Application.StartupPath + "\\Gebruikers\\" + textBox1.Text + ".txt";
             if (File.Exists(path))
             {
+                userinfolines = File.ReadAllLines(Application.StartupPath + "\\Gebruikers\\" + textBox1.Text + ".txt");
                 int i = 2, j = 1, LocPointGB = 0, LocPointLabel = 10;
-                while (i < userinfolines.Length - 6)
+                Console.WriteLine("test");
+                while (i < userinfolines.Length - 5)
                 {
                     var recensiegb = new GroupBox();
                     recensiegb.Name = "";
@@ -348,6 +349,10 @@ namespace Escaplication
                     countres++;
                     i += 7;
                 }
+            }
+            else
+            {
+                MessageBox.Show("Dit account bestaat niet");
             }
         }
         //Deze button logt de gebruiker uit.
