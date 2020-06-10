@@ -28,18 +28,17 @@ namespace Escaplication
                 recensiewriter.WriteLine("Leuke kamer!");
                 recensiewriter.WriteLine("5");
                 recensiewriter.Close();
-                StreamWriter checkwriter = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
-                checkwriter.WriteLine("false");
-                checkwriter.Close();
                 StreamWriter adminwriter = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Admin.txt");
                 adminwriter.WriteLine("Admin");
                 adminwriter.WriteLine("Admin");
                 adminwriter.Close();
+                StreamWriter accountwriter = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Accounts.txt");
+                accountwriter.Close();
             }
 
-        StreamWriter checkwriter2 = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
-        checkwriter2.WriteLine("false");
-        checkwriter2.Close();
+        StreamWriter checkwriter = new StreamWriter(Application.StartupPath + "\\Gebruikers\\" + "Loggedincheck.txt");
+        checkwriter.WriteLine("false");
+        checkwriter.Close();
         Application.EnableVisualStyles();
         Application.SetCompatibleTextRenderingDefault(false);
         Application.Run(new HoofdMenu());

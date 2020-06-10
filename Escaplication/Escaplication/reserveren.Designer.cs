@@ -264,6 +264,7 @@ namespace Escaplication
             this.Account.TabIndex = 41;
             this.Account.Text = "Account";
             this.Account.UseVisualStyleBackColor = true;
+            this.Account.Click += new System.EventHandler(this.Account_Click_1);
             // 
             // Recenties
             // 

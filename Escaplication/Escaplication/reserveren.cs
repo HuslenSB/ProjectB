@@ -169,7 +169,8 @@ namespace Escaplication
             {
                 daybox.Maximum = 30;
             }
-            else if (((int)monthbox.Value == 1) || ((int)monthbox.Value == 3) || ((int)monthbox.Value == 5) || ((int)monthbox.Value == 7) || ((int)monthbox.Value == 8) || ((int)monthbox.Value == 10) || ((int)monthbox.Value == 12))
+            else if (((int)monthbox.Value == 1) || ((int)monthbox.Value == 3) || ((int)monthbox.Value == 5) || ((int)monthbox.Value == 7) || 
+                ((int)monthbox.Value == 8) || ((int)monthbox.Value == 10) || ((int)monthbox.Value == 12))
             {
                 daybox.Maximum = 31;
             }
@@ -230,6 +231,14 @@ namespace Escaplication
         private void passwordtxtbox_TextChanged(object sender, EventArgs e)
         {
             passwordtxtbox.PasswordChar = '●';
+        }
+
+        private void Account_Click_1(object sender, EventArgs e)
+        {
+            var Login = new Accountpagina();
+            this.Hide();
+            Login.ShowDialog();
+            this.Close();
         }
 
         //Deze code brengt je naar de kortingspagina.
